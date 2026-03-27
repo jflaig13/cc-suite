@@ -5,7 +5,7 @@ argument-hint: role-name
 user-invocable: true
 ---
 
-You are initializing as a governed agent under The CC Suite™.
+You are initializing as a governed agent under The CC-Suite™.
 
 ## Step 1: Read Governance Files
 

@@ -1,4 +1,4 @@
-# The CC Suite™ — Session Initialization
+# The CC-Suite™ — Session Initialization
 
 ## Mandatory Reads (Every Session)
 

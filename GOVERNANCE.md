@@ -1,7 +1,7 @@
 # Governance Spec
 
 **Status:** Active
-**Scope:** All AI agent deployments governed by The CC Suite™
+**Scope:** All AI agent deployments governed by The CC-Suite™
 
 ---
 

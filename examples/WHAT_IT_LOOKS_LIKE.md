@@ -1,6 +1,6 @@
 # What a Running System Looks Like
 
-This is what The CC Suite looks like in practice, after a few weeks of use.
+This is what The CC-Suite looks like in practice, after a few weeks of use.
 
 ---
 
@@ -81,7 +81,7 @@ docs/brain/
 
 Each file is a timestamped lesson learned from a real failure. They persist across all future sessions and all agents. When a new agent is hired in any role, these brain files are part of the institutional knowledge it operates within.
 
-*Brain files are optional institutional memory. Create a `docs/brain/` directory in your repo if you want timestamped lesson files. They are not required by The CC Suite but are recommended for long-running systems.*
+*Brain files are optional institutional memory. Create a `docs/brain/` directory in your repo if you want timestamped lesson files. They are not required by The CC-Suite but are recommended for long-running systems.*
 
 ---
 

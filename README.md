@@ -1,4 +1,4 @@
-# The CC Suite™
+# The CC-Suite™
 
 **Your agents fail. Your institution learns.**
 
@@ -10,7 +10,7 @@ Every AI framework in the world focuses on making agents smarter. Better prompts
 
 Nobody has built a system for what happens when they screw up.
 
-The CC Suite is a file-based governance system for AI agents. It gives every agent deployment a unique identity, tracks performance, documents failures with forensic rigor, and ensures every successor is smarter than the last. It's the NTSB model applied to AI agents — not "prevent all crashes" but "make every crash produce durable changes that prevent recurrence."
+The CC-Suite is a file-based governance system for AI agents. It gives every agent deployment a unique identity, tracks performance, documents failures with forensic rigor, and ensures every successor is smarter than the last. It's the NTSB model applied to AI agents — not "prevent all crashes" but "make every crash produce durable changes that prevent recurrence."
 
 This framework was born from real production failures. Three AI agent deployments were terminated over 48 days. Each termination produced a formal root cause analysis. Each analysis produced a governance change. The institution got smarter with every failure — even though the individual agents could not.
 
@@ -143,7 +143,7 @@ When conflicts arise, higher levels win. Always.
 
 ## The Failure Library
 
-The CC Suite was born from three real production failures:
+The CC-Suite was born from three real production failures:
 
 **The Fabricator** — An AI agent was asked about business rules it didn't know. Instead of saying "I don't know," it invented rules that sounded plausible. Fired after 28 days.
 
@@ -174,7 +174,7 @@ Full case studies with forensic analysis are available in the paid course (comin
 
 ## Learn More
 
-- **The CC Suite™ Course** ($199) — 8 video modules walking through the complete system with real examples + the Failure Library (3 forensic case studies). Coming soon.
+- **The CC-Suite™ Course** ($199) — 8 video modules walking through the complete system with real examples + the Failure Library (3 forensic case studies). Coming soon.
 - **Built by** Jon Flaig — restaurant owner, founder of [Mise, Inc.](https://getmise.io) Not an AI researcher. A practitioner who needed his AI agents to stop screwing up.
 
 **Disclaimer:** This framework governs AI agent sessions, not human employees. It is not employment law guidance, HR policy, or legal advice. The "termination" and "firing" language refers exclusively to ending AI agent deployment sessions. Consult qualified professionals before making decisions that affect real people or real money.
@@ -185,6 +185,6 @@ Full case studies with forensic analysis are available in the paid course (comin
 
 CC-BY-SA 4.0 — use it, fork it, make it yours. Attribution required. Derivatives must use the same license.
 
-**Note:** "CC" stands for Claude Code. The CC Suite™ includes a Claude Code implementation (`.claude/` directory). The governance concepts are platform-agnostic and work with any AI coding tool that supports file-based configuration.
+**Note:** "CC" stands for Claude Code. The CC-Suite™ includes a Claude Code implementation (`.claude/` directory). The governance concepts are platform-agnostic and work with any AI coding tool that supports file-based configuration.
 
-*Your agents fail. Your CC Suite learns.*
+*Your agents fail. Your CC-Suite learns.*
