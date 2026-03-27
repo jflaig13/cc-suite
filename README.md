@@ -185,6 +185,6 @@ Full case studies with forensic analysis are available in the paid course (comin
 
 CC-BY-SA 4.0 — use it, fork it, make it yours. Attribution required. Derivatives must use the same license.
 
-**Note:** "CC" stands for Claude Code. The CC-Suite™ includes a Claude Code implementation (`.claude/` directory). The governance concepts are platform-agnostic and work with any AI coding tool that supports file-based configuration.
+**Note:** "CC" stands for Chief Code — as in Chief Code Technology Officer (CC-TO), Chief Code Product Officer (CC-PO), etc. A C-Suite for your AI agents. The CC-Suite™ includes a Claude Code implementation (`.claude/` directory) but the governance concepts are platform-agnostic and work with Claude Code, Codex, Copilot, Cursor, or any AI coding tool.
 
 *Your agents fail. Your CC-Suite learns.*
