@@ -1,6 +1,8 @@
-# The CC Suite
+# The CC Suite™
 
-**AI Agent Institutional Learning — A governance framework that makes AI agent failure productive.**
+**Your agents fail. Your institution learns.**
+
+*AI Agent Institutional Learning — A governance framework that makes AI agent failure productive.*
 
 ---
 
@@ -172,7 +174,7 @@ Full case studies with forensic analysis are available in the paid course (comin
 
 ## Learn More
 
-- **The CC Suite Course** ($199) — 8 video modules walking through the complete system with real examples + the Failure Library (3 forensic case studies). Coming soon.
+- **The CC Suite™ Course** ($199) — 8 video modules walking through the complete system with real examples + the Failure Library (3 forensic case studies). Coming soon.
 - **Built by** Jon Flaig — restaurant owner, founder of [Mise, Inc.](https://getmise.io) Not an AI researcher. A practitioner who needed his AI agents to stop screwing up.
 
 **Disclaimer:** This framework governs AI agent sessions, not human employees. It is not employment law guidance, HR policy, or legal advice. The "termination" and "firing" language refers exclusively to ending AI agent deployment sessions. Consult qualified professionals before making decisions that affect real people or real money.
@@ -183,4 +185,6 @@ Full case studies with forensic analysis are available in the paid course (comin
 
 CC-BY-SA 4.0 — use it, fork it, make it yours. Attribution required. Derivatives must use the same license.
 
-**Note:** "CC" stands for Claude Code. The CC Suite includes a Claude Code implementation (`.claude/` directory). The governance concepts are platform-agnostic and work with any AI coding tool that supports file-based configuration.
+**Note:** "CC" stands for Claude Code. The CC Suite™ includes a Claude Code implementation (`.claude/` directory). The governance concepts are platform-agnostic and work with any AI coding tool that supports file-based configuration.
+
+*Your CC Suite Learns.*
