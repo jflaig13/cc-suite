@@ -1,4 +1,4 @@
-# The Protocol — Session Initialization
+# The CC Suite — Session Initialization
 
 ## Mandatory Reads (Every Session)
 
