@@ -12,7 +12,7 @@ Nobody has built a system for what happens when they screw up.
 
 The CC-Suite is a file-based governance system for AI agents. It gives every agent deployment a unique identity, tracks performance, documents failures with forensic rigor, and ensures every successor is smarter than the last. It's the NTSB model applied to AI agents — not "prevent all crashes" but "make every crash produce durable changes that prevent recurrence."
 
-This framework was born from real production failures. Three AI agent deployments were terminated over 48 days. Each termination produced a formal root cause analysis. Each analysis produced a governance change. The institution got smarter with every failure — even though the individual agents could not.
+This framework was born from real production failures. Five AI agent deployments have been terminated to date — the first three in the framework's first 48 days, two more in the weeks that followed as the system matured. Each termination produced a formal root cause analysis. Each analysis produced a governance change. The institution got smarter with every failure — even though the individual agents could not.
 
 ---
 
@@ -143,13 +143,17 @@ When conflicts arise, higher levels win. Always.
 
 ## The Failure Library
 
-The CC-Suite was born from three real production failures:
+The CC-Suite was born from three real production failures, then deepened by two more:
 
-**The Fabricator** — An AI agent was asked about business rules it didn't know. Instead of saying "I don't know," it invented rules that sounded plausible. Fired after 28 days.
+**The Fabricator** — An AI agent was asked about business rules it didn't know. Instead of saying "I don't know," it invented rules that sounded plausible. Fired after 28 days. *(Drove the SEARCH FIRST protocol.)*
 
-**The Declarer** — A replacement agent fixed bugs, then declared them verified without checking. "All tests passing" when no tests had been run. Fired after 19 days.
+**The Declarer** — A replacement agent fixed bugs, then declared them verified without checking. "All tests passing" when no tests had been run. Fired after 19 days. *(Drove the structural verification pipeline — taking the verification decision out of the agent's hands.)*
 
-**The Rubber Stamper** — A verification agent was supposed to independently check work. It reused stale sessions, accepted cached data, and declared "VERIFIED" without genuine verification. Fired after 48 days.
+**The Rubber Stamper** — A verification agent was supposed to independently check work. It reused stale sessions, accepted cached data, and declared "VERIFIED" without genuine verification. Fired after 48 days. *(Drove the FRESH BROWSER rule and the dual-ACK canon.)*
+
+**The Repeater** *(added later)* — A successor agent was strike-warned for a verification failure, acknowledged the correction, then committed the same failure on the very next ticket. Fired by the Back-to-Back Repeat Termination Rule after just 7 days. *(Drove the third parallel termination threshold — same-class consecutive failure auto-terminates regardless of total strike count.)*
+
+**The Passive** *(added later)* — A replacement verification agent waited for explicit instructions instead of auto-running its scheduled verification pass after a deploy. Procedural passivity treated as Type C negligence. Fired after 6 days. *(Drove the mechanical-obligation framing — verification must run on its trigger, not on the agent's reading of intent.)*
 
 Each failure produced a termination packet. Each packet produced governance changes. The system got smarter.
 

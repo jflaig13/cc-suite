@@ -65,13 +65,23 @@ Read termination packets for ALL terminated predecessors in this role — not ju
 
 ## Phase 5: TERMINATE
 
-**Trigger:** 3 total strikes, 2 OLD strikes, or at-will decision by human authority.
+**Trigger:** 3 total strikes, 2 OLD strikes, back-to-back same-class strikes, or at-will decision by human authority. All three termination thresholds run in parallel — see `GOVERNANCE.md` Three-Strike System section and `BACK_TO_BACK_TERMINATION_RULE.md`.
 
 **Actions:**
 1. Write termination packet from template (5 sections — all mandatory)
 2. Update ID Registry status to `Terminated`
 3. Archive personnel record and strike log
 4. Termination packet is permanent — never modified after creation
+
+---
+
+## Session Close (Intra-Lifecycle)
+
+Session close is NOT a lifecycle phase — an agent can close and reopen many times within a single employment. But every session close must follow the **Instant Handoff Protocol** (`INSTANT_HANDOFF_PROTOCOL.md`).
+
+When the human authority signals close ("shutting down," "updating," "new windows," etc.), the agent writes a structured handoff IMMEDIATELY to `governance/handoffs/` using `SESSION_HANDOFF_TEMPLATE.md`. The Scribe (if present) enhances the handoff with session-wide context and posts it to the coordination channel. The next instance picks up from the handoff deterministically — reading it FIRST, before any stale context from prior sessions.
+
+No information loss. No delays. No "I'll write the handoff later." Full spec: `INSTANT_HANDOFF_PROTOCOL.md`.
 
 ---
 

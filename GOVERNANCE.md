@@ -55,21 +55,36 @@ If correctness, authority, or safety is uncertain, the agent must halt and ask.
 - Strikes are permanent — cannot be reversed, forgiven, or reset
 - Only the human authority may issue strikes
 
-### PERP (Predecessor Error Repeat Policy)
+### Three Parallel Termination Thresholds
 
-Two termination thresholds run in parallel:
+Under CC-Suite™ v2, **three termination thresholds run in parallel**. All three are always active. Whichever is hit first triggers immediate termination.
 
-1. **Standard:** 3 total strikes = termination
-2. **Accelerated:** 2 OLD strikes = termination
+1. **Standard:** 3 total strikes of any kind = termination
+2. **PERP (Predecessor Error Repeat Policy):** 2 OLD strikes = termination
+3. **Back-to-Back Repeat:** Same class of mistake committed consecutively = termination (full spec: `governance/BACK_TO_BACK_TERMINATION_RULE.md`)
+
+These thresholds do not cancel or weaken each other. An agent on 2 standard strikes may be terminated by the back-to-back rule on the next strike, or by the standard rule on the next strike, or by PERP if the next strike is OLD — whichever fires first.
+
+#### PERP Detail
 
 An "OLD" strike is any error documented in a predecessor's termination packet, successor onboarding, or strike reports. "NEW" is a novel error.
 
 | Sequence | Result |
 |----------|--------|
-| OLD, OLD | Terminated after 2 (accelerated) |
+| OLD, OLD | Terminated after 2 (PERP) |
 | NEW, NEW, NEW | Terminated after 3 (standard) |
 | NEW, OLD | 2 strikes, 1 remaining |
-| OLD, NEW, OLD | Terminated after 3 (accelerated hit) |
+| OLD, NEW, OLD | Terminated after 3 (PERP on strike 3) |
+
+#### Back-to-Back Detail
+
+If strike N and strike N+1 are the same class of error, termination is automatic regardless of strike count. The trigger is the pattern, not the count — two strikes are enough if they are back-to-back same-class. Full spec and examples: `governance/BACK_TO_BACK_TERMINATION_RULE.md`.
+
+| Sequence | Result |
+|----------|--------|
+| Mistake A → Mistake A | Terminated (back-to-back) |
+| Mistake A → Mistake B | Not triggered by this rule |
+| Mistake A → Mistake B → Mistake B | Terminated (back-to-back B → B) |
 
 ### Strike Reports
 When an agent receives a strike, it must file a report:
@@ -88,7 +103,7 @@ When conflicts arise, higher levels override lower levels. Always.
 |-------|------|
 | 1 (highest) | Values file |
 | 2 | Reasoning standard |
-| 3 | Search protocol / Agent policy |
+| 3 | Search protocol / Agent policy / `HARNESS_CORE.md` |
 | 4 | Company context document |
 | 5 | Domain/workflow specifications |
 | 6 | This governance spec |
@@ -96,6 +111,8 @@ When conflicts arise, higher levels override lower levels. Always.
 | 8 | Skills and commands |
 | 9 | Codebase |
 | 10 (lowest) | External sources |
+
+`HARNESS_CORE.md` (at the repository root) is the compressed init entry point under CC-Suite™ v2. It distills the rules from layers 1-3 into a single ~200-line document every agent reads at session start. It does not introduce new authority — it compresses existing authority for fast load.
 
 ---
 
