@@ -4,6 +4,7 @@
 **Authority:** Layer 6 (Governance Spec). Extends `governance/scribe/SCRIBE_CHANNEL_PROTOCOL.md`.
 **Scope:** The exact mechanical checklist the Scribe runs on every typed event. Produces the verdict phrase the channel server validates.
 **Related:** `governance/scribe/SCRIBE_CHANNEL_PROTOCOL.md`, `governance/scribe/EVENT_TYPES.md`, `governance/CHANNEL_PROTOCOL.md`, `governance/TANDEM_PROTOCOL.md` — Step 9.
+**Complementary protocol:** `governance/scribe/SUBATOMIC_AUDIT_PROTOCOL.md` — the 7-wave subatomic audit pattern for comprehensive multi-surface audits. This event-driven checklist handles per-event Scribe verdicts; the subatomic audit protocol handles whole-system comprehensive sweeps. Both are Scribe responsibilities; they cover different cadences (per-event vs scheduled deep audits).
 
 ---
 
