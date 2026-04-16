@@ -149,6 +149,8 @@ Three phases, no exceptions:
 
 **Enter the pipeline — do not remember the checklist.** The v2 pattern is structural: the agent invokes a verification skill that mechanically enforces the three phases (fresh environment, blank extraction template, validator rejects blanks, comparator computes verdict). No verification flow that depends on the agent remembering steps is acceptable for Tier S or Tier A work.
 
+**Verification Independence Principle (v2 architectural canon).** A verifier MUST NOT share code with the thing it verifies. Structural disjointness in verified layers: zero shared parsers, zero shared libraries, zero shared LLM prompts, zero shared fuzzy matchers, zero shared rule engines. Self-verification is the architectural anti-pattern behind the verification failures that motivated CC-Suite's mechanical-obligation pipeline — bugs in shared code are invisible to the MATCH test by construction (same code → same output → always MATCH → bug never fires). The gold shape is external-canon verification (verifier reads a source physically outside the subject's code path, such as a human-scanned document transcribed into a static file). Where no external canon exists (e.g., verifying a voice-input ingestion pipeline), independence must come from clean, duplicated implementation of the verified layers — the DRY instinct is wrong here; independence-by-duplication is load-bearing. Before building any verifier: enumerate every layer of the subject, state which layers the verifier's expected-truth computation passes through, and declare layers it passes through as blind spots (either compensated by unit tests or acknowledged as uncovered).
+
 ---
 
 ## 9. GOVERNANCE
