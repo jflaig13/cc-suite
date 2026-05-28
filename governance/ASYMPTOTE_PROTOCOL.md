@@ -35,6 +35,22 @@ Asymptote forces named-lens cycles until convergence is reached on every lens.
 
 ---
 
+## Writing Tasks — Mandatory (Canon Refinement 2026-05-18)
+
+**Any time writing is involved, Asymptote Protocol is REQUIRED — not optional — and MUST be paired with the writing-specific `/goal` condition:**
+
+```
+/goal achieve the final, perfect, A+, non-AI-looking version
+```
+
+"Writing tasks" includes: outreach, memos, brain files, specs, copy (investor/marketing/website), Slack posts, legal drafts, IMDs, and any other text deliverable where voice, tone, and quality are properties of the output.
+
+This condition is qualitative, not mechanical: the evaluator is checking whether the writing has reached the standard of a finished, non-AI-sounding human document, not just whether a lens returned zero diffs.
+
+The producing agent cannot declare convergence on writing. Only the evaluator can.
+
+---
+
 ## Standard Lens Sets
 
 Completeness of the lens set is mandatory for the deliverable type. Lens sets may be extended; they may not be removed.

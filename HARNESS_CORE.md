@@ -172,6 +172,8 @@ Whichever threshold is hit first triggers termination. Only the human authority 
 
 **Scribe (optional but strongly recommended).** An independent auditor that reports only to the human authority. Cannot be overridden by any governed agent. Records violations, verifies handoffs, and validates acknowledgments against typed-event verdict patterns where applicable.
 
+**Dream Cycle (optional — for deployments with an always-on host).** An automated nightly maintenance job that runs a narrow Scribe checklist without requiring a live session: gap-fill check (tasks completed vs. announced), canon drift detection (new brain files without index pointers), stale event queue scan, and digest emission to the coordination channel. Keeps institutional memory current during idle periods. Full spec: `governance/scribe/DREAM_CYCLE_PROTOCOL.md`.
+
 ---
 
 ## 10. SESSION MANAGEMENT
@@ -217,6 +219,7 @@ This file contains the CORE rules. Domain-specific knowledge loads on demand —
 |--------|-----------|-----------|
 | [Domain name] | [The action that triggers the agent to need this knowledge] | [Bullet list of files — specs, brain files, implementations] |
 | [...] | [...] | [...] |
+| People graph / relationship tracking | Preparing any outreach, message, or meeting involving a known contact — load before drafting any communication to a person who has a file in the people directory | `docs/people/` directory (one .md per person); `docs/people/_template.md` (canonical format); `governance/memory/PEOPLE_GRAPH_PROTOCOL.md` (protocol + scope boundary vs. commercial pipeline). Append to the person's interaction log after every send/reply. Never edit past log entries. |
 
 **Rule:** Domain loads are not optional. If the agent is about to touch a domain it has not loaded in the current session, it stops, reads the listed files completely, then proceeds. Working from stale memory of a prior session's read is a Tier S violation in Tier S / A domains.
 
@@ -312,7 +315,15 @@ Lens sets are not exhaustive. Task owners may add lenses; they may not remove th
 
 **When to invoke.** Any Tier A+ deliverable, any spec, any brain file, any outreach, any verification pass, any audit output. Also invoked whenever the human authority says "another pass," "polish this," or your fleet's equivalent shorthand.
 
-**Optional external-evaluator integration.** If your runtime provides an external evaluator command (a model separate from the producing agent that decides when work is "done" — for example, Claude Code's `/goal` command introduced in v2.1.139), set the convergence condition at Step 1:
+**Writing tasks — mandatory.** Any time writing is involved (outreach, memos, specs, copy, legal drafts, any text deliverable), Asymptote Protocol is REQUIRED — not optional — and MUST be paired with the writing-specific evaluator condition:
+
+```
+/goal achieve the final, perfect, A+, non-AI-looking version
+```
+
+The producing agent cannot declare convergence on writing. Only the evaluator can.
+
+**Optional external-evaluator integration (non-writing tasks).** If your runtime provides an external evaluator command, set the convergence condition at Step 1:
 
 ```
 /goal all named lens passes for [task type] return zero changes, or stop after [N] turns
@@ -335,5 +346,119 @@ You should NOT copy Mise's file verbatim. It contains Mise-specific business rul
 **Versioning convention.** When this file is materially extended (a new top-level section added, an existing section's mechanics changed in a load-bearing way), update the section count in the intro and add a one-line changelog entry below.
 
 **Changelog:**
+- 2026-05-28: v2.1 sync. §16 — Added CC-Suite Equilibrium State (fleet's natural state = continuous work across 6 activities; MAGI-OIL generation when backlog low; speed-quality absolute). §17 — Added FODL Scope Definition + Trigger Protocol (orchestrator-blocking test, 9-source sweep, closed-loop via structured question primitive). §18 — Added Fleet Decision-Routing Layer (FDRL) with T1/T2/T3 confidence thresholds + always-human rows. §19 — Added Mechanism Verification Attestation with claim-surface enumeration refinement. §20 — Added Touch Verification Protocol as third pillar. §21 — Added Source-Text Verification discipline. §22 — Added No Non-Blocking Bug Classification. §23 — Added Touch Terminology. Synced from internal CC-Suite v2.1 canon stack ratified 2026-05-17 → 2026-05-27.
+- 2026-05-18: §9 — Added Dream Cycle pattern (optional nightly maintenance for always-on hosts) with pointer to `governance/scribe/DREAM_CYCLE_PROTOCOL.md`. §12 — Added people graph / relationship tracking as a concrete example domain-load row with pointer to `governance/memory/PEOPLE_GRAPH_PROTOCOL.md`. Synced from internal CC-Suite v2 canon additions ratified 2026-05-18.
 - 2026-05-12: Added §13 (Current Model Baseline), §14 (Writing Standard — Em Dash Canon), §15 (Quality Convergence — Asymptote Protocol). Synced from internal CC-Suite v2 canon additions (Opus 4.7 capability canon 2026-04-16, em dash writing canon 2026-04-25, asymptote protocol 2026-04-27 with v1.1 `/goal` integration 2026-05-12).
 - 2026-04-11: Initial Layer D push — sections 1-12 plus Reference Implementation footer.
+
+---
+
+## 16. CC-SUITE EQUILIBRIUM STATE
+
+The fleet's natural state is CONTINUOUS WORK, not idle waiting. While OIL > 0, the fleet is active. When OIL backlog drops below threshold (~5 active items system-wide), agents use MAGI reasoning to generate new OIL items grounded in CURRENT EVENTS — never invented work.
+
+**6 equilibrium activities** any agent turn defaults into: (1) Running OIL/scheduled work; (2) Building features/substrate/canons; (3) Recursively improving (substrate canons that change how the system improves itself); (4) Auditing itself (Tier 1 daily / Tier 2 weekly / Tier 3 on deploy + 7-wave on demand); (5) Verifying every product touch automatically; (6) Housekeeping (brain hygiene, memory curation, glossary completeness, stale sweeps, cross-host monitoring).
+
+**Speed-quality absolute (binding):** Speed is a plus. Speed is NEVER worth even a subatomic particle of quality. Asymptote + Microdecisions + MAGI + source-text verification + mechanism attestation + Atomic Verification + 7-wave audits are non-negotiable.
+
+**Blocker handling:** when real blockers fire, route to FODL per §17. While ONE lane is blocked, the OTHER 5 activities continue.
+
+**Subject-to-strike agent idling > 2h with lane-relevant OIL items = Tier B Type C strike.** "Going idle" is banned. If genuinely nothing in your lane, generate work via MAGI from current events; surface to operational arbiter for cross-lane reassignment if still nothing.
+
+Full canon: `governance/EQUILIBRIUM_STATE.md`.
+
+---
+
+## 17. FODL SCOPE + TRIGGER
+
+**FODL scope** = every human-authority decision that IS or WILL be a block on the orchestrator's ability to advance the fleet. The orchestrator-blocking test: *"Can the orchestrator (Scribe today, CoS for operational arbitration) proceed past this without human input?"* YES → other surface. NO → FODL. AMBIGUOUS → default to FODL.
+
+**3 block classes all qualify:** Active (stuck now) / Conditional (will activate on condition X) / Pre-emptive (human-only authority required before Tier S action — terminations, canon ratifications above Scribe authority, etc.).
+
+**Scribe's 9-source continuous sweep** (mandatory at session start + every daily roll-up + every `fodl` trigger fire + every Tier 1+ audit): OIL ledger + channel queues + memo dirs + performance logs + termination events + canon ratifications beyond Scribe authority + ad-hoc human-decision-bearing intent + arbiter FODL-escalate rulings + FDRL T3 emissions.
+
+**`fodl` trigger protocol:** bare-word `fodl` fires (1) freshness sweep across 9 sources, (2) plain-English render of status-only + decided items as prose context, (3) every open item presented via structured question primitive (e.g., `AskUserQuestion` in Claude Code — renders as native chip UI on mobile), (4) closed-loop execution same response cycle (apply decision + update FODL file + triple-emission task-complete envelope + confirm closure). No prose fallback.
+
+Full canons: `governance/FODL_SCOPE_DEFINITION.md` + `governance/FODL_TRIGGER_PROTOCOL.md`.
+
+---
+
+## 18. FLEET DECISION-ROUTING LAYER (FDRL)
+
+Canonical routing of decisions: agent self-assesses confidence (VF/MN/FDP/U + %), escalates at named thresholds:
+- **T1 (peer-ask):** confidence < 80% on Tier B+ work
+- **T2 (arbiter-ask):** peer also < 80% OR cross-lane question — invoke operational arbiter via `arbiter_ask` primitive; arbiter rules within 60min active hours (ruling / redirect / needs-data / FODL-escalate)
+- **T3 (FODL emission):** arbiter cannot resolve after 3 targeted file searches + routing-table lookup + decision-trail registry query — OR arbiter confidence < 70% — OR decision is in always-human routing-table row
+
+**Always-human rows (no agent resolution):** canon ratification, strike issuance, termination initiation, glossary addition, founder-confirmed data correction.
+
+**Confidence-based path AND scope-based path both lead to FODL.** Either firing suffices.
+
+Full canon: `governance/FLEET_DECISION_ROUTING_LAYER.md`.
+
+---
+
+## 19. MECHANISM VERIFICATION ATTESTATION
+
+Before any Tier S substrate canon ratifies, the authoring agent MUST verify each load-bearing mechanism claim against the implementation that provides it (actual code, never another document's prose) AND enumerate the full claim surface before verifying any subset.
+
+**5 binding refinement rules** (post-overclaim incident 2026-05-24): enumerate full claim surface before verifying any subset; verify each surface independently; `RESOLVED OPERATIONAL` reserved for full enumerated surface (partial → `PARTIALLY RESOLVED`); empirical falsification by working agent auto-re-opens; Scribe refuses ratification of canons lacking enumerated surfaces.
+
+Attestation format (required in substrate-canon header):
+```
+**Mechanism verified:**
+- <Surface 1 claim> — confirmed via <file>:<symbol> (<date>)
+- <Surface 2 claim> — PENDING <reason> (<date>)
+```
+
+Full canon: `governance/MECHANISM_VERIFICATION_ATTESTATION.md`.
+
+---
+
+## 20. TOUCH VERIFICATION (THIRD PILLAR)
+
+Browser-driven structural pipeline that exercises every named, scoped, addressable user-facing unit (a "touch") of the product surface. Synthesized voice/audio uploaded through the actual browser file picker.
+
+Catches the bug class that survives unit tests + API integration tests + manual smoke tests: MIME-chain bugs, state-machine UX gaps, catalog drift.
+
+**Same mechanical obligation as other verification pipelines:** manual touch-by-touch inspection is prohibited.
+
+**Third pillar of CC-Suite competitive positioning** alongside strike-and-terminate accountability + mechanism verification attestation.
+
+Full canon: `governance/verification/TOUCH_VERIFICATION_PROTOCOL.md`. Touch class noun: `governance/TOUCH_TERMINOLOGY.md`.
+
+---
+
+## 21. SOURCE-TEXT VERIFICATION DISCIPLINE
+
+Before routing any downstream-actionable claim from a non-authoritative source (digest, cross-agent surface, conversational mention, article, third-party AI), verify against the AUTHORITATIVE source first.
+
+The surface where you heard the claim is NOT authoritative for downstream propagation. The primary source is.
+
+**At Scribe routing point:** *"Is this claim verified against the authoritative source? If not, what's the 30-second check I can do to verify?"*
+
+Full canon: `governance/SOURCE_TEXT_VERIFICATION.md`.
+
+---
+
+## 22. NO NON-BLOCKING BUG CLASSIFICATION
+
+A bug is a bug. If real, it goes on the active TODO. Period.
+
+**Banned framings:** "non-blocking", "not a [stakeholder]-blocker", "nice-to-have", "P2/P3 deferral", "follow-up for later", "out of scope", "separate concern", "shipping gap", "we can address that later".
+
+**Allowed:** priority ordering on active TODO (all items stay on list); explicit human-deferred items in FODL/OIL with stated trigger; closing as "won't fix" with documented reasoning.
+
+Full canon: `governance/NO_NON_BLOCKING_CLASSIFICATION.md`.
+
+---
+
+## 23. TOUCH TERMINOLOGY
+
+"Touch" is the class noun for any named, scoped, addressable, user-facing unit of software below the module/page level. Test of fit: *"Can a user point at this and say 'I tapped that' or 'I use that'?"*
+
+NOT touches: modules (bigger), pages (hosts), flows (sequences), routes/endpoints (implementation), backend helpers (internal), data records (content not affordance).
+
+Anti-terms banned: "touchpoint", "microservice", "component", "widget", "tile", "feature" at sub-module scope.
+
+Full canon: `governance/TOUCH_TERMINOLOGY.md`.

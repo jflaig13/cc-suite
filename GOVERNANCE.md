@@ -114,6 +114,22 @@ When conflicts arise, higher levels override lower levels. Always.
 
 `HARNESS_CORE.md` (at the repository root) is the compressed init entry point under CC-Suite™ v2. It distills the rules from layers 1-3 into a single ~200-line document every agent reads at session start. It does not introduce new authority — it compresses existing authority for fast load.
 
+### v2.1 Operational Discipline Canons (May 2026)
+
+Below the authority hierarchy but binding on all agent operations within governed fleets:
+
+- **`governance/EQUILIBRIUM_STATE.md`** — fleet's natural state is continuous work across 6 activities; MAGI-OIL generation when backlog low; speed-quality absolute (speed is a plus, never worth a subatomic particle of quality)
+- **`governance/FODL_SCOPE_DEFINITION.md`** — orchestrator-blocking test defines what belongs on the human-decision list; Scribe's 9-source continuous sweep prevents silent block
+- **`governance/FODL_TRIGGER_PROTOCOL.md`** — `fodl` trigger fires a closed-loop workflow via structured question primitive (mobile chip UI), not text-only action blocks
+- **`governance/FLEET_DECISION_ROUTING_LAYER.md`** — canonical routing of decisions from agent confidence (T1/T2/T3 thresholds) → peer-ask → arbiter (CoS) → human via `emit_fodl` primitive
+- **`governance/MECHANISM_VERIFICATION_ATTESTATION.md`** — Tier S substrate canons require mechanism claims verified against `file:symbol` references; full claim-surface enumeration mandatory before subset verification (post-overclaim refinement)
+- **`governance/NO_NON_BLOCKING_CLASSIFICATION.md`** — banned framings for demoting real bugs off the active list ("non-blocking", "nice-to-have", "out of scope", etc.)
+- **`governance/SOURCE_TEXT_VERIFICATION.md`** — verify regulatory/external/cross-host/"X said Y" claims against authoritative source BEFORE downstream routing
+- **`governance/TOUCH_TERMINOLOGY.md`** — class noun for named, scoped, addressable, user-facing units of software below module/page level
+- **`governance/verification/TOUCH_VERIFICATION_PROTOCOL.md`** — browser-driven structural verification of every cataloged product touch (third pillar of CC-Suite positioning)
+
+These canons are operational discipline, not authority — they make the existing authority hierarchy executable at scale.
+
 ---
 
 ## Truth Classification

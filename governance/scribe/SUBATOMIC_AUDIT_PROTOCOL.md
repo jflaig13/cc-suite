@@ -279,6 +279,6 @@ For audits where 100% certainty is the goal, the 17-agent cost is justified. For
 
 ## Reference Implementation
 
-The CC-Suite™ reference implementation (Mise, Inc.) ratified this canon on 2026-04-11 via the founder "this is the way" trigger during the Expo Protocol for the cc-suite v2 Layer D final audit. The inaugural execution scoped the entire governance system and Scribe-lane infrastructure. Mise's full canonical brain file with origin context and execution log: `docs/brain/041126__7-wave-subatomic-audit-canon.md`.
+The CC-Suite™ reference implementation (Mise Inc.) ratified this canon on 2026-04-11 via the founder "this is the way" trigger during the Expo Protocol for the cc-suite v2 Layer D final audit. The inaugural execution scoped the entire governance system and Scribe-lane infrastructure. Mise's full canonical brain file with origin context and execution log: `docs/brain/041126__7-wave-subatomic-audit-canon.md`.
 
 Adopters of the CC-Suite framework should treat this protocol as the canonical pattern when comprehensive audit certainty is required. Adjust the agent counts, particle inventory scope, and ground-truth checks to match your domain.

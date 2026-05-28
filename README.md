@@ -16,6 +16,34 @@ This framework was born from real production failures. Five AI agent deployments
 
 ---
 
+## What's New in v2.1 (May 2026)
+
+Six weeks of production-grounded canon refinement in the Mise reference implementation produced ten new substrate canons. They cluster into three pillars:
+
+### Pillar 1 — Strike-and-terminate accountability (continuing)
+The three-strike system + PERP + Back-to-Back Repeat Termination — the original CC-Suite foundation. Closest academic analog: the RLFA paper (Jan 2025). Not a productized system before CC-Suite.
+
+### Pillar 2 — Mechanism verification attestation
+`MECHANISM_VERIFICATION_ATTESTATION.md` — every Tier S substrate canon ratifies only after its mechanism claims are verified against actual code (`file:symbol`), AND the full claim surface is enumerated before any subset is verified. Refined post-overclaim incident. Closest academic analog: NabaOS (arXiv 2603.10060). Not a productized library.
+
+### Pillar 3 — Touch-level autonomous verification
+`verification/TOUCH_VERIFICATION_PROTOCOL.md` — browser-driven structural pipeline that exercises every named, scoped, addressable user-facing unit (a "touch") of the product. Synthesized voice/audio uploaded through the actual browser file picker. Catches MIME-chain bugs, state-machine UX gaps, catalog drift that survive unit tests + API tests + manual smoke tests. Phase 1 RESOLVED OPERATIONAL in Mise reference 2026-05-27 via 20/20 V-Loop CLEAN.
+
+### Supporting canons (v2.1)
+- `EQUILIBRIUM_STATE.md` — fleet's natural state is continuous work across 6 activities; MAGI-OIL generation when backlog low; speed-quality absolute
+- `FODL_SCOPE_DEFINITION.md` — orchestrator-blocking test + 9-source continuous sweep prevents silent block
+- `FODL_TRIGGER_PROTOCOL.md` — closed-loop decision capture via structured question primitive (mobile chip UI)
+- `FLEET_DECISION_ROUTING_LAYER.md` — canonical routing of decisions from agent confidence → peer → arbiter → human
+- `TOUCH_TERMINOLOGY.md` — class noun for product-surface units
+- `NO_NON_BLOCKING_CLASSIFICATION.md` — banned framings for demoting real bugs off the active list
+- `SOURCE_TEXT_VERIFICATION.md` — verify external/regulatory/cross-host claims against authoritative source BEFORE downstream routing
+
+Together: governed multi-agent dev system that **catches its own work, holds its own accountability, and verifies its own output**.
+
+Honest scope: this framework's closest kin is BMAD-METHOD. Honest frame — *"BMAD enforces process gates; CC-Suite enforces accountability invariants."*
+
+---
+
 ## What's In This Repo
 
 ```
@@ -44,8 +72,42 @@ cc-suite/
 │   │   └── VLOOP_CHECKLIST_TEMPLATE.md # Per-ticket verification checklist
 │   ├── memos/                          # Inter-agent communication
 │   │   └── .gitkeep
-│   └── gold_stars/
-│       └── GOLD_STAR_TEMPLATE.md
+│   ├── gold_stars/
+│   │   └── GOLD_STAR_TEMPLATE.md
+│   │
+│   ├── # === v2 substrate canons ===
+│   ├── ATOMIC_VERIFICATION_PROTOCOL.md # EXTRACT → COMPARE → VERDICT structural pipeline
+│   ├── ASYMPTOTE_PROTOCOL.md           # Named-lens convergence cycles for quality
+│   ├── BACK_TO_BACK_TERMINATION_RULE.md# Third parallel termination threshold
+│   ├── CHANNEL_PROTOCOL.md             # Push-based agent comms
+│   ├── DIGEST_BRIDGE_PROTOCOL.md       # Ephemeral → interactive bridge
+│   ├── INSTANT_HANDOFF_PROTOCOL.md     # Session-close handoff canon
+│   ├── MONITORING_CHAIN_INTEGRITY.md   # Host that owns subject is authoritative
+│   ├── SESSION_MANAGEMENT.md           # Compaction Initialization Protocol (CIP)
+│   ├── MODEL_CAPABILITY_CANON.md       # Current model baseline + breaking changes
+│   │
+│   ├── # === v2.1 substrate canons (May 2026) ===
+│   ├── EQUILIBRIUM_STATE.md            # Fleet's natural state = continuous work, 6 activities
+│   ├── FODL_SCOPE_DEFINITION.md        # Orchestrator-blocking test + 9-source sweep
+│   ├── FODL_TRIGGER_PROTOCOL.md        # Closed-loop decision capture via structured tool
+│   ├── FLEET_DECISION_ROUTING_LAYER.md # FDRL — confidence ladder + arbiter + emit_fodl
+│   ├── MECHANISM_VERIFICATION_ATTESTATION.md # Substrate canon attestation + refinement
+│   ├── NO_NON_BLOCKING_CLASSIFICATION.md # Banned framings for bug demotion
+│   ├── SOURCE_TEXT_VERIFICATION.md     # Verify external claims BEFORE routing
+│   ├── TOUCH_TERMINOLOGY.md            # Class noun for product-surface units
+│   ├── verification/
+│   │   ├── TOUCH_VERIFICATION_PROTOCOL.md # Pillar 3 — browser-driven touch verification
+│   │   ├── COMPARISON_TEMPLATE.md
+│   │   ├── EXTRACTION_TEMPLATE.md
+│   │   └── VERDICT_DECLARATION_TEMPLATE.md
+│   ├── memory/
+│   │   └── PEOPLE_GRAPH_PROTOCOL.md    # Append-only relationship memory
+│   └── scribe/
+│       ├── DREAM_CYCLE_PROTOCOL.md     # Nightly maintenance
+│       ├── EVENT_TYPES.md
+│       ├── SCRIBE_AUDIT_CHECKLIST.md
+│       ├── SCRIBE_CHANNEL_PROTOCOL.md
+│       └── SUBATOMIC_AUDIT_PROTOCOL.md # 7-wave Tier 3 audit pattern
 ├── .claude/
 │   ├── CLAUDE.md                       # Initialization protocol
 │   └── commands/
@@ -179,7 +241,7 @@ Full case studies with forensic analysis are available in the paid course (comin
 ## Learn More
 
 - **The CC-Suite™ Course** ($199) — 8 video modules walking through the complete system with real examples + the Failure Library (3 forensic case studies). Coming soon.
-- **Built by** Jon Flaig — restaurant owner, founder of [Mise, Inc.](https://getmise.io) Not an AI researcher. A practitioner who needed his AI agents to stop screwing up.
+- **Built by** Jon Flaig — restaurant owner, founder of [Mise Inc.](https://getmise.io) Not an AI researcher. A practitioner who needed his AI agents to stop screwing up.
 
 **Disclaimer:** This framework governs AI agent sessions, not human employees. It is not employment law guidance, HR policy, or legal advice. The "termination" and "firing" language refers exclusively to ending AI agent deployment sessions. Consult qualified professionals before making decisions that affect real people or real money.
 
