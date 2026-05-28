@@ -114,7 +114,7 @@ When conflicts arise, higher levels override lower levels. Always.
 
 `HARNESS_CORE.md` (at the repository root) is the compressed init entry point under CC-Suite™ v2. It distills the rules from layers 1-3 into a single ~200-line document every agent reads at session start. It does not introduce new authority — it compresses existing authority for fast load.
 
-### v2.1 Operational Discipline Canons (May 2026)
+### v2.2 Operational Discipline Canons (May 2026)
 
 Below the authority hierarchy but binding on all agent operations within governed fleets:
 

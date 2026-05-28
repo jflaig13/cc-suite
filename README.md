@@ -16,7 +16,7 @@ This framework was born from real production failures. Five AI agent deployments
 
 ---
 
-## What's New in v2.1 (May 2026)
+## What's New in v2.2 (May 2026)
 
 Six weeks of production-grounded canon refinement in the Mise reference implementation produced ten new substrate canons. They cluster into three pillars:
 
@@ -29,7 +29,7 @@ The three-strike system + PERP + Back-to-Back Repeat Termination — the origina
 ### Pillar 3 — Touch-level autonomous verification
 `verification/TOUCH_VERIFICATION_PROTOCOL.md` — browser-driven structural pipeline that exercises every named, scoped, addressable user-facing unit (a "touch") of the product. Synthesized voice/audio uploaded through the actual browser file picker. Catches MIME-chain bugs, state-machine UX gaps, catalog drift that survive unit tests + API tests + manual smoke tests. Phase 1 RESOLVED OPERATIONAL in Mise reference 2026-05-27 via 20/20 V-Loop CLEAN.
 
-### Supporting canons (v2.1)
+### Supporting canons (v2.2)
 - `EQUILIBRIUM_STATE.md` — fleet's natural state is continuous work across 6 activities; MAGI-OIL generation when backlog low; speed-quality absolute
 - `FODL_SCOPE_DEFINITION.md` — orchestrator-blocking test + 9-source continuous sweep prevents silent block
 - `FODL_TRIGGER_PROTOCOL.md` — closed-loop decision capture via structured question primitive (mobile chip UI)
@@ -86,7 +86,7 @@ cc-suite/
 │   ├── SESSION_MANAGEMENT.md           # Compaction Initialization Protocol (CIP)
 │   ├── MODEL_CAPABILITY_CANON.md       # Current model baseline + breaking changes
 │   │
-│   ├── # === v2.1 substrate canons (May 2026) ===
+│   ├── # === v2.2 substrate canons (May 2026) ===
 │   ├── EQUILIBRIUM_STATE.md            # Fleet's natural state = continuous work, 6 activities
 │   ├── FODL_SCOPE_DEFINITION.md        # Orchestrator-blocking test + 9-source sweep
 │   ├── FODL_TRIGGER_PROTOCOL.md        # Closed-loop decision capture via structured tool
