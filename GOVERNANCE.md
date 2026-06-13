@@ -5,6 +5,20 @@
 
 ---
 
+## Three Governance Primitives
+
+CC-Suite is a governed multi-agent development system. Three primitives distinguish it from observability tooling and process-gate frameworks:
+
+**1. Strike-and-terminate accountability** — agents accumulate a persistent performance record across deployments. Three parallel termination thresholds run simultaneously: standard 3-strike, PERP (accelerated for failures documented in predecessor packets), and Back-to-Back Repeat (automatic on same-class consecutive failure). Every termination produces a forensic packet; every successor reads it. The system has memory the individual agents don't.
+
+**2. Mechanism verification attestation** — before any load-bearing governance rule becomes binding fleet-wide, the agent authoring it must enumerate its full claim surface and verify each enumerated claim independently against actual code (`file:symbol`). RESOLVED OPERATIONAL is reserved for the full surface. Partial verification produces PARTIALLY RESOLVED — never inferred as complete coverage. A single working agent reporting a real failure auto-reopens any prior RESOLVED OPERATIONAL attestation. No committee, no override.
+
+**3. Canon registry** — every governance rule that changes the way the system operates is recorded in a named file with a ratification date, a mechanism-verified attestation (if applicable), and cross-references to the incident or founder directive that drove it. Canon drift — when the registry says one thing and the running system does another — is an auditable failure mode with defined detection and remediation steps.
+
+These three primitives are the entry points. The details follow.
+
+---
+
 ## Purpose
 
 This governance system exists to make AI agent failure productive. It provides:
