@@ -1,6 +1,6 @@
 # Customer Information Board Protocol
 
-A single canonical board for every warm customer relationship. The commercial-pipeline layer, complementary to the People Graph's relationship layer. One board, read by every agent at session start, never mixed up.
+A single canonical board for every warm customer relationship. The commercial-pipeline layer, complementary to the People Graph's relationship layer. One board, scoped to authorized customer work, never mixed up.
 
 ---
 
@@ -8,7 +8,7 @@ A single canonical board for every warm customer relationship. The commercial-pi
 
 A multi-agent fleet that sells anything accumulates customer facts in a dozen places: a call gets logged in one agent's handoff, a pricing detail in another's memo, a stage change in a third's announcement. The facts drift apart. Two agents end up holding two different versions of where a relationship stands, and a customer-facing message goes out built on the stale one.
 
-The Customer Information Board (CIB) solves that the way an institution solves any source-of-truth problem: one canonical document, everyone reads it, everyone updates it, nobody keeps a private copy. The board holds every customer the fleet is in a warm relationship with: who they are, what they're buying, where the relationship stands right now, and a dated log of every interaction.
+The Customer Information Board (CIB) solves that the way an institution solves any source-of-truth problem: one canonical record with a governed update path and derived read views. The board holds every customer the fleet is in a warm relationship with: who they are, what they're buying, where the relationship stands right now, and a dated log of every interaction.
 
 This is the commercial counterpart to the People Graph. The People Graph tracks the relationship (who someone is, how you met, the running interaction log). The CIB tracks the pipeline (what stage the deal is at, what's been provisioned, what the next step is). A single contact can appear in both; they answer different questions.
 
@@ -40,7 +40,7 @@ Add fields as a customer needs them. The schema is a floor, not a ceiling.
 
 **Never mix one customer up with another.** Every record lists both the display name and the technical account key, precisely so the two can never be confused. The friendly name a human uses and the system key a tenant is stored under are different strings, and conflating them is how one customer's data lands on another's record. Before editing a record, confirm the account key you are editing. Cross-customer field bleed (putting one customer's fact on another's record) is a data-integrity error of the same class as serving one tenant's data to another.
 
-**Read it on init.** Every agent reads the board at session start and knows the current state of every relevant relationship before doing any customer-facing work: outreach, onboarding, a follow-up, a pricing conversation. An agent acting on a stale or half-remembered customer fact is the exact failure this board exists to prevent.
+**Read before customer-facing work.** Each agent reads the authorized, relevant records before doing any customer-facing work: outreach, onboarding, a follow-up, a pricing conversation. An agent acting on a stale or half-remembered customer fact is the exact failure this board exists to prevent.
 
 ---
 
@@ -78,10 +78,10 @@ The board holds personal and commercial detail: who someone is, what they pay, w
 
 ## Ownership
 
-Every agent updates the board in its lane: whoever learns the fact records it. The relationship-facing roles (growth, customer success) are the primary update lanes. The Scribe audits the board for cross-customer bleed, stale records, and stage-vocabulary and language-honesty compliance. Auditing the source of truth is part of keeping it true.
+An authorized agent records facts through the board’s governed write path. Concurrent updates reconcile against the same canonical record; readers do not maintain independently writable copies. The relationship-facing roles (growth, customer success) are the primary update lanes. The Scribe audits the board for cross-customer bleed, stale records, and stage-vocabulary and language-honesty compliance. Auditing the source of truth is part of keeping it true.
 
 ---
 
 ## Origin
 
-This pattern emerged in the Mise reference implementation after customer facts had scattered across handoffs, memos, and announcements, and two agents briefly held different versions of the same relationship's status. The fix was a single canonical board with read-on-init and never-mix-up as hard rules. It pairs with the People Graph (relationship memory) and the cold-outreach pipeline (pre-interest prospects) as the third leg of a fleet's relationship memory: the warm commercial pipeline, kept honest.
+The board is a canonical relationship record. Other summaries and task views derive from it and retain source provenance.

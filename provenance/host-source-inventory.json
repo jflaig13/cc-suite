@@ -1,0 +1,646 @@
+{
+  "source_commit": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+  "inventory": [
+    {
+      "path": "channels/agent/arbiter_ask.test.ts",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "74d7af2d71110df924d9aa659ade9eb0676690a8d2bf9b6c8a682f92fe4a6ee7",
+      "output_sha256": "74d7af2d71110df924d9aa659ade9eb0676690a8d2bf9b6c8a682f92fe4a6ee7",
+      "adaptations": [],
+      "mode": "0o644",
+      "status": "unchanged"
+    },
+    {
+      "path": "channels/agent/arbiter_ask.ts",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "47de8304bf60cd8c75af9d0bd49553aef842322f991bca56f50230cdb627389b",
+      "output_sha256": "47de8304bf60cd8c75af9d0bd49553aef842322f991bca56f50230cdb627389b",
+      "adaptations": [],
+      "mode": "0o644",
+      "status": "unchanged"
+    },
+    {
+      "path": "channels/agent/bun.lock",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "680f17de1484c55d6b5b1e5fab3cd02f7e0046d725c971821c506b8bf170b545",
+      "output_sha256": "dd603c358ec0d48b7953437d377737b03f1b3409a056b3e871b2e58092d8d912",
+      "adaptations": [
+        "Declare actual module/build/typecheck/test commands and exact Bun/TypeScript dependencies; regenerate lock with Bun 1.3.12 and lifecycle scripts disabled."
+      ],
+      "mode": "0o644",
+      "status": "adapted"
+    },
+    {
+      "path": "channels/agent/channel.bundle.js",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "adaptations": [
+        "Rebuilt using exact declared Bun build command after export adaptations."
+      ],
+      "output_sha256": "bff64f9bdc1b56f35d39eed379fe197bf33c63230b1db2dfc329a190103aee3e",
+      "mode": "0o755",
+      "status": "generated"
+    },
+    {
+      "path": "channels/agent/channel.ts",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "4e34673d15828ce08c265a8447fee0e89add48abfe5e3b38e992fa7de50325e4",
+      "output_sha256": "408d7bfe8c07a6a8fc8d81fa2684a81f8793ad98038a0ba6117a6e8648f186b9",
+      "adaptations": [
+        "Bind workspace, package, bus, channel state, role, port and Python explicitly.",
+        "Require deployer-supplied authorization before any channel filesystem or socket effect.",
+        "Keep queue receipt, cursor, dispatch, arbitration and decision-list algorithms. Exclude retired restaurant role launch.",
+        "Narrow pre-existing TypeScript type errors: validated event ID, awaited drain callback, MCP argument assertions, and guaranteed regex capture; no message algorithm redesign.",
+        "Bind channel state to the authorized Company role/root; omit restaurant destination aliases from Company-only target configuration."
+      ],
+      "mode": "0o644",
+      "status": "adapted"
+    },
+    {
+      "path": "channels/agent/emit_fodl.ts",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "7b261cfe527cf91ffa21245cda56909a179c7a77f61142f2a6ef7b77e22f7c96",
+      "output_sha256": "35db03655bf17406a578fa70a513373df5cf698460449d4ebc2af170ef3f7e03",
+      "adaptations": [
+        "Use explicit workspace/Python; remove canonical Git-worktree interpreter discovery.",
+        "Narrow pre-existing TypeScript type errors: validated event ID, awaited drain callback, MCP argument assertions, and guaranteed regex capture; no message algorithm redesign."
+      ],
+      "mode": "0o644",
+      "status": "adapted"
+    },
+    {
+      "path": "channels/agent/package.json",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "6e864fbce2d40ec193f0fc9c253e1a4cd0ed21c9bdd16fa7d734a120b4914964",
+      "output_sha256": "82df6726308cf67e9efb796f58d97e04a7d7f424cf216fa17a9d36adf3db0d54",
+      "adaptations": [
+        "Declare actual module/build/typecheck/test commands and exact Bun/TypeScript dependencies; regenerate lock with Bun 1.3.12 and lifecycle scripts disabled."
+      ],
+      "mode": "0o644",
+      "status": "adapted"
+    },
+    {
+      "path": "channels/agent/tsconfig.json",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "4dc04b191bf94ab851419f7c62b4514bc1d1ec2eadaf8bff5b97c002f6d84b5b",
+      "output_sha256": "4dc04b191bf94ab851419f7c62b4514bc1d1ec2eadaf8bff5b97c002f6d84b5b",
+      "adaptations": [],
+      "mode": "0o644",
+      "status": "unchanged"
+    },
+    {
+      "path": "channels/configs/fleet-hook.settings.json",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "d902458794c3b25bceabf43fe3c409e524dcac4ea894355a005ab2c7d01c7387",
+      "output_sha256": "dd014e84d7d5ce36618d956c50d1bad141a50efa95491558c2e2f42fadb22818",
+      "adaptations": [],
+      "mode": "0o644",
+      "status": "adapted"
+    },
+    {
+      "path": "channels/configs/role-ccco.mcp.json",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "607b25c8b02be6052e4e6cdf5b8e9030912a428326a0349b874fb2b675efa328",
+      "output_sha256": "de0d4424bbdc744b1273ffd64f17eec6c629b32f640bbb2d615852735962bc91",
+      "adaptations": [
+        "Keep role server keys/ports; replace private paths with explicit guarded host adapter."
+      ],
+      "mode": "0o644",
+      "status": "adapted"
+    },
+    {
+      "path": "channels/configs/role-ccde.mcp.json",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "ed8292b7ca43d3213a09f2bf02609e0cc1be778afe19aea9c3753621adfea33a",
+      "output_sha256": "852f8b75344f816e77d2fece1cfca6db39ed829b60802c0b2ed076faa389e36f",
+      "adaptations": [
+        "Keep role server keys/ports; replace private paths with explicit guarded host adapter."
+      ],
+      "mode": "0o644",
+      "status": "adapted"
+    },
+    {
+      "path": "channels/configs/role-ccfo.mcp.json",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "0783f8c6e1aed5d8e53e46387c1ccd67a721a5aa6fc483d67b19e4f7fca8578c",
+      "output_sha256": "da465cb1b3562ff4c644d4fd1cb1d07f20f101b30e07cefae658aba529093b3a",
+      "adaptations": [
+        "Keep role server keys/ports; replace private paths with explicit guarded host adapter."
+      ],
+      "mode": "0o644",
+      "status": "adapted"
+    },
+    {
+      "path": "channels/configs/role-ccgo.mcp.json",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "c095bb079d9e1c419a25416d37610921647488f98048d2ddf0599fe29e81a7b0",
+      "output_sha256": "9817c7d8e16182110145409d56b283efc3d299007d31ae5dff1a46108825c1f1",
+      "adaptations": [
+        "Keep role server keys/ports; replace private paths with explicit guarded host adapter."
+      ],
+      "mode": "0o644",
+      "status": "adapted"
+    },
+    {
+      "path": "channels/configs/role-cclo.mcp.json",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "94d7c543ba0ab00e109f5fb17ac712e1edd1b835645a4dcdef575bde4c3f858f",
+      "output_sha256": "eebd9c4e1656dcf2e686c5dea806528afe6e663ad9fe3d1f5197a38702fe6739",
+      "adaptations": [
+        "Keep role server keys/ports; replace private paths with explicit guarded host adapter."
+      ],
+      "mode": "0o644",
+      "status": "adapted"
+    },
+    {
+      "path": "channels/configs/role-ccmo.mcp.json",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "feaea18834e66309e86b5e331d027ff4eb4907ae98e9b3ccd8eddb34221a7c26",
+      "output_sha256": "c10ddcb47d69f2a24f643f74ba562b44b19efdb439a087e6ebd69ee98304fe87",
+      "adaptations": [
+        "Keep role server keys/ports; replace private paths with explicit guarded host adapter."
+      ],
+      "mode": "0o644",
+      "status": "adapted"
+    },
+    {
+      "path": "channels/configs/role-ccpo.mcp.json",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "411df8e3f8ba284b6cb0cd5358836fe44b2b7c0d69acf1c1091467e0ba048f59",
+      "output_sha256": "6cec4c401b86de38612f95c8fe59df1604f01489d0a71f8a9e366f1c2f23a801",
+      "adaptations": [
+        "Keep role server keys/ports; replace private paths with explicit guarded host adapter."
+      ],
+      "mode": "0o644",
+      "status": "adapted"
+    },
+    {
+      "path": "channels/configs/role-ccro.mcp.json",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "533361c4f37470cc43c40c65f77f62ed36bc41952dd94d052e19ef512fe375d7",
+      "output_sha256": "ed1879720e652cb0beadb9e2cbd81f7b25b0944e957aa24e2e1fdda185c0e499",
+      "adaptations": [
+        "Keep role server keys/ports; replace private paths with explicit guarded host adapter."
+      ],
+      "mode": "0o644",
+      "status": "adapted"
+    },
+    {
+      "path": "channels/configs/role-ccto.mcp.json",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "292f0b45501bff604855491c971e18e69df12f235bda29f806f2ad8118859c39",
+      "output_sha256": "f935d489c40fa221e288f201802455968af0d93eac1cebe9a3d3295a34d2ef42",
+      "adaptations": [
+        "Keep role server keys/ports; replace private paths with explicit guarded host adapter."
+      ],
+      "mode": "0o644",
+      "status": "adapted"
+    },
+    {
+      "path": "channels/configs/role-cos.mcp.json",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "30b9cdc7f568d21180cb3af7176fd0232d42c460e0e389f2076177a7ba907bb7",
+      "output_sha256": "843158c9c120ac0d00a1aa5d5d16c3df00644bff00028ff79240e405c4631b69",
+      "adaptations": [
+        "Keep role server keys/ports; replace private paths with explicit guarded host adapter."
+      ],
+      "mode": "0o644",
+      "status": "adapted"
+    },
+    {
+      "path": "channels/configs/role-scribe.mcp.json",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "8195e004710008e937ae3e8a312552e76832bd116057b320a06b5ec6d59108b2",
+      "output_sha256": "2972c71a8245977da1d82ebdc87be544e4c4e53a5eab2c302e7b594915216983",
+      "adaptations": [
+        "Keep role server keys/ports; replace private paths with explicit guarded host adapter."
+      ],
+      "mode": "0o644",
+      "status": "adapted"
+    },
+    {
+      "path": "channels/configs/role-utility.mcp.json",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "35491aaa4a30c00f11b8afecc9b9bccfe0ac1d48e30dfb6a9d85425f3f8c183e",
+      "output_sha256": "3f3cf93efd01bb99075bedf15a122ec3c80b74073968f0d867ebabd2a5c98a71",
+      "adaptations": [
+        "Keep role server keys/ports; replace private paths with explicit guarded host adapter."
+      ],
+      "mode": "0o644",
+      "status": "adapted"
+    },
+    {
+      "path": "channels/scribe/bun.lock",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "ce58cd50de18968d8bb7701c928a5f9c5eec13e5935ecd56f7c36546b16180a0",
+      "output_sha256": "aaa89c9719ce219d55f7a62b4f0ce6c7d3ce5e6133db081276e2231b3ad29153",
+      "adaptations": [
+        "Declare actual module/build/typecheck/test commands and exact Bun/TypeScript dependencies; regenerate lock with Bun 1.3.12 and lifecycle scripts disabled."
+      ],
+      "mode": "0o644",
+      "status": "adapted"
+    },
+    {
+      "path": "channels/scribe/closed_mcp.ts",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "733bc64496c958aaee8bdd68525cdb60bc54ece1c459d2c250a8d39ce0ec4dc6",
+      "output_sha256": "733bc64496c958aaee8bdd68525cdb60bc54ece1c459d2c250a8d39ce0ec4dc6",
+      "adaptations": [],
+      "mode": "0o644",
+      "status": "unchanged"
+    },
+    {
+      "path": "channels/scribe/durable_delivery.test.ts",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "c3b4a24521245a26d3ecb5ddbe18f9df22e23f2b33875b3ef5f962b8d714784a",
+      "output_sha256": "c3b4a24521245a26d3ecb5ddbe18f9df22e23f2b33875b3ef5f962b8d714784a",
+      "adaptations": [],
+      "mode": "0o644",
+      "status": "unchanged"
+    },
+    {
+      "path": "channels/scribe/durable_delivery.ts",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "efa3dc1dfe58d518b8d0c3eaeda117de5df8353e0b82dab99d3b18697ec5c652",
+      "output_sha256": "efa3dc1dfe58d518b8d0c3eaeda117de5df8353e0b82dab99d3b18697ec5c652",
+      "adaptations": [],
+      "mode": "0o644",
+      "status": "unchanged"
+    },
+    {
+      "path": "channels/scribe/frozen-bundle.json",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "6417ac4b84e3f274b7342ecf1d93d4a719421cf5bbc704fd2f0c620860f7179b",
+      "output_sha256": "1381c89044c264481750cceaff1007928708f1ff02156da2c73f59e0d809b82e",
+      "adaptations": [
+        "Recompute all sanitized source, bundle, and canonical linkage hashes.",
+        "Recomputed every exact input/bundle hash and canonical JSON link hash after final TypeScript/package/lock changes."
+      ],
+      "mode": "0o644",
+      "status": "adapted"
+    },
+    {
+      "path": "channels/scribe/package.json",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "155d56662d1446ef1a02bf14a34daebaf225754060037ea22e7a44a61ab1034b",
+      "output_sha256": "53488857f44f26781eba94033f62a980b0455d14d03a964f4ebcdcbfde70612d",
+      "adaptations": [
+        "Declare actual module/build/typecheck/test commands and exact Bun/TypeScript dependencies; regenerate lock with Bun 1.3.12 and lifecycle scripts disabled."
+      ],
+      "mode": "0o644",
+      "status": "adapted"
+    },
+    {
+      "path": "channels/scribe/tsconfig.json",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "4dc04b191bf94ab851419f7c62b4514bc1d1ec2eadaf8bff5b97c002f6d84b5b",
+      "output_sha256": "4dc04b191bf94ab851419f7c62b4514bc1d1ec2eadaf8bff5b97c002f6d84b5b",
+      "adaptations": [],
+      "mode": "0o644",
+      "status": "unchanged"
+    },
+    {
+      "path": "channels/scribe/webhook.bundle.js",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "bc162f0cd63902e1cc1ab05d0f240e58f623c820106a5e44d128a34da7ecc3d9",
+      "output_sha256": "ed6403f628d841b763982f8fe543e57295db6de2c0485110c0fd01ad1fb06e9c",
+      "adaptations": [
+        "Rebuilt from sanitized exact source with Bun 1.3.12; no dependency install.",
+        "Rebuilt using exact declared Bun build command after export adaptations."
+      ],
+      "mode": "0o755",
+      "status": "adapted"
+    },
+    {
+      "path": "channels/scribe/webhook.ts",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "aa20319287fddf7ded58283ad09ba78ba4cc52f0bb00e4f7a645a094b3f74ecc",
+      "output_sha256": "4299e3272a576c41160731c86e5543bc1479d67062bffb50a889279bbdb87f7c",
+      "adaptations": [
+        "Remove ambient private state/bus defaults; require explicit native runtime paths.",
+        "Validate exact admitted parent before directory creation; preserve effect-broker send/reply authority.",
+        "Run offline import probe before configuration checks and effects.",
+        "Narrow pre-existing TypeScript type errors: validated event ID, awaited drain callback, MCP argument assertions, and guaranteed regex capture; no message algorithm redesign."
+      ],
+      "mode": "0o644",
+      "status": "adapted"
+    },
+    {
+      "path": "channels/shared/advisor_ask_detect.test.ts",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "bcc64bb248fa993f22bd351e91a93fd64c42cbce034b40e275d52b0647f864b1",
+      "output_sha256": "bcc64bb248fa993f22bd351e91a93fd64c42cbce034b40e275d52b0647f864b1",
+      "adaptations": [],
+      "mode": "0o644",
+      "status": "unchanged"
+    },
+    {
+      "path": "channels/shared/advisor_ask_detect.ts",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "2359df2da9607104c7dc5fdc5d0d982a99ffca051f0a1264c1aa927dd2204682",
+      "output_sha256": "2359df2da9607104c7dc5fdc5d0d982a99ffca051f0a1264c1aa927dd2204682",
+      "adaptations": [],
+      "mode": "0o644",
+      "status": "unchanged"
+    },
+    {
+      "path": "channels/shared/durable_inbox.test.ts",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "35b727034289cb7755f903017163929ffcb34fafa237a68cd76a228073fa9273",
+      "output_sha256": "35b727034289cb7755f903017163929ffcb34fafa237a68cd76a228073fa9273",
+      "adaptations": [],
+      "mode": "0o644",
+      "status": "unchanged"
+    },
+    {
+      "path": "channels/shared/durable_inbox.ts",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "2a1e490b73aa980b370ce2f9d56148679cc896498de07b9fdc7e22dfdf7eebb2",
+      "output_sha256": "2a1e490b73aa980b370ce2f9d56148679cc896498de07b9fdc7e22dfdf7eebb2",
+      "adaptations": [],
+      "mode": "0o644",
+      "status": "unchanged"
+    },
+    {
+      "path": "channels/shared/durable_inbox_coldstart.test.ts",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "dd9b93ec5ef97bb0e1f4b4df5f5fad0a26022e5f482189ebd6c4c72a673b11fe",
+      "output_sha256": "dd9b93ec5ef97bb0e1f4b4df5f5fad0a26022e5f482189ebd6c4c72a673b11fe",
+      "adaptations": [],
+      "mode": "0o644",
+      "status": "unchanged"
+    },
+    {
+      "path": "channels/shared/send_receipt.test.ts",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "9034dab70558d432a80d5541bf5e69eff17a7a609ff0f51f375485fc6544bca2",
+      "output_sha256": "9034dab70558d432a80d5541bf5e69eff17a7a609ff0f51f375485fc6544bca2",
+      "adaptations": [],
+      "mode": "0o644",
+      "status": "unchanged"
+    },
+    {
+      "path": "channels/shared/send_receipt.ts",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "b139395741b5c331a042346fc6ea030e796d6cb6ae64c0ae667c241397847f23",
+      "output_sha256": "b139395741b5c331a042346fc6ea030e796d6cb6ae64c0ae667c241397847f23",
+      "adaptations": [],
+      "mode": "0o644",
+      "status": "unchanged"
+    },
+    {
+      "path": "docs/host-runtime.md",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "adaptations": [
+        "Local-safe portable export boundary regression coverage; no deployment activation."
+      ],
+      "output_sha256": "ecda14f4d76e4d8ae3179790d1fcc6370d7ad93767dd8fc0cbe73eeabe4b0689",
+      "mode": "0o644",
+      "status": "generated",
+      "post_assembly_changes": [
+        "Correct host identity and environment documentation; distinguish historical staging verification from final assembly."
+      ]
+    },
+    {
+      "path": "mcp_servers/channel_relay/__init__.py",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "adaptations": [],
+      "mode": "0o600",
+      "status": "unchanged"
+    },
+    {
+      "path": "mcp_servers/channel_relay/__main__.py",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "4336d8221a389eaa0063df02090d479cf97093d14d73c7b40e485835608d8bd8",
+      "output_sha256": "4336d8221a389eaa0063df02090d479cf97093d14d73c7b40e485835608d8bd8",
+      "adaptations": [],
+      "mode": "0o644",
+      "status": "unchanged"
+    },
+    {
+      "path": "mcp_servers/channel_relay/durable_inbox.py",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "777c6befd716009ca53c1f0c7e48276333db2aed59dd6cb8e1b8aa92b178edbe",
+      "output_sha256": "777c6befd716009ca53c1f0c7e48276333db2aed59dd6cb8e1b8aa92b178edbe",
+      "adaptations": [],
+      "mode": "0o644",
+      "status": "unchanged"
+    },
+    {
+      "path": "mcp_servers/channel_relay/kernel_plane_bridge.py",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "353f17bad3ac52101b1ff19637d7d58292437ae83c72f26075a324b4b36ab410",
+      "output_sha256": "f833d0acf51cdb76078d5dcc2bdd00b29f78047dfbc75dd1b75792e4f9bf1635",
+      "adaptations": [
+        "Keep native bridge algorithms; explicit opt-in before any database/client discovery and explicit bus mirror location.",
+        "Resolve reviewed bridge code from package root; no mutable workspace module discovery; kernel bridge disabled unless explicitly enabled."
+      ],
+      "mode": "0o644",
+      "status": "adapted",
+      "post_assembly_changes": [
+        "Use the same configured cutover projection with canonical read-to-projection serialization and safe inactive fallback."
+      ]
+    },
+    {
+      "path": "mcp_servers/channel_relay/server.py",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "923cfa8211b244a2face854129017fdcde65123009558eb52f91420156ca9e2f",
+      "output_sha256": "f7671fe92f39b3e75cedf325d55f455b85f17acfcf34e4396ee4cac37edab73a",
+      "adaptations": [
+        "Explicit workspace/bus/state paths and deployer authorization; refuse legacy Scribe relay.",
+        "Slack posting requires an explicitly installed/authorized external adapter; no Slack credentials or registry exported.",
+        "State path bound to role/root; Company-only target configuration; optional Slack bridge explicit; external hook behavior labeled deployment prerequisite."
+      ],
+      "mode": "0o644",
+      "status": "adapted"
+    },
+    {
+      "path": "scripts/company_role_host_gate.py",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "d42e390753598b9e9714efd967206169cdea61beafa5a5c612fa6e7c54062600",
+      "output_sha256": "3acbf72ee741c1ed149b6eeb7b2e824d82beb4d9f0bae6a5d15644db0bbc145d",
+      "adaptations": [
+        "Write refusal records only under explicit state root.",
+        "Pass source map and role as shell arguments rather than interpolated code; replace historical mandate prose with source-pinned policy boundary."
+      ],
+      "mode": "0o755",
+      "status": "adapted"
+    },
+    {
+      "path": "scripts/company_role_kernel_lineage_probe.py",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "8bbb8e03d373f7f5199076c88ea9b79675518ddc6097eed6c7889311607207c4",
+      "output_sha256": "6ef39827610e6fbe49c07847a64d8a91d6dde40c04826ddeb85839e80e710e60",
+      "adaptations": [
+        "Resolve lineage state only from explicit state root or CLI state directory."
+      ],
+      "mode": "0o755",
+      "status": "adapted"
+    },
+    {
+      "path": "scripts/fleet_auth_scrub.sh",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "60100510749d58ba72b10e4d2ec220c80b34441541b6d42b54fa07663002225e",
+      "output_sha256": "145927749faeb9a9b2f8d4c3eb95e121ce2132d563f577c11b757e17da98b984",
+      "adaptations": [],
+      "mode": "0o644",
+      "status": "adapted",
+      "post_assembly_changes": [
+        "Remove private incident and account narrative from comments and diagnostics; preserve control flow."
+      ]
+    },
+    {
+      "path": "scripts/fleet_spawn.sh",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "c595210b8f0a31acaf9dc07fc420c947ac90200258fef3b8d702fc23be589c09",
+      "output_sha256": "bcc7e42f1cd14cc843d10447f435b0ce054a4c10d66b278427701d1336c12edc",
+      "adaptations": [
+        "Preserve Company role selection, already-running skip, dry-run command files and Terminal launch mechanism.",
+        "Require deployment authorizer per role; generated command files quote explicit non-secret configuration with shlex.",
+        "Exclude retired restaurant spawning, ambient tmp markers, automatic consent clicks and front-window title changes."
+      ],
+      "mode": "0o755",
+      "status": "adapted",
+      "post_assembly_changes": [
+        "Forward explicit identities into fresh generated command environments and stop on configuration refusal.",
+        "Forward explicit identities, preserve configuration refusal, and provide accurate configuration-free help including dry-run file effects."
+      ]
+    },
+    {
+      "path": "scripts/handoff_ledger.py",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "748b2b94a3f41383ac755e9a3062304b08ed2d53952a6bf38cf73184d77f7728",
+      "output_sha256": "a87ebf7bea839f6b15dbae3e45f56098b93df430358f75f00832585086cb0288",
+      "adaptations": [
+        "Explicit workspace/bus; replace private founder names/address with adopter-supplied identity aliases."
+      ],
+      "mode": "0o644",
+      "status": "adapted"
+    },
+    {
+      "path": "scripts/kernel_plane_dual_write_cli.py",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "aef76e1bc283fb043b24eb8ce87e4ed4e2a72417822de31d8cda88ccc0266f86",
+      "output_sha256": "aef76e1bc283fb043b24eb8ce87e4ed4e2a72417822de31d8cda88ccc0266f86",
+      "adaptations": [],
+      "mode": "0o644",
+      "status": "unchanged"
+    },
+    {
+      "path": "scripts/launch_channel.sh",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "output_sha256": "a6d180c81a7826bb1ba614d2b15b3e1b52740789cc19c2561c2c115ee499adbe",
+      "adaptations": [
+        "New guarded role-channel launcher; no deployment policy embedded."
+      ],
+      "mode": "0o755",
+      "status": "generated"
+    },
+    {
+      "path": "scripts/launch_claude.sh",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "c4cf021c965bc6dd10b1b0b4849f2b27c10638e93d8b13b92898e73131bb958c",
+      "output_sha256": "6720f1dc4000492862d8f5ae8369fc821db02a8e5d63f9df152956a4fdd99fc8",
+      "adaptations": [
+        "Preserve role/model/effort selection, native host/lineage checks, auth scrub, headless prompts, channel config, and init launch.",
+        "Require explicit deployment authorizer, workspace/state/bus/interpreter/Claude/permission settings.",
+        "Remove retired restaurant recovery, automatic consent keystrokes, automatic process killing, automatic Chrome/fallback-model choices and private account-history prose.",
+        "State files leave package source; no host service is installed.",
+        "Default init macro must exist in configured workspace; explicit initial command accepted; missing init refuses before state files. Remove automatic permission clicks, process killing, retired tenant recovery and private interpreter discovery."
+      ],
+      "mode": "0o755",
+      "status": "adapted",
+      "post_assembly_changes": [
+        "Stop deliberately when the shared host configuration guard refuses."
+      ]
+    },
+    {
+      "path": "scripts/launch_company_scribe.sh",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "dbbd417ef5f925d978f7077d4182b8ce8139df265e72189a3a312b3b0ae6f747",
+      "output_sha256": "dbbd417ef5f925d978f7077d4182b8ce8139df265e72189a3a312b3b0ae6f747",
+      "adaptations": [],
+      "mode": "0o755",
+      "status": "unchanged"
+    },
+    {
+      "path": "scripts/portable_host.py",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "output_sha256": "1e9edeeed604ce730b7db6f2a1f1b80e378d00a1c78b18cf5466dfc5317485e5",
+      "adaptations": [
+        "New minimal explicit-configuration boundary for exported host source.",
+        "Exact-subject external adopter decision requires JSON true and matching role/operation/workspace/state/bus; bounded local-authorizer call; no authority or credentials bundled."
+      ],
+      "mode": "0o644",
+      "status": "generated"
+    },
+    {
+      "path": "scripts/portable_host_env.sh",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "output_sha256": "00a56d4dbfa9a8d8a689736f955cf179f7d9abb33f50551de5518f922a10b0b4",
+      "adaptations": [
+        "New minimal explicit-configuration boundary for exported host source."
+      ],
+      "mode": "0o644",
+      "status": "generated",
+      "post_assembly_changes": [
+        "Validate and export explicit Company and Scribe deployment IDs before host-gate imports."
+      ]
+    },
+    {
+      "path": "scripts/role_model_map.sh",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "19867a6758c4ba8ef4a4b18ed2c40551a513cb709913aaaa6d8a037866cb9a14",
+      "output_sha256": "e636e30e097eb04973181556819aa8b9086e961d59d1e5c8c2d36934be224cd9",
+      "adaptations": [
+        "Retain source routing functions and verification-seat/contract checks; omit historical private mandate prose."
+      ],
+      "mode": "0o644",
+      "status": "adapted"
+    },
+    {
+      "path": "scripts/sync_kernel_dispatch_approval_shadow.py",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "b1b983be62a6c5aa7c31d7147071374d4ac9bf78ea5682f9b916cb62791b7fb7",
+      "output_sha256": "69138ba66eeb628ce184ff04427a4befb1432196740d14ffaca620d611b73b73",
+      "adaptations": [
+        "Remove ambient Git/common-venv shell trampoline; invoke with configured Python."
+      ],
+      "mode": "0o755",
+      "status": "adapted"
+    },
+    {
+      "path": "tests/test_portable_host_boundary.py",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "adaptations": [
+        "Local-safe portable export boundary regression coverage; no deployment activation."
+      ],
+      "output_sha256": "d2d671a752634b4351d1d17bd2d6ab15d38a17ea9b71401ae18f5719c03c0091",
+      "mode": "0o644",
+      "status": "generated",
+      "post_assembly_changes": [
+        "Test missing or invalid identities and generated fresh-environment host gate execution without live launch.",
+        "Test missing or invalid identities, generated host-gate execution, and configuration-free help without state changes."
+      ]
+    },
+    {
+      "path": "tests/test_tier1_channel_relay_durable_inbox.py",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "71af1eebdbc9f6f40e3d6d3161a12e34746a8b3b768a6364b89e022375da44a9",
+      "output_sha256": "71af1eebdbc9f6f40e3d6d3161a12e34746a8b3b768a6364b89e022375da44a9",
+      "adaptations": [],
+      "mode": "0o644",
+      "status": "unchanged"
+    },
+    {
+      "path": "tests/test_tier1_durable_inbox_cursor_seed.py",
+      "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+      "source_sha256": "7567f08f218a9a43198e5b18c165685b26ccfc3b30a97d8c0db94669dea95e52",
+      "output_sha256": "7567f08f218a9a43198e5b18c165685b26ccfc3b30a97d8c0db94669dea95e52",
+      "adaptations": [],
+      "mode": "0o644",
+      "status": "unchanged"
+    }
+  ]
+}

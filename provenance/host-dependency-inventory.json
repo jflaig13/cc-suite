@@ -1,0 +1,141 @@
+{
+  "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+  "scope": "source-only reusable host/channel closure; no activation",
+  "included_files": [
+    "channels/agent/arbiter_ask.test.ts",
+    "channels/agent/arbiter_ask.ts",
+    "channels/agent/bun.lock",
+    "channels/agent/channel.bundle.js",
+    "channels/agent/channel.ts",
+    "channels/agent/emit_fodl.ts",
+    "channels/agent/package.json",
+    "channels/agent/tsconfig.json",
+    "channels/configs/fleet-hook.settings.json",
+    "channels/configs/role-ccco.mcp.json",
+    "channels/configs/role-ccde.mcp.json",
+    "channels/configs/role-ccfo.mcp.json",
+    "channels/configs/role-ccgo.mcp.json",
+    "channels/configs/role-cclo.mcp.json",
+    "channels/configs/role-ccmo.mcp.json",
+    "channels/configs/role-ccpo.mcp.json",
+    "channels/configs/role-ccro.mcp.json",
+    "channels/configs/role-ccto.mcp.json",
+    "channels/configs/role-cos.mcp.json",
+    "channels/configs/role-scribe.mcp.json",
+    "channels/configs/role-utility.mcp.json",
+    "channels/scribe/bun.lock",
+    "channels/scribe/closed_mcp.ts",
+    "channels/scribe/durable_delivery.test.ts",
+    "channels/scribe/durable_delivery.ts",
+    "channels/scribe/frozen-bundle.json",
+    "channels/scribe/package.json",
+    "channels/scribe/tsconfig.json",
+    "channels/scribe/webhook.bundle.js",
+    "channels/scribe/webhook.ts",
+    "channels/shared/advisor_ask_detect.test.ts",
+    "channels/shared/advisor_ask_detect.ts",
+    "channels/shared/durable_inbox.test.ts",
+    "channels/shared/durable_inbox.ts",
+    "channels/shared/durable_inbox_coldstart.test.ts",
+    "channels/shared/send_receipt.test.ts",
+    "channels/shared/send_receipt.ts",
+    "docs/host-runtime.md",
+    "mcp_servers/channel_relay/__init__.py",
+    "mcp_servers/channel_relay/__main__.py",
+    "mcp_servers/channel_relay/durable_inbox.py",
+    "mcp_servers/channel_relay/kernel_plane_bridge.py",
+    "mcp_servers/channel_relay/server.py",
+    "scripts/company_role_host_gate.py",
+    "scripts/company_role_kernel_lineage_probe.py",
+    "scripts/fleet_auth_scrub.sh",
+    "scripts/fleet_spawn.sh",
+    "scripts/handoff_ledger.py",
+    "scripts/kernel_plane_dual_write_cli.py",
+    "scripts/launch_channel.sh",
+    "scripts/launch_claude.sh",
+    "scripts/launch_company_scribe.sh",
+    "scripts/portable_host.py",
+    "scripts/portable_host_env.sh",
+    "scripts/role_model_map.sh",
+    "scripts/sync_kernel_dispatch_approval_shadow.py",
+    "tests/test_portable_host_boundary.py",
+    "tests/test_tier1_channel_relay_durable_inbox.py",
+    "tests/test_tier1_durable_inbox_cursor_seed.py"
+  ],
+  "supplied_by_runtime_owner": [
+    "fleet_kernel.identity.COMPANY_ROLE_TYPES",
+    "fleet_kernel.company_message_plane.client.CompanyMessagePlaneClient",
+    "fleet_kernel.m4.supervision.sync_authoritative_file",
+    "fleet_kernel.m4.read_backend.read_verified_kernel_rows",
+    "fleet_kernel.m5.dispatch_approval_migration.DispatchApprovalMigrationError",
+    "fleet_kernel.m5.supervision.LegacySurfacePaths",
+    "fleet_kernel.m5.supervision.sync_authoritative_files",
+    "native Company/Scribe supervisor/effect broker and complete import closure",
+    "Python package declarations: mcp>=1.0,<2; httpx==0.28.1; psycopg/native dependencies"
+  ],
+  "supplied_by_adopter": [
+    "Explicit canonical workspace, state root, shared Company bus, reviewed installed payload root",
+    "Explicit executable Python, Bun and optional Claude host paths",
+    "Organization policy adapter executable with exact role/operation/workspace/state/bus receipt",
+    "Native admitted package/Company identity/role authority; credentials stay outside model children",
+    "Actual governance role contracts and explicit initialization command or workspace init-role macro",
+    "Explicit host permission policy and headless prompt/budget if headless launcher is used",
+    "Optional Slack transport module and native M4/M5/message-plane configuration only if enabled"
+  ],
+  "excluded": [
+    {
+      "path": "scripts/admit_company_role_cutover.py",
+      "reason": "Historical live migration driver includes private mandate/cutover paths, process termination and live launchd mutation; no runtime invocation depends on it."
+    },
+    {
+      "path": "scripts/grok/launch_grok.sh",
+      "reason": "Absent at pinned source and retired host; runtime diagnostics point to current native supervisor documentation."
+    },
+    {
+      "path": "mcp_servers/slack_bridge/client.py",
+      "reason": "Private Slack transport is opt-in adopter integration; no credentials, registry or live transport exported."
+    },
+    {
+      "path": "scripts/channels/user_prompt_submit_drain.sh and project Stop hooks",
+      "reason": "External project hook installation is outside this package; native push and explicit relay pending/drain remain available."
+    },
+    {
+      "path": "scripts/window_target.sh and UI-consent automation",
+      "reason": "Not imported by export; automatic clicks, Enter delivery and process termination were removed from launch wrapper."
+    },
+    {
+      "path": "live bus/queue/cursor/audit JSONL and kernel_cutover.json",
+      "reason": "Deployment state, not reusable source."
+    },
+    {
+      "path": "customer files, founder mandates, restaurant deployment aliases, credentials/auth stores",
+      "reason": "Organization-specific or secret material excluded."
+    },
+    {
+      "path": "launchd plists, installation scripts, private runtime binaries, node_modules and .venv",
+      "reason": "Not shipped; exact Bun lock/build included, runtime launches compiled bundles and adoption supplies interpreters."
+    }
+  ],
+  "runtime_process_closure": {
+    "native_scribe": "frozen Scribe TS/lock/manifest + webhook.bundle.js; native package launcher and Python supervisor/broker supplied by runtime owner",
+    "generic_push": "role-*.mcp.json -> launch_channel.sh -> portable_host_env.sh + portable_host.py -> Bun --no-install channels/agent/channel.bundle.js (SDK bundled)",
+    "generic_relay": "role-*.mcp.json -> launch_channel.sh -> portable_host.py -> Python -m mcp_servers.channel_relay -> durable_inbox + optional kernel bridge",
+    "legacy_interactive": "fleet_spawn.sh -> launch_claude.sh -> role map + host gate + lineage probe + auth scrub -> explicit adopter command/config; no init macro fabricated"
+  },
+  "verification": {
+    "bun": "1.3.12",
+    "python": "3.14.0",
+    "pytest": "8.4.2",
+    "typescript": "5.9.3",
+    "bun_types": "1.3.11",
+    "sdk": "1.29.0",
+    "bun_tests": 90,
+    "python_tests": 76,
+    "fresh_install_typecheck_build_test": "PASS",
+    "rebuild_byte_parity": "PASS for both compiled bundles",
+    "scribe_manifest": "PASS",
+    "shell_syntax": "PASS for all 7 shell sources",
+    "live_services_database_external_transport": "NOT RUN / NOT ACTIVATED"
+  },
+  "verification_scope": "Historical initial staged host-only verification; final assembled source and tests are verified against the exact published revision in CI. See docs/host-runtime.md."
+}

@@ -1,0 +1,34 @@
+{
+  "mcpServers": {
+    "scribe-channel-push": {
+      "type": "stdio",
+      "command": "bash",
+      "args": [
+        "-c",
+        "exec \"${CC_SUITE_PACKAGE_ROOT:?explicit package root required}/scripts/launch_channel.sh\" \"$@\"",
+        "ccsuite-channel",
+        "scribe",
+        "push"
+      ],
+      "env": {
+        "AGENT_PORT": "8789",
+        "RELAY_PORT": "8789"
+      }
+    },
+    "scribe-channel": {
+      "type": "stdio",
+      "command": "bash",
+      "args": [
+        "-c",
+        "exec \"${CC_SUITE_PACKAGE_ROOT:?explicit package root required}/scripts/launch_channel.sh\" \"$@\"",
+        "ccsuite-channel",
+        "scribe",
+        "relay"
+      ],
+      "env": {
+        "AGENT_PORT": "8789",
+        "RELAY_PORT": "8789"
+      }
+    }
+  }
+}

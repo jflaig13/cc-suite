@@ -1,5 +1,7 @@
 # Digest Bridge Protocol
 
+This file specifies a transport or lifecycle contract. A deployment must implement and verify its adapter before claiming the behavior is operational. Configuration, scheduled actions and outward messages require the owner’s authority; no mechanism in this document grants it. Acknowledgment records receipt, not task completion.
+
 **Status:** Active (CC-Suite™ v2)
 **Scope:** Cross-lifecycle communication from ephemeral batch agents to long-running interactive agents
 **Related:** `CHANNEL_PROTOCOL.md`, `lifecycle/EPHEMERAL_LIFECYCLE.md`, `lifecycle/INTERACTIVE_LIFECYCLE.md`
@@ -42,7 +44,7 @@ Ephemeral Agent (cron-triggered)
   │
   ▼
 Output file in shared directory
-  (e.g., ~/.shared/digest-latest.md)
+  (e.g., {shared_directory}/digest-latest.md)
   │
   ▼
 Bridge helper script (runs as final step of the cron prompt)
@@ -74,7 +76,7 @@ Interactive agents receive the digest as a channel event
 
 A filesystem location both the ephemeral agent AND the bridge helper can read. Examples:
 
-- `~/.shared/` on a single machine where both agents live
+- `{shared_directory}/` on a single machine where both agents live
 - A networked drive or SMB/NFS mount for multi-machine deployments
 - A GCS/S3 bucket with sync (more complex, but platform-agnostic)
 
@@ -137,7 +139,7 @@ Digest events delivered via the bridge are **Slack-sourced** (or bus-sourced equ
 - Internal ACK via the agent's reply tool
 - External ACK via a reply post back to the bus channel
 
-This means 10 agents receiving one daily digest will generate 10 dual-ACK replies. That's acceptable and expected — it proves every agent received the digest, and the founder can see at a glance if any agent missed it (silent = broken).
+Record receipt for each intended recipient using the configured acknowledgment policy. Missing acknowledgment is unknown delivery or processing state until the owning transport is checked.
 
 ---
 
@@ -154,15 +156,3 @@ This means 10 agents receiving one daily digest will generate 10 dual-ACK replie
 5. **Interactive agent never dual-ACKs the digest** — Scribe audit flags missing ACKs per the dual-ACK canon. Recovery: the agent that missed it gets a notification or strike per canon enforcement.
 
 ---
-
-## Reference Implementation
-
-Mise uses the digest bridge pattern for its Mac Mini fleet. The Mini's two daily cron jobs (`harness-health-digest` at 06:30 ET, `mini-scribe-daily-digest` at 06:00 ET) write digest files to `~/.openclaw-shared/` and invoke `scripts/push_digest_to_slack.sh` as their final step. The script posts to `#common-room` on the Slack workspace; the MacBook's Slack poller (`channels/shared/slack_poller.ts`) routes to all 10 MacBook agent channels; each agent receives the digest as a `<channel source="{role}-channel" ...>` system reminder. Verified end-to-end on 2026-04-10 evening.
-
-Full Mise spec: `docs/brain/041026__channel-architecture-rollout.md` + `docs/brain/041126__cc-suite-v2-scope.md` Capability 5.
-
----
-
-## CHANGELOG
-
-- **v1.0 (2026-04-11):** Protocol established as part of CC-Suite™ v2 extraction from Mise's live implementation.

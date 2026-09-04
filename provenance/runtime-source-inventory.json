@@ -1,0 +1,2069 @@
+{
+  "source_commit": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+  "inventory": [
+    {
+      "source_path": "fleet_kernel/FLEET_KERNEL_MASTER_SPEC.md",
+      "source_sha256": "8a03ae55a925baeabeb42701d72d1582d592a8eec92831ddc62c2a9149f08e81",
+      "status": "excluded",
+      "reason": "Private program documentation, local pins, or migration history; not an executable dependency"
+    },
+    {
+      "source_path": "fleet_kernel/PATH_PIN.json",
+      "source_sha256": "9ecc742685f662c37f512196cb0c8dc27c0a5315cac65154023cd5916ea19cd6",
+      "status": "excluded",
+      "reason": "Private program documentation, local pins, or migration history; not an executable dependency"
+    },
+    {
+      "source_path": "fleet_kernel/__init__.py",
+      "source_sha256": "b4c4bbe1101dc5b22f0848f86e6e6e5dd1f7c5fa79021d5a1552676fd3e42a61",
+      "status": "included",
+      "output_path": "fleet_kernel/__init__.py",
+      "output_sha256": "20de886ca5cf8808cb2baca8a29386816813786b2d4e061ed075dc2089a7526d",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Replace obsolete pre-live package description with current public scope."
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/application_service.py",
+      "source_sha256": "106ee5da0fbb041fdd6af7b1f59ea175a4da55e439696681bc2bf32fa4323462",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/ask_mise_stage_lanes.py",
+      "source_sha256": "749153698ec0148b6d65e85f8733ad2cc05fc294b60b6e3c6f4d9ad4b013828e",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/ask_mise_voice.md",
+      "source_sha256": "ecb8e30a02433cb4cabe7df180da18d1475d63d88abbea51c2984395db9868c5",
+      "status": "excluded",
+      "reason": "Private program documentation, local pins, or migration history; not an executable dependency"
+    },
+    {
+      "source_path": "fleet_kernel/browser_capability.py",
+      "source_sha256": "3177873e7f39bad8615b22ab0294974db9e5f07e78e771d151fd9f4f075906d1",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/company_message_plane/__init__.py",
+      "source_sha256": "47528d612b58a737f215289e12fa1e118ba96b04be1560f922e90f2da4078c29",
+      "status": "included",
+      "output_path": "fleet_kernel/company_message_plane/__init__.py",
+      "output_sha256": "47528d612b58a737f215289e12fa1e118ba96b04be1560f922e90f2da4078c29",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/company_message_plane/client.py",
+      "source_sha256": "395d29deb6e20353bc1215d6783394bdff4afb085477f7593965a06592bfb7e9",
+      "status": "adapted",
+      "output_path": "fleet_kernel/company_message_plane/client.py",
+      "output_sha256": "681f7ae36e2904ae01358b85b41d2e3cdcdbc39001fd9bc3e17a0c9192aa3de8",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Removed live credentials-file fallback; database configuration is mandatory",
+        "Company, Scribe deployment, and authority issuer are explicit configuration"
+      ],
+      "post_assembly_changes": [
+        "Use the configured shared cutover projection and serialize canonical changes through atomic projection; report partial failure."
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/company_role_runtime.py",
+      "source_sha256": "e96442c3436e2971140e4923ac3957d947573058900e53f90c0471482f10d516",
+      "status": "included",
+      "output_path": "fleet_kernel/company_role_runtime.py",
+      "output_sha256": "aa6bfbe4b26d60f19671e3a10753441744731cd288c903558c603bfee8cc83a8",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Pass explicit nonsecret host configuration into isolated role child. Bind channel code root to verified installed package payload and workspace to reviewed workspace binding, overriding ambient paths."
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/company_scribe_admission.py",
+      "source_sha256": "7ca2992208fb7ca33b8c9e7df94edbd4c03828559f91d42563978e7bdbd7754f",
+      "status": "included",
+      "output_path": "fleet_kernel/company_scribe_admission.py",
+      "output_sha256": "bdd8303a27bfeb8867ed79b3590868e000ec944d48ff56738f5ac603d9dc8d70",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Rebound source package inventory and digest to the public runtime closure; removed payroll release coupling",
+        "Company, Scribe deployment, and authority issuer are explicit configuration"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/company_scribe_release.py",
+      "source_sha256": "5bced90525586d88a1268640c9f9f78d9fe653e472a761bb7a6b9218c29de58d",
+      "status": "excluded",
+      "reason": "Replaced by public exact-byte release inventory; original unions private payroll release"
+    },
+    {
+      "source_path": "fleet_kernel/company_scribe_runtime.py",
+      "source_sha256": "cc63a811ce26ad7000e91170882ec418603965e8f55022fd7a8037424b365e28",
+      "status": "included",
+      "output_path": "fleet_kernel/company_scribe_runtime.py",
+      "output_sha256": "56f35e8e48cb209cb662155f7a4e88c6178dccd1f7bb1e342062be3e80e1e075",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Removed author-specific executable candidates; use explicit environment or installed CLI PATH",
+        "Company, Scribe deployment, and authority issuer are explicit configuration",
+        "Derive Scribe launch default from current role identity instead of stale model literal. Pass nonsecret explicit Company identity into isolated child/proxy environments; never authority file or database credentials."
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/company_scribe_supervisor.py",
+      "source_sha256": "b5233f231293cc9baf647f37aa4c1375111368f4296d2be910c14fb9207275c4",
+      "status": "included",
+      "output_path": "fleet_kernel/company_scribe_supervisor.py",
+      "output_sha256": "3ce81828520dab7de67bdc1cac06a8b9cf6498341971f7e94872425182b30ca6",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company, Scribe deployment, and authority issuer are explicit configuration"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/company_workspace.py",
+      "source_sha256": "196ffff070ead2cf86ca922d833aac0c753d8093a4519cdf73c926b59373c803",
+      "status": "included",
+      "output_path": "fleet_kernel/company_workspace.py",
+      "output_sha256": "8044876f838004057ebb486e797d90701bce5a6452fd7cc83569b5b665dad041",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Public compatibility fix: bind reviewer signature, key lookup, receipt and MAC to current configured reviewer model; require exact immutable worker-model match."
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/company_workspace_api.py",
+      "source_sha256": "76bbe84cf5650a77bda5881fd3b27c691cb206a1a6ee54139b62a97d669fd5c2",
+      "status": "included",
+      "output_path": "fleet_kernel/company_workspace_api.py",
+      "output_sha256": "76bbe84cf5650a77bda5881fd3b27c691cb206a1a6ee54139b62a97d669fd5c2",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/content_lint.py",
+      "source_sha256": "85cf88b9889ef3d6e14afb0556001cbd1a534f718a371d82df5436836dc6508e",
+      "status": "included",
+      "output_path": "fleet_kernel/content_lint.py",
+      "output_sha256": "85cf88b9889ef3d6e14afb0556001cbd1a534f718a371d82df5436836dc6508e",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/ddl/001_initial_schema.sql",
+      "source_sha256": "0cd48960be4468b9257fafb4e6baa335d4dcb4859f88503de3946c9b5fa115a3",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/001_initial_schema.sql",
+      "output_sha256": "0cd48960be4468b9257fafb4e6baa335d4dcb4859f88503de3946c9b5fa115a3",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/002_m2_proving_spike.sql",
+      "source_sha256": "7c92c01334d921e58de2ce87ba2b8d1d8616ef9c74d0fb1d28007e9383c5fe08",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/002_m2_proving_spike.sql",
+      "output_sha256": "7c92c01334d921e58de2ce87ba2b8d1d8616ef9c74d0fb1d28007e9383c5fe08",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/003_m3_runtime.sql",
+      "source_sha256": "7ebac996f573c3c07fde74ac74fdeefadf8b00e61b4ac15c6bb9f61810e33b61",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/003_m3_runtime.sql",
+      "output_sha256": "7ebac996f573c3c07fde74ac74fdeefadf8b00e61b4ac15c6bb9f61810e33b61",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/004_m4_handoff.sql",
+      "source_sha256": "bf13cc52305dcb1cccffdde0f20d7306f9d421faab2c5aa514dbf29c4c54fd7f",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/004_m4_handoff.sql",
+      "output_sha256": "bf13cc52305dcb1cccffdde0f20d7306f9d421faab2c5aa514dbf29c4c54fd7f",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/005_m5_dispatch_approval.sql",
+      "source_sha256": "33df7d1adb701e6f4d87ac2668634888134cfdc3d134ee50eb402ec963fe83b1",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/005_m5_dispatch_approval.sql",
+      "output_sha256": "33df7d1adb701e6f4d87ac2668634888134cfdc3d134ee50eb402ec963fe83b1",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/006_m6_spend.sql",
+      "source_sha256": "ece9e711abe9e9e388fe52790ab11d45f8d3b187e8273e36bd475cdccf032f2f",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/006_m6_spend.sql",
+      "output_sha256": "ece9e711abe9e9e388fe52790ab11d45f8d3b187e8273e36bd475cdccf032f2f",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/007_m7_role_queues.sql",
+      "source_sha256": "59d293158cb0809a43ea45742a4cab66be32cc73db1c4aae14c2dc875f27bc7c",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/007_m7_role_queues.sql",
+      "output_sha256": "59d293158cb0809a43ea45742a4cab66be32cc73db1c4aae14c2dc875f27bc7c",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/008_m8_isolation.sql",
+      "source_sha256": "e7c4e6f92572b7ff320c2534563dee1176f93b331bc7332fbff0740fad052423",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/008_m8_isolation.sql",
+      "output_sha256": "e7c4e6f92572b7ff320c2534563dee1176f93b331bc7332fbff0740fad052423",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/009_m8_verification_observability.sql",
+      "source_sha256": "fc0668c4b52278c884e45603baacb37ad3395e4cce59d9e800aaeb43c0ab4489",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/009_m8_verification_observability.sql",
+      "output_sha256": "fc0668c4b52278c884e45603baacb37ad3395e4cce59d9e800aaeb43c0ab4489",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/010_m9_misefleet.sql",
+      "source_sha256": "13e7a56eac6e0dca506cdead28473e30eb25ec4a9dd97303360da9b294c51b7b",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/011_m10_prove99.sql",
+      "source_sha256": "86e7cbb559e6b336104da019c44a365fd5f0afcb9635e9ada94d1e0c1038b65e",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/012_identity_plane.sql",
+      "source_sha256": "af37cb738a7d09e8724d52b33fbb180708f25fe43bec623b9930b2dd30f218c1",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/012_identity_plane.sql",
+      "output_sha256": "07c099dc00e4d21b581cf94288ffe90edd455a97cfef08d53b831d534e016208",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/013_customer_command_plane.sql",
+      "source_sha256": "3df17c2d03f08f1f2d565d16e035ef8cb88b19cb513a878eaf4d064597cc7c59",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/014_customer_operator_actions.sql",
+      "source_sha256": "54c97489e80964242559c801e72729e720c6ec731f0d28f863ca13e18ca94b39",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/015_domain_worker_lifecycle.sql",
+      "source_sha256": "d642cd4cb8cbfb76e0fa6f667cc0fd9217cf24cc17af5f14ff22fe804e73ecec",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/016_browser_capability_rails.sql",
+      "source_sha256": "86aefc3359db3dbcf460cf71c6a9132e29d3c80366fbf7e0224b1bf437dab080",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/017_performance_scorecards.sql",
+      "source_sha256": "3f9b74558f0df062c9c5b22258cd203befd8778509a49bcdd44ddb50e46d19fc",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/018_restaurant_fleet_packages.sql",
+      "source_sha256": "6d0efa5f1a5b7d9700dc41fd2dadc2c8669c2ef51305aa7ea022d747accdf1c6",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/019_mini_runtime_migration.sql",
+      "source_sha256": "f2ec087c28b4f9012cb4e7b36893af8b0d9845b76c8b9dcf00950a3dc476596f",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/020_company_workspace.sql",
+      "source_sha256": "a77f1f25d33e9c5d5806e2a26d9c61487533f710fc6923213d49907ada9c488b",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/020_company_workspace.sql",
+      "output_sha256": "fa36b6d9458f9b8b2bcc5e49bb2a3cfe20bd0d0af7a5bcfa213a66218747a0a6",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders",
+        "Public compatibility fix: support admitted 5/5.1 review identity, bind MAC to immutable worker model and require receipt model agreement."
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/021_restaurant_host_materialization.sql",
+      "source_sha256": "2b61858671f53464d1e9d6ce62c07309a14140591ffaacc82b282a5f6ee324b0",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/022_m9_legacy_replay.sql",
+      "source_sha256": "d446305238f27631ed54ac14dfcbc16bdd5150b8dea53fab2851243274cdd929",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/023_m9_attempt_failure_recovery.sql",
+      "source_sha256": "5e7b8c97759bc4be1be33b6cab1143561f6c8cd402f21417bdab2a1bfcf82a19",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/024_founder_activation_authority.sql",
+      "source_sha256": "24e12c43e3423f2c3eea02f52ad2f9d381fb4325aa4a293ea6bea9cd3e73c3b6",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/024_founder_activation_authority.sql",
+      "output_sha256": "a9f0757f12f51596519d42c778e13c0df25e48326981c7d1147b2d70eaf8a40e",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/025_company_scribe_admission.sql",
+      "source_sha256": "0f8dfa1268f2a88bb10c8069fd4f3e684dbd8f15ee9a64ca7ee6165e50530962",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/025_company_scribe_admission.sql",
+      "output_sha256": "f65921748f7a42102c207d72d8a38d8e0b2308c1013feeff71d2bf37264f5ca3",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/026_atomic_mini_cutover.sql",
+      "source_sha256": "5f37139262286eecda663ab171ef2f8d6adbb675608bbe252ddb6de4fe3f9d69",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/027_scribe_first_admission.sql",
+      "source_sha256": "a8b94e709e86d02ba023bbfc70d52d7573eb99f52b25dbc6f03604adf79314b8",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/027_scribe_first_admission.sql",
+      "output_sha256": "a8b94e709e86d02ba023bbfc70d52d7573eb99f52b25dbc6f03604adf79314b8",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/028_required_shadow_domains_amendment.sql",
+      "source_sha256": "f333ad8b7c8d7e159ac69ec8e607a4e9acb9bfadb8041b83495b18ac467a526e",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/029_operational_evidence_calendar_amendment.sql",
+      "source_sha256": "8cb9550b5a22ea2069cab8d3e2efb04b1f6975b9ad138ccd0289e512a35fbb00",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/030_maintenance_release_registry_read_amendment.sql",
+      "source_sha256": "49e5dfa6bdbf67ae48d8cdd21a9e35e59edf1e6e74efb1eff8d7b5cf88342753",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/031_cc_suite_admission_generalization.sql",
+      "source_sha256": "7bbc5163f15423bdf3e1282c180a1e7956b11e5aaf5ac2116fb88dddef2d3a27",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/031_cc_suite_admission_generalization.sql",
+      "output_sha256": "2cc40048876a98eecf92b7cfeffaa1636fccc3e851c2cea1306d1dd604580c68",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/032_scribe_admission_contract_reconciliation.sql",
+      "source_sha256": "0fe934cef1dca329d4fd3163ef92d62f024a289d574bb8da2deac3b01b1fd828",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/032_scribe_admission_contract_reconciliation.sql",
+      "output_sha256": "0154ac940e17a7b309971ac1d0236e5d1f09ae798e2812e6fa485a2e7a178047",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/033_phase4_mandate_validator_branch.sql",
+      "source_sha256": "a1563df7e7b679e0351c248a9b53eb99a092aa6cbffe9417be46159ff129af33",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/033_phase4_mandate_validator_branch.sql",
+      "output_sha256": "1462e28774b679b16dc4d2b368f2c2dc6846d5b01e4fd07675585fc9e123f49f",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/034_company_role_renewal_subject_repair.sql",
+      "source_sha256": "e9f3aa6b1c218d3b58af70262497c14f0f35f9658478837fc80183f4f18f7bdc",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/034_company_role_renewal_subject_repair.sql",
+      "output_sha256": "bf574eb3376243a16ba8f77cb16eff1f14c45b3946d9a7ce3eb92b4a85373571",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/035_role_grant_on_target_insert.sql",
+      "source_sha256": "00c77232579ee41b96c1bfb507b2737c7133b79e9f654512c6526371e130af85",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/035_role_grant_on_target_insert.sql",
+      "output_sha256": "00c77232579ee41b96c1bfb507b2737c7133b79e9f654512c6526371e130af85",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/036_company_role_provisioner_principals.sql",
+      "source_sha256": "e594b89c0672b629f09258c52df1928ac62c2dca79c498edc8f0d8fa48816701",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/036_company_role_provisioner_principals.sql",
+      "output_sha256": "02daa4271295b94890747220a2fffe314f4ec5ab49dbccb8231dfc57b892ef94",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/037_utility_role_vocabulary.sql",
+      "source_sha256": "59c444d9f009f010b5538c37d4759b92cebf773a0ac3566ff9a206d2e35ee81c",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/037_utility_role_vocabulary.sql",
+      "output_sha256": "2bc0f007545a48b3b5c2b67eeb21f532081d6596bb9ed66443b2343784c938bd",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "[redacted-customer-source-001]",
+      "source_sha256": "ccb78d55baba377dca74680d20f2dbb0a15db48b6ca632c326357e36d1d7e487",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions",
+      "source_path_redacted": true
+    },
+    {
+      "source_path": "fleet_kernel/ddl/039_scribe_admission_lease_binding.sql",
+      "source_sha256": "14b7f78755122506ca8e9e83dc95107864f50963741775886857440c0696aba8",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/039_scribe_admission_lease_binding.sql",
+      "output_sha256": "e6ca90a8b58d5b51a73937bd2b14617e203977b34ad170b2a11b074ba0b32ac0",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/040_admission_lease_wallclock_repair.sql",
+      "source_sha256": "d07779ccbc3fc39dc1acb47ae45739cbbeaa34b09f251fa2fe0fd96db15c39d9",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/040_admission_lease_wallclock_repair.sql",
+      "output_sha256": "d6b6b657598d28ea32e56771a441409d3053d83b62d895d4dd30f03463a4cfe6",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/041_scribe_admission_lease_wallclock_repair.sql",
+      "source_sha256": "30e32a6fa9984144f5225cb0a2f3800ef2ffe1827c5bfa2c85ba7b11a3a395e2",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/041_scribe_admission_lease_wallclock_repair.sql",
+      "output_sha256": "54dbe7b38a98654eee53799f3799760cefc58458d4e736edc94e03b48a6296c1",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/042_eval_plane_domain.sql",
+      "source_sha256": "a8213b18ceff1b5cf1eae08c5d774bff095f3cfffce10f7a15f8bf1c4cc3dd72",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/042_eval_plane_domain.sql",
+      "output_sha256": "a8213b18ceff1b5cf1eae08c5d774bff095f3cfffce10f7a15f8bf1c4cc3dd72",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/050_payroll_review_bundle.sql",
+      "source_sha256": "c54cb6c35326769f1bdd86611b3697ec1b4c9308f33681fdc390bf82806e9c36",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/051_payroll_product_observability.sql",
+      "source_sha256": "19801f7025f0dde36205fe8add1240c71057f06de730870f4f6d1edf2eba5e2f",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/052_payroll_publication_trigger_authority.sql",
+      "source_sha256": "a7d40a5bb0f1f2b603faf7de86310ea6a3ca9851b98590ae57ad029420f4458a",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/053_employee_population_sync_attempts.sql",
+      "source_sha256": "9a148a0ed95333a8e380e3f3fff21b3906e4db2e78280c7881aaf5cc150f3f66",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/054_tenant_readiness_helper_acl_amendment.sql",
+      "source_sha256": "d045c1316670c4677a93bed4948c3cea8b9e9238a77bfca9100f35a2406fc171",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/055_tenant_status_integrity_acl_amendment.sql",
+      "source_sha256": "9ce8499742717eb2991291157a0d21b1445000cfdcf2eb78d87b9ec191eb77fd",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/056_shadow_eradication_supervised_live_amendment.sql",
+      "source_sha256": "0f6cd32961511ddf576a7e709b826e9862b2e63dfe94f2035d0d192d5c6dfad6",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/057_pre_database_revision_gap_amendment.sql",
+      "source_sha256": "7413fb7a75d128413109ab4cd04a90a7fa9961eba566c7942677ae0dea9e8a60",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/058_corrective_release_lineage_amendment.sql",
+      "source_sha256": "08f631b76e0a5e588458147c872a7b4fbb3bbb5c380a2bcc49cb561f0e972e0d",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/059_maintenance_objective_verification_policy_read_amendment.sql",
+      "source_sha256": "5576e768dcdeeeddea8be3a5821f4a5b47c7fb046d693a394c9c62f69e373841",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/060_zero_effect_rehearsal_same_day_subject_amendment.sql",
+      "source_sha256": "8788611d5320fe52f9c05e6c431761ca7e0201c1fca9bda539b3dfc031293323",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/061_kernel_company_message_plane.sql",
+      "source_sha256": "66ff7d7aa2b362f8e9d88ba3b562d3c1a8298d2d1ed66c4b913fa943f075e72d",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/061_kernel_company_message_plane.sql",
+      "output_sha256": "af120937a438d9535cafedad100af1ae3a26d9afa2bd68cb0a0dd13f4154a7a9",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/062_kernel_company_message_plane_v1.sql",
+      "source_sha256": "61de5a203497dff206d51a2b9f33b0294c103acd53c37ce13e1567c4ff784c5c",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/062_kernel_company_message_plane_v1.sql",
+      "output_sha256": "639f6cda37bd0c7067b32a13330eedc8bebf6d0c46497fb9c3242dcb4e9f250e",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/063_eval_plane_maintenance_dry_run.sql",
+      "source_sha256": "f52cd62e9d5cf1d324a9acde0d8d00a412a36333d6ac01ae446a06202cd885e0",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/063_eval_plane_maintenance_dry_run.sql",
+      "output_sha256": "f52cd62e9d5cf1d324a9acde0d8d00a412a36333d6ac01ae446a06202cd885e0",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/064_scribe_admission_authority_lease_backfill_repair.sql",
+      "source_sha256": "5565b564c409a7e560a4cfdb42b62b2d174a2113204b666651081adfa71d3ba2",
+      "status": "excluded",
+      "reason": "Data-only historical repair contains private live admission IDs, subject hashes and lease history; no reusable schema definition"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/065_company_message_plane_company_scope_rls.sql",
+      "source_sha256": "a56a617603ec28d70367093debab1f785bc4548f3e9111c0b84d39a374f33444",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/065_company_message_plane_company_scope_rls.sql",
+      "output_sha256": "a56a617603ec28d70367093debab1f785bc4548f3e9111c0b84d39a374f33444",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/066_eval_plane_m9_linked_classification.sql",
+      "source_sha256": "6fc7330618b31df5ade0010b5611016dbc0d4f56168e57c1db1d975e985e3c21",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/067_family_scoped_effort_vocabulary.sql",
+      "source_sha256": "a3cee9205af81cf5d6d82d66a41d815771bca8f716a5d81f10b02c9a48e55a77",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/067_family_scoped_effort_vocabulary.sql",
+      "output_sha256": "a3cee9205af81cf5d6d82d66a41d815771bca8f716a5d81f10b02c9a48e55a77",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/068_utility_kernel_activation.sql",
+      "source_sha256": "dc5fc9621d82cfbb18d900d7f571dfa802c06503610e93e715e9170c9576833e",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/068_utility_kernel_activation.sql",
+      "output_sha256": "f16254398a4a41baacd5b6c4ede1db82085935654d2f63bb4ad43501d31102ec",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/069_live_process_lease_survival.sql",
+      "source_sha256": "82e0a3f2103de68dce4236cf77408965705792e58f9df0fb2b54e23353b216ff",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/069_live_process_lease_survival.sql",
+      "output_sha256": "bc1c39acc0ee487ca4bbe28d21a0c415ac653c2a99c6ea247d210efa720a33a7",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/070_activation_drill_gate_eradication.sql",
+      "source_sha256": "9cd6e972b07033dc495c6d89d1089c924a2beffc873c59b0ecae11a296e4b93b",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/071_activation_precondition_eradication.sql",
+      "source_sha256": "1c87109fc6dcebe12841ab97fcbc8db8b6ac98bce24c3bc3754295e471ccef3c",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/072_restaurant_orchestrator_tick.sql",
+      "source_sha256": "5f50688f5b38ac95167f7a33d502b801faf900ca7847baaa2c501dbf0cfb464f",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/073_ask_mise_orchestrator_turns.sql",
+      "source_sha256": "efebc366d77e9c00e0815996f86d8e6c3dd911178accbb315a5714c9f109ba6a",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/074_restaurant_body_bus.sql",
+      "source_sha256": "c49b14a89e8da2256f8f3cd10ca15432ee87664e3fe83011b5c4d53795ba635b",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/075_role_lease_lineage_repair.sql",
+      "source_sha256": "38faf177dc361ffce733e4914774c61c342bad91f126dcc8ce53764c81303811",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/075_role_lease_lineage_repair.sql",
+      "output_sha256": "ebd428bc728e9ca372500c0b86e115fa451d8031986ee1718e8ee4a98a65bbaf",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/076_admitted_memory_operator_forget.sql",
+      "source_sha256": "75982de36c5b909d407e0b668a5f748ea119e6ea56c9d5065c907345eab7c872",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/077_roster_tip_share_proposals.sql",
+      "source_sha256": "19bf544d1348d75a9efb093f717003635afaab34e0b557dbbb8ac9a336a45e8f",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/078_roster_convergence_reviews.sql",
+      "source_sha256": "94e93ebcd8e293f50bdbb4f1c3e97b22798dda5e931b7ff6074ebb9cfc48cbbf",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/079_roster_convergence_adoption_proposals.sql",
+      "source_sha256": "3d89fb26767fcc3b93c66d2e54cec3c54e718157f850bcef56b9e545acbb42c1",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/080_codex_sol_admission_target.sql",
+      "source_sha256": "5ca69c420053c0d1551c3f25f0fa4c6c136e4bcd6efc7b883dcce4a5e7761966",
+      "status": "adapted",
+      "output_path": "fleet_kernel/ddl/080_codex_sol_admission_target.sql",
+      "output_sha256": "18e2ae5546fbc6a68ffad9cbf421588e78f7bae5cf3993b11312a28bcd0cd637",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ],
+      "post_assembly_changes": [
+        "Remove private production account arrangement from comments; preserve SQL behavior."
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/081_sdk_review_transport_evidence_amendment.sql",
+      "source_sha256": "59cd3a23bcc4a0becef1e5efea9d4cde009751f190e1a7354cce5423b383bf2c",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/082_zero_effect_failed_cross_release_retry.sql",
+      "source_sha256": "037351628a1006c86160203eb6fddafd0fb2eea19f6d6596055e3c11bd3b6629",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/083_installed_release_authority.sql",
+      "source_sha256": "a21b01e91deac5c3dab88644e182b4e6f82d78ef8f93c9da48969b0ff0eb7968",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/084_lineage_guard_privilege_aware_integrity.sql",
+      "source_sha256": "f5de2389ebd5c706b17db796fc6f43b5261b3fa1090aff65da823ff2e223159d",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/085_supervised_live_failure_terminal_widening.sql",
+      "source_sha256": "a6846f37676060ae6d10229c56f27ced32eebb8903bead550f38339f3426ca23",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/086_walkers_zero_effect_acceptance.sql",
+      "source_sha256": "97d81d04203452cc830155cda03d24b15b7c5f4e0246c2f9ce9360fcd4c131f7",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/087_walkers_drop_time_dependent_lineage_recheck.sql",
+      "source_sha256": "e1479e62a6d698e8f36f73449e49f523a6e7f0eb41d832dd50b72a1c1566d893",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/088_approved_unconsumed_heads_correctable.sql",
+      "source_sha256": "1c017e4d9829eb753b91baeb1c702f113763c5103b2eb30f734bc76a27de5f8c",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/089_browser_held_zero_effect_heads_correctable.sql",
+      "source_sha256": "962a9688d0df9a87989d11821d825b1ad133c2148c9c81aa7e5c5cfaf25d4f5e",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/090_zero_effect_predicate_state_only.sql",
+      "source_sha256": "804b405dd1c622f55500a19faa6da9fbc8d0aa05d98648116ec90165d2c373f2",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/091_guard_v3_tail_consumed_and_receipt_tolerance.sql",
+      "source_sha256": "746465c67422914c2a1dd7fe6cd7591defd8ddd14c279c5b83340b8fb5cee3b5",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/092_browser_executing_orphans_correctable.sql",
+      "source_sha256": "b1955aa6979a11dfe0ff88bdd3e3b72e1a0398a8d2650fd9837f4d1510c95e5a",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/093_verified_live_closure_jsonb_access_fix.sql",
+      "source_sha256": "a93dbb6c387d8fa3058316544c41977ae43676a91629b21f53ade710ae1db2e0",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/094_in_window_operator_conveyance_closure_fallback.sql",
+      "source_sha256": "ddd2f4aa590d8a841c2091183744feea6d6395d27fbfd929e442bee419efd64b",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/095_held_live_v3_checkpoint_backfill.sql",
+      "source_sha256": "10286578fda6a8fcfa997ffcc61861661100a1c7ac00d9f4777068d26c9f134e",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/096_prefix_terminal_set_correction_family.sql",
+      "source_sha256": "d24b289c8254196f6f4180c4e2eb7e3aced12df33009edf6ab21f7ba9ba98c99",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/097_verified_live_walker_alias_shadowing_fix.sql",
+      "source_sha256": "c50939cdf4941ed4ee5835ed630ac7f0cf9ae2e1b5f3f1df6fe87b453356c54f",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/098_walker_consumed_approval_browser_tolerance.sql",
+      "source_sha256": "6c3e8d4a5aad960e507821606ae98057c9115426f546e8dec005e0616d6cfd1a",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/099_in_window_operator_topology_integrity.sql",
+      "source_sha256": "d9dd3661b1496bcb617ce72e9e7baa86a04fd8e3c63d3769904a142604e155fa",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/100_product_rail_exemption_restore.sql",
+      "source_sha256": "4f40205cfdaa0b43e65318ca37ad75dc06a1dd1a6f239abdeac28d1410d6088d",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/101_product_rail_failure_arm_restore.sql",
+      "source_sha256": "8cb44b87929f4baa9ed1abb85354ebb555de7b5744099affb48866b98e4f4a47",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/102_validator_contract_registry.sql",
+      "source_sha256": "032594a1042276a0d9816b607be59247628d60973fdbee99d56c4d9e325328a8",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/103_walker_fold.sql",
+      "source_sha256": "f0801f1c96a43885cdddf6308276f910bcbb66e77c0d89938897c404868d16a5",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/105_company_review_seat_fable_5_1.sql",
+      "source_sha256": "75bf687d5ebc14488ca5a89f1c755fe98e76df10c84ce866c58a4bc55c7c4457",
+      "status": "included",
+      "output_path": "fleet_kernel/ddl/105_company_review_seat_fable_5_1.sql",
+      "output_sha256": "b60134adbcca4a07a5e8e1a2dce43124bbfc7ed9e875162e63e4487123b95477",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company identity, deployment, and founder artifact pins are explicit install-time placeholders"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/106_unconsummated_cutover_evidence_supersession.sql",
+      "source_sha256": "57176301832de5f6ec5a93853d633999203bdba2fcfda23d3e19b15b11ad8762",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/107_contract_incidents_classification.sql",
+      "source_sha256": "85bb57ed22ac313d421ef451d0368a16ed11249f0b70566103d550d44fcf7b7f",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/108_contract_incidents_linked_triggers.sql",
+      "source_sha256": "b9fdf0292962fdc4f10639ea14ac21f1070a6867a7893c6e3f426eb402f734c0",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/109_contract_incidents_observability.sql",
+      "source_sha256": "44cdd7fb7cba96f6c46d644074c703dc5c9e8811fe6c6bb382eeb9da0c53d108",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/110_evidence_supersession_by_intent.sql",
+      "source_sha256": "8ad72b77680c9d973f25872297e44175e65064db60d31c353e511b2191475c09",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/111_held_run_unknown_persons.sql",
+      "source_sha256": "43791b3f10f9b53e3354e61a5a945fc468b9336b4aa013ec066ba24fb5458973",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/112_prelude_evidence_no_lapse.sql",
+      "source_sha256": "dd68ac44652c503aa36c7ddf9c968c2a1e5d248336dff4a33c8a641d4d61b9fa",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/114_m9_walkers_self_inflicted_kill.sql",
+      "source_sha256": "c5904a9fd6f2d45cd4cfded32d1ddc381e6b9abdb0ed7cb4e3dff43ebf0e4fd4",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/115_authority_persists_until_revoked.sql",
+      "source_sha256": "2463fed9f3d9a36693f34fcae1279f51cc03fac39111b7c9b5da38e2a348e3a4",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/117_restaurant_seat_models_and_tick.sql",
+      "source_sha256": "1132ec4f2ec619fb48c6e2d8bc768a6b9eed52acbeda229ef96c9d4fc764b560",
+      "status": "included",
+      "reason": "Current shared runtime-worker identity validator",
+      "output_path": "fleet_kernel/ddl/117_runtime_worker_identity.sql",
+      "output_sha256": "c87ec978a6e43bfae901d2bf44786fdee93aa85ffbf589fb6b9444e164524690",
+      "modifications": [
+        "Extracted source lines 41-207 (monotonicity guard, shared validator, version comment); omitted adjacent restaurant orchestrator tick",
+        "Company identity is explicit install-time configuration"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/ddl/118_fable_review_model_set.sql",
+      "source_sha256": "5876cd792974728785377a36b18e9dfe404478ca22cbb35b9bcb2d4477140876",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/998_managed_postgres_maintenance_refresh.sql",
+      "source_sha256": "a15b2157c844a9b693e5a5510f27646a930f31e0b5d996680ae9a01da4d56001",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/999_test_scaffolding.sql",
+      "source_sha256": "7f203f88c47d1888777f185d6b4b3e82de23aa7bad9f5b37b0efd30654c45e6f",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl/identity_ledger.json",
+      "source_sha256": "96d71b186a845e5d38632719dba29ed69f8e4fe71b48cda7dbb7b800e2e9a8f7",
+      "status": "excluded",
+      "reason": "Historical migration outside reusable Company scope; see schema statement inventory for selected cross-file definitions"
+    },
+    {
+      "source_path": "fleet_kernel/ddl_identity.py",
+      "source_sha256": "352eeaa608ca9873942667d28aaafde8adf7f87f368d8621561ad1e056982cb5",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/domains/__init__.py",
+      "source_sha256": "1aaa95001d0b866dc128c3150c3049c5f746982770968a527a7cfe74bf7ca7be",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/domains/inventory.py",
+      "source_sha256": "6f3f9b3c7eaa55051353140be1bdc364418de2654b77b07cd208303fade95582",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/domains/lifecycle.py",
+      "source_sha256": "f632cf916ae78c17799ebb4786dba8587115006c0a993e23b306a7ffad96fa5b",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/domains/ordering.py",
+      "source_sha256": "958284291d9b5ec35c5f861bd4b10ab770b74910f07e440a838e74dd6afc8089",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/domains/payroll.py",
+      "source_sha256": "a13e7ede371ef353e43969cf30850416844a8602cfd9c7e153f118e6e8f73749",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/eval_plane/__init__.py",
+      "source_sha256": "058090a1820de58db4c2122b03b192f3bd0c6c136810f209c8d8370b65e9333a",
+      "status": "included",
+      "output_path": "fleet_kernel/eval_plane/__init__.py",
+      "output_sha256": "058090a1820de58db4c2122b03b192f3bd0c6c136810f209c8d8370b65e9333a",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/eval_plane/conduct_graders.py",
+      "source_sha256": "7ecfc55109ebb6d5703bca740397aca2037ec4ea6f152d27f24bf9d8a588365f",
+      "status": "included",
+      "output_path": "fleet_kernel/eval_plane/conduct_graders.py",
+      "output_sha256": "7ecfc55109ebb6d5703bca740397aca2037ec4ea6f152d27f24bf9d8a588365f",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/eval_plane/domain.py",
+      "source_sha256": "b919e06c6af534ae85e16e5c2ef0069e417dfbaf478cfeff719722c523c35dd2",
+      "status": "included",
+      "output_path": "fleet_kernel/eval_plane/domain.py",
+      "output_sha256": "b919e06c6af534ae85e16e5c2ef0069e417dfbaf478cfeff719722c523c35dd2",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/eval_plane/effect_control.py",
+      "source_sha256": "59afcf402de1ba273530a6bd91f67f8401757dc02e180d1cd55d3ea952b49363",
+      "status": "included",
+      "output_path": "fleet_kernel/eval_plane/effect_control.py",
+      "output_sha256": "a35664b900b0013abf366711b62e657fca9152ff6a1d1b11c959c97be88eb7eb",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Exclude private product adapter registry, production storage predicate and private response fixture import. Preserve native generic interception/ledger/redaction/simulation/recovery algorithms. Require explicit nonempty adopter chokepoints."
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/eval_plane/graders.py",
+      "source_sha256": "25e07d2873fa72547788bb3552c2bd8aedecc212bd62360251bd378205521178",
+      "status": "included",
+      "output_path": "fleet_kernel/eval_plane/graders.py",
+      "output_sha256": "25e07d2873fa72547788bb3552c2bd8aedecc212bd62360251bd378205521178",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/eval_plane/holdout_provider.py",
+      "source_sha256": "b91374a31d5dcab7ae0edd897821f62d2c4ff69dbdc1ac5f002810c1dbfc47de",
+      "status": "included",
+      "output_path": "fleet_kernel/eval_plane/holdout_provider.py",
+      "output_sha256": "b91374a31d5dcab7ae0edd897821f62d2c4ff69dbdc1ac5f002810c1dbfc47de",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/eval_plane/qualification.py",
+      "source_sha256": "7528534802aa038b20f21e0c6f90a9ad06d1a44bff46f4fbb5648aaa96bf6a00",
+      "status": "included",
+      "output_path": "fleet_kernel/eval_plane/qualification.py",
+      "output_sha256": "7528534802aa038b20f21e0c6f90a9ad06d1a44bff46f4fbb5648aaa96bf6a00",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/eval_plane/qualification_store.py",
+      "source_sha256": "21c9f596438619d6d23a3de9bdf5706ed8becfab71696ad1cfdf62ac615dec81",
+      "status": "included",
+      "output_path": "fleet_kernel/eval_plane/qualification_store.py",
+      "output_sha256": "21c9f596438619d6d23a3de9bdf5706ed8becfab71696ad1cfdf62ac615dec81",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/eval_plane/suite_package.py",
+      "source_sha256": "8a6b4ed6fdd8c377d1a33f386f191eb27b7cd3d77d4fc264c5e948dc96feec2b",
+      "status": "included",
+      "output_path": "fleet_kernel/eval_plane/suite_package.py",
+      "output_sha256": "8a6b4ed6fdd8c377d1a33f386f191eb27b7cd3d77d4fc264c5e948dc96feec2b",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/eval_plane/target_fingerprint.py",
+      "source_sha256": "dfc88a622d5c27b20f85a66fc52075f834c48b6e9d832a63fd23e2a7ea9fac49",
+      "status": "included",
+      "output_path": "fleet_kernel/eval_plane/target_fingerprint.py",
+      "output_sha256": "dfc88a622d5c27b20f85a66fc52075f834c48b6e9d832a63fd23e2a7ea9fac49",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "[redacted-customer-source-002]",
+      "source_sha256": "f129a4c6b8e34914a670d7a75aa2c9938bf588029f3efe3a059c9ee52934e43d",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export",
+      "source_path_redacted": true
+    },
+    {
+      "source_path": "[redacted-customer-source-003]",
+      "source_sha256": "3c84ba6cb50ffbbab3251d03de9874fb33f27503b92b8bb30dfb7ac9f6396a73",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export",
+      "source_path_redacted": true
+    },
+    {
+      "source_path": "fleet_kernel/evidence_keys.py",
+      "source_sha256": "e026e8cdd75a4c4fdad65664f60fa3d73322e39506f1ead88537680242e37533",
+      "status": "included",
+      "output_path": "fleet_kernel/evidence_keys.py",
+      "output_sha256": "e026e8cdd75a4c4fdad65664f60fa3d73322e39506f1ead88537680242e37533",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/fable_client.py",
+      "source_sha256": "15f79673256f2a02ec98f707c4e2a613908af3495abf2d3d63418678739c0c17",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/fleet_kernel_evaluation_plane_full_project_directive.md",
+      "source_sha256": "623535b02a7be1fc293a1c7018d9b23d1eec41806fa82fe021cf9b15aec65028",
+      "status": "excluded",
+      "reason": "Private program documentation, local pins, or migration history; not an executable dependency"
+    },
+    {
+      "source_path": "fleet_kernel/fleet_package.py",
+      "source_sha256": "af9e3b170f82ecc56f145e2c5f22212db7a9ab6b069d7fcceb4f784b66afa0fb",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/founder_authority.py",
+      "source_sha256": "ed463bfe587384ff80cbb11a7fb38ed01859310e0da149c57e0a0038edf083e3",
+      "status": "included",
+      "output_path": "fleet_kernel/founder_authority.py",
+      "output_sha256": "9882474c82b7a23582e016ef7cfe250f97900d8e6dbaeba098121a0b2ab9014e",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Replaced private founder instruction, deployment IDs, signed artifact pins, and dates with absent-by-default deployment bindings",
+        "Company, Scribe deployment, and authority issuer are explicit configuration"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/host_package.py",
+      "source_sha256": "9a3f6ab11077c51d8250319d85f15edadfb37d62d3f4e17c824165801c97b2c3",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/identity.py",
+      "source_sha256": "8f8f4c1f3771b6662114d8752cea736a40e9f3a727932e005c8342ae984ce0eb",
+      "status": "adapted",
+      "output_path": "fleet_kernel/identity.py",
+      "output_sha256": "2bf3c2ff9e68588f7f3d9787a7ba67dc34b60f0ccf8e3b754ca997a5d6521e65",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Company, Scribe deployment, and authority issuer are explicit configuration"
+      ],
+      "post_assembly_changes": [
+        "Remove private production account arrangement from comments; preserve executable behavior.",
+        "Remove private production account arrangement from comments; preserve executable behavior."
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/identity_key.py",
+      "source_sha256": "ed743fb81b7d0f1029d2f04d643c3db792a14c573e0c535832702680d4ef11b6",
+      "status": "included",
+      "output_path": "fleet_kernel/identity_key.py",
+      "output_sha256": "ed743fb81b7d0f1029d2f04d643c3db792a14c573e0c535832702680d4ef11b6",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m10/__init__.py",
+      "source_sha256": "6a8d1d8acdfba32e0415a6359207776b73ffb4e250e6b702cb2e14d01972dbfb",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m10/prove99.py",
+      "source_sha256": "1b0d0b34b6b57f02a66588bca69fc934b04817379d9f64e37f57b5fe4ed77dd9",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m2/__init__.py",
+      "source_sha256": "df1824660e0c31c791c1023491d07f668d3764c27577a81a0cb141ac52d685fb",
+      "status": "included",
+      "output_path": "fleet_kernel/m2/__init__.py",
+      "output_sha256": "df1824660e0c31c791c1023491d07f668d3764c27577a81a0cb141ac52d685fb",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m2/_harness_crash_money_fixed.py",
+      "source_sha256": "b25ef8a27084e3de56a5c52f98b95dc97f265d650d1605ca9742e012c7d45eda",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m2/_harness_crash_resume.py",
+      "source_sha256": "90edab50fb48c2cf95aa11df1d80a4786adb05f7e3b709a4c6f494837862504c",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m2/_harness_timer.py",
+      "source_sha256": "df049addbfc9bff4cf4d2db0576ddc18c9c5d727d796d746bbb61237fd5dc808",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m2/dbos_workflows.py",
+      "source_sha256": "a8eaaf2cc0df1226b813307572dde67fe4f570afb6db72ff230abd92458d1d88",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m2/lease.py",
+      "source_sha256": "bc5b7788b1d7d41488ec917ead3953fde6f37f20ef662a424ad99d3a3356fb22",
+      "status": "included",
+      "output_path": "fleet_kernel/m2/lease.py",
+      "output_sha256": "bc5b7788b1d7d41488ec917ead3953fde6f37f20ef662a424ad99d3a3356fb22",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m3/__init__.py",
+      "source_sha256": "1d058801f1f135d3051d1f389230610d47e3f3cb2ad0ced1387ef54b1e325e10",
+      "status": "included",
+      "output_path": "fleet_kernel/m3/__init__.py",
+      "output_sha256": "1d058801f1f135d3051d1f389230610d47e3f3cb2ad0ced1387ef54b1e325e10",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m3/_repo_root.py",
+      "source_sha256": "054dc98737ff4d59cfe9c0848eae9de675fb5b8df5dad8256a7b3adc67a2ea27",
+      "status": "excluded",
+      "reason": "Private legacy cutover/host adapter; depends on current company checkout or retired dispatch surfaces"
+    },
+    {
+      "source_path": "fleet_kernel/m3/autonomy_workflow.py",
+      "source_sha256": "39e5c2f39b7e14427efcce637c78e4125c1c1b6b58cae22bbb960c168561d253",
+      "status": "excluded",
+      "reason": "Private legacy cutover/host adapter; depends on current company checkout or retired dispatch surfaces"
+    },
+    {
+      "source_path": "fleet_kernel/m3/captured_dispatch_executor.py",
+      "source_sha256": "c2a8abaf875d360097646f9a6f68db51e849221cf3481b7a8c5b8fe577a4c453",
+      "status": "excluded",
+      "reason": "Private legacy cutover/host adapter; depends on current company checkout or retired dispatch surfaces"
+    },
+    {
+      "source_path": "fleet_kernel/m3/cognition_adapter.py",
+      "source_sha256": "140e08778eba6a26876e7ab47d6a7794f556effb13a494b6cc8a8a7f83b8179e",
+      "status": "excluded",
+      "reason": "Private legacy cutover/host adapter; depends on current company checkout or retired dispatch surfaces"
+    },
+    {
+      "source_path": "fleet_kernel/m3/controls.py",
+      "source_sha256": "93f2ee79d7a2d40ca884406f047698160134722e4b23ed715ee7996dfd54d0c0",
+      "status": "included",
+      "output_path": "fleet_kernel/m3/controls.py",
+      "output_sha256": "93f2ee79d7a2d40ca884406f047698160134722e4b23ed715ee7996dfd54d0c0",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m3/cutover.py",
+      "source_sha256": "5da32ac7dec5b98c2ad825be4f905289d3cffa6f314bf9cc889b02d927be91d0",
+      "status": "excluded",
+      "reason": "Private legacy cutover/host adapter; depends on current company checkout or retired dispatch surfaces"
+    },
+    {
+      "source_path": "fleet_kernel/m3/engine_config.py",
+      "source_sha256": "6e257442c61a258860b244ab3e6ce8562e165350bb090a0a2881c54172ab320e",
+      "status": "excluded",
+      "reason": "Private legacy cutover/host adapter; depends on current company checkout or retired dispatch surfaces"
+    },
+    {
+      "source_path": "fleet_kernel/m3/envelope_gate.py",
+      "source_sha256": "1259b7cae87fbb48351abcfc8dacb8e0329d36fae5fb2a8707fea8a01980d235",
+      "status": "excluded",
+      "reason": "Private legacy cutover/host adapter; depends on current company checkout or retired dispatch surfaces"
+    },
+    {
+      "source_path": "fleet_kernel/m3/f1_golden_transcript.py",
+      "source_sha256": "551ddc093f81846c3155debbd79b72a7e81a1b482d407c9606da723e18f729ec",
+      "status": "excluded",
+      "reason": "Private legacy cutover/host adapter; depends on current company checkout or retired dispatch surfaces"
+    },
+    {
+      "source_path": "fleet_kernel/m3/legacy_cycle_capture.py",
+      "source_sha256": "d2da516ecec953c2a6ae9deadf7b014b77dac67f170805f9bb8d06831d9f905b",
+      "status": "excluded",
+      "reason": "Private legacy cutover/host adapter; depends on current company checkout or retired dispatch surfaces"
+    },
+    {
+      "source_path": "fleet_kernel/m3/live_runner.py",
+      "source_sha256": "aa9a1fa9ad8c31b2bbc716209fe323b2f2ad6dd480e96eb12a0f869a37bf5a63",
+      "status": "excluded",
+      "reason": "Private legacy cutover/host adapter; depends on current company checkout or retired dispatch surfaces"
+    },
+    {
+      "source_path": "fleet_kernel/m3/live_workflow.py",
+      "source_sha256": "8c20edecebeba0bd4d9d09c923add9e681c04b19bf50877f996a68e8b82da64a",
+      "status": "excluded",
+      "reason": "Private legacy cutover/host adapter; depends on current company checkout or retired dispatch surfaces"
+    },
+    {
+      "source_path": "fleet_kernel/m3/outbox_renderer.py",
+      "source_sha256": "074af9303c67f2614629ebd98348a766c9889dc91a7123f03f44664fab60664a",
+      "status": "included",
+      "output_path": "fleet_kernel/m3/outbox_renderer.py",
+      "output_sha256": "074af9303c67f2614629ebd98348a766c9889dc91a7123f03f44664fab60664a",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m3/parity.py",
+      "source_sha256": "50e7763ac3eb5b2bcd3110263ce6263b3cc93bd4a40ccf301508bc2ec15cb7c9",
+      "status": "included",
+      "output_path": "fleet_kernel/m3/parity.py",
+      "output_sha256": "50e7763ac3eb5b2bcd3110263ce6263b3cc93bd4a40ccf301508bc2ec15cb7c9",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m3/runner_lock.py",
+      "source_sha256": "65c83adad707c3adf06fb5e75ab3795611e09b770c13c9de8a73cb220ae52baf",
+      "status": "excluded",
+      "reason": "Private legacy cutover/host adapter; depends on current company checkout or retired dispatch surfaces"
+    },
+    {
+      "source_path": "fleet_kernel/m3/runtime_store.py",
+      "source_sha256": "46af67a51b4257b5b2a4511ba1746fe0216572bae278c8bb7321989a2ffa9912",
+      "status": "included",
+      "output_path": "fleet_kernel/m3/runtime_store.py",
+      "output_sha256": "46af67a51b4257b5b2a4511ba1746fe0216572bae278c8bb7321989a2ffa9912",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m3/shadow_cognition_boundary.py",
+      "source_sha256": "4f84f28e38667b25a932e0a3dba849bef7170b35035af2987bdc8fd252766f73",
+      "status": "excluded",
+      "reason": "Private legacy cutover/host adapter; depends on current company checkout or retired dispatch surfaces"
+    },
+    {
+      "source_path": "fleet_kernel/m3/shadow_workflow.py",
+      "source_sha256": "eda82729b6372bd5d1028a2755f65ec18edb52cb7aae803ffc33702d4b06bcd8",
+      "status": "excluded",
+      "reason": "Private legacy cutover/host adapter; depends on current company checkout or retired dispatch surfaces"
+    },
+    {
+      "source_path": "fleet_kernel/m3/snapshot.py",
+      "source_sha256": "925581078b6839346dfd45fac1e0d063b95e1efd3fd742459880f1dae6b2ada1",
+      "status": "excluded",
+      "reason": "Private legacy cutover/host adapter; depends on current company checkout or retired dispatch surfaces"
+    },
+    {
+      "source_path": "fleet_kernel/m3/structural_suppression.py",
+      "source_sha256": "a71bdc77698ce0ef3b2e42b80c8b57f14e942c00cb7b653e2ea16f9405daa9d6",
+      "status": "excluded",
+      "reason": "Private legacy cutover/host adapter; depends on current company checkout or retired dispatch surfaces"
+    },
+    {
+      "source_path": "fleet_kernel/m3/surface_projection.py",
+      "source_sha256": "7f6b5fe44e2ff324622e2b8623152ed843e4534270f3d8a0207237f851dacb1e",
+      "status": "excluded",
+      "reason": "Private legacy cutover/host adapter; depends on current company checkout or retired dispatch surfaces"
+    },
+    {
+      "source_path": "fleet_kernel/m4/__init__.py",
+      "source_sha256": "17e05261121ad7c0c84d19ba16df26a61e0d1602cd982332697281d3fb7491f1",
+      "status": "included",
+      "output_path": "fleet_kernel/m4/__init__.py",
+      "output_sha256": "17e05261121ad7c0c84d19ba16df26a61e0d1602cd982332697281d3fb7491f1",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m4/cutover.py",
+      "source_sha256": "c2ce3738fd4dde30252d59574c5ff68d3057c187f595b8556f70e3ea20a7169c",
+      "status": "excluded",
+      "reason": "Private legacy cutover/host adapter; depends on current company checkout or retired dispatch surfaces"
+    },
+    {
+      "source_path": "fleet_kernel/m4/handoff_migration.py",
+      "source_sha256": "cfcb702ddd0f1104bc02ef80f132f962b7adaaf3eb1698658dbe3f9107439e88",
+      "status": "included",
+      "output_path": "fleet_kernel/m4/handoff_migration.py",
+      "output_sha256": "cfcb702ddd0f1104bc02ef80f132f962b7adaaf3eb1698658dbe3f9107439e88",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m4/locking.py",
+      "source_sha256": "c52466b4cbbd12194819d3b52cc86223b9a34a0dd1a519dea3de873083a84a26",
+      "status": "included",
+      "output_path": "fleet_kernel/m4/locking.py",
+      "output_sha256": "c52466b4cbbd12194819d3b52cc86223b9a34a0dd1a519dea3de873083a84a26",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m4/read_backend.py",
+      "source_sha256": "ddcd14af3ec06f8e3ccd062a15b35953baab6dfac66270b1c73695f600d5bf8f",
+      "status": "included",
+      "output_path": "fleet_kernel/m4/read_backend.py",
+      "output_sha256": "ddcd14af3ec06f8e3ccd062a15b35953baab6dfac66270b1c73695f600d5bf8f",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m4/supervision.py",
+      "source_sha256": "9c9b2502b9be2712eb2a70d4774de115a9d81b46b2ac3348d3b641bce4b1613d",
+      "status": "included",
+      "output_path": "fleet_kernel/m4/supervision.py",
+      "output_sha256": "9c9b2502b9be2712eb2a70d4774de115a9d81b46b2ac3348d3b641bce4b1613d",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m4/sweep_adapter.py",
+      "source_sha256": "dc59be6b0fced261fb5e6e360611da3e30ca6bf217df2bb5b802e39da1e75da9",
+      "status": "excluded",
+      "reason": "Private legacy cutover/host adapter; depends on current company checkout or retired dispatch surfaces"
+    },
+    {
+      "source_path": "fleet_kernel/m5/__init__.py",
+      "source_sha256": "3287fb30ecda4828ababd957712000bf5d91f74987273a8b59ef5d90c3e9d329",
+      "status": "included",
+      "output_path": "fleet_kernel/m5/__init__.py",
+      "output_sha256": "3287fb30ecda4828ababd957712000bf5d91f74987273a8b59ef5d90c3e9d329",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m5/approval_api.py",
+      "source_sha256": "ea638235defe4a34775ac0f2aa5732e65e7b2bbd5674594cf9dde0334a5c0473",
+      "status": "included",
+      "output_path": "fleet_kernel/m5/approval_api.py",
+      "output_sha256": "ea638235defe4a34775ac0f2aa5732e65e7b2bbd5674594cf9dde0334a5c0473",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m5/cutover.py",
+      "source_sha256": "39ab86f9f3cccf684fde550438dd04b1ac5ffbfdc668e8657e79444e45c4e475",
+      "status": "excluded",
+      "reason": "Private legacy cutover/host adapter; depends on current company checkout or retired dispatch surfaces"
+    },
+    {
+      "source_path": "fleet_kernel/m5/dispatch_approval_migration.py",
+      "source_sha256": "65d8a27067331df683324dfb369acb90b1929a4b7d51b4cd1df27cc4e32f43bd",
+      "status": "included",
+      "output_path": "fleet_kernel/m5/dispatch_approval_migration.py",
+      "output_sha256": "65d8a27067331df683324dfb369acb90b1929a4b7d51b4cd1df27cc4e32f43bd",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m5/read_backend.py",
+      "source_sha256": "4103354e9f7b9f8ed849de67db47d3d4ed031af1e7e38172e8e4117b90622a98",
+      "status": "included",
+      "output_path": "fleet_kernel/m5/read_backend.py",
+      "output_sha256": "03b221ea6ef5267de161c1ae2de828074119bd4ccb2718bcb51f7ddba2eb213e",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Remove author home-state fallback; FLEET_KERNEL_M5_GAP_ROOT must be explicit and absolute."
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/m5/read_pointer.py",
+      "source_sha256": "530ef7cc35e923ebfd3d0659a07a1fbd532efdeeb421a67502ca50481917239f",
+      "status": "included",
+      "output_path": "fleet_kernel/m5/read_pointer.py",
+      "output_sha256": "530ef7cc35e923ebfd3d0659a07a1fbd532efdeeb421a67502ca50481917239f",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m5/supervision.py",
+      "source_sha256": "59a5b06598b4344926178a2035dc5e11e3509b061cfc253ac4d2896a7435fee6",
+      "status": "included",
+      "output_path": "fleet_kernel/m5/supervision.py",
+      "output_sha256": "59a5b06598b4344926178a2035dc5e11e3509b061cfc253ac4d2896a7435fee6",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m6/__init__.py",
+      "source_sha256": "925f44bc75f4706b08fc186d6563f76abd1444bc4de848a809ac975b381258eb",
+      "status": "included",
+      "output_path": "fleet_kernel/m6/__init__.py",
+      "output_sha256": "925f44bc75f4706b08fc186d6563f76abd1444bc4de848a809ac975b381258eb",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m6/cutover.py",
+      "source_sha256": "86574a834fe3847dc48040fbf8cb7faf712d555321a9ff07d5076191d91e03f3",
+      "status": "excluded",
+      "reason": "Private legacy cutover/host adapter; depends on current company checkout or retired dispatch surfaces"
+    },
+    {
+      "source_path": "fleet_kernel/m6/envelope_gate.py",
+      "source_sha256": "dac1bff60f7d98302134af70a278d86dc87c6832f7c7d07df90075b5e98ee4e8",
+      "status": "excluded",
+      "reason": "Private legacy cutover/host adapter; depends on current company checkout or retired dispatch surfaces"
+    },
+    {
+      "source_path": "fleet_kernel/m6/read_backend.py",
+      "source_sha256": "ef900160634dadb1ba6f62d3dc9f93c43558e5f4db9b54992b4be56bda1313bb",
+      "status": "included",
+      "output_path": "fleet_kernel/m6/read_backend.py",
+      "output_sha256": "ef900160634dadb1ba6f62d3dc9f93c43558e5f4db9b54992b4be56bda1313bb",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m6/read_pointer.py",
+      "source_sha256": "1f0612c2facc0055ddcb18a3e0acb70b4324d5b860d38eafeb5b36a7ac35944f",
+      "status": "included",
+      "output_path": "fleet_kernel/m6/read_pointer.py",
+      "output_sha256": "1f0612c2facc0055ddcb18a3e0acb70b4324d5b860d38eafeb5b36a7ac35944f",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m6/spend_migration.py",
+      "source_sha256": "7f97f17cad395fb65a99eee696166e8994ea596546e077c4f221cef682e4af3e",
+      "status": "included",
+      "output_path": "fleet_kernel/m6/spend_migration.py",
+      "output_sha256": "7f97f17cad395fb65a99eee696166e8994ea596546e077c4f221cef682e4af3e",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m6/supervision.py",
+      "source_sha256": "5d262d7c0d5070ada4280fda0dec06099a558fdbf818a0c209c89031b906e389",
+      "status": "included",
+      "output_path": "fleet_kernel/m6/supervision.py",
+      "output_sha256": "5d262d7c0d5070ada4280fda0dec06099a558fdbf818a0c209c89031b906e389",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m7/__init__.py",
+      "source_sha256": "1af578a49892d86a79aba65cbf61e9f4c666db8006ba29cac9096e2fcf5ec8c8",
+      "status": "included",
+      "output_path": "fleet_kernel/m7/__init__.py",
+      "output_sha256": "1af578a49892d86a79aba65cbf61e9f4c666db8006ba29cac9096e2fcf5ec8c8",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m7/cutover.py",
+      "source_sha256": "ae8d1be9be9e9a6eaee7dabeb95b9afb2d66372332d5c346c903cb83ef393b57",
+      "status": "excluded",
+      "reason": "Private legacy cutover/host adapter; depends on current company checkout or retired dispatch surfaces"
+    },
+    {
+      "source_path": "fleet_kernel/m7/errors.py",
+      "source_sha256": "125958cfb0d0d37caede84e01b5f9986e15521f9c41def78037c8cc94aece42b",
+      "status": "included",
+      "output_path": "fleet_kernel/m7/errors.py",
+      "output_sha256": "125958cfb0d0d37caede84e01b5f9986e15521f9c41def78037c8cc94aece42b",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m7/hook_backend.py",
+      "source_sha256": "3602b79df129c29579782b1188676bbc22a38af475073bfa3992ba53989aab83",
+      "status": "excluded",
+      "reason": "Private legacy cutover/host adapter; depends on current company checkout or retired dispatch surfaces"
+    },
+    {
+      "source_path": "fleet_kernel/m7/legacy_surfaces.py",
+      "source_sha256": "f915b56055bc4d05eb41576aab5ffa7650abf35647216019cc6f18af208d276b",
+      "status": "included",
+      "output_path": "fleet_kernel/m7/legacy_surfaces.py",
+      "output_sha256": "f915b56055bc4d05eb41576aab5ffa7650abf35647216019cc6f18af208d276b",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m7/read_backend.py",
+      "source_sha256": "8983161a2832daca23e4086ae063a59749ebda3ebb34cc58d0f3419f74441e7f",
+      "status": "included",
+      "output_path": "fleet_kernel/m7/read_backend.py",
+      "output_sha256": "8983161a2832daca23e4086ae063a59749ebda3ebb34cc58d0f3419f74441e7f",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m7/read_pointer.py",
+      "source_sha256": "00ad9581e01050521dbca72e3cb31154782a24a63f8cc9a3dba5cb2a6fbed4c7",
+      "status": "included",
+      "output_path": "fleet_kernel/m7/read_pointer.py",
+      "output_sha256": "00ad9581e01050521dbca72e3cb31154782a24a63f8cc9a3dba5cb2a6fbed4c7",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m7/role_queue_migration.py",
+      "source_sha256": "32c1ca53e17b8e669a26fa108a91ab90a8efc6dfac33d0af009896cf6a64f506",
+      "status": "included",
+      "output_path": "fleet_kernel/m7/role_queue_migration.py",
+      "output_sha256": "32c1ca53e17b8e669a26fa108a91ab90a8efc6dfac33d0af009896cf6a64f506",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m7/supervision.py",
+      "source_sha256": "f4c20382a8cfa23d4f117a74554d0ec98daf287e62792abf60c4a9e1db24d348",
+      "status": "included",
+      "output_path": "fleet_kernel/m7/supervision.py",
+      "output_sha256": "f4c20382a8cfa23d4f117a74554d0ec98daf287e62792abf60c4a9e1db24d348",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m8/__init__.py",
+      "source_sha256": "5078a3d0bb0d3b15295593fbe4c926566783c797649c25cefc20e87a39f43c06",
+      "status": "included",
+      "output_path": "fleet_kernel/m8/__init__.py",
+      "output_sha256": "5078a3d0bb0d3b15295593fbe4c926566783c797649c25cefc20e87a39f43c06",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m8/authority.py",
+      "source_sha256": "8d00a92047728ad55e9d4d6b1d67ccb6d0486b60dcbcae3b8a2505f0642c56d9",
+      "status": "included",
+      "output_path": "fleet_kernel/m8/authority.py",
+      "output_sha256": "8d00a92047728ad55e9d4d6b1d67ccb6d0486b60dcbcae3b8a2505f0642c56d9",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m8/compiled_controls.py",
+      "source_sha256": "20f5031b7363fdaaee31f227e578eac93285964b5ecd8bca54d600f2c4da0a86",
+      "status": "excluded",
+      "reason": "Mise product/application-specific policy implementation; generic signed authority matrix is included"
+    },
+    {
+      "source_path": "fleet_kernel/m8/db_isolation.py",
+      "source_sha256": "0df52d68f3f38477a6a48a29241e8047ad6e2005a6dafd949694abeda8d281ed",
+      "status": "included",
+      "output_path": "fleet_kernel/m8/db_isolation.py",
+      "output_sha256": "6cc3462470a987b7f542f3fe4b15fe80a4f765c8601ca1dae948f324c021368e",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Kept Company principal provisioning/assertions; excluded restaurant grant tables and restaurant-serving functions",
+        "Company, Scribe deployment, and authority issuer are explicit configuration"
+      ]
+    },
+    {
+      "source_path": "fleet_kernel/m8/isolation.py",
+      "source_sha256": "6635261f6fdc99fddcbd2be7228fefd393a338aa9fb3593acc2c90107fe33c42",
+      "status": "included",
+      "output_path": "fleet_kernel/m8/isolation.py",
+      "output_sha256": "6635261f6fdc99fddcbd2be7228fefd393a338aa9fb3593acc2c90107fe33c42",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m8/observability.py",
+      "source_sha256": "d4c6f4af2323cd49b5958e34f6039b269cfc81af92d52d73da5b73ccac25c3f7",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m8/verification.py",
+      "source_sha256": "db1aa6b2fa604f441f3804cc2228aee7f3aba1ca5435ca7d77a13b4484f51300",
+      "status": "included",
+      "output_path": "fleet_kernel/m8/verification.py",
+      "output_sha256": "db1aa6b2fa604f441f3804cc2228aee7f3aba1ca5435ca7d77a13b4484f51300",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/m9/__init__.py",
+      "source_sha256": "68e22f0b142004be9bdc4e503e78fc8f158f38a393cae9af38fc03bee14d6544",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m9/billing_hold.py",
+      "source_sha256": "cdbcc1785f23120ece7dc2ad61097bab64f31426e0dec7511acdcbf6726f0f6f",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m9/browser_adapter.py",
+      "source_sha256": "0ca8958890687d9d00bfca740250c583e7b1291ffbb28bee879481ffb73a2a4d",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m9/cutover_gate.py",
+      "source_sha256": "5d3ccd1cf0b1c85dff45bf73726c23bb0779c18d9231a4140425ed75bf1fcf23",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m9/cutover_route.py",
+      "source_sha256": "13751d72bed9d98ed17077c256c1d6c468d4eddf467f7df06454274ecea3e0c7",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m9/cutover_transaction.py",
+      "source_sha256": "2b9776b079d8f300a326ce52c6c3df4d0f042621fa4a14532087278ba659bbb0",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m9/d13_evidence.py",
+      "source_sha256": "446543e8c0c8c90f86f10191d7e3924b7e73fd3ebb1b6831346acd3e5b279999",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m9/demo_effect_adapter.py",
+      "source_sha256": "6283c68fefb10f0d785ed7c2ca0f2d06d1e0f1de4b1a5c47bd794430fecb5ed7",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m9/dispatch_runtime.py",
+      "source_sha256": "3cc11db9506eaa79e8a3751c52459655269408eecc211b3cf4171a4a94f32df1",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m9/fable_review.py",
+      "source_sha256": "f8e0eb2bb4ea69f3d49f40482bee2ec42e0606f5e3b70ee4208dd5e3ec66fb5d",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m9/fixture_parity.py",
+      "source_sha256": "732e63a844f358161820359a49ba8acdb3d00cdf2510c0b17d63239ff552dbeb",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m9/mini_verification.py",
+      "source_sha256": "44fe8ab0acaecc8c84a203442126faceffd1a9acb78ea16467936bc5da380a56",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m9/payroll.py",
+      "source_sha256": "28dd766914fae7fca54eb8ee41b6f7c2a6b249584a16dcd30a6c65f033382053",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m9/payroll_app_binding.py",
+      "source_sha256": "040a70f2d7ac3a6a881694f21d05aaec9fceeee70b89a76433748f8eab723819",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m9/payroll_controller.py",
+      "source_sha256": "3803b4f6523ab5831dd4f41a7b750e260d2370f1d4b8f68f93d356806a636994",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m9/payroll_controller_config.py",
+      "source_sha256": "6538d5e4d9a8fc2822745f3c43c1afe4017195c9c6bc064724f57687bb706888",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m9/payroll_controller_runtime.py",
+      "source_sha256": "aa4fe78777857890694541f7628aab69ffc171517899f338d9435ce768ee26a7",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m9/payroll_notifications.py",
+      "source_sha256": "c8e99c62634a308551c8d004002fc9b638cbf8c079866f8dd694e0322dd56e1b",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m9/recent_projection.py",
+      "source_sha256": "f1286f841656d8aed8fcec86b29f6c948cf7f5e6e95b04e8f817c0ac11a0ca00",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m9/release_observations.py",
+      "source_sha256": "1ca1ae5630fa16325226cd11c33ae5bd992c64ff5dbff14c289af432dca8f867",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m9/role_bridge.py",
+      "source_sha256": "d06c611a90f562b704ff0959664298d96f9fff5830dbea7436ec654bb6bf1035",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m9/runtime_integrity.py",
+      "source_sha256": "7d4316b96431028fc47ed8b1809654e7ffbac99c9cd345e778152deb0a940140",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m9/shadow_adapter.py",
+      "source_sha256": "083fe250c6d33751811b3bdd98b37fd52c238428acb9c0208fb9d92e3b4674ad",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m9/shadow_runtime.py",
+      "source_sha256": "5bf38cc1a252f041531073c51caf12ca837f8b8d23ccbd18c86817319ea0c213",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m9/subscription_fable.py",
+      "source_sha256": "d3176a7dbfb6581245148e9977c6ba5d813b086202360cbc89778938431ede37",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/m9/supervised_live.py",
+      "source_sha256": "7622f4e53c5dd533bb335e35bc72aa7f3d36b18c3e735c9e28ba1835d6e6c7b9",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/mini_migration.py",
+      "source_sha256": "119d1edbfca9f52ab2f1a042aee1418c1fa01b398591e6f06e03c218e7bfe8fb",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/mise_skillify_SKILL.md",
+      "source_sha256": "1e7b3d12a24a7ec35b17e444aa81d4966513fd2b92c9d70af5f786d6df22923b",
+      "status": "excluded",
+      "reason": "Private program documentation, local pins, or migration history; not an executable dependency"
+    },
+    {
+      "source_path": "fleet_kernel/payroll_demo.py",
+      "source_sha256": "95752285584188e27c5d3a618137f87b015e52390ba0760abf76ef34019ba5ff",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/payroll_product.py",
+      "source_sha256": "82cf4a9c592a12d9d9e9270b36819deea6d03dc29e042d97ac1f8349802a8526",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/payroll_review.py",
+      "source_sha256": "5adb8d0a944f263d790974c4d64fc620d9089314071525027b92d2df8bde0df8",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/performance.py",
+      "source_sha256": "512489983b3cb8911576640ccd93eb2bc305fdf3880d9fd935b33f45f50a0379",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/prose_lint.py",
+      "source_sha256": "88c647aa5e4e4f83dd73efd7241b21046023ccee2f18b7f1523767b681b3588c",
+      "status": "included",
+      "output_path": "fleet_kernel/prose_lint.py",
+      "output_sha256": "88c647aa5e4e4f83dd73efd7241b21046023ccee2f18b7f1523767b681b3588c",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/requirements-kernel.txt",
+      "source_sha256": "e5248dd3422ba720b299b4eef8a92db2e1240837a6be48b65eb2751e834f6f1b",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/restaurant_body.py",
+      "source_sha256": "8ea25c2d4240975d95bbeaaebf351fed46557e4ec134c9006c01629b63660255",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/restaurant_orchestrator.py",
+      "source_sha256": "e3046722a95a31216a435904f4c3875cb4052dd8f1f2c10c8a6ab6e76ea215ac",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/restaurant_record.py",
+      "source_sha256": "33c8c2102db1e1ea18fb3259b802649d4f21abb06ba400d39a31ad15e5f099c7",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/role_signing.py",
+      "source_sha256": "767bde8150699ed5c543a31c686cabc3964227b35440b43c720ca7144eecbb89",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/roster_custodian.py",
+      "source_sha256": "ec2fd09b83ff8a7e58c9b1ec700c4c8e01dd5a0aab9fe0e95f3dd250a39223d3",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "fleet_kernel/schemas.py",
+      "source_sha256": "457293885a0ae816c4317d270e70035ed0cc29d044d8b4bced9f5b4dbe231a39",
+      "status": "included",
+      "output_path": "fleet_kernel/schemas.py",
+      "output_sha256": "457293885a0ae816c4317d270e70035ed0cc29d044d8b4bced9f5b4dbe231a39",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": []
+    },
+    {
+      "source_path": "fleet_kernel/section_zero_ratchet.py",
+      "source_sha256": "08e3f0e0b0cb3c3ef26b1c994640d76f144a42c6b24dc199fcd6287b2f34ac59",
+      "status": "excluded",
+      "reason": "Restaurant application, payroll, inventory, ordering, browser integrations, or domain-specific runtime; excluded from Company framework export"
+    },
+    {
+      "source_path": "scripts/company_scribe_effect_broker.py",
+      "source_sha256": "6d203046fe60ae1b21f64885b22a57a5bb4aa2e1fdf75e56e047a0af94b3c927",
+      "status": "included",
+      "output_path": "scripts/company_scribe_effect_broker.py",
+      "output_sha256": "d13d61b415cbd491d6bf2e17d29f4df2bad0cc9d513e537a651c2bdac2e7083f",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Propagate only explicit nonsecret Company identities into isolated broker command environment."
+      ]
+    },
+    {
+      "source_path": "scripts/company_scribe_supervisor.py",
+      "source_sha256": "7a850229950273a997ad024eda276cfc8e5b2ea2acd93bb46ea26df0aa0721ea",
+      "status": "included",
+      "output_path": "scripts/company_scribe_supervisor.py",
+      "output_sha256": "f2438170d9dc170eecd386a872e0d73af676f1d44beb674cfee24de0ce76980e",
+      "reason": "Current reusable Company runtime or its shared dependency",
+      "modifications": [
+        "Rebound release digest to the public runtime closure",
+        "Company, Scribe deployment, and authority issuer are explicit configuration",
+        "Derive Scribe launch default from current role identity. Preserve explicit trusted supervisor authority configuration. Require explicit install plist and label; atomic exclusive link by default prevents existing-target replacement, which requires --replace-existing."
+      ]
+    },
+    {
+      "source_path": "tests/test_tier1_kernel_company_workspace.py",
+      "source_sha256": "2df4d42a5df3f3329986ab20800c91c71f08571510ca530352d35541b33251dd",
+      "status": "adapted-test",
+      "output_path": "tests/runtime/test_company_workspace.py",
+      "output_sha256": "b3e7502318acd31febe6b8f0fa8f63381ea334bb7500d16458b4551097fec8d2",
+      "reason": "Native test logic/fixtures selected for reusable scope, generalized to synthetic identities, with public compatibility/recovery regressions.",
+      "modifications": [
+        "Removed private environment and excluded-domain assumptions; use disposable local fixtures."
+      ]
+    },
+    {
+      "source_path": "tests/test_tier1_company_scribe_broker_v2.py",
+      "source_sha256": "5c316cf5beccf6d4c4223d719bdb96d41819b1b39c882fa98d64d9125a13d9d5",
+      "status": "adapted-test",
+      "output_path": "tests/runtime/test_effect_broker.py",
+      "output_sha256": "ef3ac8295707163d23c7ce7acde065e3d193a1b0a35141b1fec9af26f1889f85",
+      "reason": "Native test logic/fixtures selected for reusable scope, generalized to synthetic identities, with public compatibility/recovery regressions.",
+      "modifications": [
+        "Removed private environment and excluded-domain assumptions; use disposable local fixtures."
+      ]
+    },
+    {
+      "source_path": "tests/test_tier1_kernel_m8_authority.py",
+      "source_sha256": "c4be4a30f028b2a7a2c264989d7c0bc76bd020839f5cce251da9fd40e410a6e0",
+      "status": "adapted-test",
+      "output_path": "tests/runtime/test_kernel_m8_authority.py",
+      "output_sha256": "25154651d2dcc77a975748a58076be15debde87c3a8798ae8797b602c5407cb3",
+      "reason": "Native test logic/fixtures selected for reusable scope, generalized to synthetic identities, with public compatibility/recovery regressions.",
+      "modifications": [
+        "Removed private environment and excluded-domain assumptions; use disposable local fixtures."
+      ]
+    },
+    {
+      "source_path": "tests/test_tier1_kernel_m8_isolation.py",
+      "source_sha256": "7241c164351d446287a4184cb341b2f83cbe12cff9f2ee629784edd31e1f4430",
+      "status": "adapted-test",
+      "output_path": "tests/runtime/test_kernel_m8_isolation.py",
+      "output_sha256": "4fbf9de2d1a44b986fce837ebb321240d8ed0e6795a47fb86c2efaea4a58badf",
+      "reason": "Native test logic/fixtures selected for reusable scope, generalized to synthetic identities, with public compatibility/recovery regressions.",
+      "modifications": [
+        "Removed private environment and excluded-domain assumptions; use disposable local fixtures."
+      ],
+      "post_assembly_changes": [
+        "Synthetic worker fixture explicitly assigns the current process group across platforms."
+      ]
+    },
+    {
+      "source_path": "tests/test_tier1_kernel_content_lint.py",
+      "source_sha256": "f9503efe1ad6b80dc605b28558aa1fae8b01a9ab6f2de985fe116f1ef964a875",
+      "status": "adapted-test",
+      "output_path": "tests/runtime/test_kernel_content_lint.py",
+      "output_sha256": "e63c22c8942821e16817c16ccb4a5bc0508c5214d3653cc3bafcda71db32c8ea",
+      "reason": "Native test logic/fixtures selected for reusable scope, generalized to synthetic identities, with public compatibility/recovery regressions.",
+      "modifications": [
+        "Removed private environment and excluded-domain assumptions; use disposable local fixtures."
+      ]
+    }
+  ],
+  "source_scope": "All 262 pinned fleet_kernel files plus native supervisor/broker entrypoints, with selected native tests separately recorded.",
+  "customer_path_redaction": "Excluded customer-specific source paths are redacted; exact source hashes retained. No excluded file content is distributed."
+}

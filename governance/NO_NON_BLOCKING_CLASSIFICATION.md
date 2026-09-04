@@ -1,6 +1,6 @@
 # No "Non-Blocking" Bug Classification
 
-**Status:** Canonical. Part of CC-Suite™ v2. Fleet-wide permanent — stronger than the standard "this is the way" canonization (the originating ratification used "remembered by every agent forever" phrasing).
+**Scope:** Portable CC-Suite governance. Fleet-wide permanent — stronger than the standard "this is the way" canonization (the originating ratification used "remembered by every agent forever" phrasing).
 
 **Scope:** All governed fleets operating under CC-Suite. Defines what counts as legitimate priority-ordering vs. anti-pattern bug demotion.
 
@@ -28,7 +28,7 @@ LLM agents (and humans under pressure) instinctively reach for framings that all
 - "shipping gap" (used to soft-pedal a scoped-but-undelivered feature)
 - "we can address that later"
 
-Every one of these is a route to leaving a real bug behind. The originating incident (the canon's provenance): an agent reported a day-step arrow bug as "not a stakeholder-blocker" after shipping three browser-driven fixes; same session demoted 4 transcribe failures + 1 upload failure as "pre-existing, not regressions." The human caught the pattern within minutes. All 5 items added back to the active TODO at ratification.
+These framings can silently remove required work. Keep the finding in the active inventory and reconcile its disposition with the original objective.
 
 The cost of these demotions compounds:
 - Demoted bug accumulates in shadow lists nobody reviews
@@ -90,7 +90,3 @@ This is mandatory. Skipping it is itself a Tier B violation.
 - **FODL Scope Definition** — sister canon: real human-blocking decisions stay on FODL; this canon: real bugs stay on active TODO. Same anti-pattern protection at different layers.
 
 ---
-
-## Reference Implementation
-
-This canon was authored in Mise's `mise-core` repo as `docs/brain/052726__no-non-blocking-bug-classification-canon.md` (2026-05-27). Mise is CC-Suite's reference implementation; the canon was ratified there as fleet-wide PERMANENT (stronger than "this is the way" — human verbatim: *"remembered by every agent forever"*). The framework version sanitizes Mise-specific identifiers while preserving the operational substance + the permanence force.

@@ -1,0 +1,34 @@
+{
+  "mcpServers": {
+    "ccde-channel-push": {
+      "type": "stdio",
+      "command": "bash",
+      "args": [
+        "-c",
+        "exec \"${CC_SUITE_PACKAGE_ROOT:?explicit package root required}/scripts/launch_channel.sh\" \"$@\"",
+        "ccsuite-channel",
+        "ccde",
+        "push"
+      ],
+      "env": {
+        "AGENT_PORT": "8800",
+        "RELAY_PORT": "8800"
+      }
+    },
+    "ccde-channel": {
+      "type": "stdio",
+      "command": "bash",
+      "args": [
+        "-c",
+        "exec \"${CC_SUITE_PACKAGE_ROOT:?explicit package root required}/scripts/launch_channel.sh\" \"$@\"",
+        "ccsuite-channel",
+        "ccde",
+        "relay"
+      ],
+      "env": {
+        "AGENT_PORT": "8800",
+        "RELAY_PORT": "8800"
+      }
+    }
+  }
+}

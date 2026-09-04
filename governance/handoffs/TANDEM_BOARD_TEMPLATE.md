@@ -9,7 +9,11 @@
 
 - **Description:** [one-line description]
 - **Tier/EDG:** [classification]
-- **V-Loop Step:** [1-9 or FAST LANE]
+- **V-Loop Step:** [1-9]
+- **Original objective:** [instruction reference]
+- **Exact subject:** [commit/tree or artifact hashes]
+- **Overall objective status:** [COMPLETE / INCOMPLETE / BLOCKED]
+- **Open requirements:** [complete remainder or verified none]
 - **Next Action:** [BUILDER / REVIEWER]
 - **Status:** [IDLE / OPEN / IN PROGRESS / VERIFIED / CLOSED]
 

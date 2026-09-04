@@ -1,0 +1,34 @@
+{
+  "mcpServers": {
+    "ccfo-channel-push": {
+      "type": "stdio",
+      "command": "bash",
+      "args": [
+        "-c",
+        "exec \"${CC_SUITE_PACKAGE_ROOT:?explicit package root required}/scripts/launch_channel.sh\" \"$@\"",
+        "ccsuite-channel",
+        "ccfo",
+        "push"
+      ],
+      "env": {
+        "AGENT_PORT": "8794",
+        "RELAY_PORT": "8794"
+      }
+    },
+    "ccfo-channel": {
+      "type": "stdio",
+      "command": "bash",
+      "args": [
+        "-c",
+        "exec \"${CC_SUITE_PACKAGE_ROOT:?explicit package root required}/scripts/launch_channel.sh\" \"$@\"",
+        "ccsuite-channel",
+        "ccfo",
+        "relay"
+      ],
+      "env": {
+        "AGENT_PORT": "8794",
+        "RELAY_PORT": "8794"
+      }
+    }
+  }
+}

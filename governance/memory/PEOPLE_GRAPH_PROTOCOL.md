@@ -6,7 +6,7 @@ Structured per-person relationship records. One file per person. Relationship la
 
 ## Concept
 
-For every person the founder (or a designated agent) has a direct interaction with, create one markdown file. Store it in a designated people directory (e.g., `docs/people/`).
+When authorized relationship-record work includes a direct interaction, maintain one scoped record per person. Store it in a designated people directory (e.g., `docs/people/`).
 
 The file captures who they are, why they matter, what you have in common, who connected you, and a running log of every interaction. This is not a CRM. It's a memory aid with structure.
 
@@ -77,10 +77,11 @@ Do not create speculative files for people who haven't been touched yet. The int
 
 ## File Naming
 
-Use kebab-case of the person's full name: `garry-tan.md`, `aaron-aday.md`. Keep a `_template.md` (leading underscore) in the same directory for reference.
+Use kebab-case of the person's full name: `contact-example.md`. Keep a `_template.md` (leading underscore) in the same directory for reference.
 
 ---
 
-## Origin
 
-This pattern adapts Garry Tan's GBrain project (personal AI memory system, ~17K GitHub stars) to CC-Suite's markdown-first approach. GBrain uses a richer schema and dedicated tooling; this protocol prioritizes simplicity and portability over richness.
+## Data boundary
+
+Actual relationship records stay private. Load only records authorized and relevant to the task, keep provenance for factual updates, and do not infer outreach authority from a stored contact. Retention or deletion follows the governing privacy and records policy.

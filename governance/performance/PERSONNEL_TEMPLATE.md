@@ -16,7 +16,7 @@
 
 | # | File | Read? | Date |
 |---|------|-------|------|
-| 1 | Values file | [ ] | |
+| 1 | `HARNESS_CORE.md` and host adapter | [ ] | |
 | 2 | `GOVERNANCE.md` | [ ] | |
 | 3 | Role definition | [ ] | |
 | 4 | `RISK_CLASSIFICATION.md` | [ ] | |

@@ -1,0 +1,51 @@
+{
+  "schema": "mise.company-scribe-frozen-channel-bundle.v1",
+  "bundler": "bun-1.3.12",
+  "build_command": [
+    "bun",
+    "--no-install",
+    "build",
+    "webhook.ts",
+    "--target=bun",
+    "--outfile=webhook.bundle.js"
+  ],
+  "entrypoint": "channels/scribe/webhook.ts",
+  "lockfile": "channels/scribe/bun.lock",
+  "inputs": [
+    {
+      "path": "channels/scribe/bun.lock",
+      "sha256": "aaa89c9719ce219d55f7a62b4f0ce6c7d3ce5e6133db081276e2231b3ad29153"
+    },
+    {
+      "path": "channels/scribe/closed_mcp.ts",
+      "sha256": "733bc64496c958aaee8bdd68525cdb60bc54ece1c459d2c250a8d39ce0ec4dc6"
+    },
+    {
+      "path": "channels/scribe/durable_delivery.ts",
+      "sha256": "efa3dc1dfe58d518b8d0c3eaeda117de5df8353e0b82dab99d3b18697ec5c652"
+    },
+    {
+      "path": "channels/scribe/package.json",
+      "sha256": "53488857f44f26781eba94033f62a980b0455d14d03a964f4ebcdcbfde70612d"
+    },
+    {
+      "path": "channels/scribe/tsconfig.json",
+      "sha256": "4dc04b191bf94ab851419f7c62b4514bc1d1ec2eadaf8bff5b97c002f6d84b5b"
+    },
+    {
+      "path": "channels/scribe/webhook.ts",
+      "sha256": "4299e3272a576c41160731c86e5543bc1479d67062bffb50a889279bbdb87f7c"
+    },
+    {
+      "path": "channels/shared/durable_inbox.ts",
+      "sha256": "2a1e490b73aa980b370ce2f9d56148679cc896498de07b9fdc7e22dfdf7eebb2"
+    },
+    {
+      "path": "channels/shared/send_receipt.ts",
+      "sha256": "b139395741b5c331a042346fc6ea030e796d6cb6ae64c0ae667c241397847f23"
+    }
+  ],
+  "bundle": "channels/scribe/webhook.bundle.js",
+  "bundle_sha256": "ed6403f628d841b763982f8fe543e57295db6de2c0485110c0fd01ad1fb06e9c",
+  "link_sha256": "5eccf3fc21664a9376ce86022c50e9132aebb6c108fb578241a469a4307d95a6"
+}

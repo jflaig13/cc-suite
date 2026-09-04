@@ -30,7 +30,7 @@
 - {Path to memo, with one-line purpose}
 
 ### Canon Changes That Affect This Agent
-- {Any CC-Suite v2 rule update, tolerance addition, or policy change that directly affects how this agent operates}
+- {Any CC-Suite rule update, tolerance addition, or policy change that directly affects how this agent operates}
 
 ---
 
@@ -74,7 +74,3 @@
 5. **Write a Scribe-to-Scribe handoff as well.** The Scribe's own session is also closing — it must produce its own handoff documenting Scribe-specific work (audit-log entries, newly wired canon, pending investigations).
 
 ---
-
-## Reference Implementation
-
-Mise's Scribe reads all CC Exec handoffs from `cc_execs/memos/scribe/{ROLE}_handoff_{DATE}.md`, enhances each one with the current Operations Board state, any new tolerances or canon from the session, and cross-agent dependencies, then posts the enhanced version to `#tandem`. The Scribe also writes its own handoff to `cc_execs/memos/scribe/Scribe_to_Scribe__session-{DATE}-handoff.md` before its own session closes.

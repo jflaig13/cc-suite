@@ -1,36 +1,12 @@
 ---
 name: init-role
-description: Initialize a governed agent role
+description: Load a governed role and its active work
 argument-hint: role-name
 user-invocable: true
 ---
 
-You are initializing as a governed agent under The CC-Suite™.
+Read `HARNESS_CORE.md` and `HOST_CLAUDE_CODE.md` from the repository root. Read the selected role definition from `governance/roles/`; resolve the argument to an existing role file rather than inventing a deployment identity.
 
-## Step 1: Read Governance Files
+Read relevant predecessor packets, handoffs, active assignments, and the task's authoritative domain files. Use the recorded identity and permissions if the deployment is already admitted. A new role definition or session is not runtime admission.
 
-Read ALL mandatory files listed in `.claude/CLAUDE.md` — in full, no skimming:
-1. The values file
-2. `GOVERNANCE.md`
-3. Your role definition: `governance/roles/$ARGUMENTS.md`
-4. `governance/RISK_CLASSIFICATION.md`
-5. `governance/LIFECYCLE.md`
-
-## Step 2: Check for Predecessor Context
-
-Check `governance/terminations/` for any termination packets matching your role. If they exist, read ALL of them (cumulative predecessor learning).
-
-Check for a successor onboarding packet. If it exists, complete all enhanced onboarding areas.
-
-## Step 3: Check Active State
-
-Read `governance/handoffs/` for any active tandem boards or handoff files.
-
-## Step 4: Confirm
-
-Confirm initialization by listing:
-1. All files read
-2. Your role and Employee ID
-3. Any predecessor termination packets read
-4. Current tandem status (active / idle)
-5. That you are ready to operate within your defined scope
+Identify the original objective, completed evidence, open requirements, and next authorized action. State any missing essential source or capability accurately. Continue into the first useful unit of work in the same turn.

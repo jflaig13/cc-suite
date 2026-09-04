@@ -4,6 +4,8 @@
 **Role:** {ROLE_NAME}
 **Strike Date:** {YYYY-MM-DD}
 **Strike Type:** {A / B / C}
+**Human issuance reference:** {source}
+**Status:** {proposed finding / human-issued strike}
 
 ---
 

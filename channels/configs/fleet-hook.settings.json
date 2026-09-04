@@ -1,0 +1,6 @@
+{
+  "_comment": "Passes only the selected MISE_ROLE to the host. This export does not install project hooks; adopters configure any prompt/Stop hooks separately.",
+  "env": {
+    "MISE_ROLE": "@ROLE@"
+  }
+}

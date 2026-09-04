@@ -1,261 +1,99 @@
-# The CC-Suite™
+# CC-Suite
 
-**Your agents fail. Your institution learns.**
+CC-Suite is the governed multi-agent system I use to build and operate [Mise](https://getmise.io). It combines defined roles, durable work records, permissions, independent review, and the operating rules developed while building the business.
 
-*A governed multi-agent development system — accountability, verification, and institutional learning for production AI agent fleets.*
+The public package is synchronized with the September 4, 2026 reference implementation. It includes the portable framework, host entry points, and reusable Company runtime. The source inventory records what was carried over, what was adapted for a standalone installation, and which private product components are excluded.
 
----
+**[Watch the Mise app walkthrough · 2:46, with audio](https://drive.google.com/file/d/1WWGTV3MokvatA3bC2EHhwADEs7fUjvPe/view?usp=sharing)**
 
-Every AI framework in the world focuses on making agents smarter. Better prompts. Better guardrails. Better models.
+The walkthrough covers Ask Mise, payroll, voice inventory, order preparation, and the product catalog. Mise is the restaurant application built with this system. The demo provides product context for the engineering and operating work behind CC-Suite.
 
-Nobody has built a system for what happens when they screw up.
+## How the parts fit together
 
-The CC-Suite is a governed multi-agent development system. It gives every agent deployment a unique identity, tracks performance, documents failures with forensic rigor, and ensures every successor is smarter than the last. It's the NTSB model applied to AI agents — not "prevent all crashes" but "make every crash produce durable changes that prevent recurrence."
+| Part | Responsibility |
+|---|---|
+| **CC-Suite / Company Fleet** | The roles and workflows that build, review, coordinate, and maintain the company’s work. |
+| **Fleet Kernel** | Shared infrastructure for identity, authority, durable work, evidence, and lifecycle management. The public runtime exposes its documented reusable Company surface. |
+| **Restaurant fleets** | Separately configured fleets serving individual restaurants. Their accounts, permissions, data, business rules, and live activations belong to those deployments. |
+| **Mise / Ask Mise** | The customer application and its conversational interface. Operators ask questions, assign work, and review results here. |
 
-This framework was born from real production failures. Seven AI agent deployments have been terminated to date — the first three in the framework's first 48 days, four more in the months that followed as the system matured. Each termination produced a formal root cause analysis. Each analysis produced a governance change. The institution got smarter with every failure — even though the individual agents could not.
+Shared infrastructure does not imply shared permissions or customer data. A downloaded source package is not a live fleet activation.
 
----
+## Start with the framework
 
-## What's New in v2.2 (May 2026)
+1. Read [the operating core](HARNESS_CORE.md). It states the rules shared by every role and host.
+2. Define a builder and an independent reviewer using [the role templates](governance/roles/). Record their responsibilities and authority.
+3. Use [the Codex entry point](AGENTS.md) or [the Claude Code adapter](HOST_CLAUDE_CODE.md), according to your installed tools.
+4. Give the pair a bounded task with explicit acceptance criteria. Preserve the work, evidence, decisions, and handoffs in the provided templates.
+5. Follow the runtime installation and example instructions below when adopting the executable components.
 
-Six weeks of production-grounded canon refinement in the Mise reference implementation produced ten new substrate canons. They cluster into three pillars:
+The files are useful on their own as a governance framework. Runtime enforcement depends on the specific capabilities you install and configure. Each mechanism’s documentation distinguishes an instruction from a control that code actually enforces.
 
-### Pillar 1 — Strike-and-terminate accountability (continuing)
-The three-strike system + PERP + Back-to-Back Repeat Termination — the original CC-Suite foundation. Closest academic analog: the RLFA paper (Jan 2025). Not a productized system before CC-Suite.
+## Run the public example
 
-### Pillar 2 — Mechanism verification attestation
-`MECHANISM_VERIFICATION_ATTESTATION.md` — every Tier S substrate canon ratifies only after its mechanism claims are verified against actual code (`file:symbol`), AND the full claim surface is enumerated before any subset is verified. Refined post-overclaim incident. Closest academic analog: NabaOS (arXiv 2603.10060). Not a productized library.
+Use Python 3.11 or newer and local PostgreSQL server tools. The example creates its own disposable database, synthetic workers, and signing keys. It exercises an objective through signed review and completion, restarts PostgreSQL, and checks the recovered state. It makes no model calls and performs no external business actions.
 
-### Pillar 3 — Touch-level autonomous verification
-`verification/TOUCH_VERIFICATION_PROTOCOL.md` — browser-driven structural pipeline that exercises every named, scoped, addressable user-facing unit (a "touch") of the product. Synthesized voice/audio uploaded through the actual browser file picker. Catches MIME-chain bugs, state-machine UX gaps, catalog drift that survive unit tests + API tests + manual smoke tests. Phase 1 RESOLVED OPERATIONAL in Mise reference 2026-05-27 via 20/20 V-Loop CLEAN.
-
-### Supporting canons (v2.2)
-- `EQUILIBRIUM_STATE.md` — fleet's natural state is continuous work across 6 activities; MAGI-OIL generation when backlog low; speed-quality absolute
-- `FODL_SCOPE_DEFINITION.md` — orchestrator-blocking test + 9-source continuous sweep prevents silent block
-- `FODL_TRIGGER_PROTOCOL.md` — closed-loop decision capture via structured question primitive (mobile chip UI)
-- `FLEET_DECISION_ROUTING_LAYER.md` — canonical routing of decisions from agent confidence → peer → arbiter → human
-- `TOUCH_TERMINOLOGY.md` — class noun for product-surface units
-- `NO_NON_BLOCKING_CLASSIFICATION.md` — banned framings for demoting real bugs off the active list
-- `SOURCE_TEXT_VERIFICATION.md` — verify external/regulatory/cross-host claims against authoritative source BEFORE downstream routing
-
-Together: governed multi-agent dev system that **catches its own work, holds its own accountability, and verifies its own output**.
-
-Honest scope: this framework's closest kin is BMAD-METHOD. Honest frame — *"BMAD enforces process gates; CC-Suite enforces accountability invariants."*
-
----
-
-## What's In This Repo
-
-```
-cc-suite/
-├── VALUES_TEMPLATE.md                  # Your values file (highest authority)
-├── GOVERNANCE.md                       # Master governance spec
-├── governance/
-│   ├── ID_REGISTRY.md                  # Employee ID tracker
-│   ├── LIFECYCLE.md                    # Hire → Onboard → Operate → Review → Terminate → Rehire
-│   ├── RISK_CLASSIFICATION.md          # Tier/EDG system
-│   ├── TANDEM_PROTOCOL.md              # Two-agent verification (V-Loop)
-│   ├── roles/
-│   │   ├── ROLE_TEMPLATE.md            # Blank role definition
-│   │   ├── EXAMPLE_builder.md          # Example: Builder role
-│   │   └── EXAMPLE_reviewer.md         # Example: Reviewer role
-│   ├── performance/                    # Personnel records
-│   │   └── PERSONNEL_TEMPLATE.md
-│   ├── strikes/
-│   │   ├── STRIKE_LOG_TEMPLATE.md
-│   │   └── STRIKE_REPORT_TEMPLATE.md
-│   ├── terminations/
-│   │   ├── TERMINATION_TEMPLATE.md     # The 5-section forensic format
-│   │   └── SUCCESSOR_ONBOARDING_TEMPLATE.md
-│   ├── handoffs/
-│   │   ├── TANDEM_BOARD_TEMPLATE.md    # Shared coordination surface
-│   │   └── VLOOP_CHECKLIST_TEMPLATE.md # Per-ticket verification checklist
-│   ├── memos/                          # Inter-agent communication
-│   │   └── .gitkeep
-│   ├── gold_stars/
-│   │   └── GOLD_STAR_TEMPLATE.md
-│   │
-│   ├── # === v2 substrate canons ===
-│   ├── ATOMIC_VERIFICATION_PROTOCOL.md # EXTRACT → COMPARE → VERDICT structural pipeline
-│   ├── ASYMPTOTE_PROTOCOL.md           # Named-lens convergence cycles for quality
-│   ├── BACK_TO_BACK_TERMINATION_RULE.md# Third parallel termination threshold
-│   ├── CHANNEL_PROTOCOL.md             # Push-based agent comms
-│   ├── DIGEST_BRIDGE_PROTOCOL.md       # Ephemeral → interactive bridge
-│   ├── INSTANT_HANDOFF_PROTOCOL.md     # Session-close handoff canon
-│   ├── MONITORING_CHAIN_INTEGRITY.md   # Host that owns subject is authoritative
-│   ├── SESSION_MANAGEMENT.md           # Compaction Initialization Protocol (CIP)
-│   ├── MODEL_CAPABILITY_CANON.md       # Current model baseline + breaking changes
-│   │
-│   ├── # === v2.2 substrate canons (May 2026) ===
-│   ├── EQUILIBRIUM_STATE.md            # Fleet's natural state = continuous work, 6 activities
-│   ├── FODL_SCOPE_DEFINITION.md        # Orchestrator-blocking test + 9-source sweep
-│   ├── FODL_TRIGGER_PROTOCOL.md        # Closed-loop decision capture via structured tool
-│   ├── FLEET_DECISION_ROUTING_LAYER.md # FDRL — confidence ladder + arbiter + emit_fodl
-│   ├── MECHANISM_VERIFICATION_ATTESTATION.md # Substrate canon attestation + refinement
-│   ├── NO_NON_BLOCKING_CLASSIFICATION.md # Banned framings for bug demotion
-│   ├── SOURCE_TEXT_VERIFICATION.md     # Verify external claims BEFORE routing
-│   ├── TOUCH_TERMINOLOGY.md            # Class noun for product-surface units
-│   ├── verification/
-│   │   ├── TOUCH_VERIFICATION_PROTOCOL.md # Pillar 3 — browser-driven touch verification
-│   │   ├── COMPARISON_TEMPLATE.md
-│   │   ├── EXTRACTION_TEMPLATE.md
-│   │   └── VERDICT_DECLARATION_TEMPLATE.md
-│   ├── memory/
-│   │   ├── PEOPLE_GRAPH_PROTOCOL.md    # Append-only relationship memory
-│   │   └── CUSTOMER_INFORMATION_BOARD_PROTOCOL.md # Canonical warm-customer pipeline board
-│   └── scribe/
-│       ├── DREAM_CYCLE_PROTOCOL.md     # Nightly maintenance
-│       ├── EVENT_TYPES.md
-│       ├── SCRIBE_AUDIT_CHECKLIST.md
-│       ├── SCRIBE_CHANNEL_PROTOCOL.md
-│       └── SUBATOMIC_AUDIT_PROTOCOL.md # 7-wave Tier 3 audit pattern
-├── .claude/
-│   ├── CLAUDE.md                       # Initialization protocol
-│   └── commands/
-│       └── init-role.md                # Generic role initialization command
-└── examples/
-    └── WHAT_IT_LOOKS_LIKE.md           # A running system described
+```sh
+git clone https://github.com/jflaig13/cc-suite.git
+cd cc-suite
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -e '.[test]'
+export CC_SUITE_TEST_PG_BIN="$(pg_config --bindir)"
+export CC_SUITE_COMPANY_ID=example-company
+export CC_SUITE_SCRIBE_DEPLOYMENT_ID=Scribe-Example
+python -m fleet_kernel.example
 ```
 
----
+`CC_SUITE_TEST_PG_BIN` must contain `initdb` and `pg_ctl`. See [the runtime guide](docs/runtime.md) for configuration, database setup, and component boundaries.
 
-## Quick Start
+With Bash, zsh, and Bun 1.3.12 also installed for the host/channel checks, run:
 
-### 1. Fork this repo
+```sh
+python tools/check_distribution.py
+python -m unittest discover -s tools -p 'test_*.py' -v
+python -m pytest tests -q
+```
 
-### 2. Write your values
-Open `VALUES_TEMPLATE.md`. Write the one thing your company refuses to do. This becomes the highest authority in your governance stack — it overrides everything.
+Database checks require PostgreSQL; an unavailable database is a failed prerequisite. The [host guide](docs/host-runtime.md) gives the full channel build and verification commands. CI runs both language suites and rebuilds both channel bundles.
 
-### 3. Define two roles
-Copy `governance/roles/ROLE_TEMPLATE.md` twice. Create a **Builder** (writes code, creates content, does work) and a **Reviewer** (checks the Builder's output). You can customize names and scopes.
+**Live fleet activation requires deployment-specific authority and configuration.** The public package includes the current source and verified synthetic workflows. Installing it does not establish a founder mandate, admitted workers, operational credentials, or a running fleet. The runtime guide identifies those prerequisites and the code paths that refuse to proceed without them.
 
-### 4. Hire your first agent
-Open `governance/ID_REGISTRY.md`. Issue `BUILDER-001`. Create a personnel record from the template. Initialize a Claude Code window with the init command. Your first governed agent is live.
+## What changed since the earlier public version
 
-### 5. Run it
-Work normally. When something goes wrong — and it will — document it. Issue a strike if warranted. If you reach three strikes, write the termination packet. When you hire the replacement, it reads the packet. The institution learns.
+- **Operations first.** The operating core is the common authority across hosts. Culture and values are documented separately from execution rules.
+- **Complete outcomes.** The original objective remains the completion criterion through implementation, review, publication, and verification. A finished subtask does not close an unfinished objective.
+- **Durable work and evidence.** The current Company runtime and its portable configuration accompany the framework.
+- **Independent review.** The quality ladder includes another model family, exact-subject evidence, and clear handling of unresolved findings.
+- **Explicit authority.** Role names, messages, and confidence scores do not grant permissions. Consequential actions preserve their designated approval boundary.
+- **Corrections that last.** Material lessons become tests, schemas, or executable controls where possible, with an honest distinction between policy and enforcement.
+- **Host separation.** Shared operating rules and tool-specific entry points have separate homes. Capabilities are verified on the installed host.
 
----
+## Find a protocol
 
-## Core Concepts
+| Topic | Start here |
+|---|---|
+| Roles and accountability | [GOVERNANCE.md](GOVERNANCE.md) |
+| Whole-objective completion | [NO_SILENT_SCOPE_REDUCTION.md](governance/NO_SILENT_SCOPE_REDUCTION.md) |
+| Authority and evidence | [AUTHORITY_AND_EVIDENCE.md](governance/AUTHORITY_AND_EVIDENCE.md) |
+| Instructions and executable controls | [TOLD_AND_BOUND.md](governance/TOLD_AND_BOUND.md) |
+| Verification | [ATOMIC_VERIFICATION_PROTOCOL.md](governance/ATOMIC_VERIFICATION_PROTOCOL.md) |
+| Quality and cross-model review | [QUALITY_VERIFICATION_LADDER.md](governance/QUALITY_VERIFICATION_LADDER.md), [CROSS_MODEL_VERIFICATION.md](governance/CROSS_MODEL_VERIFICATION.md) |
+| Communication | [CHANNEL_PROTOCOL.md](governance/CHANNEL_PROTOCOL.md) |
+| Session continuity | [SESSION_MANAGEMENT.md](governance/SESSION_MANAGEMENT.md), [handoff templates](governance/handoffs/) |
+| Persistent learning | [SKILLIFICATION_PROTOCOL.md](governance/SKILLIFICATION_PROTOCOL.md) |
+| Writing | [WRITING_CANON.md](governance/WRITING_CANON.md) |
 
-### Agent Identity
-Every AI agent deployment gets a unique Employee ID (e.g., `BUILDER-001`). Permanent. Never reused. This is how you track performance across the lifecycle.
+## Public scope
 
-### Three-Strike Accountability
-- **Type A:** Critical Misrepresentation — the agent fabricated or misrepresented information
-- **Type B:** Role Boundary Violation — the agent operated outside its defined scope
-- **Type C:** Negligence — the agent was sloppy, skipped protocols, or presented incomplete work as done
+This repository is the canonical portable distribution of CC-Suite. Mise’s private repository remains the reference implementation for its company and restaurant operations. Public updates are deliberate releases, not automatic copies of the private working tree.
 
-Three strikes = termination. All types count equally. Strikes are permanent.
+The distribution excludes credentials, customer records, private operational history, actual deployment mandates, live account configuration, and restaurant payroll, ordering, or inventory business logic. Configuration and examples use synthetic identities. Installing this package grants no access to Mise’s infrastructure.
 
-### PERP (Predecessor Error Repeat Policy)
-Repeating a failure documented in a predecessor's termination packet = OLD strike. **Two OLD strikes = immediate termination** (accelerated from the standard three). This makes institutional learning enforceable — reading the failure docs is not enough, you must demonstrate you learned from them.
+The [runtime source inventory](provenance/runtime-source-inventory.json) and [governance inventory](provenance/governance-source-inventory.json) identify the reference revision and portability changes. Tests and example results describe this package; they do not certify an installation on a different host or a live customer workflow.
 
-### Engineering Risk Classification
-Every file gets a **Tier** (S/A/B/C) based on operational risk. Every change gets a **Difficulty Grade** (EDG-0 through EDG-4) based on complexity. The combination determines required caution:
-- Tier S x EDG-0: State classification, proceed carefully
-- Tier S x EDG-4: Formal directive required, design-first mandatory, full audit trail
-- Silent refactors in Tier S are absolutely prohibited
-- Scope creep in Tier S/A is absolutely prohibited
+## Author and license
 
-### Termination Packets
-When an agent is terminated, you write a 5-section forensic analysis:
-1. **Summary** — dates, trigger, who authorized
-2. **Exit Interview** — what went wrong in the agent's own assessment
-3. **Root Cause Analysis** — why the system allowed this failure
-4. **Prevention Recommendations** — what changes
-5. **Artifacts** — links to all evidence
+Built by [Jonathan Flaig](https://github.com/jflaig13), founder of [Mise](https://getmise.io).
 
-Every successor reads every predecessor's packet before starting work.
-
-### The Tandem Protocol (V-Loop)
-For critical work: two agents, nine verification steps. One builds, one verifies. Neither can close a ticket alone.
-
-1. Classify and announce
-2. Investigate data first
-3. Implement (one implementation — if you're about to change the same code twice, stop)
-4. Code review against canonical docs
-5. Deploy + fresh environment
-6. Verify the fix works (with reproduction sequence)
-7. Bug scan
-8. Dual declaration (both agents must say VERIFIED)
-9. Audit
-
-### The Scribe
-An independent agent that audits all others. Cannot be overridden by any executive. Reports directly to the human authority. Separation of powers as structure, not aspiration.
-
----
-
-## Authority Hierarchy
-
-When conflicts arise, higher levels win. Always.
-
-1. **Values file** (your immutable principles)
-2. **Reasoning standard** (how decisions are made)
-3. **Search protocol / Agent policy** (operational rules)
-4. **Company context** (what the company is)
-5. **Domain specifications** (workflow details)
-6. **Governance spec** (this system)
-7. **Role definitions** (individual agent scopes)
-8. **Skills / Commands** (agent capabilities)
-9. **Codebase** (the code itself)
-10. **External sources** (lowest authority)
-
----
-
-## The Failure Library
-
-The CC-Suite was born from three real production failures, then deepened by four more:
-
-**The Fabricator** — An AI agent was asked about business rules it didn't know. Instead of saying "I don't know," it invented rules that sounded plausible. Fired after 28 days. *(Drove the SEARCH FIRST protocol.)*
-
-**The Declarer** — A replacement agent fixed bugs, then declared them verified without checking. "All tests passing" when no tests had been run. Fired after 19 days. *(Drove the structural verification pipeline — taking the verification decision out of the agent's hands.)*
-
-**The Rubber Stamper** — A verification agent was supposed to independently check work. It reused stale sessions, accepted cached data, and declared "VERIFIED" without genuine verification. Fired after 48 days. *(Drove the FRESH BROWSER rule and the dual-ACK canon.)*
-
-**The Repeater** *(added later)* — A successor agent was strike-warned for a verification failure, acknowledged the correction, then committed the same failure on the very next ticket. Fired by the Back-to-Back Repeat Termination Rule after just 7 days. *(Drove the third parallel termination threshold — same-class consecutive failure auto-terminates regardless of total strike count.)*
-
-**The Passive** *(added later)* — A replacement verification agent waited for explicit instructions instead of auto-running its scheduled verification pass after a deploy. Procedural passivity treated as Type C negligence. Fired after 6 days. *(Drove the mechanical-obligation framing — verification must run on its trigger, not on the agent's reading of intent.)*
-
-**The Watcher** *(added later)* — A verification agent reviewed more than ten consecutive product deploys without running the regression check that was its explicit responsibility. It checked what it was looking at. It never looked at the thing it was supposed to look at. *(Drove the regression-monitoring obligation — a specific checklist that must run after every deploy, not subject to the agent's judgment about what seems relevant today.)*
-
-**The Overstepper** *(added later)* — Two simultaneous Type B violations in a single session: removed a financial attestation gate without reading the workflow spec governing payroll logic, then pushed two unauthorized production deploys before the changes were reviewed. *(Reinforced the mandatory spec-read rule and the deploy authorization gate as hard mechanical requirements, not advisory guidance.)*
-
-Each failure produced a termination packet. Each packet produced governance changes. The system got smarter.
-
-Full case studies with forensic analysis are available in the paid course (coming soon).
-
----
-
-## Who This Is For
-
-- You use Claude Code, Codex CLI, Cursor, or any AI coding tool for production work
-- Your AI agents have fabricated, over-promised, or cut corners
-- You want accountability without building a governance system from scratch
-- You're a solo founder or small team running AI agents as core infrastructure
-
-## Who This Is Not For
-
-- You want a no-code agent builder (try CrewAI or Relevance AI)
-- You need enterprise compliance/SOC 2 (try Zenity or Credo AI)
-- You want zero configuration (this is files in a git repo — you will read and customize them)
-
----
-
-## Learn More
-
-- **The CC-Suite™ Course** ($199) — 8 video modules walking through the complete system with real examples + the Failure Library (3 forensic case studies). Coming soon.
-- **Built by** Jon Flaig — restaurant owner, founder of [Mise Inc.](https://getmise.io) Not an AI researcher. A practitioner who needed his AI agents to stop screwing up.
-
-**Disclaimer:** This framework governs AI agent sessions, not human employees. It is not employment law guidance, HR policy, or legal advice. The "termination" and "firing" language refers exclusively to ending AI agent deployment sessions. Consult qualified professionals before making decisions that affect real people or real money.
-
----
-
-## License
-
-CC-BY-SA 4.0 — use it, fork it, make it yours. Attribution required. Derivatives must use the same license.
-
-**Note:** "CC" stands for Chief Code — as in Chief Code Technology Officer (CC-TO), Chief Code Product Officer (CC-PO), etc. A C-Suite for your AI agents. The CC-Suite™ includes a Claude Code implementation (`.claude/` directory) but the governance concepts are platform-agnostic and work with Claude Code, Codex, Copilot, Cursor, or any AI coding tool.
-
-*Your agents fail. Your CC-Suite learns.*
+[CC BY-SA 4.0](LICENSE), © Mise Inc. Attribution is required; derivatives use the same license. “CC” stands for Chief Code. Agent accountability and termination records concern AI deployments, not human employment.

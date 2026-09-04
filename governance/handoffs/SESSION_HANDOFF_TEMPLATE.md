@@ -9,6 +9,12 @@
 
 ---
 
+**Original objective:** {instruction reference and full acceptance surface}
+**Authority boundaries:** {permitted effects and reserved decisions}
+**Exact subject:** {commit/tree or artifact hashes}
+**Overall objective status:** {COMPLETE / INCOMPLETE / BLOCKED}
+**Open requirements:** {complete remainder}
+
 ## Active Work (Exact State at Close)
 
 *What you were doing the moment the close signal came in. Be specific — file paths, line numbers, V-Loop step numbers, test status, deploy status.*

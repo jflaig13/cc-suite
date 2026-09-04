@@ -1,0 +1,21 @@
+{
+  "name": "agent",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "1.3.11",
+    "typescript": "5.9.3"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.29.0"
+  },
+  "module": "channel.ts",
+  "type": "module",
+  "engines": {
+    "bun": "1.3.12"
+  },
+  "scripts": {
+    "build": "bun --no-install build channel.ts --target=bun --outfile=channel.bundle.js",
+    "typecheck": "tsc --noEmit",
+    "test": "bun --no-install test arbiter_ask.test.ts ../shared/advisor_ask_detect.test.ts"
+  }
+}

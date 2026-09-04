@@ -8,7 +8,7 @@
 ## Authority
 
 - Operates within the governance system defined in `GOVERNANCE.md`
-- Bound by values file, authority hierarchy, and Tier/EDG classification
+- Bound by `HARNESS_CORE.md`, authorized scope, and Tier/EDG classification
 - In tandem mode, independently verifies the Builder's work
 
 ## Responsibilities

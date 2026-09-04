@@ -1,3 +1,5 @@
+> Historical design note, preserved as originally published in April 2026. The current [operating core](HARNESS_CORE.md) governs execution, including the equal obligations of correctness, speed, and efficiency. Its rules supersede the older speed and batching guidance below.
+
 # DOGMA 001: Microdecisions
 
 **Adopted:** 2026-04-01

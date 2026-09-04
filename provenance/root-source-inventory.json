@@ -1,0 +1,81 @@
+{
+  "source_commit": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+  "baseline_public_commit": "6c57e98d4055cb716ca4ca41b38b2f1950fdb123",
+  "files": [
+    {
+      "path": ".claude/CLAUDE.md",
+      "output_sha256": "91593447cec08d170e856192fc5642ff1678193a566d16030fb472b7da59c066",
+      "basis": "Current operating core and portable Claude host entrypoint"
+    },
+    {
+      "path": ".claude/commands/init-role.md",
+      "output_sha256": "882d501c39dba95ad2534a2bbdb8aac01b00f54e36f4db0f0e79e8337199a43e",
+      "basis": "Current role initialization and explicit identity/admission boundary"
+    },
+    {
+      "path": ".github/workflows/verify.yml",
+      "output_sha256": "9995ae4ab0873826c0425273920b735a790d871ae6ff71f1e25ed8150e0aca7d",
+      "basis": "New reproducible public distribution CI"
+    },
+    {
+      "path": ".gitignore",
+      "output_sha256": "2e15696836c9db45235c87b2bded6d4c3da180ee63f64c9f63a5f639bff1f6cd",
+      "basis": "Previous public defaults plus generated package/test artifacts"
+    },
+    {
+      "path": "AGENTS.md",
+      "output_sha256": "484b9f0c8d5075812e109f089df515a31eb9573e418af88a0c7d504e4c0aee11",
+      "basis": "Portable Codex entrypoint adapted from current AGENTS.md and HARNESS_CORE.md"
+    },
+    {
+      "path": "DOGMA_001__microdecisions.md",
+      "output_sha256": "c20dab596bbd399899643412dbe2253e367cb271838924a35f1c9e93e495d48c",
+      "basis": "Original public historical note preserved with current-policy precedence notice"
+    },
+    {
+      "path": "GOVERNANCE.md",
+      "output_sha256": "ff3a73d6b6f27534ec2c4579a0794386ffa363bde9435477ae63df80e6d420d7",
+      "basis": "Current operating core, role separation, identity and human authority rules"
+    },
+    {
+      "path": "HARNESS_CORE.md",
+      "output_sha256": "3220b4da5815333224499516b1d5c916b0c7916bb321e991d3b32cec02224822",
+      "basis": "Current reference HARNESS_CORE.md and governing protocols, adapted to a portable distribution"
+    },
+    {
+      "path": "HOST_CLAUDE_CODE.md",
+      "output_sha256": "dda2b1cd6799965deb84be4bf788f68069faeee77198745dde8bb53be8b5a91a",
+      "basis": "Current host adapter separation and explicit capability configuration"
+    },
+    {
+      "path": "LICENSE",
+      "output_sha256": "2a30b55022a73265df9ac5f3f83ac7cbb8dc23b59887583a73f337e2183b7bfd",
+      "basis": "Unchanged public CC BY-SA 4.0 license"
+    },
+    {
+      "path": "README.md",
+      "output_sha256": "3a4740201da219084e3c9a98c76c1ca53e16e4b2137b1d97d06acf51a6fa5d8d",
+      "basis": "Current release contents, verified usage and user-supplied Mise demo"
+    },
+    {
+      "path": "VALUES_TEMPLATE.md",
+      "output_sha256": "53cf025c11701b1c5a3ed993599dbb2213bb25c475929bd8310b03e1e06ae1ef",
+      "basis": "Current separation of culture from operating law"
+    },
+    {
+      "path": "provenance/README.md",
+      "output_sha256": "777ebd916b071688bdc02b7fcd65db490eb9ab0a1d24e7b09a472015d65f2958",
+      "basis": "New release inventory explanation"
+    },
+    {
+      "path": "tools/check_distribution.py",
+      "output_sha256": "226dcea9d56d38e17c3be0c7ee202855248c48478e849bb1dbb60187483bf1e3",
+      "basis": "New read-only source, inventory and boundary verification"
+    },
+    {
+      "path": "tools/test_check_distribution.py",
+      "output_sha256": "69dd46959bf97f03c48fd61442446bf14ce37cbad0efb2fc0397aa58fb550bd6",
+      "basis": "New negative controls for distribution verification"
+    }
+  ]
+}

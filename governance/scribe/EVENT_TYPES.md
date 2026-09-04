@@ -1,7 +1,9 @@
 # Scribe Event Types — Canonical Registry
 
-**Status:** Active (CC-Suite™ v2 — Phase 2 Channels)
-**Authority:** Layer 6 (Governance Spec). Extends `governance/scribe/SCRIBE_CHANNEL_PROTOCOL.md`.
+This file specifies a transport or lifecycle contract. A deployment must implement and verify its adapter before claiming the behavior is operational. Configuration, scheduled actions and outward messages require the owner’s authority; no mechanism in this document grants it. Acknowledgment records receipt, not task completion.
+
+**Scope:** Portable channel contract; deployment mechanics require verification.
+**Authority:** Subject to HARNESS_CORE operating rules. Extends `governance/scribe/SCRIBE_CHANNEL_PROTOCOL.md`.
 **Scope:** Canonical registry of event types the Scribe can receive, with required verdict phrases and origin rules.
 **Related:** `governance/CHANNEL_PROTOCOL.md`, `governance/scribe/SCRIBE_CHANNEL_PROTOCOL.md`, `governance/scribe/SCRIBE_AUDIT_CHECKLIST.md`.
 
@@ -27,9 +29,9 @@ Keep this registry in sync with your implementation's verdict patterns map. If t
 |---|---|---|---|---|
 | `brain_file_created` | Code hook (PostToolUse on writes into the brain files directory) | `WIRING COMPLETE` OR `WIRING INCOMPLETE` OR `CONFLICT DETECTED` | Reply REJECTED by channel server | Hook-sourced — internal ACK only |
 | `deploy_completed` | Human (bus post) OR script | `DOC SYNC CLEAN` OR `DRIFT FOUND` | Reply REJECTED by channel server | Yes if bus-sourced (has bus timestamp); internal-only if script-sourced |
-| `canon_changed` | Code hook (PostToolUse on writes into canon files — VALUES, GOVERNANCE, CLAUDE.md, AUTHORITY, etc.) | `CANON CHANGE CLEAN` OR `AUTHORITY CONFLICT` OR `DOWNSTREAM UPDATES NEEDED` | Reply REJECTED by channel server | Hook-sourced — internal ACK only |
+| `canon_changed` | Code hook (PostToolUse on writes into canon files — HARNESS_CORE, GOVERNANCE, host adapter, AUTHORITY, etc.) | `CANON CHANGE CLEAN` OR `AUTHORITY CONFLICT` OR `DOWNSTREAM UPDATES NEEDED` | Reply REJECTED by channel server | Hook-sourced — internal ACK only |
 | `tandem_board_updated` | Code hook (PostToolUse on writes into the tandem coordination board) | `V-LOOP STEP VALID` OR `V-LOOP VIOLATION` OR `TANDEM AUDIT CLEAN` | Reply REJECTED by channel server | Hook-sourced — internal ACK only |
-| `verification_result` | Script (automated verification output) OR agent (manual verification push) | `ALL FIELDS MATCH` OR `MISMATCH FOUND` OR `VERIFICATION LOGGED` | Reply REJECTED by channel server | Depends on origin — dual-ACK if bus-sourced or originating from a human request, internal-only if purely machine-originated |
+| `verification_result` | Script (automated verification output) OR agent (manual verification push) | `ALL FIELDS MATCH` OR `MISMATCH FOUND` OR `VERIFICATION INCOMPLETE` OR `VERIFICATION LOGGED` | Reply REJECTED by channel server | Depends on origin — dual-ACK if bus-sourced or originating from a human request, internal-only if purely machine-originated |
 | `slack_message` | Human (bus post routed by the central poller) | Informational — no required phrase | Reply accepted as-is | Yes — bus-sourced by definition |
 | `message` | Any (direct POST, generic) | Informational — no required phrase | Reply accepted as-is | Yes if bus-sourced (has bus timestamp); internal-only otherwise |
 | `hook_event` (generic) | Any code hook | Informational — no required phrase | Reply accepted as-is | Hook-sourced — internal ACK only |
@@ -49,11 +51,11 @@ The typed events (`brain_file_created`, `deploy_completed`, `canon_changed`, `ta
 - **`deploy_completed`** catches the "deployed code drifted from documentation" failure mode. Requires DOC SYNC CLEAN or DRIFT FOUND. "Looks good" is not an option.
 - **`canon_changed`** catches the "edited the top of the authority hierarchy without checking downstream" failure mode. Requires CANON CHANGE CLEAN, AUTHORITY CONFLICT, or DOWNSTREAM UPDATES NEEDED.
 - **`tandem_board_updated`** catches the "agents skipped V-Loop steps but declared VERIFIED anyway" failure mode. Requires V-LOOP STEP VALID, V-LOOP VIOLATION, or TANDEM AUDIT CLEAN.
-- **`verification_result`** catches the "agent ran the pipeline but didn't actually check the output" failure mode. Requires ALL FIELDS MATCH, MISMATCH FOUND, or VERIFICATION LOGGED.
+- **`verification_result`** catches the "agent ran the pipeline but didn't actually check the output" failure mode. Requires ALL FIELDS MATCH, MISMATCH FOUND, VERIFICATION INCOMPLETE, or VERIFICATION LOGGED. Logging is an acknowledgment of a record, not a clean verification result.
 
-Each required verdict set is designed so that the Scribe cannot acknowledge the event without having at least nominally traversed the mechanical checklist. The checklist outputs are the verdicts, not vice versa. If an agent writes "WIRING COMPLETE" without running the wiring checklist, it is lying — and when the failure surfaces, the audit log will show the lie.
+The adapter must validate the event shape and corroborating evidence separately. A required phrase alone cannot prove a checklist was executed. The checklist outputs are the verdicts, not vice versa. If an agent writes "WIRING COMPLETE" without running the wiring checklist, it is lying — and when the failure surfaces, the audit log will show the lie.
 
-**The verdict is a formula output, not a judgment call.** This is the same principle as the atomic verification protocol (`governance/ATOMIC_VERIFICATION_PROTOCOL.md` in Phase 1): verification verdicts are computed mechanically from extracted data and comparison grids, not produced by the agent's judgment.
+**The verification verdict derives from complete evidence and comparison. Missing required evidence yields INCOMPLETE; a logging acknowledgment is not a verdict.** This is the same principle as the atomic verification protocol (`governance/ATOMIC_VERIFICATION_PROTOCOL.md`): verification verdicts are computed mechanically from extracted data and comparison grids, not produced by the agent's judgment.
 
 ---
 
@@ -107,12 +109,8 @@ The dual-ACK canon (`governance/CHANNEL_PROTOCOL.md` — "Dual-ACK Requirement")
 - `governance/scribe/SCRIBE_CHANNEL_PROTOCOL.md` — The Scribe channel specialization that consumes these event types.
 - `governance/scribe/SCRIBE_AUDIT_CHECKLIST.md` — The mechanical checklist the Scribe runs to produce each verdict.
 - `governance/CHANNEL_PROTOCOL.md` — The abstract channel protocol and dual-ACK canon.
-- `governance/ATOMIC_VERIFICATION_PROTOCOL.md` (Phase 1, if present) — The verification protocol that produces `verification_result` events.
+- `governance/ATOMIC_VERIFICATION_PROTOCOL.md` — The verification protocol that produces `verification_result` events.
 - Your deployment's hook registry (e.g., `docs/brain/hooks.md`) — Lists which hooks fire which event types.
 - The implementation's verdict patterns map — the runtime enforcement (e.g., `channels/scribe/webhook.ts` in the Mise reference).
 
 ---
-
-## Changelog
-
-- **v1.0 (2026-04-11):** Initial canonical registry. Derived from the Mise reference implementation's `VERDICT_PATTERNS` map.

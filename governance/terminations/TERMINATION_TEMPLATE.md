@@ -10,10 +10,14 @@
 | Role | {ROLE_NAME} |
 | Hire Date | {HIRE_DATE} |
 | Termination Date | {TERMINATION_DATE} |
-| Termination Trigger | {3 strikes / 2 OLD strikes / At-will / Other} |
+| Termination Trigger | {3 strikes / 2 OLD strikes / back-to-back repeat / human at-will decision / other} |
 | Authorized By | {NAME} |
 
 ---
+
+**Human authorization reference:** {direct instruction or validated delegation}
+**Records custodian:** {role and deployment ID}
+**Runtime revocation evidence:** {receipt or explicit not applicable}
 
 ## Section B — Exit Interview
 

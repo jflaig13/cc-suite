@@ -1,0 +1,1121 @@
+{
+  "source_commit": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+  "direct_python_imports": [
+    {
+      "path": "fleet_kernel/__init__.py",
+      "imports": []
+    },
+    {
+      "path": "fleet_kernel/company_cutover_mirror.py",
+      "imports": [
+        "__future__",
+        "contextlib",
+        "fcntl",
+        "json",
+        "os",
+        "pathlib",
+        "tempfile"
+      ]
+    },
+    {
+      "path": "fleet_kernel/company_message_plane/__init__.py",
+      "imports": []
+    },
+    {
+      "path": "fleet_kernel/company_message_plane/client.py",
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "fleet_kernel.company_cutover_mirror",
+        "fleet_kernel.configuration",
+        "hashlib",
+        "os",
+        "pathlib",
+        "psycopg",
+        "psycopg.rows",
+        "stat",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "path": "fleet_kernel/company_role_runtime.py",
+      "imports": [
+        "__future__",
+        "fleet_kernel.company_scribe_admission",
+        "fleet_kernel.company_scribe_supervisor",
+        "json",
+        "os",
+        "pathlib",
+        "psycopg",
+        "stat",
+        "sys",
+        "time",
+        "typing"
+      ]
+    },
+    {
+      "path": "fleet_kernel/company_scribe_admission.py",
+      "imports": [
+        "__future__",
+        "contextlib",
+        "ctypes",
+        "dataclasses",
+        "datetime",
+        "fcntl",
+        "fleet_kernel.configuration",
+        "fleet_kernel.founder_authority",
+        "fleet_kernel.identity",
+        "fleet_kernel.release",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "platform",
+        "psycopg",
+        "psycopg.pq",
+        "psycopg.rows",
+        "psycopg.types.json",
+        "re",
+        "shutil",
+        "signal",
+        "stat",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "time",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "path": "fleet_kernel/company_scribe_runtime.py",
+      "imports": [
+        "__future__",
+        "errno",
+        "fleet_kernel.company_scribe_admission",
+        "fleet_kernel.company_scribe_supervisor",
+        "fleet_kernel.configuration",
+        "fleet_kernel.identity",
+        "hashlib",
+        "hmac",
+        "json",
+        "os",
+        "pathlib",
+        "psycopg",
+        "re",
+        "scripts.company_scribe_effect_broker",
+        "shutil",
+        "socket",
+        "stat",
+        "subprocess",
+        "sys",
+        "time",
+        "typing"
+      ]
+    },
+    {
+      "path": "fleet_kernel/company_scribe_supervisor.py",
+      "imports": [
+        "__future__",
+        "contextlib",
+        "dataclasses",
+        "datetime",
+        "fcntl",
+        "fleet_kernel",
+        "fleet_kernel.company_role_runtime",
+        "fleet_kernel.company_scribe_admission",
+        "fleet_kernel.configuration",
+        "fleet_kernel.founder_authority",
+        "json",
+        "os",
+        "pathlib",
+        "psycopg",
+        "psycopg.rows",
+        "stat",
+        "subprocess",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "path": "fleet_kernel/company_workspace.py",
+      "imports": [
+        "__future__",
+        "contextlib",
+        "cryptography.exceptions",
+        "cryptography.hazmat.primitives.asymmetric.ed25519",
+        "dataclasses",
+        "datetime",
+        "fleet_kernel.company_scribe_admission",
+        "fleet_kernel.identity",
+        "fleet_kernel.m8.db_isolation",
+        "json",
+        "psycopg",
+        "psycopg.rows",
+        "psycopg.types.json",
+        "re",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "path": "fleet_kernel/company_workspace_api.py",
+      "imports": [
+        "__future__",
+        "datetime",
+        "fastapi",
+        "fastapi.responses",
+        "fastapi.security",
+        "fleet_kernel.company_workspace",
+        "hmac",
+        "os",
+        "psycopg.conninfo",
+        "pydantic",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "path": "fleet_kernel/configuration.py",
+      "imports": [
+        "functools",
+        "json",
+        "os",
+        "pathlib",
+        "re"
+      ]
+    },
+    {
+      "path": "fleet_kernel/content_lint.py",
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "hashlib",
+        "json",
+        "re"
+      ]
+    },
+    {
+      "path": "fleet_kernel/database.py",
+      "imports": [
+        "pathlib",
+        "psycopg.rows",
+        "re"
+      ]
+    },
+    {
+      "path": "fleet_kernel/eval_plane/__init__.py",
+      "imports": [
+        "fleet_kernel.eval_plane.holdout_provider",
+        "fleet_kernel.eval_plane.suite_package"
+      ]
+    },
+    {
+      "path": "fleet_kernel/eval_plane/conduct_graders.py",
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "fleet_kernel.eval_plane.domain",
+        "fleet_kernel.eval_plane.graders",
+        "fleet_kernel.prose_lint",
+        "json",
+        "pathlib",
+        "re",
+        "typing"
+      ]
+    },
+    {
+      "path": "fleet_kernel/eval_plane/domain.py",
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "fleet_kernel.schemas",
+        "re",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "path": "fleet_kernel/eval_plane/effect_control.py",
+      "imports": [
+        "__future__",
+        "collections.abc",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "fleet_kernel.eval_plane.domain",
+        "functools",
+        "hashlib",
+        "importlib",
+        "json",
+        "os",
+        "re",
+        "sys",
+        "types",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "path": "fleet_kernel/eval_plane/graders.py",
+      "imports": [
+        "__future__",
+        "abc",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "fleet_kernel.eval_plane",
+        "fleet_kernel.eval_plane.domain",
+        "hashlib",
+        "json",
+        "re",
+        "types",
+        "typing"
+      ]
+    },
+    {
+      "path": "fleet_kernel/eval_plane/holdout_provider.py",
+      "imports": [
+        "__future__",
+        "abc",
+        "dataclasses",
+        "enum",
+        "hashlib",
+        "json",
+        "pathlib",
+        "re",
+        "typing"
+      ]
+    },
+    {
+      "path": "fleet_kernel/eval_plane/qualification.py",
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "fleet_kernel.eval_plane.domain",
+        "fleet_kernel.eval_plane.graders",
+        "re",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "path": "fleet_kernel/eval_plane/qualification_store.py",
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "fleet_kernel.eval_plane.domain",
+        "fleet_kernel.eval_plane.graders",
+        "fleet_kernel.eval_plane.qualification",
+        "fleet_kernel.eval_plane.suite_package",
+        "json",
+        "pathlib",
+        "psycopg",
+        "re",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "path": "fleet_kernel/eval_plane/suite_package.py",
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "fleet_kernel.eval_plane.domain",
+        "fleet_kernel.eval_plane.graders",
+        "fleet_kernel.eval_plane.holdout_provider",
+        "hashlib",
+        "json",
+        "pathlib",
+        "re",
+        "typing"
+      ]
+    },
+    {
+      "path": "fleet_kernel/eval_plane/target_fingerprint.py",
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "fleet_kernel.identity",
+        "hashlib",
+        "pathlib",
+        "re",
+        "types",
+        "typing"
+      ]
+    },
+    {
+      "path": "fleet_kernel/evidence_keys.py",
+      "imports": [
+        "__future__",
+        "base64",
+        "collections.abc",
+        "dataclasses",
+        "datetime",
+        "hashlib",
+        "hmac",
+        "json",
+        "re",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "path": "fleet_kernel/example.py",
+      "imports": [
+        "__future__",
+        "contextlib",
+        "cryptography.hazmat.primitives",
+        "cryptography.hazmat.primitives.asymmetric.ed25519",
+        "dataclasses",
+        "fleet_kernel",
+        "fleet_kernel.company_workspace",
+        "fleet_kernel.database",
+        "fleet_kernel.identity",
+        "fleet_kernel.m8.db_isolation",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "psycopg",
+        "shutil",
+        "socket",
+        "subprocess",
+        "tempfile",
+        "uuid"
+      ]
+    },
+    {
+      "path": "fleet_kernel/founder_authority.py",
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "fleet_kernel.configuration",
+        "hashlib",
+        "json",
+        "pathlib",
+        "re",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "path": "fleet_kernel/identity.py",
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "fleet_kernel.configuration",
+        "hashlib",
+        "json",
+        "pathlib",
+        "psycopg",
+        "psycopg.rows",
+        "psycopg.types.json",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "path": "fleet_kernel/identity_key.py",
+      "imports": [
+        "__future__",
+        "datetime",
+        "hashlib",
+        "json",
+        "re",
+        "typing"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m2/__init__.py",
+      "imports": []
+    },
+    {
+      "path": "fleet_kernel/m2/lease.py",
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m3/__init__.py",
+      "imports": []
+    },
+    {
+      "path": "fleet_kernel/m3/controls.py",
+      "imports": [
+        "__future__",
+        "datetime",
+        "typing",
+        "zoneinfo"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m3/outbox_renderer.py",
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "json",
+        "os",
+        "pathlib",
+        "psycopg",
+        "psycopg.rows",
+        "tempfile",
+        "typing"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m3/parity.py",
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "decimal",
+        "json",
+        "psycopg",
+        "psycopg.rows",
+        "psycopg.types.json",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m3/runtime_store.py",
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "decimal",
+        "psycopg",
+        "psycopg.rows",
+        "psycopg.types.json",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m4/__init__.py",
+      "imports": []
+    },
+    {
+      "path": "fleet_kernel/m4/handoff_migration.py",
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "psycopg",
+        "psycopg.rows",
+        "psycopg.types.json",
+        "stat",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m4/locking.py",
+      "imports": [
+        "__future__",
+        "contextlib",
+        "fleet_kernel.m4.handoff_migration",
+        "psycopg"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m4/read_backend.py",
+      "imports": [
+        "__future__",
+        "fleet_kernel.m4.handoff_migration",
+        "fleet_kernel.m4.locking",
+        "hashlib",
+        "json",
+        "pathlib",
+        "psycopg",
+        "psycopg.rows",
+        "typing"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m4/supervision.py",
+      "imports": [
+        "__future__",
+        "datetime",
+        "fleet_kernel.m4.handoff_migration",
+        "fleet_kernel.m4.locking",
+        "hashlib",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m5/__init__.py",
+      "imports": []
+    },
+    {
+      "path": "fleet_kernel/m5/approval_api.py",
+      "imports": [
+        "__future__",
+        "collections.abc",
+        "contextlib",
+        "dataclasses",
+        "datetime",
+        "fleet_kernel.founder_authority",
+        "fleet_kernel.m5.dispatch_approval_migration",
+        "hashlib",
+        "json",
+        "psycopg",
+        "psycopg.rows",
+        "psycopg.types.json",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m5/dispatch_approval_migration.py",
+      "imports": [
+        "__future__",
+        "base64",
+        "dataclasses",
+        "datetime",
+        "hashlib",
+        "json",
+        "psycopg",
+        "psycopg.rows",
+        "psycopg.types.json",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m5/read_backend.py",
+      "imports": [
+        "__future__",
+        "contextlib",
+        "dataclasses",
+        "fcntl",
+        "fleet_kernel.m5.dispatch_approval_migration",
+        "fleet_kernel.m5.supervision",
+        "hashlib",
+        "os",
+        "pathlib",
+        "psycopg",
+        "psycopg.rows",
+        "stat",
+        "typing"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m5/read_pointer.py",
+      "imports": [
+        "__future__",
+        "contextlib",
+        "dataclasses",
+        "fcntl",
+        "fleet_kernel.m5.dispatch_approval_migration",
+        "json",
+        "os",
+        "pathlib",
+        "stat",
+        "typing"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m5/supervision.py",
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "fleet_kernel.m5.dispatch_approval_migration",
+        "hashlib",
+        "os",
+        "pathlib",
+        "stat"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m6/__init__.py",
+      "imports": []
+    },
+    {
+      "path": "fleet_kernel/m6/read_backend.py",
+      "imports": [
+        "__future__",
+        "contextlib",
+        "dataclasses",
+        "fleet_kernel.m6.spend_migration",
+        "fleet_kernel.m6.supervision",
+        "hashlib",
+        "pathlib",
+        "psycopg",
+        "psycopg.rows",
+        "typing"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m6/read_pointer.py",
+      "imports": [
+        "__future__",
+        "contextlib",
+        "dataclasses",
+        "fcntl",
+        "fleet_kernel.m6.spend_migration",
+        "json",
+        "os",
+        "pathlib",
+        "stat",
+        "typing"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m6/spend_migration.py",
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "decimal",
+        "hashlib",
+        "json",
+        "psycopg",
+        "psycopg.rows",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m6/supervision.py",
+      "imports": [
+        "__future__",
+        "fleet_kernel.m6.spend_migration",
+        "hashlib",
+        "os",
+        "pathlib",
+        "stat"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m7/__init__.py",
+      "imports": []
+    },
+    {
+      "path": "fleet_kernel/m7/errors.py",
+      "imports": []
+    },
+    {
+      "path": "fleet_kernel/m7/legacy_surfaces.py",
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "fleet_kernel.m7.errors",
+        "json",
+        "os",
+        "pathlib",
+        "re",
+        "stat"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m7/read_backend.py",
+      "imports": [
+        "__future__",
+        "base64",
+        "dataclasses",
+        "datetime",
+        "fleet_kernel.m7.errors",
+        "fleet_kernel.m7.legacy_surfaces",
+        "hashlib",
+        "pathlib",
+        "psycopg",
+        "psycopg.rows",
+        "typing"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m7/read_pointer.py",
+      "imports": [
+        "__future__",
+        "contextlib",
+        "dataclasses",
+        "fcntl",
+        "fleet_kernel.m7.errors",
+        "json",
+        "os",
+        "pathlib",
+        "stat",
+        "typing"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m7/role_queue_migration.py",
+      "imports": [
+        "__future__",
+        "base64",
+        "dataclasses",
+        "datetime",
+        "fleet_kernel.m7.errors",
+        "hashlib",
+        "json",
+        "psycopg",
+        "psycopg.rows",
+        "psycopg.types.json",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m7/supervision.py",
+      "imports": [
+        "__future__",
+        "datetime",
+        "fleet_kernel.m7.legacy_surfaces",
+        "fleet_kernel.m7.role_queue_migration",
+        "hashlib",
+        "pathlib",
+        "psycopg",
+        "time"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m8/__init__.py",
+      "imports": []
+    },
+    {
+      "path": "fleet_kernel/m8/authority.py",
+      "imports": [
+        "__future__",
+        "cryptography.exceptions",
+        "cryptography.hazmat.primitives.asymmetric.ed25519",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "fleet_kernel.content_lint",
+        "hashlib",
+        "json",
+        "typing"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m8/db_isolation.py",
+      "imports": [
+        "__future__",
+        "contextlib",
+        "dataclasses",
+        "fleet_kernel.configuration",
+        "fleet_kernel.identity",
+        "hashlib",
+        "psycopg",
+        "psycopg.rows",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m8/isolation.py",
+      "imports": [
+        "__future__",
+        "cryptography.exceptions",
+        "cryptography.hazmat.primitives.asymmetric.ed25519",
+        "dataclasses",
+        "datetime",
+        "fcntl",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "re",
+        "stat",
+        "tempfile",
+        "typing",
+        "urllib.parse",
+        "uuid"
+      ]
+    },
+    {
+      "path": "fleet_kernel/m8/verification.py",
+      "imports": [
+        "__future__",
+        "cryptography.exceptions",
+        "cryptography.hazmat.primitives.asymmetric.ed25519",
+        "dataclasses",
+        "datetime",
+        "hashlib",
+        "json",
+        "psycopg",
+        "psycopg.rows",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "path": "fleet_kernel/prose_lint.py",
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "math",
+        "pathlib",
+        "re",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "path": "fleet_kernel/release.py",
+      "imports": [
+        "hashlib",
+        "json",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "fleet_kernel/schemas.py",
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "datetime",
+        "enum",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "path": "mcp_servers/channel_relay/__init__.py",
+      "imports": []
+    },
+    {
+      "path": "mcp_servers/channel_relay/__main__.py",
+      "imports": [
+        "mcp_servers.channel_relay.server"
+      ]
+    },
+    {
+      "path": "mcp_servers/channel_relay/durable_inbox.py",
+      "imports": [
+        "__future__",
+        "dataclasses",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "re",
+        "sys",
+        "time",
+        "typing"
+      ]
+    },
+    {
+      "path": "mcp_servers/channel_relay/kernel_plane_bridge.py",
+      "imports": [
+        "__future__",
+        "fleet_kernel.company_cutover_mirror",
+        "fleet_kernel.company_message_plane.client",
+        "os",
+        "pathlib",
+        "sys",
+        "time",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "path": "mcp_servers/channel_relay/server.py",
+      "imports": [
+        "datetime",
+        "fcntl",
+        "hashlib",
+        "httpx",
+        "json",
+        "mcp.server.fastmcp",
+        "mcp_servers.channel_relay.durable_inbox",
+        "mcp_servers.channel_relay.kernel_plane_bridge",
+        "mcp_servers.slack_bridge.client",
+        "os",
+        "pathlib",
+        "portable_host",
+        "re",
+        "scripts",
+        "sys",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/__init__.py",
+      "imports": []
+    },
+    {
+      "path": "scripts/company_role_host_gate.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "datetime",
+        "fleet_kernel.identity",
+        "json",
+        "os",
+        "pathlib",
+        "subprocess",
+        "sys"
+      ]
+    },
+    {
+      "path": "scripts/company_role_kernel_lineage_probe.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "json",
+        "os",
+        "pathlib",
+        "re",
+        "sys"
+      ]
+    },
+    {
+      "path": "scripts/company_scribe_effect_broker.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "base64",
+        "contextlib",
+        "ctypes",
+        "dataclasses",
+        "datetime",
+        "fcntl",
+        "fleet_kernel.company_scribe_admission",
+        "fleet_kernel.configuration",
+        "hashlib",
+        "hmac",
+        "json",
+        "math",
+        "os",
+        "pathlib",
+        "psycopg",
+        "selectors",
+        "shutil",
+        "signal",
+        "socket",
+        "stat",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "threading",
+        "time",
+        "typing",
+        "uuid",
+        "zlib"
+      ]
+    },
+    {
+      "path": "scripts/company_scribe_supervisor.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "fleet_kernel.company_scribe_admission",
+        "fleet_kernel.company_scribe_supervisor",
+        "fleet_kernel.configuration",
+        "fleet_kernel.founder_authority",
+        "fleet_kernel.identity",
+        "fleet_kernel.m5.approval_api",
+        "fleet_kernel.release",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "plistlib",
+        "psycopg",
+        "subprocess",
+        "sys",
+        "tempfile",
+        "time",
+        "typing",
+        "uuid"
+      ]
+    },
+    {
+      "path": "scripts/handoff_ledger.py",
+      "imports": [
+        "__future__",
+        "contextlib",
+        "datetime",
+        "fcntl",
+        "fleet_kernel.m4.read_backend",
+        "fleet_kernel.m4.supervision",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "psycopg.conninfo",
+        "sys",
+        "tempfile",
+        "typing"
+      ]
+    },
+    {
+      "path": "scripts/kernel_plane_dual_write_cli.py",
+      "imports": [
+        "__future__",
+        "argparse",
+        "json",
+        "mcp_servers.channel_relay.kernel_plane_bridge",
+        "pathlib",
+        "sys"
+      ]
+    },
+    {
+      "path": "scripts/portable_host.py",
+      "imports": [
+        "__future__",
+        "json",
+        "os",
+        "pathlib",
+        "re",
+        "subprocess",
+        "sys"
+      ]
+    },
+    {
+      "path": "scripts/sync_kernel_dispatch_approval_shadow.py",
+      "imports": [
+        "argparse",
+        "fleet_kernel.m5.dispatch_approval_migration",
+        "fleet_kernel.m5.supervision",
+        "json",
+        "os",
+        "pathlib",
+        "psycopg",
+        "psycopg.conninfo",
+        "sys"
+      ]
+    }
+  ],
+  "external_python_packages": [
+    "psycopg[binary]",
+    "cryptography",
+    "fastapi",
+    "httpx",
+    "mcp"
+  ],
+  "dynamic_dependency_contracts": [
+    "Evaluation EffectInterceptor requires explicit adopter ChokepointSpec adapters; private product registry excluded.",
+    "Native channels/hosts require explicit executables, workspace, state, bus and adopter authorization as documented in docs/host-runtime.md."
+  ],
+  "mandatory_local_imports_unresolved": [],
+  "excluded_optional_adapters": [
+    {
+      "path": "mcp_servers/channel_relay/server.py",
+      "import": "mcp_servers.slack_bridge.client",
+      "reason": "Private external Slack adapter excluded; disabled by default and explicit enable reports unavailable without external dispatch."
+    }
+  ]
+}

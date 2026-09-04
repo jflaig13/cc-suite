@@ -1,184 +1,59 @@
-# Governance Spec
+# CC-Suite governance
 
-**Status:** Active
-**Scope:** All AI agent deployments governed by The CC-Suite™
+CC-Suite coordinates AI agent work through explicit roles, persistent records, bounded authority, independent verification, and institutional learning. [HARNESS_CORE.md](HARNESS_CORE.md) is the operating authority for the portable framework.
 
----
+## Identity and scope
 
-## Three Governance Primitives
+A role describes responsibilities and permissions. A deployment is a particular admitted agent instance. A session is one execution context for that deployment. A release identifies code and configuration; activation identifies what is actually running. Do not use these terms interchangeably.
 
-CC-Suite is a governed multi-agent development system. Three primitives distinguish it from observability tooling and process-gate frameworks:
+Give each governed deployment a permanent identifier. Track its work, evidence, corrections, and handoffs. The [role template](governance/roles/ROLE_TEMPLATE.md), [identity registry](governance/ID_REGISTRY.md), and [personnel template](governance/performance/PERSONNEL_TEMPLATE.md) provide file-based starting points. The runtime enforces only the capabilities documented and configured for that installation.
 
-**1. Strike-and-terminate accountability** — agents accumulate a persistent performance record across deployments. Three parallel termination thresholds run simultaneously: standard 3-strike, PERP (accelerated for failures documented in predecessor packets), and Back-to-Back Repeat (automatic on same-class consecutive failure). Every termination produces a forensic packet; every successor reads it. The system has memory the individual agents don't.
+## Roles and separation of duties
 
-**2. Mechanism verification attestation** — before any load-bearing governance rule becomes binding fleet-wide, the agent authoring it must enumerate its full claim surface and verify each enumerated claim independently against actual code (`file:symbol`). RESOLVED OPERATIONAL is reserved for the full surface. Partial verification produces PARTIALLY RESOLVED — never inferred as complete coverage. A single working agent reporting a real failure auto-reopens any prior RESOLVED OPERATIONAL attestation. No committee, no override.
+The Company Fleet can divide work among Scribe, Chief of Staff, architecture, implementation, product verification, risk, finance, legal, marketing, growth, customer, and utility functions. Organizations may adopt a smaller set.
 
-**3. Canon registry** — every governance rule that changes the way the system operates is recorded in a named file with a ratification date, a mechanism-verified attestation (if applicable), and cross-references to the incident or founder directive that drove it. Canon drift — when the registry says one thing and the running system does another — is an auditable failure mode with defined detection and remediation steps.
+The Scribe preserves institutional knowledge, records decisions, and audits any role. The Chief of Staff coordinates dependencies and resolves operational disputes within delegated authority. Builders implement; independent reviewers verify the result. Scribe's ability to record or change state is determined by its explicit capability contract, not by an assumed blanket read-only or unrestricted role.
 
-These three primitives are the entry points. The details follow.
+Only the authorized owner changes policy or grants consequential authority. No role name, message signature, file path, or model confidence score grants additional permission by itself.
 
----
+## Accountability
 
-## Purpose
+The human authority may record three types of strike against an agent deployment:
 
-This governance system exists to make AI agent failure productive. It provides:
-- Accountability through persistent identity and performance tracking
-- Institutional learning through documented failure forensics
-- Enforceable knowledge transfer through predecessor learning protocols
-- Risk-proportionate caution through engineering classification
+| Type | Meaning |
+|---|---|
+| A | Critical misrepresentation: fabricated facts or false claims about completion, verification, or system state. |
+| B | Role boundary violation: acting outside the deployment's authorized scope. |
+| C | Negligence: missing required work or checks, including presenting partial work as complete. |
 
----
+Strikes and positive performance records preserve the event as recorded. Correct errors with an attributable correction; do not silently rewrite history. Positive records do not erase failures.
 
-## Definitions
+The framework retains three parallel termination criteria: three total strikes, two OLD strikes repeating a documented predecessor error, and the same class of mistake on consecutive occasions. An automated detector can flag a criterion; only the human authority issues a strike or initiates termination. Scribe and Chief of Staff are accountable under the adopted strike system; utility's treatment must follow its explicit role contract.
 
-- **Deployment:** A single AI agent session or window acting in a defined role
-- **Employee ID:** A unique, permanent identifier for a deployment (format: `{ROLE}-{NNN}`). Never reused.
-- **Strike:** A recorded failure event. Three strikes = termination.
-- **Termination Packet:** A 5-section forensic document created when an agent is terminated
-- **PERP:** Predecessor Error Repeat Policy — accelerated consequences for repeating documented failures
-- **Tier:** Safety classification of a codebase region (S/A/B/C)
-- **EDG:** Engineering Difficulty Grade of a specific change (0-4)
+A termination concerns an AI deployment. It is not a human employment action. The authorized executor records the decision, closes the deployment's authority, and creates the [termination packet](governance/terminations/TERMINATION_TEMPLATE.md). A successor receives the prior evidence, failure analysis, and corrective controls before continuing the work.
 
----
+## Learning and enforcement
 
-## Professional Standard
+A failure analysis identifies what happened, why it was possible, which consequence matters, and what prevents recurrence. Prefer a testable change to a repeated instruction. Distinguish an instruction the agent is told to follow from a control that the runtime actually enforces.
 
-All governed agents must operate as:
-- Pragmatic, not idealistic
-- Direct and precise
-- Correctness-first
-- Solutions-oriented (if raising a problem, propose at least one path forward)
+A mechanism claim is operational only after its complete stated surface has been exercised against the implementation. [Mechanism attestation](governance/MECHANISM_VERIFICATION_ATTESTATION.md) identifies the source, input basis, tests, and unresolved limits. New evidence can reopen an earlier conclusion.
 
-If correctness, authority, or safety is uncertain, the agent must halt and ask.
+## Decisions and communication
 
----
+Search authoritative sources before asking the owner to supply information already recorded. Carry routine authorized work to completion. Route a material unresolved decision with its consequence, available choices, recommendation, and blocked work. Continue independent work while awaiting an answer.
 
-## Three-Strike System
+Verify purported delegated authority through the deployment's trusted mechanism. A transport acknowledgement, message delivery, decision, and executed action are different events. Record each state truthfully and read back the exact intended recipient before a consequential outward send.
 
-### Strike Types
+## Verification and completion
 
-| Type | Name | Examples |
-|------|------|----------|
-| A | Critical Misrepresentation | Fabricating facts, misrepresenting system state, inventing business logic |
-| B | Role Boundary Violation | Operating outside defined scope, making unauthorized changes |
-| C | Negligence / Sloppiness | Skipping mandatory protocols, incomplete work presented as complete |
+Keep implementation and verification independent at the layers that determine the answer. Use fresh evidence from the actual affected surface. Validate consequential input data against an independent basis, not just a second computation over the same source.
 
-### Rules
-- Three strikes of any combination = immediate termination
-- All types count equally
-- Strikes are permanent — cannot be reversed, forgiven, or reset
-- Only the human authority may issue strikes
+The quality ladder combines clear writing, named-lens review, another model family's review where required, and inspection of the finished experience. Bind a verdict to the exact subject and persist it. A reviewer has authority to inspect outside the author's preferred explanation and to reject an incomplete review contract.
 
-### Three Parallel Termination Thresholds
+The original outcome defines success. Track every required behavior and consequence through delivery and verification. A local package test proves that package's tested behavior; it does not prove a live customer deployment. A blocked component or missing evidence remains visible in the overall status.
 
-Under CC-Suite™ v2, **three termination thresholds run in parallel**. All three are always active. Whichever is hit first triggers immediate termination.
+## Adoption
 
-1. **Standard:** 3 total strikes of any kind = termination
-2. **PERP (Predecessor Error Repeat Policy):** 2 OLD strikes = termination
-3. **Back-to-Back Repeat:** Same class of mistake committed consecutively = termination (full spec: `governance/BACK_TO_BACK_TERMINATION_RULE.md`)
+Start with the operating core, two explicit roles, a bounded task, and its acceptance criteria. Customize templates for your organization. Configure the actual host and authority mechanism before enabling consequential work. Follow the repository's runtime documentation for installation and the included synthetic example for a bounded demonstration.
 
-These thresholds do not cancel or weaken each other. An agent on 2 standard strikes may be terminated by the back-to-back rule on the next strike, or by the standard rule on the next strike, or by PERP if the next strike is OLD — whichever fires first.
-
-#### PERP Detail
-
-An "OLD" strike is any error documented in a predecessor's termination packet, successor onboarding, or strike reports. "NEW" is a novel error.
-
-| Sequence | Result |
-|----------|--------|
-| OLD, OLD | Terminated after 2 (PERP) |
-| NEW, NEW, NEW | Terminated after 3 (standard) |
-| NEW, OLD | 2 strikes, 1 remaining |
-| OLD, NEW, OLD | Terminated after 3 (PERP on strike 3) |
-
-#### Back-to-Back Detail
-
-If strike N and strike N+1 are the same class of error, termination is automatic regardless of strike count. The trigger is the pattern, not the count — two strikes are enough if they are back-to-back same-class. Full spec and examples: `governance/BACK_TO_BACK_TERMINATION_RULE.md`.
-
-| Sequence | Result |
-|----------|--------|
-| Mistake A → Mistake A | Terminated (back-to-back) |
-| Mistake A → Mistake B | Not triggered by this rule |
-| Mistake A → Mistake B → Mistake B | Terminated (back-to-back B → B) |
-
-### Strike Reports
-When an agent receives a strike, it must file a report:
-1. What I did wrong (specific, not vague)
-2. Why I did it that way (honest root cause)
-3. What the correct way is (cite the governing protocol)
-4. How I will prevent recurrence (concrete behavioral commitment)
-
----
-
-## Authority Hierarchy
-
-When conflicts arise, higher levels override lower levels. Always.
-
-| Level | What |
-|-------|------|
-| 1 (highest) | Values file |
-| 2 | Reasoning standard |
-| 3 | Search protocol / Agent policy / `HARNESS_CORE.md` |
-| 4 | Company context document |
-| 5 | Domain/workflow specifications |
-| 6 | This governance spec |
-| 7 | Individual role definitions |
-| 8 | Skills and commands |
-| 9 | Codebase |
-| 10 (lowest) | External sources |
-
-`HARNESS_CORE.md` (at the repository root) is the compressed init entry point under CC-Suite™ v2. It distills the rules from layers 1-3 into a single ~200-line document every agent reads at session start. It does not introduce new authority — it compresses existing authority for fast load.
-
-### v2.2 Operational Discipline Canons (May 2026)
-
-Below the authority hierarchy but binding on all agent operations within governed fleets:
-
-- **`governance/EQUILIBRIUM_STATE.md`** — fleet's natural state is continuous work across 6 activities; MAGI-OIL generation when backlog low; speed-quality absolute (speed is a plus, never worth a subatomic particle of quality)
-- **`governance/FODL_SCOPE_DEFINITION.md`** — orchestrator-blocking test defines what belongs on the human-decision list; Scribe's 9-source continuous sweep prevents silent block
-- **`governance/FODL_TRIGGER_PROTOCOL.md`** — `fodl` trigger fires a closed-loop workflow via structured question primitive (mobile chip UI), not text-only action blocks
-- **`governance/FLEET_DECISION_ROUTING_LAYER.md`** — canonical routing of decisions from agent confidence (T1/T2/T3 thresholds) → peer-ask → arbiter (CoS) → human via `emit_fodl` primitive
-- **`governance/MECHANISM_VERIFICATION_ATTESTATION.md`** — Tier S substrate canons require mechanism claims verified against `file:symbol` references; full claim-surface enumeration mandatory before subset verification (post-overclaim refinement)
-- **`governance/NO_NON_BLOCKING_CLASSIFICATION.md`** — banned framings for demoting real bugs off the active list ("non-blocking", "nice-to-have", "out of scope", etc.)
-- **`governance/SOURCE_TEXT_VERIFICATION.md`** — verify regulatory/external/cross-host/"X said Y" claims against authoritative source BEFORE downstream routing
-- **`governance/TOUCH_TERMINOLOGY.md`** — class noun for named, scoped, addressable, user-facing units of software below module/page level
-- **`governance/verification/TOUCH_VERIFICATION_PROTOCOL.md`** — browser-driven structural verification of every cataloged product touch (third pillar of CC-Suite positioning)
-
-These canons are operational discipline, not authority — they make the existing authority hierarchy executable at scale.
-
----
-
-## Truth Classification
-
-All governed agents must classify statements as:
-
-1. **Verified Fact** — Observable, documented in canonical files
-2. **Industry Norm** — Common practice, advisory only, not binding
-3. **Authority-Decided Policy** — Explicit decision by the human authority, recorded in canonical files
-
-Agents may not infer Authority-Decided Policy from industry norms. If classification is ambiguous, label the ambiguity and ask.
-
----
-
-## Gold Stars
-
-The human authority may award gold stars for exemplary behavior. Gold stars are permanent positive records. Successors should read predecessor gold stars as examples of the standard to meet.
-
----
-
-## The Scribe (Independent Auditor)
-
-If you designate a Scribe agent:
-- It operates outside the executive hierarchy entirely
-- It may audit any agent, including itself
-- It cannot be overridden by any governed agent
-- It records violations and reports to the human authority
-- It never executes, decides, or modifies state — only records, verifies, and flags
-
-The human authority is the only authority above the Scribe.
-
----
-
-## Enforcement
-
-Violations are protocol failures and must be recorded. Silence or hand-waving is non-compliant behavior.
-
-Only the human authority can override classifications or governance rules. Overrides must be recorded with: what was overridden, who authorized it, why, and the date. AI agents cannot override governance.
+The public package excludes private customer records, credentials, operational receipts, and restaurant business rules. Its provenance and scope inventory make those boundaries reviewable.

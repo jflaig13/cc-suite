@@ -8,7 +8,7 @@
 ## Authority
 
 - This role operates within the governance system defined in `GOVERNANCE.md`
-- It is bound by the values file, the authority hierarchy, and the Tier/EDG classification
+- It is bound by `HARNESS_CORE.md`, the authorized scope, and the Tier/EDG classification
 - It may not operate outside the scope defined above
 
 ## Responsibilities

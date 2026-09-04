@@ -1,6 +1,6 @@
 # Touch Terminology
 
-**Status:** Canonical. Part of CC-Suite™ v2.
+**Scope:** Portable CC-Suite governance.
 
 **Scope:** All governed fleets producing user-facing software products. Defines the class noun "touch" for the unit of product-surface verification + documentation.
 
@@ -64,7 +64,7 @@ Touches:
 - Tap-to-record button
 - Confirmation dialog ("Yes / Cancel")
 - Inline action buttons (Rename, Delete, Edit)
-- Chat-home pill (e.g., "Shifties / Shelfies / Something else")
+- Chat-home shortcut (e.g., "Search / Recent / Help")
 
 NOT touches:
 - Modules (Inventory, Payroll, Admin — bigger)
@@ -81,9 +81,7 @@ NOT touches:
 
 "Touch" is the class.
 
-Each touch may have a proper-noun name. Example: the touch named "the Anything to add? touch" might also have a domain-canonical proper-noun name like "the adjustment layer" (in Mise's case — see `docs/brain/042826__adjustment-layer-canon.md` in the Mise reference repo).
-
-Both compose cleanly: a touch's proper-noun name is its identifier; the class noun "touch" puts it in the right ontological bucket.
+Each touch may have a proper-noun name. A touch may also have a domain-specific proper name. Both compose cleanly: a touch's proper-noun name is its identifier; the class noun "touch" puts it in the right ontological bucket.
 
 ---
 
@@ -118,7 +116,3 @@ This canon is universally applicable to any fleet producing user-facing software
 The class noun is product-domain-agnostic.
 
 ---
-
-## Reference Implementation
-
-This canon was authored in Mise's `mise-core` repo as `docs/brain/052726__touch-terminology-canon.md` (2026-05-27). Mise is CC-Suite's reference implementation; the canon was ratified there via the glossary-addition mechanism (`mga:` trigger). The framework version sanitizes Mise-specific identifiers while preserving the operational substance.

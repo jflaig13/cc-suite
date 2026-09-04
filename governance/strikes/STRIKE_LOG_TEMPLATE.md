@@ -17,9 +17,12 @@
 - **OLD** — This error matches a documented predecessor failure
 - **NEW** — This error is novel (not previously documented)
 
-**Termination thresholds (both always active):**
-- 2 OLD strikes (any order) = immediate termination
-- 3 total strikes (any classification) = immediate termination
+**Three thresholds for human adjudication:**
+- 2 OLD strikes, in any order.
+- 3 total strikes, in any classification.
+- Consecutive repetition of the same mistake.
+
+Only the human authority issues strikes or initiates termination. Record the decision reference before an authorized custodian updates deployment status.
 
 ---
 

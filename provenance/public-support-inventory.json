@@ -1,0 +1,103 @@
+{
+  "source_commit": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+  "inventory": [
+    {
+      "output_path": "docs/runtime.md",
+      "output_sha256": "83ebdc8170ffc4a9430eaa6e641d22fa50cc5122d77c36965e5341ccb152be28",
+      "status": "added",
+      "reason": "Public portability support, packaging, documentation or synthetic regression; not claimed as verbatim source.",
+      "post_assembly_changes": [
+        "Clarified that the complete Python/host release suite requires Bun, while the core suite does not.",
+        "Document missing adopter configuration, secure test-state environment, full-suite tools, and cutover projection behavior.",
+        "Document missing adopter configuration, secure test-state environment, full-suite tools, and cutover projection behavior."
+      ]
+    },
+    {
+      "output_path": "fleet_kernel/configuration.py",
+      "output_sha256": "f912c08904912e1cefd5d042e26ccf66bdd9d4b9add299c121ac08ac5be475ab",
+      "status": "added",
+      "reason": "Public portability support, packaging, documentation or synthetic regression; not claimed as verbatim source."
+    },
+    {
+      "output_path": "fleet_kernel/database.py",
+      "output_sha256": "f619be1c24fd6900e09d263066374075f903bfd54f10222a220f2f9667af74fa",
+      "status": "added",
+      "reason": "Public portability support, packaging, documentation or synthetic regression; not claimed as verbatim source."
+    },
+    {
+      "output_path": "fleet_kernel/example.py",
+      "output_sha256": "cef5fa730cd2087c8ebcd131923b6cdf9b78daa1745859cad5e8bc202b22c5e6",
+      "status": "added",
+      "reason": "Public portability support, packaging, documentation or synthetic regression; not claimed as verbatim source."
+    },
+    {
+      "output_path": "fleet_kernel/release.py",
+      "output_sha256": "f2b0665ba23fd54448209b2d142a9622f0719038d2abed1c89fde22469f19f2f",
+      "status": "added",
+      "reason": "Public portability support, packaging, documentation or synthetic regression; not claimed as verbatim source."
+    },
+    {
+      "output_path": "fleet_kernel/release_files.json",
+      "output_sha256": "bc38417d1fbdd95a56b651eaaae6272174dae84646adf7859c1ef592a522749f",
+      "status": "added",
+      "reason": "Public portability support, packaging, documentation or synthetic regression; not claimed as verbatim source.",
+      "post_assembly_changes": [
+        "Include the shared cutover projection helper in native cold payload dependency closure."
+      ]
+    },
+    {
+      "output_path": "pyproject.toml",
+      "output_sha256": "3dd2c3c39cbe971fef034eb115856979c2ed711797989217c91d7125fa971016",
+      "status": "added",
+      "reason": "Public portability support, packaging, documentation or synthetic regression; not claimed as verbatim source.",
+      "post_assembly_changes": [
+        "Default pytest discovery includes the complete tests directory, including host boundaries."
+      ]
+    },
+    {
+      "output_path": "scripts/__init__.py",
+      "output_sha256": "94afce73bdfce1e8718e243ba2fd3ba189a2e411da28e4c53ca2141a4500e216",
+      "status": "added",
+      "reason": "Public portability support, packaging, documentation or synthetic regression; not claimed as verbatim source."
+    },
+    {
+      "output_path": "tests/runtime/conftest.py",
+      "output_sha256": "aca4911a9fd3f1545f9ac2182663062ff8c81887a1a872a2d708a3aaf6dc161d",
+      "status": "added",
+      "reason": "Public portability support, packaging, documentation or synthetic regression; not claimed as verbatim source.",
+      "post_assembly_changes": [
+        "Portable secure temporary-state fixture integration for ordinary public test invocation."
+      ]
+    },
+    {
+      "output_path": "tests/runtime/test_eval_effect_control.py",
+      "output_sha256": "8344e408b3db19bdfb77756af73edcf98d8263d23e0eed1e3c9feb32a85c1593",
+      "status": "added",
+      "reason": "Public portability support, packaging, documentation or synthetic regression; not claimed as verbatim source."
+    },
+    {
+      "output_path": "tests/runtime/test_public_boundaries.py",
+      "output_sha256": "5afa7943b3133d1c9ca06e439764fd66e3bdb98aa6ab54b096570e80cf701975",
+      "status": "added",
+      "reason": "Public portability support, packaging, documentation or synthetic regression; not claimed as verbatim source."
+    },
+    {
+      "output_path": "tests/conftest.py",
+      "status": "added",
+      "reason": "Secure, isolated, owner/group-correct pytest session storage; production authority validators are unchanged.",
+      "output_sha256": "673fbd34f01e26990fb801261127c20f0d60cdc98afd99054ed48f9245388d06"
+    },
+    {
+      "output_path": "fleet_kernel/company_cutover_mirror.py",
+      "status": "added",
+      "reason": "Shared configured cutover projection with atomic writes and canonical-operation serialization.",
+      "output_sha256": "5017fa3f9b13422637a3435b90987552a93df1a60f6d288d1a5d4d4029d35b55"
+    },
+    {
+      "output_path": "tests/runtime/test_cutover_mirror.py",
+      "status": "added",
+      "reason": "Database restart, missing configuration, failed projection recovery, inactive fallback, and concurrent cutover regression tests.",
+      "output_sha256": "e2034d49b3c1ef1b9da2d8423bf84ff829b1502bd1b56007894c88db7de0f948"
+    }
+  ]
+}

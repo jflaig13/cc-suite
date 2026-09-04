@@ -1,7 +1,7 @@
 # Scribe Audit Checklist — Mechanical Per-Event-Type Process
 
-**Status:** Active (CC-Suite™ v2 — Phase 2 Channels)
-**Authority:** Layer 6 (Governance Spec). Extends `governance/scribe/SCRIBE_CHANNEL_PROTOCOL.md`.
+**Scope:** Portable channel contract; deployment mechanics require verification.
+**Authority:** Subject to HARNESS_CORE operating rules. Extends `governance/scribe/SCRIBE_CHANNEL_PROTOCOL.md`.
 **Scope:** The exact mechanical checklist the Scribe runs on every typed event. Produces the verdict phrase the channel server validates.
 **Related:** `governance/scribe/SCRIBE_CHANNEL_PROTOCOL.md`, `governance/scribe/EVENT_TYPES.md`, `governance/CHANNEL_PROTOCOL.md`, `governance/TANDEM_PROTOCOL.md` — Step 9.
 **Complementary protocol:** `governance/scribe/SUBATOMIC_AUDIT_PROTOCOL.md` — the 7-wave subatomic audit pattern for comprehensive multi-surface audits. This event-driven checklist handles per-event Scribe verdicts; the subatomic audit protocol handles whole-system comprehensive sweeps. Both are Scribe responsibilities; they cover different cadences (per-event vs scheduled deep audits).
@@ -105,7 +105,7 @@ Call `reply(event_id, text)` with the verdict phrase plus the specific drift ite
 
 ## Event: `canon_changed`
 
-**Trigger:** a canon file (values file, reasoning standard, search protocol, agent policy, or session init file) has been edited.
+**Trigger:** an operating-rule file (HARNESS_CORE, reasoning standard, search protocol, agent policy, or session init file) has been edited.
 
 ### STEP 1 — EXTRACT
 
@@ -123,7 +123,7 @@ For each change, check:
 
 | Check | Result |
 |---|---|
-| Authority hierarchy conflict? | ☐ Does this change contradict a higher-authority file? The authority hierarchy in `GOVERNANCE.md` is: Values → Reasoning Standard → Search Protocol → Agent Policy → Company Context → Domain Specs → Governance → Roles → Skills → Codebase → External. Changes to a lower-authority file cannot override a higher-authority file. |
+| Authority hierarchy conflict? | ☐ Does this change contradict a higher-authority file? The authority hierarchy in `GOVERNANCE.md` is: Platform instructions and authorized user scope → HARNESS_CORE → search/agent policy/host adapters → reasoning standard → company context → workflow contracts → governance → roles → skills → implementation → external sources. Changes to a lower-authority file cannot override a higher-authority file. |
 | Downstream documents stale? | ☐ Are there brain files, init files, or role registries that reference the old text and must be updated? |
 | Contradicts memory or spec? | ☐ Does the change contradict a statement in the memory file or master spec? |
 | Hook or reference broken? | ☐ Does the change break a script, hook, or cross-reference that depended on the old text? |
@@ -185,7 +185,7 @@ Call `reply(event_id, text)` with the verdict phrase plus specifics.
 
 ## Event: `verification_result`
 
-**Trigger:** an automated verification script or agent has produced a structured verification output (typically a per-field MATCH/MISMATCH grid from a mechanical pipeline, per `governance/ATOMIC_VERIFICATION_PROTOCOL.md` in Phase 1).
+**Trigger:** an automated verification script or agent has produced a structured verification output (typically a per-field MATCH/MISMATCH grid from a mechanical pipeline, per `governance/ATOMIC_VERIFICATION_PROTOCOL.md`).
 
 ### STEP 1 — EXTRACT
 
@@ -200,15 +200,17 @@ The event content is structured data (JSON or equivalent). Extract:
 
 ### STEP 2 — COMPARE
 
+- Missing required observations, expected basis or rows produce **VERIFICATION INCOMPLETE**, with the complete open set. Logging the result cannot mark it clean.
 - Cross-check the per-field grid: does the count of MATCH/MISMATCH verdicts equal the totals in the summary?
 - For each MISMATCH: is the "page shows" / "canon says" / "verdict" triple populated with specific values (not "N/A" or blank)?
 - Is the script's verdict consistent with the grid? (CLEAN should mean zero mismatches; FAILURES FOUND should mean at least one.)
 
 ### STEP 3 — VERDICT
 
-- **ALL FIELDS MATCH** — every field in the grid matches. The script's summary confirms zero mismatches.
+- **ALL FIELDS MATCH** — every required manifest field is present, the independent expected basis is established, and the complete grid has zero mismatches.
 - **MISMATCH FOUND** — at least one field has a MISMATCH verdict. List every mismatch with the specific field, expected value, and actual value. This flag goes to the human authority — the Scribe does not judge whether the mismatch "matters."
-- **VERIFICATION LOGGED** — the verification output was recorded but the grid was malformed (missing fields, blank verdicts, or internal inconsistency). Log the verification event but explicitly note that the output format was invalid and a re-run is needed.
+- **VERIFICATION INCOMPLETE** — required fields, independent basis or consistent comparison evidence are missing. List every gap and known mismatch.
+- **VERIFICATION LOGGED** — the record was stored. This acknowledges storage only and cannot substitute for a verification verdict.
 
 ### STEP 4 — ACKNOWLEDGE
 
@@ -245,7 +247,7 @@ No required phrase. Use free-form text stating what the Scribe did or decided. T
 
 - `browser_fresh_violation` — an agent took a browser snapshot without closing the browser first. This is a verification protocol violation.
 - `verification_incomplete` — an agent declared VERIFIED without running the mechanical checklist.
-- Any `slack_message` containing "shutting down" or "updating" from the human authority — triggers the Instant Handoff Protocol (Phase 1, see `governance/INSTANT_HANDOFF_PROTOCOL.md`).
+- A message from the human clearly requesting session close or restart triggers the Instant Handoff Protocol; quoted or incidental words do not (Phase 1, see `governance/INSTANT_HANDOFF_PROTOCOL.md`).
 
 ### STEP 4 — ACKNOWLEDGE
 
@@ -278,11 +280,7 @@ See `governance/CHANNEL_PROTOCOL.md` — "Dual-ACK Requirement" for the full can
 - `governance/scribe/EVENT_TYPES.md` — Canonical event registry with required verdict phrases.
 - `governance/CHANNEL_PROTOCOL.md` — Abstract channel protocol and dual-ACK canon.
 - `governance/TANDEM_PROTOCOL.md` — V-Loop protocol; Step 9 (Audit) invokes this checklist.
-- `governance/ATOMIC_VERIFICATION_PROTOCOL.md` (Phase 1, if present) — The structural verification pipeline that produces `verification_result` events.
+- `governance/ATOMIC_VERIFICATION_PROTOCOL.md` — The structural verification pipeline that produces `verification_result` events.
 - `GOVERNANCE.md` — "The Scribe (Independent Auditor)" section defining the role.
 
 ---
-
-## Changelog
-
-- **v1.0 (2026-04-11):** Initial checklist. Extracted from the Mise reference implementation's scribe channel instructions (`channels/scribe/webhook.ts` `instructions` field).

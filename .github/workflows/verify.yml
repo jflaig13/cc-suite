@@ -1,0 +1,74 @@
+name: Verify public distribution
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      CC_SUITE_COMPANY_ID: example-company
+      CC_SUITE_SCRIBE_DEPLOYMENT_ID: Scribe-Example
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.11', '3.13']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - name: Install disposable database tooling
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends postgresql zsh
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          candidates = sorted(Path('/usr/lib/postgresql').glob('*/bin/initdb'))
+          if not candidates:
+              raise SystemExit('PostgreSQL initdb is required for the release checks')
+          with open(os.environ['GITHUB_ENV'], 'a') as env:
+              env.write(f'CC_SUITE_TEST_PG_BIN={candidates[-1].parent}\n')
+          PY
+      - name: Install public package
+        run: python -m pip install -e '.[test]'
+      - name: Verify distribution boundaries and local links
+        run: |
+          python tools/check_distribution.py
+          python -m unittest discover -s tools -p 'test_*.py' -v
+      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2
+        with:
+          bun-version: 1.3.12
+      - name: Verify Scribe channel source and bundle
+        working-directory: channels/scribe
+        run: |
+          bun install --frozen-lockfile --ignore-scripts
+          bun run typecheck
+          bun run test
+          bun run build
+      - name: Verify generic agent channel
+        working-directory: channels/agent
+        run: |
+          bun install --frozen-lockfile --ignore-scripts
+          bun run typecheck
+          bun run test
+          bun run build
+      - name: Verify runtime against a fresh local database
+        run: python -m pytest tests -q --strict-markers -rs
+      - name: Run installed runtime example
+        run: python -m fleet_kernel.example
+      - name: Check generated source still matches release inventories
+        run: |
+          python tools/check_distribution.py
+          git diff --exit-code

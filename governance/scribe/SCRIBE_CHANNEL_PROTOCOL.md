@@ -1,7 +1,9 @@
 # Scribe Channel Protocol — Independent Audit with Verdict Validation
 
-**Status:** Active (CC-Suite™ v2 — Phase 2 Channels)
-**Authority:** Layer 6 (Governance Spec). Specialization of `governance/CHANNEL_PROTOCOL.md` for the Scribe role.
+This file specifies a transport or lifecycle contract. A deployment must implement and verify its adapter before claiming the behavior is operational. Configuration, scheduled actions and outward messages require the owner’s authority; no mechanism in this document grants it. Acknowledgment records receipt, not task completion.
+
+**Scope:** Portable channel contract; deployment mechanics require verification.
+**Authority:** Subject to `HARNESS_CORE.md`; specialization of `governance/CHANNEL_PROTOCOL.md`.
 **Scope:** Deployments that run a Scribe (independent auditor) agent and need mechanical enforcement of audit verdicts.
 **Related:** `governance/CHANNEL_PROTOCOL.md`, `governance/scribe/EVENT_TYPES.md`, `governance/scribe/SCRIBE_AUDIT_CHECKLIST.md`, `GOVERNANCE.md` — "The Scribe (Independent Auditor)" section.
 
@@ -13,7 +15,7 @@ The Scribe is the institutional auditor defined in `GOVERNANCE.md`. It operates 
 
 In a polling-era governance system, the Scribe audits by reading log files and brain files on request. In v2's push-based channel architecture, the Scribe receives a live stream of institutional events — brain file creations, deploys, canon changes, tandem board updates, verification results — and must produce a verdict on each one. The Scribe Channel Protocol specializes the generic Channel Protocol with two extra mechanical enforcements that make those verdicts auditable:
 
-1. **Typed-event verdict validation.** The reply tool REJECTS any acknowledgment that does not contain a required verdict phrase for the event type. The Scribe cannot rationalize, hand-wave, or short-circuit the mechanical checklist — the server refuses to accept a reply that doesn't state the verdict.
+1. **Typed-event verdict validation.** The reply tool REJECTS any acknowledgment that does not contain a required verdict phrase for the event type. The adapter rejects a malformed verdict envelope. It must validate required evidence separately; wording alone cannot prove that the checklist ran.
 2. **Append-only audit log.** Every accepted verdict is appended to a permanent log file. Entries are never modified or removed. The log is the canonical record of which events the Scribe processed and how it ruled.
 
 Together, these two enforcements close the gap v1 left open: v1 defined the Scribe role but provided no mechanical way to ensure the Scribe actually ran the audit before declaring "done."
@@ -61,7 +63,7 @@ When the agent calls the reply tool on a typed event, the channel server:
 
 The Scribe's next action on a REJECTED reply is to re-run the checklist, select a valid verdict, and reply again. The pending events map preserves the event until a valid verdict lands.
 
-**Rationale:** this makes the audit mechanical. An agent cannot write "looks fine" or "noted" on a typed event — the server refuses. The only way to clear a typed event is to state one of the required verdict phrases, which means the Scribe has at least nominally traversed the checklist that ends in those phrases.
+**Rationale:** this makes the audit mechanical. An agent cannot write "looks fine" or "noted" on a typed event — the server refuses. A required phrase checks only message shape. A valid verification event must also bind the exact subject and corroborating evidence; the phrase alone does not prove that any checklist ran.
 
 ---
 
@@ -108,7 +110,7 @@ Beyond its own compliance, the Scribe is responsible for AUDITING every other ag
 **How the Scribe audits dual-ACK:**
 
 1. Periodically (on a schedule or in response to an explicit request), the Scribe reads the audit log entries for bus-sourced events across all channels.
-2. For each entry, the Scribe checks whether a corresponding bus post exists in the originating channel within a reasonable window (~60 seconds) after the internal ACK timestamp.
+2. For each entry, the Scribe checks whether a corresponding bus post exists in the originating channel within the owner-configured acknowledgment window after the internal ACK timestamp.
 3. If the internal ACK is logged but no bus post is visible, the Scribe flags the violation to the human authority with:
    - Agent employee ID
    - Event ID and type
@@ -144,7 +146,7 @@ The following table cross-references the Scribe's event handling with the canoni
 | `deploy_completed` | Human (bus) or script | `DOC SYNC CLEAN` / `DRIFT FOUND` | Yes if bus-sourced; no if script-sourced |
 | `canon_changed` | Code hook on canon-file write | `CANON CHANGE CLEAN` / `AUTHORITY CONFLICT` / `DOWNSTREAM UPDATES NEEDED` | No (hook-sourced) |
 | `tandem_board_updated` | Code hook on tandem-board write | `V-LOOP STEP VALID` / `V-LOOP VIOLATION` / `TANDEM AUDIT CLEAN` | No (hook-sourced) |
-| `verification_result` | Script or agent | `ALL FIELDS MATCH` / `MISMATCH FOUND` / `VERIFICATION LOGGED` | Depends on origin |
+| `verification_result` | Script or agent | `ALL FIELDS MATCH` / `MISMATCH FOUND` / `VERIFICATION INCOMPLETE` / `VERIFICATION LOGGED` | Depends on origin |
 | `slack_message` / `message` | Human (bus) or generic | Informational — no required phrase | Yes if bus-sourced |
 | `browser_closed` / `deploy_detected` / `browser_fresh_violation` / `verification_incomplete` | Code hook | Informational — no required phrase | No (hook-sourced) |
 | `handoff_created` | Script or agent | Informational — no required phrase | Depends on origin |
@@ -171,23 +173,3 @@ The Scribe channel adds:
 If you need a channel that does NOT enforce verdict validation (e.g., for a Builder or Reviewer role), use the generic `governance/CHANNEL_TEMPLATE.md` pattern instead. Only the Scribe (and any other independent-auditor-class roles your deployment defines) should use this specialization.
 
 ---
-
-## Reference Implementation
-
-The Mise reference implementation of the Scribe channel lives at:
-
-- **Scribe channel server:** `channels/scribe/webhook.ts` — implements the `VERDICT_PATTERNS` map, the `reply` tool with validation logic, the append-only audit log at `channels/scribe/audit_log.jsonl`, and exposes HTTP endpoints (`/health`, `/metrics`, `/audit`, `/drain`, and direct POST).
-- **Brain-file hook:** `scripts/scribe_channel_brain_hook.sh` — PostToolUse hook that fires `brain_file_created` events when a brain file is written.
-- **Verdict pattern registry in code:** the `VERDICT_PATTERNS: Record<string, RegExp[]>` map inside `webhook.ts`. Keep this map in sync with `governance/scribe/EVENT_TYPES.md`.
-- **Audit log inspection:** `curl -s http://127.0.0.1:8789/audit | jq .` returns the full audit log as a JSON array.
-- **Metrics endpoint:** `curl -s http://127.0.0.1:8789/metrics | jq .` returns uptime, event counters, delivery rate, and pending event count.
-
-Full Mise spec: `docs/brain/041026__channel-architecture-rollout.md`. Dual-ACK canon: `docs/brain/041126__channel-dual-ack-canon.md`.
-
-The Mise implementation uses TypeScript + Bun + the Model Context Protocol SDK. Equivalent implementations in other languages / runtimes should preserve the three load-bearing behaviors: verdict pattern validation in the reply tool, append-only audit log on every accepted verdict, and dual-ACK audit responsibility across the fleet.
-
----
-
-## Changelog
-
-- **v1.0 (2026-04-11):** Extracted from Mise reference implementation into CC-Suite™ v2 Phase 2 governance source. Integrates dual-ACK canon from 2026-04-11.

@@ -1,0 +1,458 @@
+{
+  "source_commit": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
+  "baseline_public_commit": "6c57e98d4055cb716ca4ca41b38b2f1950fdb123",
+  "files": [
+    {
+      "path": "examples/WHAT_IT_LOOKS_LIKE.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70\u20131, 5, 8\u201310, 14, 19",
+      "baseline_sha256": "bd553d95811c98fd64ed136eb677d218ccaa3aa9028fc22971fca24d73604b0a",
+      "output_sha256": "65dc0d816abf286636856f2d9c388be50b3e56a93663b0d4da7f7c177ad36fb2"
+    },
+    {
+      "path": "governance/ASYMPTOTE_PROTOCOL.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a714; docs/brain/081226__quality-verification-ladder-canon.md",
+      "baseline_sha256": "7c79a4d9310012c0ec01001eaed11b68ac03c46c8a94376e498feac0e089b081",
+      "output_sha256": "82c86f1a17a6c74b59ec38a9f188ff6b6c891144960501474349472d05b527f3"
+    },
+    {
+      "path": "governance/ATOMIC_VERIFICATION_PROTOCOL.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70\u20131, 5, 8\u201310, 14, 19",
+      "baseline_sha256": "2014ee65abddfaf0c1980eaadb4c12bbb6688bdcc8e84716749e78d1faed7e27",
+      "output_sha256": "cfcb94cac681ee651eefb57517aa2fa61873427f15cfd4b9968bcf935e3545c4"
+    },
+    {
+      "path": "governance/BACK_TO_BACK_TERMINATION_RULE.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a79",
+      "baseline_sha256": "3699074e9438f7fafa811ad79359f4e506b054fb8e648043745784f8abb9d998",
+      "output_sha256": "0708c86a8978a6959290971a7becf9c95eb91cbe02a29ab65da932cb7cce22d5"
+    },
+    {
+      "path": "governance/CHANNEL_PROTOCOL.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70, 5, 9\u201310, 19; host-agnostic contract and authority boundary",
+      "baseline_sha256": "c43536c56ef4ae02197915700edc7be4a37d626288ea68d930abc85dd6897f59",
+      "output_sha256": "f7e84cff941df5442362d5c4f81d8dab25275acd5184ae4e1f2422cce20198b1"
+    },
+    {
+      "path": "governance/CHANNEL_TEMPLATE.md",
+      "action": "adapted",
+      "source": "Existing generic template/protocol retained; no current-rule conflict identified",
+      "baseline_sha256": "2d00dcb35b086c4e32105fc7103c2505bda515608caf384a008c5f2843a1115d",
+      "output_sha256": "c2a7c0b71ac668fb030657a08e9f9ba2e96ae35be55b73f649914ea75bc1ea42"
+    },
+    {
+      "path": "governance/DIGEST_BRIDGE_PROTOCOL.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70\u20133, 5, 9\u201310, 19; existing generic structure preserved",
+      "baseline_sha256": "6cfb6da8c9f7b761f5ec1145084003994ef8e78f11928be3066e6e5ffbd75092",
+      "output_sha256": "1c685ac76b12de37c820ea9ceabf96ee59ee7538f4596328d40f4fcbf2977fe7"
+    },
+    {
+      "path": "governance/EQUILIBRIUM_STATE.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70\u20131, 18\u201319",
+      "baseline_sha256": "b4ac6a6fe7b25c1244f07e2f2ea6d889ecea19b70001533913d64886726f85d5",
+      "output_sha256": "2552f62f732ef574acfc61527b3c43910d4f1fab54cb680a0df9b2d97a9eebbf"
+    },
+    {
+      "path": "governance/FLEET_DECISION_ROUTING_LAYER.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a71, 5, 17, 19",
+      "baseline_sha256": "4b4d600bb1888e47a6c5bea54bec24cc1c1d011b840c0e7eba95e33727c41aca",
+      "output_sha256": "1c9491e224f52545b7d344dc0ac2fc4e8c78fa41010e37346eab5d17cf0491c4"
+    },
+    {
+      "path": "governance/FODL_SCOPE_DEFINITION.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a710, 17, 19",
+      "baseline_sha256": "bdb9f438329fb5a61985021e7c56c25225bcc63e18db7b98ad47f453241b60db",
+      "output_sha256": "1904de3fe23f749859cfe20b16f30fb3498e64798d1a1d6e1bbfbcd1540421fb"
+    },
+    {
+      "path": "governance/FODL_TRIGGER_PROTOCOL.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a710\u201311, 17, 19",
+      "baseline_sha256": "7b6a2670cca51e3e96fbca93a0b307323d00a600ed4d62ddd39b2b916d9096a5",
+      "output_sha256": "bbf6d98d2350307abc7619224019baff103d8500897ff5a580017983fc162221"
+    },
+    {
+      "path": "governance/ID_REGISTRY.md",
+      "action": "retained",
+      "source": "Existing generic template/protocol retained; no current-rule conflict identified",
+      "baseline_sha256": "c663010ae302b126b09cb98b949f3c4526cd93bebdaa24de0b5d0a6070b3eb3b",
+      "output_sha256": "c663010ae302b126b09cb98b949f3c4526cd93bebdaa24de0b5d0a6070b3eb3b"
+    },
+    {
+      "path": "governance/INSTANT_HANDOFF_PROTOCOL.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70, 10\u201311, 19",
+      "baseline_sha256": "87450367e2cfe360b98a94fea282fb0b988155a3240131208da549947229a191",
+      "output_sha256": "b23f3201f3ad5b8ab0f927ee00b019c1319d45b8818518799f8643d0fd890518"
+    },
+    {
+      "path": "governance/LIFECYCLE.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a79\u201310; AGENTS.md",
+      "baseline_sha256": "c6bbb53e26c9bcce2f3402ebfae5c70623e030c45cd10df28796041d1a220c33",
+      "output_sha256": "47027fbf09c016c1f7697ef80a912017a1f4850cbb4b721d49ef24024b7b1dc8"
+    },
+    {
+      "path": "governance/MECHANISM_VERIFICATION_ATTESTATION.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70\u20133, 5, 8\u201310, 14, 19; current portable contract",
+      "baseline_sha256": "f6038207ff0c1cdb3c14f7870a6b30856a646a43fd9fb1c5b2a87c4f67832056",
+      "output_sha256": "28629cf0ba320a454061feff6d6c4fca2a8149e03621929ab96c134b59587cb3"
+    },
+    {
+      "path": "governance/MODEL_CAPABILITY_CANON.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a79, 18; AGENTS.md",
+      "baseline_sha256": "24f5397f4157809a05b2b75ac8fe52f456c2d6c2faa9e71879f52e0be7ce355b",
+      "output_sha256": "f5d1b4dfd2a3dbce41c5ea508d3a34abd78201f9c3548f09ef64c832836b3d08"
+    },
+    {
+      "path": "governance/MONITORING_CHAIN_INTEGRITY.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70, 5, 8, 10; docs/brain/070326__sensor-liveness-canon.md",
+      "baseline_sha256": "748bba837e399180a21ff697818465ed43e42c188a8626a4c210c6a3b543f704",
+      "output_sha256": "20a62c1601cd0bac97260917e6ffe844a68704d3cfa82f88b975dc0b9cb9088f"
+    },
+    {
+      "path": "governance/NO_NON_BLOCKING_CLASSIFICATION.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70\u20133, 9\u201310, 14, 19; unchanged generic protocol body preserved; implementation history removed",
+      "baseline_sha256": "8b3813c875cb2e258d3f02f09afc3b5edde2f7f0cf60365c44a5411118e0c4ad",
+      "output_sha256": "0f25d26437b0638b63145e7bd6524820991f3f2651412d3759dedc0d2cf8719c"
+    },
+    {
+      "path": "governance/RISK_CLASSIFICATION.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70\u20131, 4, 14",
+      "baseline_sha256": "1dc4e82068f1656b2a171e16a3b22a02ca258f0a669e545ea4cddb05471b40fc",
+      "output_sha256": "5bc505a4f96e0efca56152fc28c6621b47db20c72cae1f49977f887af1c2173e"
+    },
+    {
+      "path": "governance/SESSION_MANAGEMENT.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70\u20131, 5, 8\u201310, 14, 19",
+      "baseline_sha256": "f26469f0ff88b39416de51c32bec9258a8f56c23980541c0af7227f5fe9489e2",
+      "output_sha256": "32264258eb5cecafeaf51bcd8335bfa855aa8d2dd0849c9c99639fcde9730bff"
+    },
+    {
+      "path": "governance/SOURCE_TEXT_VERIFICATION.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70, 3, 5, 9\u201310; primary source and verified authority",
+      "baseline_sha256": "122d0cc140edeb24784d4ef8fb5a6543a4e277d20d207cac7d2c0ead2844b7d4",
+      "output_sha256": "c429ed452d98c9c144e61c30bd60e6e1037a607d29cad49e730ec9e7114bdd49"
+    },
+    {
+      "path": "governance/TANDEM_PROTOCOL.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70\u20131, 8\u201310, 14, 19",
+      "baseline_sha256": "05ba4fa6e88f455bb52eb32e103f32b64329ff5305d38dd6e2a534fced1df037",
+      "output_sha256": "8a85fb330b7054f1e028fe44e103d54784593c5d6a2d69d0f02149d4e2cea7af"
+    },
+    {
+      "path": "governance/TOUCH_TERMINOLOGY.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70\u20133, 9\u201310, 14, 19; unchanged generic protocol body preserved; implementation history removed",
+      "baseline_sha256": "fdb11b47e8b2d4192a5d66c1d86b04e5ca4a68a3fe5eeb8d32c610815a3fa372",
+      "output_sha256": "8a2c6ad5bbdd970fcee485a112b8eacfbe46dc4f976318392261eb27ba96963a"
+    },
+    {
+      "path": "governance/WRITING_CANON.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a71, 13, 19; .agents/skills/no-ai-slop/SKILL.md",
+      "baseline_sha256": "046afdc05732b83694126d6ef4a5bfb4bf9dde7e071087ffae4a941289619d76",
+      "output_sha256": "113d093918fcfdc7f3fbddd7225f8e80db8488f10e603a263c73ee944cf2f2d6"
+    },
+    {
+      "path": "governance/bridges/DIGEST_FORMAT_TEMPLATE.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70\u20131, 5, 8\u201310, 14, 19",
+      "baseline_sha256": "7ed1187d87f7c4b7f21e2d1251682cb3e46d98719b9b6500d30d36c9e84836a9",
+      "output_sha256": "323803b97e0848f47cb40a1385a87fbea1c74a1e08b1c134ff3bdba0e60c6e65"
+    },
+    {
+      "path": "governance/gold_stars/GOLD_STAR_TEMPLATE.md",
+      "action": "retained",
+      "source": "Existing generic template/protocol retained; no current-rule conflict identified",
+      "baseline_sha256": "77027d5b9c7ce16c350fe1f42fd3d775194de66bc54b6c21bb758bef9126d3e3",
+      "output_sha256": "77027d5b9c7ce16c350fe1f42fd3d775194de66bc54b6c21bb758bef9126d3e3"
+    },
+    {
+      "path": "governance/handoffs/SCRIBE_HANDOFF_ENHANCEMENT_TEMPLATE.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70\u20133, 9\u201310, 14, 19; unchanged generic protocol body preserved; implementation history removed",
+      "baseline_sha256": "68de0b842768d3cb69cd5025587c70249cc056f168b779ae751a3712304ef7eb",
+      "output_sha256": "4a957cfe44e1bc1a28da0e74bf18e1735fc3e06192c00d80f24d1bda35efe766"
+    },
+    {
+      "path": "governance/handoffs/SESSION_HANDOFF_TEMPLATE.md",
+      "action": "adapted",
+      "source": "Existing generic template/protocol retained; no current-rule conflict identified",
+      "baseline_sha256": "6a77cb9dd0c5e6c79b5a1c80b56994da61bbb1a30e477f7c7f232b81e482fe80",
+      "output_sha256": "7ab1669219554924b3ebd5e587ec9140535e930b92046b051857129e67da280a"
+    },
+    {
+      "path": "governance/handoffs/TANDEM_BOARD_TEMPLATE.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a71, 8\u201310, 14, 19; portable template coherence",
+      "baseline_sha256": "ac8eb1937ea725f3a7268e3bb436d15f25e1e47d36e13bb93fd74684ad6f3c4f",
+      "output_sha256": "54458caf577948d1a66ca3c16e3dc389f9639315e300a8e6c9c5cb76f61411b8"
+    },
+    {
+      "path": "governance/handoffs/VLOOP_CHECKLIST_TEMPLATE.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a71, 8\u201310, 14, 19; portable template coherence",
+      "baseline_sha256": "d0812f138946fe67a5772a8a7276a785fc025b13f6b6f99b5c0c65dc548284ea",
+      "output_sha256": "9f6ebcaddc6620df5f5544ad00fd76eac460b451367a63e3ecde35b62e82c8d5"
+    },
+    {
+      "path": "governance/lifecycle/EPHEMERAL_LIFECYCLE.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70\u20131, 5, 8\u201310, 14, 19",
+      "baseline_sha256": "98afb433ad8b4a31917d37416374fe5f3e9e629de57df7e70a7e5e0dcaf0a70b",
+      "output_sha256": "7434425bd7e8ad4a84067bc4abbbbe53714421e6867cd8a816517e5f376958d2"
+    },
+    {
+      "path": "governance/lifecycle/INTERACTIVE_LIFECYCLE.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70\u20131, 5, 8\u201310, 14, 19",
+      "baseline_sha256": "dd9972ef5ca4d557c958500a6b3913bac2d226b188d76787e125b58a51937fab",
+      "output_sha256": "e2fe85f5df20165dd15da5bb79d48c539b21654fa906bc36fe00282f55f3835f"
+    },
+    {
+      "path": "governance/memory/CUSTOMER_INFORMATION_BOARD_PROTOCOL.md",
+      "action": "adapted",
+      "source": "Existing generic template/protocol retained; no current-rule conflict identified",
+      "baseline_sha256": "ced36348bc81903e1c769cbe60458a80e7588794fba8c8e6b7ae8c4bb4bcd4d8",
+      "output_sha256": "7faa611d64eb4d5ec4bd504337a793abf12219e5387ed188f0d14eb7c59a35b5"
+    },
+    {
+      "path": "governance/memory/PEOPLE_GRAPH_PROTOCOL.md",
+      "action": "adapted",
+      "source": "Existing generic template/protocol retained; no current-rule conflict identified",
+      "baseline_sha256": "c2f46767e50e0d4f4fc6e87c79b432cb22190d643c7828edba6fbd2af056adfb",
+      "output_sha256": "2fef083385909cbe296038400823494a0a2c26053d7d3aaef336f673bcf49fb0"
+    },
+    {
+      "path": "governance/memos/.gitkeep",
+      "action": "retained",
+      "source": "Existing generic template/protocol retained; no current-rule conflict identified",
+      "baseline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "governance/performance/PERSONNEL_TEMPLATE.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70\u20133, 9\u201310, 14, 19; unchanged generic protocol body preserved; implementation history removed",
+      "baseline_sha256": "0da38caedbbfe493bed0969bdcceac2c8b9a9789f884ccef26e179e4118bda46",
+      "output_sha256": "a2cbeffa385186518a502f6919bb27d4291ea0b4b61380e25de2a458efaf9f5f"
+    },
+    {
+      "path": "governance/roles/EXAMPLE_builder.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70\u20133, 9\u201310, 14, 19; unchanged generic protocol body preserved; implementation history removed",
+      "baseline_sha256": "cbcc99be5865c6067d7ac717bc4d66629a4d27f943dd53f05491ded2faffeca2",
+      "output_sha256": "3e646e4421f433ec02b0def660a210d7435cca00b1f2c99cf5e623b80f0faf6c"
+    },
+    {
+      "path": "governance/roles/EXAMPLE_reviewer.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70\u20133, 9\u201310, 14, 19; unchanged generic protocol body preserved; implementation history removed",
+      "baseline_sha256": "d196327055ebd1b822d55d2b232850ea6d44de9d9cbaa03c418afd7ca4dd3519",
+      "output_sha256": "551f9d437bc2464503c8627c63bad3673739a5bee3403425519a35624ffe008d"
+    },
+    {
+      "path": "governance/roles/ROLE_TEMPLATE.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70\u20133, 5, 9\u201310, 19; existing generic structure preserved",
+      "baseline_sha256": "b8a2d5f43ad5f41d04b62b8195ec6289294989e24455de2483a6f9ffcf1f115d",
+      "output_sha256": "4cf0162bbad6786e7c4db83ca74b2e119d69b76c0219e8150b87128f96dd6387"
+    },
+    {
+      "path": "governance/scribe/DREAM_CYCLE_PROTOCOL.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70\u20131, 5, 8\u201310, 14, 19",
+      "baseline_sha256": "f1f8611c84d6d5be8b92b7a32bfa48c2c17af93e41362ddb367b093b4be0a7b4",
+      "output_sha256": "13f8677651d8ebef54b2a393a2d24d88cc950ca62652382458dc134ef35a472e"
+    },
+    {
+      "path": "governance/scribe/EVENT_TYPES.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70\u20133, 5, 9\u201310, 19; existing generic structure preserved",
+      "baseline_sha256": "1b49670b26662091ef83f9a9d2146532d2cff6e025d3f95ecdffd21c4c76c0c3",
+      "output_sha256": "4136d1ceb7bad91b33fa7e6cf09fd29fa1a66473792b01db4b2bb806a66df8bb"
+    },
+    {
+      "path": "governance/scribe/MECHANISM_ATTESTATION_PRIMITIVE.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a73, 5, 8; docs/brain/081426__told-vs-bound-canon.md",
+      "baseline_sha256": "8211adb841b10b8b987d848b6a87bfb84ce01bb6b0f4b380ee71d47af0acadaa",
+      "output_sha256": "bd9ea99a0bab94dc2e579be153c6b8429118d47e0ffd0f4a22c69d33f1927401"
+    },
+    {
+      "path": "governance/scribe/SCRIBE_AUDIT_CHECKLIST.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70\u20133, 5, 9\u201310, 19; existing generic structure preserved",
+      "baseline_sha256": "596219cd3914d0db6d5be9c8a76c4edca390147a12e2dbd62f7307b821b51266",
+      "output_sha256": "b08ae6a8b60212dfcd74d48fc44cd860ec142367c4d532df4475392297c671ed"
+    },
+    {
+      "path": "governance/scribe/SCRIBE_CHANNEL_PROTOCOL.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70\u20133, 5, 9\u201310, 19; existing generic structure preserved",
+      "baseline_sha256": "b5f1017c0469e549832df997622d653cc3d5b8f0ff938b507c326e89d3103e14",
+      "output_sha256": "67224aa3594a8d5b96bbf0d761b4d6bcf566900f41df299d72a5905018c07ee2"
+    },
+    {
+      "path": "governance/scribe/STRIKE_SYSTEM_PRIMITIVE.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a79",
+      "baseline_sha256": "18b6bc6f899a181edae4e617b079661d556eca6abc929c7190a75c22c8502751",
+      "output_sha256": "badb97ecb29408b2a855fcd6d182cd432840b62cd7ad07f78b05b5ccc9ab6983"
+    },
+    {
+      "path": "governance/scribe/SUBATOMIC_AUDIT_PROTOCOL.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a78\u20139, 14; docs/brain/041126__7-wave-subatomic-audit-canon.md",
+      "baseline_sha256": "f578b464908757675b52b1d4353f46662d94e856d40441faef0decc4f138a991",
+      "output_sha256": "cd8c68a482d0d4d04daaac7d74a9567a12d9b99b6a9fa961640f60c4ee8548be"
+    },
+    {
+      "path": "governance/session/CIP_HANDOFF_TEMPLATE.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70\u20133, 5, 8\u201310, 14, 19; current portable contract",
+      "baseline_sha256": "8bb9faf25a4279e5552b110b9670137c419341c2b79a493d1d14b93cb010d04a",
+      "output_sha256": "6ed6344fa0477c12373b22fb8e25884cff0ce4aed586ee943251b91b27f106f9"
+    },
+    {
+      "path": "governance/strikes/STRIKE_LOG_TEMPLATE.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a71, 8\u201310, 14, 19; portable template coherence",
+      "baseline_sha256": "b40a478971a9c0dd0e608c0ea8ba7b2a9d8ef3aa1c5dbc8648b77f84599173f1",
+      "output_sha256": "3f69285ddb55e859e3ffd5254f7a698830fbb81b6d8334abaf14e6238420f05b"
+    },
+    {
+      "path": "governance/strikes/STRIKE_REPORT_TEMPLATE.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a71, 8\u201310, 14, 19; portable template coherence",
+      "baseline_sha256": "64f1cae912c65f062d7992659332ec06415b29a027c3e3135dd6e83aa29878b4",
+      "output_sha256": "5b826ec2b7daa4d078ec8bc686a31d6a46d67f6fc9d5a87391574be210b9acb8"
+    },
+    {
+      "path": "governance/terminations/SUCCESSOR_ONBOARDING_TEMPLATE.md",
+      "action": "retained",
+      "source": "Existing generic template/protocol retained; no current-rule conflict identified",
+      "baseline_sha256": "cf1cef7ac759c07e6ffa49d54b19aab3dd9819cc38a4758cbd7fd171e63be57a",
+      "output_sha256": "cf1cef7ac759c07e6ffa49d54b19aab3dd9819cc38a4758cbd7fd171e63be57a"
+    },
+    {
+      "path": "governance/terminations/TERMINATION_TEMPLATE.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a71, 8\u201310, 14, 19; portable template coherence",
+      "baseline_sha256": "3035d5ff74dbe89d509750798d7e59202a5067b1f33094b61878719ad6d59cdc",
+      "output_sha256": "76caa6b1acb62455f3618a443c8251bda134ea28f62af9c1d083a509c3459d9d"
+    },
+    {
+      "path": "governance/verification/COMPARISON_TEMPLATE.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a76, 8, 14; portable neutral synthetic template",
+      "baseline_sha256": "798f04d737de622cd3757e37f8f805ad9871deb9fd81e809509edf364e5f63d7",
+      "output_sha256": "582e5fd8de38a8186235e906d82bd8a587c88135689770ca165b06937dae154d"
+    },
+    {
+      "path": "governance/verification/EXTRACTION_TEMPLATE.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a78, 14; portable neutral synthetic template",
+      "baseline_sha256": "8ee37b3afe1208ed8838118ee2e270e72cacd4fa5489c6b753b2e64fe6e66f0f",
+      "output_sha256": "1006829bd6a89e9c68caf1def8b1d1ac77b99103da42365ad4de3c254a367c70"
+    },
+    {
+      "path": "governance/verification/TOUCH_VERIFICATION_PROTOCOL.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a70, 8, 14, 16; docs/brain/052726__verify-touches-architecture.md",
+      "baseline_sha256": "0b410df8444c27f4a8d5b16d1e78513125f2b36f20222d22c6dab6cd180adf6a",
+      "output_sha256": "e09ba3dfaa093a2c8f37e62d9b46b63c921d8ef8eebc1abb6ce068520c0de2b9"
+    },
+    {
+      "path": "governance/verification/VERDICT_DECLARATION_TEMPLATE.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a71, 8, 14, 19; complete evidence verdict",
+      "baseline_sha256": "1f3ec7055d8731d8c8a1f7cc6a95e75b51c503b270553dbab9b5e5f1108fc448",
+      "output_sha256": "c7674d31d20243c6a2edf08c54b3bcc54211279fd545653032b2bb4607dfe6a3"
+    },
+    {
+      "path": "governance/verification/VERIFICATION_MANIFEST_TEMPLATE.md",
+      "action": "adapted",
+      "source": "HARNESS_CORE.md \u00a7\u00a76, 8, 14; neutral manifest and input basis",
+      "baseline_sha256": "b1574432ce30fb35bb99b9c28a94569fba0ba9818656dfa661450bfe5a03a0ba",
+      "output_sha256": "82ae5035f33522e94030f600124186d95d8af5e7e4529b955b1828fd79a1b73c"
+    },
+    {
+      "path": "governance/AUTHORITY_AND_EVIDENCE.md",
+      "action": "added",
+      "source": "HARNESS_CORE.md \u00a7\u00a70\u20135, 9\u201310, 19",
+      "output_sha256": "2c2ee0e2110c8a099841be043a8b457ee1f8869ef5a7d5a9716bc2a6e662af0f"
+    },
+    {
+      "path": "governance/CONDUCT_FLOOR.md",
+      "action": "added",
+      "source": "HARNESS_CORE.md \u00a7\u00a70\u20131, 19",
+      "output_sha256": "dbf1481d69877d942df4f7f9f0b88a2fecb98eed1c050c64edc748dde02c74b5"
+    },
+    {
+      "path": "governance/NO_SILENT_SCOPE_REDUCTION.md",
+      "action": "added",
+      "source": "HARNESS_CORE.md \u00a7\u00a71, 19; docs/brain/071326__no-silent-scope-reduction-and-false-completion-canon.md",
+      "output_sha256": "b2b27284e578d9be8a58df00adc4f6507be6f5c3d0412b1cfdfd5f0c289f8818"
+    },
+    {
+      "path": "governance/TOLD_AND_BOUND.md",
+      "action": "added",
+      "source": "docs/brain/081426__told-vs-bound-canon.md; HARNESS_CORE.md \u00a71",
+      "output_sha256": "8c57ff2a34432e152cbe22b737debe49cd985763380967040cb0ac5b9b521bd3"
+    },
+    {
+      "path": "governance/SKILLIFICATION_PROTOCOL.md",
+      "action": "added",
+      "source": "HARNESS_CORE.md \u00a71; docs/brain/081426__told-vs-bound-canon.md",
+      "output_sha256": "1cec03440a7a3abc28e4b6c27607ed97e1871bb0c69e8593399996c4fb297973"
+    },
+    {
+      "path": "governance/QUALITY_VERIFICATION_LADDER.md",
+      "action": "added",
+      "source": "docs/brain/081226__quality-verification-ladder-canon.md; HARNESS_CORE.md \u00a714",
+      "output_sha256": "42fe477b6efa6debf257f0d838533e11634ce93bd5d9f1626883efd23a067461"
+    },
+    {
+      "path": "governance/CROSS_MODEL_VERIFICATION.md",
+      "action": "added",
+      "source": "HARNESS_CORE.md \u00a714; docs/brain/081226__quality-verification-ladder-canon.md",
+      "output_sha256": "ed0240cced47ec44c8db486730d763ffca565ec3992f83279b35e608886dc2e9"
+    },
+    {
+      "path": "governance/VERIFICATION_INDEPENDENCE.md",
+      "action": "added",
+      "source": "HARNESS_CORE.md \u00a7\u00a78, 14; docs/brain/041526__verification-independence-principle.md",
+      "output_sha256": "d955fea9cd1897a7570c823bf1e79fd1603f59d23c011ef1c75ead430460fcd4"
+    },
+    {
+      "path": "governance/PROVISIONAL_CONFIGURATION.md",
+      "action": "added",
+      "source": "docs/brain/081226__provisional-configuration-flexibility-canon.md; HARNESS_CORE.md \u00a71",
+      "output_sha256": "c4fcee93f31add5f14b1018e894c7abae756b9087f959e46e973f24594a6bb0a"
+    },
+    {
+      "path": "governance/ROLE_SEPARATION.md",
+      "action": "added",
+      "source": "HARNESS_CORE.md \u00a7\u00a79\u201310; AGENTS.md",
+      "output_sha256": "a190a5d770cd2c1cca929d8f06aa21b6c26943a0444c0603084dd56a6c610f93"
+    }
+  ]
+}

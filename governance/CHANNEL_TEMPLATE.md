@@ -1,7 +1,7 @@
 # Channel Definition Template — {Role Name}
 
 **Status:** {Active / Proposed / Deprecated}
-**Authority:** Layer 6 (Governance Spec) — subordinate to `governance/CHANNEL_PROTOCOL.md`
+**Authority:** Subject to HARNESS_CORE operating rules — subordinate to `governance/CHANNEL_PROTOCOL.md`
 **Scope:** Defines the channel configuration for a single role.
 
 Use this template to add a new channel for a specific role in your fleet. Copy this file to `governance/channels/{role-name}.md` (or equivalent), fill in the placeholders, and submit it with the role definition and port table update.

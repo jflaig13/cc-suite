@@ -1,7 +1,9 @@
 # Channel Protocol — Push-Based Event Delivery for Long-Running Agents
 
-**Status:** Active (CC-Suite™ v2 — Phase 2 Channels)
-**Authority:** Layer 6 (Governance Spec). Does not override Values, Reasoning Standard, Search Protocol, Agent Policy, or company context documents.
+This file specifies a transport or lifecycle contract. A deployment must implement and verify its adapter before claiming the behavior is operational. Configuration, scheduled actions and outward messages require the owner’s authority; no mechanism in this document grants it. Acknowledgment records receipt, not task completion.
+
+**Scope:** Portable channel contract; deployment mechanics require verification.
+**Authority:** Subject to the platform instructions, the user’s authorized scope, and `HARNESS_CORE.md`; see `AUTHORITY_AND_EVIDENCE.md`.
 **Scope:** Any deployment of The CC-Suite™ that runs long-running interactive agent sessions which must receive institutional events in real time.
 **Related:** `governance/CHANNEL_TEMPLATE.md`, `governance/scribe/SCRIBE_CHANNEL_PROTOCOL.md`, `governance/scribe/EVENT_TYPES.md`, `governance/scribe/SCRIBE_AUDIT_CHECKLIST.md`, `governance/lifecycle/INTERACTIVE_LIFECYCLE.md`
 
@@ -11,7 +13,7 @@
 
 When you need real-time event delivery to long-running agent sessions, use this pattern.
 
-The Channel Protocol exists because long-running agents cannot be asked to poll for messages without burning their context window. Polling loops (e.g., "check the shared board every 2 minutes") consume tokens continuously, drift out of sync with reality, and produce silent failure modes where a missed check looks identical to "nothing happened." Push-based delivery inverts the relationship: events arrive at the agent as structured system reminders the moment they land on the shared message bus, and the agent acknowledges each one through a mechanical reply tool that produces an auditable record.
+The channel contract separates durable event delivery from an agent remembering to inspect a shared board. Each event records its source, intended recipient, identity and processing state. A host adapter supplies the actual delivery and acknowledgment mechanism.
 
 This protocol is **optional** — CC-Suite deployments that do not run long-running interactive sessions (e.g., purely batch or single-turn invocations) have no consumer for pushed events and should use the `governance/lifecycle/EPHEMERAL_LIFECYCLE.md` variant with the one-way digest bridge instead.
 
@@ -19,7 +21,7 @@ This protocol is **optional** — CC-Suite deployments that do not run long-runn
 
 ## The Problem It Solves
 
-Polling burns context. Every `/check-board` call reads the same file, produces the same "nothing new" output, and reduces the tokens available for actual work. For a long-running agent active for eight hours, a 2-minute polling loop costs 240 tool calls, and 238 of them return no new information. The cost is real. The detection is impossible — a missed poll looks the same as an empty poll.
+Use event-driven delivery or an explicitly configured observation process. Preserve durable state and make observation failures distinguishable from an empty queue.
 
 Channel push events flip the model. Instead of the agent asking "anything new?", the infrastructure asks the agent "here is a new thing" — only when there actually is one. Events arrive as structured system reminders the agent is guaranteed to see. Zero polling overhead. No silent misses.
 
@@ -95,7 +97,7 @@ When a message is broadcast to all roles, the poller writes it once to every rol
 One MCP server (or equivalent protocol server) per role. Parameterized by role name — one codebase, N instances. Each server:
 
 1. Runs as a subprocess of the agent session's runtime
-2. Drains its role queue on a short interval (every 2–3 seconds is typical)
+2. Drains its role queue on the owner-configured delivery trigger or interval
 3. Pushes each drained event into the agent session as a structured system reminder
 4. Exposes a `reply` tool the agent calls to acknowledge each event
 5. Validates the reply text against required verdict patterns (for typed events)
@@ -238,11 +240,11 @@ This is a **behavioral canon, not a mechanical enforcement**. The channel server
 
 Enforcement comes from three layers:
 
-1. **Scribe audit** — The Scribe (see `governance/scribe/SCRIBE_CHANNEL_PROTOCOL.md`) periodically reviews the audit log and flags any Slack-sourced (bus-sourced) event whose internal ACK has no corresponding bus post visible in the originating channel within a short window (~60 seconds).
+1. **Scribe audit** — The Scribe (see `governance/scribe/SCRIBE_CHANNEL_PROTOCOL.md`) periodically reviews the audit log and flags any Slack-sourced (bus-sourced) event whose internal ACK has no corresponding bus post visible in the originating channel within the owner-configured acknowledgment window.
 2. **Human observation** — The human authority watches the bus channels in real time. A missing bus ACK from an agent that SHOULD have received an event is immediately visible. This is the fastest detection path.
 3. **Canon pressure + strike consequences** — Violations are strike-able under the deployment's governance rules (e.g., Type C — Negligence, per `GOVERNANCE.md`). Repeat violations escalate per the standard and back-to-back termination thresholds.
 
-See `BACK_TO_BACK_TERMINATION_RULE.md` (Phase 1) for back-to-back repeat handling.
+See `BACK_TO_BACK_TERMINATION_RULE.md` for back-to-back repeat handling.
 
 ---
 
@@ -298,7 +300,7 @@ Each channel server binds a unique localhost port. Ports are reserved per role i
 | Poller missing a required role queue | Role regex matches but queue file does not exist | Wrapper creates queue files at launch; health check flags missing files |
 | Bus rate limit exceeded | Poller stderr reports rate limit | Increase poll interval; scale down if pathological |
 
-See also the Operations Runbook in your deployment's Mise-equivalent brain file (`docs/brain/041026__channel-architecture-rollout.md` in the reference implementation).
+See the deployment’s actual transport and recovery runbook.
 
 ---
 
@@ -309,34 +311,9 @@ See also the Operations Runbook in your deployment's Mise-equivalent brain file 
 - **`governance/scribe/EVENT_TYPES.md`** — Canonical registry of event types and required verdict phrases. Update this whenever you add a new typed event.
 - **`governance/scribe/SCRIBE_AUDIT_CHECKLIST.md`** — Mechanical checklist the Scribe runs on every event type. Extracted from this protocol to keep Scribe responsibilities auditable.
 - **`governance/lifecycle/INTERACTIVE_LIFECYCLE.md`** — Lifecycle variant for long-running agents that consume channel events. Interactive agents MUST be channel-connected.
-- **`governance/lifecycle/EPHEMERAL_LIFECYCLE.md`** — Lifecycle variant for batch-triggered ephemeral agents. Ephemeral agents do NOT use channels because they have no persistent consumer; see `governance/DIGEST_BRIDGE_PROTOCOL.md` (Phase 3) for their one-way output pattern.
+- **`governance/lifecycle/EPHEMERAL_LIFECYCLE.md`** — Lifecycle variant for batch-triggered ephemeral agents. Bounded workers may consume a durable queue when their adapter supports it; `governance/DIGEST_BRIDGE_PROTOCOL.md` describes the separate output-delivery pattern.
 - **`governance/TANDEM_PROTOCOL.md`** — V-Loop Step 9 (Audit) references the Scribe audit checklist for mechanical per-event-type enforcement.
-- **`HARNESS_CORE.md`** (Phase 1, repo root) — Compressed init that may reference this protocol in its "Communication" section.
-- **`BACK_TO_BACK_TERMINATION_RULE.md`** (Phase 1) — Governs repeat violations of dual-ACK canon and other channel-protocol rules.
+- **`HARNESS_CORE.md`** — Compressed init that may reference this protocol in its "Communication" section.
+- **`BACK_TO_BACK_TERMINATION_RULE.md`** — Governs repeat violations of dual-ACK canon and other channel-protocol rules.
 
 ---
-
-## Reference Implementation
-
-The Mise reference implementation lives in the main `mise-core` repository and implements this protocol with:
-
-- **Shared poller:** `channels/shared/slack_poller.ts` — single always-on process, polls Slack `#tandem` and `#common-room` every 10s, routes by regex, writes per-role JSONL queues, emits `poller.heartbeat`.
-- **Generic agent channel:** `channels/agent/channel.ts` — parameterized by `AGENT_ROLE` env var, drains its role queue every 3s, pushes via `mcp.notification({method: "notifications/claude/channel"})`, exposes `reply` tool.
-- **Scribe channel:** `channels/scribe/webhook.ts` — extends the generic agent channel with verdict validation against the VERDICT_PATTERNS map and append-only audit log at `channels/scribe/audit_log.jsonl`.
-- **Per-role MCP configs:** `channels/configs/role-{name}.mcp.json` — one config file per role, each containing exactly ONE channel server. Loaded at launch via `--mcp-config`. This per-role isolation is the architectural fix that allows multiple simultaneous agent sessions without port collision.
-- **Launch wrapper:** `scripts/launch_claude.sh` — role-aware launcher that validates the config, pre-flights the port, and passes the dev flag.
-- **Shell aliases:** `scripts/dev/claude_aliases.zsh` — auto-sourced by `~/.zshrc`, one alias per role.
-- **Process supervision:** `launchd/com.mise.slack-poller.plist.template` — macOS launchctl singleton enforcement with auto-restart.
-- **Health check:** `scripts/check_push_health.sh` — heartbeat freshness, process liveness, per-channel `/health` endpoint, scribe `/metrics` summary.
-- **Rollback:** `scripts/rollback_push_architecture.sh` — emergency revert that stops the poller, kills channel subprocesses, and reverts the cutover commit.
-- **Ports:** 8789 (scribe) + 8790–8798 (nine agent channels).
-
-Full Mise spec: `docs/brain/041026__channel-architecture-rollout.md`. The dual-ACK canon: `docs/brain/041126__channel-dual-ack-canon.md`.
-
-The Mise implementation uses Slack as the message bus, Bun as the runtime, Claude Code as the agent runtime, and macOS launchd as the process supervisor. None of those choices are load-bearing for the protocol itself — any comparable substitutes (Discord + Cursor + systemd, Telegram + custom-agent + supervisord, in-process queue + test harness) implement the same abstract pattern.
-
----
-
-## Changelog
-
-- **v1.0 (2026-04-11):** Extracted from Mise reference implementation into CC-Suite™ v2 Phase 2 governance source. Mandates dual-ACK requirement per canon ratified 2026-04-11.

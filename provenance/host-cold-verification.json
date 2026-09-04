@@ -1,0 +1,175 @@
+{
+  "status": "pass",
+  "python": "Python 3.14.0",
+  "bun": "1.3.12",
+  "results": [
+    {
+      "command": [
+        "bun",
+        "install",
+        "--frozen-lockfile",
+        "--ignore-scripts"
+      ],
+      "cwd": "checkout/channels/scribe",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "typecheck"
+      ],
+      "cwd": "checkout/channels/scribe",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "build"
+      ],
+      "cwd": "checkout/channels/scribe",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "test"
+      ],
+      "cwd": "checkout/channels/scribe",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "bun",
+        "install",
+        "--frozen-lockfile",
+        "--ignore-scripts"
+      ],
+      "cwd": "checkout/channels/agent",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "typecheck"
+      ],
+      "cwd": "checkout/channels/agent",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "build"
+      ],
+      "cwd": "checkout/channels/agent",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "bun",
+        "run",
+        "test"
+      ],
+      "cwd": "checkout/channels/agent",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "pytest",
+        "tests/test_portable_host_boundary.py",
+        "tests/test_tier1_channel_relay_durable_inbox.py",
+        "tests/test_tier1_durable_inbox_cursor_seed.py",
+        "-q"
+      ],
+      "cwd": "checkout",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "bash",
+        "-n",
+        "scripts/fleet_auth_scrub.sh"
+      ],
+      "cwd": "checkout",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "zsh",
+        "-n",
+        "scripts/fleet_spawn.sh"
+      ],
+      "cwd": "checkout",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "bash",
+        "-n",
+        "scripts/launch_channel.sh"
+      ],
+      "cwd": "checkout",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "bash",
+        "-n",
+        "scripts/launch_claude.sh"
+      ],
+      "cwd": "checkout",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "bash",
+        "-n",
+        "scripts/launch_company_scribe.sh"
+      ],
+      "cwd": "checkout",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "bash",
+        "-n",
+        "scripts/portable_host_env.sh"
+      ],
+      "cwd": "checkout",
+      "exit_code": 0
+    },
+    {
+      "command": [
+        "bash",
+        "-n",
+        "scripts/role_model_map.sh"
+      ],
+      "cwd": "checkout",
+      "exit_code": 0
+    },
+    {
+      "check": "fresh-build-byte-parity",
+      "path": "scribe/webhook.bundle.js",
+      "pass": true,
+      "sha256": "ed6403f628d841b763982f8fe543e57295db6de2c0485110c0fd01ad1fb06e9c"
+    },
+    {
+      "check": "fresh-build-byte-parity",
+      "path": "agent/channel.bundle.js",
+      "pass": true,
+      "sha256": "bff64f9bdc1b56f35d39eed379fe197bf33c63230b1db2dfc329a190103aee3e"
+    },
+    {
+      "check": "frozen-scribe-manifest",
+      "pass": true,
+      "link_sha256": "5eccf3fc21664a9376ce86022c50e9132aebb6c108fb578241a469a4307d95a6"
+    }
+  ],
+  "environment": "Disposable clean checkout; local paths redacted."
+}

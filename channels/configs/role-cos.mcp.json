@@ -1,0 +1,34 @@
+{
+  "mcpServers": {
+    "cos-channel-push": {
+      "type": "stdio",
+      "command": "bash",
+      "args": [
+        "-c",
+        "exec \"${CC_SUITE_PACKAGE_ROOT:?explicit package root required}/scripts/launch_channel.sh\" \"$@\"",
+        "ccsuite-channel",
+        "cos",
+        "push"
+      ],
+      "env": {
+        "AGENT_PORT": "8799",
+        "RELAY_PORT": "8799"
+      }
+    },
+    "cos-channel": {
+      "type": "stdio",
+      "command": "bash",
+      "args": [
+        "-c",
+        "exec \"${CC_SUITE_PACKAGE_ROOT:?explicit package root required}/scripts/launch_channel.sh\" \"$@\"",
+        "ccsuite-channel",
+        "cos",
+        "relay"
+      ],
+      "env": {
+        "AGENT_PORT": "8799",
+        "RELAY_PORT": "8799"
+      }
+    }
+  }
+}
