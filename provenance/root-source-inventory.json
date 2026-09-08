@@ -55,7 +55,7 @@
     {
       "path": "LICENSE",
       "output_sha256": "3f3d9e0024b1921b067d6f7f88deb4a60cbe7a78e76c64e3f1d7fc3b779b9d04",
-      "basis": "Unchanged public CC BY-SA 4.0 license; September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      "basis": "September 8 owner-authorized replacement of the prior CC BY-SA root declaration with the unchanged standard MPL-2.0 text for software. Documentation uses the complete CC BY-SA 4.0 text in LICENSES/CC-BY-SA-4.0.txt; earlier grants remain in effect."
     },
     {
       "path": "LICENSES/CC-BY-SA-4.0.txt",
