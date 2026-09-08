@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Public portability boundaries with no actual host install or authority."""
 import importlib
 import json

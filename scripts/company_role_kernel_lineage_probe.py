@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MPL-2.0
 """Refuse legacy role launch while file-backed Kernel lineage can act/recover."""
 from __future__ import annotations
 

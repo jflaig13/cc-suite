@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """M8 identity, credential, egress, signed-message, and memory isolation."""
 from __future__ import annotations
 

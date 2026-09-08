@@ -1,4 +1,5 @@
 #!/bin/bash
+# SPDX-License-Identifier: MPL-2.0
 # Source-pinned reusable role routing functions, requiring adopter deployment approval.
 # Definitions only; this file never starts a host.
 

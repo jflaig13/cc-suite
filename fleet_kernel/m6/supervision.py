@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Stable, read-only capture for the M6 spend shadow."""
 from __future__ import annotations
 

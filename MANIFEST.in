@@ -1,0 +1,6 @@
+# SPDX-License-Identifier: MPL-2.0
+include LICENSE COPYING.md TRADEMARKS.md THIRD_PARTY_NOTICES.md
+include LICENSES/*.txt
+recursive-include LICENSES/third-party *.txt
+include provenance/license-map.json provenance/third-party-licenses.json
+include tools/check_licenses.py tools/license_bundles.py

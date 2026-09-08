@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Tier 1 tests for mcp_servers/channel_relay/durable_inbox.py.
 
 Tests the cursor primitive in isolation (no Claude Code, no MCP, no actual

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Dependency-free M7 errors used by legacy rollback paths."""
 
 

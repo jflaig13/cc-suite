@@ -14,8 +14,9 @@
     "bun": "1.3.12"
   },
   "scripts": {
-    "build": "bun --no-install build channel.ts --target=bun --outfile=channel.bundle.js",
+    "build": "bun --no-install build channel.ts --target=bun --outfile=channel.bundle.js && python3 ../../tools/license_bundles.py --write channel.bundle.js",
     "typecheck": "tsc --noEmit",
     "test": "bun --no-install test arbiter_ask.test.ts ../shared/advisor_ask_detect.test.ts"
-  }
+  },
+  "license": "MPL-2.0"
 }

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Typed, human-authorized decision and consume-once APIs for M5 approvals."""
 from __future__ import annotations
 

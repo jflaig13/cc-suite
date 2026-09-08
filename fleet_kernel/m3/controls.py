@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Evidence validators for the M3 parity-window diversity controls."""
 from __future__ import annotations
 

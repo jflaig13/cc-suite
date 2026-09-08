@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Durable cursor-based inbox reader (Python port of channels/shared/durable_inbox.ts).
 
 Replaces consume-and-delete drain for the shared role queue

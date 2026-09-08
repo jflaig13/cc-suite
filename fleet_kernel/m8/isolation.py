@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Non-database M8 structural isolation controls."""
 from __future__ import annotations
 

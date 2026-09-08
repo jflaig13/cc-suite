@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Unskippable objective verification, nightly failure families, calibration."""
 from __future__ import annotations
 

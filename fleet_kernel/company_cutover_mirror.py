@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Atomic local projection of the database cutover registry for legacy relays.
 
 This is fallback state, not admission or effect authority. The bus is always an

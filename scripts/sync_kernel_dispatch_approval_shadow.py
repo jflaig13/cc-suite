@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MPL-2.0
 """Run one strictly shadow-only M5 legacy-surface synchronization cycle."""
 import argparse
 import json

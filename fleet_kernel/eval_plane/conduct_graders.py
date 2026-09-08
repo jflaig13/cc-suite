@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Agent-conduct graders (Told -> Bound program, Phase F; suite `agent_conduct_v1`).
 
 Deterministic graders over a session transcript. No model, no network. Five of the

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Fail-closed M7 kernel projection while legacy role queues remain rollback."""
 from __future__ import annotations
 

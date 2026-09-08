@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MPL-2.0
 /**
  * Tests for durable_inbox.ts — cursor-based inbox reader (Ticket B).
  *

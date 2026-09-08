@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Negative controls for the source-only public distribution check."""
 from pathlib import Path
 import hashlib

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Install the exported schema into an explicitly supplied empty database."""
 from pathlib import Path
 import re

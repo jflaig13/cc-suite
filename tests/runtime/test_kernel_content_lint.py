@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Tier 1 guard for the deterministic content lint (no-ai-slop kernel wiring).
 
 Every failing-input test here is the bite test for its rule: remove the rule

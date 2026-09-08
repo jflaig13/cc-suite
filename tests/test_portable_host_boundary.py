@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Hermetic checks for exported configuration/admission boundaries; no services start."""
 from pathlib import Path
 import importlib.util

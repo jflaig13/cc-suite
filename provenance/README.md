@@ -10,6 +10,14 @@ This distribution was prepared on September 4, 2026 against the CC-Suite referen
 
 Output hashes bind each inventory to the files it describes. `python tools/check_distribution.py` checks those hashes, local Markdown links, Python import closure for Fleet Kernel, and a limited set of public-distribution hazards. It supplements source review and runtime tests; it is not a security certification.
 
+The September 8 licensing correction separates software and documentation
+licenses, preserves upstream notices and records coverage in
+[license-map.json](license-map.json). The distribution check also verifies file
+classification, source notices and legal-file inclusion in package and payload
+manifests. `python tools/license_bundles.py --check` checks generated notices
+against the [third-party manifest](third-party-licenses.json); CI repeats it
+after both bundles rebuild and inspects the legal files in built Python archives.
+
 Excluded files have no public output. Private customer-bearing names may be redacted in the public inventory; the entry states that redaction and retains a reference-source digest. A source digest identifies a revision without exposing its contents.
 
 Portability adaptations replace deployment-specific bindings with explicit configuration, preserve authority refusals, and correct documented compatibility defects. The runtime guide describes the verified public behavior and prerequisites for adopting deployment-bound components.

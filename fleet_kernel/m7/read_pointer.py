@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Private, atomic M7 role-queue read-authority pointer."""
 from __future__ import annotations
 

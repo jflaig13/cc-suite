@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MPL-2.0
 /**
  * Cold-start replay fix — acceptance tests (spec:
  * cc_execs/memos/ccde/20260626__durable-inbox-cold-start-replay-FIX-SPEC.md).

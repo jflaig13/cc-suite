@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Exact MacBook Company Scribe package and single-writer admission.
 
 This module prepares the activation path but never activates anything at

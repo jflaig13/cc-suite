@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """fleet_kernel.m2 — the M2 proving spike (OIL-227).
 
 Falsifies (or confirms) D4's control-plane decision: Postgres-backed

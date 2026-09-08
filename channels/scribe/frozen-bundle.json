@@ -18,15 +18,15 @@
     },
     {
       "path": "channels/scribe/closed_mcp.ts",
-      "sha256": "733bc64496c958aaee8bdd68525cdb60bc54ece1c459d2c250a8d39ce0ec4dc6"
+      "sha256": "39861b01d04c93a868146263b1164ef4713be4f9cdf9c9bbcaadd5e0be635371"
     },
     {
       "path": "channels/scribe/durable_delivery.ts",
-      "sha256": "efa3dc1dfe58d518b8d0c3eaeda117de5df8353e0b82dab99d3b18697ec5c652"
+      "sha256": "15a9f3ad5e58b55c6314f34c88cb24a4c6749e784acef98ffae55141bb6134bd"
     },
     {
       "path": "channels/scribe/package.json",
-      "sha256": "53488857f44f26781eba94033f62a980b0455d14d03a964f4ebcdcbfde70612d"
+      "sha256": "4f7b1f4e064076fe4294210463278e6c97beb7c4286cbc906affe8a2aa541f93"
     },
     {
       "path": "channels/scribe/tsconfig.json",
@@ -34,18 +34,18 @@
     },
     {
       "path": "channels/scribe/webhook.ts",
-      "sha256": "4299e3272a576c41160731c86e5543bc1479d67062bffb50a889279bbdb87f7c"
+      "sha256": "afe49b410603a94c8c2aec92be7db3ed6516ed1956c5b890c10af3ea5fdfde4e"
     },
     {
       "path": "channels/shared/durable_inbox.ts",
-      "sha256": "2a1e490b73aa980b370ce2f9d56148679cc896498de07b9fdc7e22dfdf7eebb2"
+      "sha256": "0dc7c7a84e4eb742f5107583d570f26886e6b19aaf2bf42001afcfee34c910d9"
     },
     {
       "path": "channels/shared/send_receipt.ts",
-      "sha256": "b139395741b5c331a042346fc6ea030e796d6cb6ae64c0ae667c241397847f23"
+      "sha256": "4cb2c2554b8b7a9d98b23db666cb161f90142ae26dc9aba21ec1cb7a779f6a3b"
     }
   ],
   "bundle": "channels/scribe/webhook.bundle.js",
-  "bundle_sha256": "ed6403f628d841b763982f8fe543e57295db6de2c0485110c0fd01ad1fb06e9c",
-  "link_sha256": "5eccf3fc21664a9376ce86022c50e9132aebb6c108fb578241a469a4307d95a6"
+  "bundle_sha256": "a9e8f025f4fc307cfa4dbadaaf1d92b3ab087c417900514d5a390e7956979089",
+  "link_sha256": "995158e025b60d894239f483f90e2e6cc189db6e4ae2734750a4e172afab5ec7"
 }

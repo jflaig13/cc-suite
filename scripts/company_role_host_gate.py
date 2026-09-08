@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MPL-2.0
 """Source-pinned Company host/model gate; adopter authorization is required separately.
 
 The reusable host policy admits Claude seats and Codex review and refuses the

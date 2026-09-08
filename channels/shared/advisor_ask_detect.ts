@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MPL-2.0
 // advisor_ask_detect.ts — B3 (CCTO amendment A3, OIL-221 north-star trial):
 // detects an ADVISOR ask so the handoff-ledger auto-open gate (G-c) can fire
 // for it, not just for event_type=task_handoff.

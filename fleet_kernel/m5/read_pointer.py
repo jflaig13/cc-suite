@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Private, atomic M5 read-authority pointer."""
 from __future__ import annotations
 

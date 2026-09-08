@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Dependency-free, stable reads of legacy M7 queue and role-cursor files."""
 from __future__ import annotations
 

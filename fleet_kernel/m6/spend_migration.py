@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Byte-honest M6 shadow of legacy budget reservations.
 
 ``budget_usd`` is a ceiling, not actual spend. Actual provider usage remains in

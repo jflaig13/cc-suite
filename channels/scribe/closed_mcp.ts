@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MPL-2.0
 type JsonObject = Record<string, unknown>;
 type RequestHandler = (
   request: { params: JsonObject }

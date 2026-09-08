@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MPL-2.0
 """Operational entrypoint for held install and one admitted Company Scribe.
 
 Initial admission uses the exact local process, installed package, active

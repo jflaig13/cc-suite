@@ -1,4 +1,5 @@
 #!/usr/bin/env bun
+// SPDX-License-Identifier: MPL-2.0
 /**
  * Generic Agent Channel — One codebase, any role.
  *

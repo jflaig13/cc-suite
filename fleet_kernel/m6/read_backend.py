@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Fail-closed M6 reads while the legacy envelope stays the rollback surface."""
 from __future__ import annotations
 

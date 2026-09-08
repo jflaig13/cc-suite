@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Fleet Kernel Evaluation Plane.
 
 Directive: `fleet_kernel/fleet_kernel_evaluation_plane_full_project_directive.md`.

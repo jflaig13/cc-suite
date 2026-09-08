@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MPL-2.0
 import { describe, expect, test } from "bun:test";
 import { isAdvisorAsk } from "./advisor_ask_detect";
 

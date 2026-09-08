@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MPL-2.0
 """CLI for bun channel dual-write (best-effort; exit 0 always)."""
 from __future__ import annotations
 

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Keep synthetic test state out of shared system temporary directories.
 
 CC_SUITE_TEST_STATE_ROOT may select an existing secure parent; otherwise HOME

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Internal daily driver for the Mise Company Fleet.
 
 The Company Workspace is a separate operating surface from every restaurant

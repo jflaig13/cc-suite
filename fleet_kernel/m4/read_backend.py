@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Fail-closed M4 kernel read projection while the JSONL remains authoritative."""
 from __future__ import annotations
 

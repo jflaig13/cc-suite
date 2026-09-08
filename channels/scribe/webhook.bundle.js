@@ -761,6 +761,10 @@ function appendInboundEvent(queuePath, event) {
 }
 
 // webhook.ts
+/*! SPDX-License-Identifier: MPL-2.0
+ * Source: https://github.com/jflaig13/cc-suite
+ * License: https://mozilla.org/MPL/2.0/
+ */
 var SCRIBE_PORT = 8789;
 if (process.env.SCRIBE_OFFLINE_PROBE === "1") {
   console.log("offline-bun-ok");

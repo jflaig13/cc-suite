@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """External MacBook provisioner/supervisor for the writable Company Scribe.
 
 This process is intentionally separate from Claude Code.  Its database route

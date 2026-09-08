@@ -5,19 +5,25 @@
       "path": "channels/agent/arbiter_ask.test.ts",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "74d7af2d71110df924d9aa659ade9eb0676690a8d2bf9b6c8a682f92fe4a6ee7",
-      "output_sha256": "74d7af2d71110df924d9aa659ade9eb0676690a8d2bf9b6c8a682f92fe4a6ee7",
+      "output_sha256": "d6d4df63c480222327543b4890169f4e890ffa6d7aaf29fe557b0e5f1495f6f8",
       "adaptations": [],
       "mode": "0o644",
-      "status": "unchanged"
+      "status": "unchanged",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "channels/agent/arbiter_ask.ts",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "47de8304bf60cd8c75af9d0bd49553aef842322f991bca56f50230cdb627389b",
-      "output_sha256": "47de8304bf60cd8c75af9d0bd49553aef842322f991bca56f50230cdb627389b",
+      "output_sha256": "8968936a6403d292aad32a36eec25ea0c76ca5e20d7d45e49f0f3b2770e1bc53",
       "adaptations": [],
       "mode": "0o644",
-      "status": "unchanged"
+      "status": "unchanged",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "channels/agent/bun.lock",
@@ -36,15 +42,18 @@
       "adaptations": [
         "Rebuilt using exact declared Bun build command after export adaptations."
       ],
-      "output_sha256": "bff64f9bdc1b56f35d39eed379fe197bf33c63230b1db2dfc329a190103aee3e",
+      "output_sha256": "66c0341a87fc4f26df424c0847049a506daafe90ab464928d2b74dee9e956810",
       "mode": "0o755",
-      "status": "generated"
+      "status": "generated",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "channels/agent/channel.ts",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "4e34673d15828ce08c265a8447fee0e89add48abfe5e3b38e992fa7de50325e4",
-      "output_sha256": "408d7bfe8c07a6a8fc8d81fa2684a81f8793ad98038a0ba6117a6e8648f186b9",
+      "output_sha256": "c85530dd436404a398b1200cc5734a43bfae2470ca9c345f087dfed1f7e8c092",
       "adaptations": [
         "Bind workspace, package, bus, channel state, role, port and Python explicitly.",
         "Require deployer-supplied authorization before any channel filesystem or socket effect.",
@@ -53,30 +62,39 @@
         "Bind channel state to the authorized Company role/root; omit restaurant destination aliases from Company-only target configuration."
       ],
       "mode": "0o644",
-      "status": "adapted"
+      "status": "adapted",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "channels/agent/emit_fodl.ts",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "7b261cfe527cf91ffa21245cda56909a179c7a77f61142f2a6ef7b77e22f7c96",
-      "output_sha256": "35db03655bf17406a578fa70a513373df5cf698460449d4ebc2af170ef3f7e03",
+      "output_sha256": "128244ecf10d4c23210caaaf8d4c0a100449f0759b3c4fab148435473c14a597",
       "adaptations": [
         "Use explicit workspace/Python; remove canonical Git-worktree interpreter discovery.",
         "Narrow pre-existing TypeScript type errors: validated event ID, awaited drain callback, MCP argument assertions, and guaranteed regex capture; no message algorithm redesign."
       ],
       "mode": "0o644",
-      "status": "adapted"
+      "status": "adapted",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "channels/agent/package.json",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "6e864fbce2d40ec193f0fc9c253e1a4cd0ed21c9bdd16fa7d734a120b4914964",
-      "output_sha256": "82df6726308cf67e9efb796f58d97e04a7d7f424cf216fa17a9d36adf3db0d54",
+      "output_sha256": "810324ba8effecacc977dc8755989f3a0614546e5cc9c9bf1a67dcc0327bff79",
       "adaptations": [
         "Declare actual module/build/typecheck/test commands and exact Bun/TypeScript dependencies; regenerate lock with Bun 1.3.12 and lifecycle scripts disabled."
       ],
       "mode": "0o644",
-      "status": "adapted"
+      "status": "adapted",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "channels/agent/tsconfig.json",
@@ -243,51 +261,66 @@
       "path": "channels/scribe/closed_mcp.ts",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "733bc64496c958aaee8bdd68525cdb60bc54ece1c459d2c250a8d39ce0ec4dc6",
-      "output_sha256": "733bc64496c958aaee8bdd68525cdb60bc54ece1c459d2c250a8d39ce0ec4dc6",
+      "output_sha256": "39861b01d04c93a868146263b1164ef4713be4f9cdf9c9bbcaadd5e0be635371",
       "adaptations": [],
       "mode": "0o644",
-      "status": "unchanged"
+      "status": "unchanged",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "channels/scribe/durable_delivery.test.ts",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "c3b4a24521245a26d3ecb5ddbe18f9df22e23f2b33875b3ef5f962b8d714784a",
-      "output_sha256": "c3b4a24521245a26d3ecb5ddbe18f9df22e23f2b33875b3ef5f962b8d714784a",
+      "output_sha256": "d7c333b037db24a149217ea93f77228747b711c165e39b6ada96c18d63f56c2c",
       "adaptations": [],
       "mode": "0o644",
-      "status": "unchanged"
+      "status": "unchanged",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "channels/scribe/durable_delivery.ts",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "efa3dc1dfe58d518b8d0c3eaeda117de5df8353e0b82dab99d3b18697ec5c652",
-      "output_sha256": "efa3dc1dfe58d518b8d0c3eaeda117de5df8353e0b82dab99d3b18697ec5c652",
+      "output_sha256": "15a9f3ad5e58b55c6314f34c88cb24a4c6749e784acef98ffae55141bb6134bd",
       "adaptations": [],
       "mode": "0o644",
-      "status": "unchanged"
+      "status": "unchanged",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "channels/scribe/frozen-bundle.json",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "6417ac4b84e3f274b7342ecf1d93d4a719421cf5bbc704fd2f0c620860f7179b",
-      "output_sha256": "1381c89044c264481750cceaff1007928708f1ff02156da2c73f59e0d809b82e",
+      "output_sha256": "2fccf10434cb09529bad32bc46f4f10a974ea1e91f120fee0a4352a139c67bba",
       "adaptations": [
         "Recompute all sanitized source, bundle, and canonical linkage hashes.",
         "Recomputed every exact input/bundle hash and canonical JSON link hash after final TypeScript/package/lock changes."
       ],
       "mode": "0o644",
-      "status": "adapted"
+      "status": "adapted",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "channels/scribe/package.json",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "155d56662d1446ef1a02bf14a34daebaf225754060037ea22e7a44a61ab1034b",
-      "output_sha256": "53488857f44f26781eba94033f62a980b0455d14d03a964f4ebcdcbfde70612d",
+      "output_sha256": "4f7b1f4e064076fe4294210463278e6c97beb7c4286cbc906affe8a2aa541f93",
       "adaptations": [
         "Declare actual module/build/typecheck/test commands and exact Bun/TypeScript dependencies; regenerate lock with Bun 1.3.12 and lifecycle scripts disabled."
       ],
       "mode": "0o644",
-      "status": "adapted"
+      "status": "adapted",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "channels/scribe/tsconfig.json",
@@ -302,19 +335,22 @@
       "path": "channels/scribe/webhook.bundle.js",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "bc162f0cd63902e1cc1ab05d0f240e58f623c820106a5e44d128a34da7ecc3d9",
-      "output_sha256": "ed6403f628d841b763982f8fe543e57295db6de2c0485110c0fd01ad1fb06e9c",
+      "output_sha256": "a9e8f025f4fc307cfa4dbadaaf1d92b3ab087c417900514d5a390e7956979089",
       "adaptations": [
         "Rebuilt from sanitized exact source with Bun 1.3.12; no dependency install.",
         "Rebuilt using exact declared Bun build command after export adaptations."
       ],
       "mode": "0o755",
-      "status": "adapted"
+      "status": "adapted",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "channels/scribe/webhook.ts",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "aa20319287fddf7ded58283ad09ba78ba4cc52f0bb00e4f7a645a094b3f74ecc",
-      "output_sha256": "4299e3272a576c41160731c86e5543bc1479d67062bffb50a889279bbdb87f7c",
+      "output_sha256": "afe49b410603a94c8c2aec92be7db3ed6516ed1956c5b890c10af3ea5fdfde4e",
       "adaptations": [
         "Remove ambient private state/bus defaults; require explicit native runtime paths.",
         "Validate exact admitted parent before directory creation; preserve effect-broker send/reply authority.",
@@ -322,70 +358,94 @@
         "Narrow pre-existing TypeScript type errors: validated event ID, awaited drain callback, MCP argument assertions, and guaranteed regex capture; no message algorithm redesign."
       ],
       "mode": "0o644",
-      "status": "adapted"
+      "status": "adapted",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "channels/shared/advisor_ask_detect.test.ts",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "bcc64bb248fa993f22bd351e91a93fd64c42cbce034b40e275d52b0647f864b1",
-      "output_sha256": "bcc64bb248fa993f22bd351e91a93fd64c42cbce034b40e275d52b0647f864b1",
+      "output_sha256": "53390db3f424f1184887f98ec1ece231fd4b42ffed3f60430a7841d44c9b1e51",
       "adaptations": [],
       "mode": "0o644",
-      "status": "unchanged"
+      "status": "unchanged",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "channels/shared/advisor_ask_detect.ts",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "2359df2da9607104c7dc5fdc5d0d982a99ffca051f0a1264c1aa927dd2204682",
-      "output_sha256": "2359df2da9607104c7dc5fdc5d0d982a99ffca051f0a1264c1aa927dd2204682",
+      "output_sha256": "ff7dad3bcdd54968f264edfad3982424d574d228e6e26e49c288217cc3469c88",
       "adaptations": [],
       "mode": "0o644",
-      "status": "unchanged"
+      "status": "unchanged",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "channels/shared/durable_inbox.test.ts",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "35b727034289cb7755f903017163929ffcb34fafa237a68cd76a228073fa9273",
-      "output_sha256": "35b727034289cb7755f903017163929ffcb34fafa237a68cd76a228073fa9273",
+      "output_sha256": "385ea4370c26bad73c38e8e452d41bcfc6b3d8598ef3076f8b15fa6ea07c08c1",
       "adaptations": [],
       "mode": "0o644",
-      "status": "unchanged"
+      "status": "unchanged",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "channels/shared/durable_inbox.ts",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "2a1e490b73aa980b370ce2f9d56148679cc896498de07b9fdc7e22dfdf7eebb2",
-      "output_sha256": "2a1e490b73aa980b370ce2f9d56148679cc896498de07b9fdc7e22dfdf7eebb2",
+      "output_sha256": "0dc7c7a84e4eb742f5107583d570f26886e6b19aaf2bf42001afcfee34c910d9",
       "adaptations": [],
       "mode": "0o644",
-      "status": "unchanged"
+      "status": "unchanged",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "channels/shared/durable_inbox_coldstart.test.ts",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "dd9b93ec5ef97bb0e1f4b4df5f5fad0a26022e5f482189ebd6c4c72a673b11fe",
-      "output_sha256": "dd9b93ec5ef97bb0e1f4b4df5f5fad0a26022e5f482189ebd6c4c72a673b11fe",
+      "output_sha256": "0fd2de5cebe699698e26c6e979978240d482c8430e643a1076161817dc1cd2f7",
       "adaptations": [],
       "mode": "0o644",
-      "status": "unchanged"
+      "status": "unchanged",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "channels/shared/send_receipt.test.ts",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "9034dab70558d432a80d5541bf5e69eff17a7a609ff0f51f375485fc6544bca2",
-      "output_sha256": "9034dab70558d432a80d5541bf5e69eff17a7a609ff0f51f375485fc6544bca2",
+      "output_sha256": "bab47dd49c07a56a47624b15eddfdd92224b3d44d40d9112accab02ddea4c7a5",
       "adaptations": [],
       "mode": "0o644",
-      "status": "unchanged"
+      "status": "unchanged",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "channels/shared/send_receipt.ts",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "b139395741b5c331a042346fc6ea030e796d6cb6ae64c0ae667c241397847f23",
-      "output_sha256": "b139395741b5c331a042346fc6ea030e796d6cb6ae64c0ae667c241397847f23",
+      "output_sha256": "4cb2c2554b8b7a9d98b23db666cb161f90142ae26dc9aba21ec1cb7a779f6a3b",
       "adaptations": [],
       "mode": "0o644",
-      "status": "unchanged"
+      "status": "unchanged",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "docs/host-runtime.md",
@@ -393,45 +453,55 @@
       "adaptations": [
         "Local-safe portable export boundary regression coverage; no deployment activation."
       ],
-      "output_sha256": "ecda14f4d76e4d8ae3179790d1fcc6370d7ad93767dd8fc0cbe73eeabe4b0689",
+      "output_sha256": "7d62e822d2f92dff6c4f4061553f38df2531c0aa2edb422a203265b9e2edf55c",
       "mode": "0o644",
       "status": "generated",
       "post_assembly_changes": [
-        "Correct host identity and environment documentation; distinguish historical staging verification from final assembly."
+        "Correct host identity and environment documentation; distinguish historical staging verification from final assembly.",
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     },
     {
       "path": "mcp_servers/channel_relay/__init__.py",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "c7765348ba8162b5d3a2595b3818917765c38fd3e4782b279a97131f6dfaddc5",
       "adaptations": [],
       "mode": "0o600",
-      "status": "unchanged"
+      "status": "unchanged",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "mcp_servers/channel_relay/__main__.py",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "4336d8221a389eaa0063df02090d479cf97093d14d73c7b40e485835608d8bd8",
-      "output_sha256": "4336d8221a389eaa0063df02090d479cf97093d14d73c7b40e485835608d8bd8",
+      "output_sha256": "ab239347e5359ff82f10d0cf5cde03479bd709ed5c10994b3a78b79be938c413",
       "adaptations": [],
       "mode": "0o644",
-      "status": "unchanged"
+      "status": "unchanged",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "mcp_servers/channel_relay/durable_inbox.py",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "777c6befd716009ca53c1f0c7e48276333db2aed59dd6cb8e1b8aa92b178edbe",
-      "output_sha256": "777c6befd716009ca53c1f0c7e48276333db2aed59dd6cb8e1b8aa92b178edbe",
+      "output_sha256": "b1c11c23d871d500d7845c0d1643f43115c6b33cc47071f6ff697d38b9618dbd",
       "adaptations": [],
       "mode": "0o644",
-      "status": "unchanged"
+      "status": "unchanged",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "mcp_servers/channel_relay/kernel_plane_bridge.py",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "353f17bad3ac52101b1ff19637d7d58292437ae83c72f26075a324b4b36ab410",
-      "output_sha256": "f833d0acf51cdb76078d5dcc2bdd00b29f78047dfbc75dd1b75792e4f9bf1635",
+      "output_sha256": "71a21edeefbab869c34e50b0dc8128f3475ef32b63051ce732827a33b25c4b5f",
       "adaptations": [
         "Keep native bridge algorithms; explicit opt-in before any database/client discovery and explicit bus mirror location.",
         "Resolve reviewed bridge code from package root; no mutable workspace module discovery; kernel bridge disabled unless explicitly enabled."
@@ -439,62 +509,73 @@
       "mode": "0o644",
       "status": "adapted",
       "post_assembly_changes": [
-        "Use the same configured cutover projection with canonical read-to-projection serialization and safe inactive fallback."
+        "Use the same configured cutover projection with canonical read-to-projection serialization and safe inactive fallback.",
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     },
     {
       "path": "mcp_servers/channel_relay/server.py",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "923cfa8211b244a2face854129017fdcde65123009558eb52f91420156ca9e2f",
-      "output_sha256": "f7671fe92f39b3e75cedf325d55f455b85f17acfcf34e4396ee4cac37edab73a",
+      "output_sha256": "a1341e7b86f23fd2853809c6bf2a62045dd210334583bf0cee1553e3d4ef9695",
       "adaptations": [
         "Explicit workspace/bus/state paths and deployer authorization; refuse legacy Scribe relay.",
         "Slack posting requires an explicitly installed/authorized external adapter; no Slack credentials or registry exported.",
         "State path bound to role/root; Company-only target configuration; optional Slack bridge explicit; external hook behavior labeled deployment prerequisite."
       ],
       "mode": "0o644",
-      "status": "adapted"
+      "status": "adapted",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "scripts/company_role_host_gate.py",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "d42e390753598b9e9714efd967206169cdea61beafa5a5c612fa6e7c54062600",
-      "output_sha256": "3acbf72ee741c1ed149b6eeb7b2e824d82beb4d9f0bae6a5d15644db0bbc145d",
+      "output_sha256": "535b73508f472c037bc3caa004d70c2873671c3a449024de9bf882ef1f600208",
       "adaptations": [
         "Write refusal records only under explicit state root.",
         "Pass source map and role as shell arguments rather than interpolated code; replace historical mandate prose with source-pinned policy boundary."
       ],
       "mode": "0o755",
-      "status": "adapted"
+      "status": "adapted",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "scripts/company_role_kernel_lineage_probe.py",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "8bbb8e03d373f7f5199076c88ea9b79675518ddc6097eed6c7889311607207c4",
-      "output_sha256": "6ef39827610e6fbe49c07847a64d8a91d6dde40c04826ddeb85839e80e710e60",
+      "output_sha256": "c838e2355109cc6404b3e987230df60b69269cd3725d04ec9c959381f12aca2a",
       "adaptations": [
         "Resolve lineage state only from explicit state root or CLI state directory."
       ],
       "mode": "0o755",
-      "status": "adapted"
+      "status": "adapted",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "scripts/fleet_auth_scrub.sh",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "60100510749d58ba72b10e4d2ec220c80b34441541b6d42b54fa07663002225e",
-      "output_sha256": "145927749faeb9a9b2f8d4c3eb95e121ce2132d563f577c11b757e17da98b984",
+      "output_sha256": "651d81379aac8b7e970b3f50eadec3eb9be4340292f3d73d21022de3fa7c0d70",
       "adaptations": [],
       "mode": "0o644",
       "status": "adapted",
       "post_assembly_changes": [
-        "Remove private incident and account narrative from comments and diagnostics; preserve control flow."
+        "Remove private incident and account narrative from comments and diagnostics; preserve control flow.",
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     },
     {
       "path": "scripts/fleet_spawn.sh",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "c595210b8f0a31acaf9dc07fc420c947ac90200258fef3b8d702fc23be589c09",
-      "output_sha256": "bcc7e42f1cd14cc843d10447f435b0ce054a4c10d66b278427701d1336c12edc",
+      "output_sha256": "6e9ebd8031d261c0a7799b79d908b5c2b60c90e7e51122637401070ca1caff9c",
       "adaptations": [
         "Preserve Company role selection, already-running skip, dry-run command files and Terminal launch mechanism.",
         "Require deployment authorizer per role; generated command files quote explicit non-secret configuration with shlex.",
@@ -504,44 +585,54 @@
       "status": "adapted",
       "post_assembly_changes": [
         "Forward explicit identities into fresh generated command environments and stop on configuration refusal.",
-        "Forward explicit identities, preserve configuration refusal, and provide accurate configuration-free help including dry-run file effects."
+        "Forward explicit identities, preserve configuration refusal, and provide accurate configuration-free help including dry-run file effects.",
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     },
     {
       "path": "scripts/handoff_ledger.py",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "748b2b94a3f41383ac755e9a3062304b08ed2d53952a6bf38cf73184d77f7728",
-      "output_sha256": "a87ebf7bea839f6b15dbae3e45f56098b93df430358f75f00832585086cb0288",
+      "output_sha256": "249ca4e06bcc5db17b57c2819069aecffbbfeaa810d6cd62d40cc00c9c272128",
       "adaptations": [
         "Explicit workspace/bus; replace private founder names/address with adopter-supplied identity aliases."
       ],
       "mode": "0o644",
-      "status": "adapted"
+      "status": "adapted",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "scripts/kernel_plane_dual_write_cli.py",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "aef76e1bc283fb043b24eb8ce87e4ed4e2a72417822de31d8cda88ccc0266f86",
-      "output_sha256": "aef76e1bc283fb043b24eb8ce87e4ed4e2a72417822de31d8cda88ccc0266f86",
+      "output_sha256": "89f99e04097f95f240ccac1cd6ca4a6014682d1faf144c8454d032ef51df3b6e",
       "adaptations": [],
       "mode": "0o644",
-      "status": "unchanged"
+      "status": "unchanged",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "scripts/launch_channel.sh",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
-      "output_sha256": "a6d180c81a7826bb1ba614d2b15b3e1b52740789cc19c2561c2c115ee499adbe",
+      "output_sha256": "b0f079d1319fd41f24720e62631a7750664b189d1269dfacf0d43fb939d11ba1",
       "adaptations": [
         "New guarded role-channel launcher; no deployment policy embedded."
       ],
       "mode": "0o755",
-      "status": "generated"
+      "status": "generated",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "scripts/launch_claude.sh",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "c4cf021c965bc6dd10b1b0b4849f2b27c10638e93d8b13b92898e73131bb958c",
-      "output_sha256": "6720f1dc4000492862d8f5ae8369fc821db02a8e5d63f9df152956a4fdd99fc8",
+      "output_sha256": "53d3afa86c80e69504ff0dc46709868a4ae9139140f099f81e341ba7aea422fd",
       "adaptations": [
         "Preserve role/model/effort selection, native host/lineage checks, auth scrub, headless prompts, channel config, and init launch.",
         "Require explicit deployment authorizer, workspace/state/bus/interpreter/Claude/permission settings.",
@@ -552,63 +643,77 @@
       "mode": "0o755",
       "status": "adapted",
       "post_assembly_changes": [
-        "Stop deliberately when the shared host configuration guard refuses."
+        "Stop deliberately when the shared host configuration guard refuses.",
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     },
     {
       "path": "scripts/launch_company_scribe.sh",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "dbbd417ef5f925d978f7077d4182b8ce8139df265e72189a3a312b3b0ae6f747",
-      "output_sha256": "dbbd417ef5f925d978f7077d4182b8ce8139df265e72189a3a312b3b0ae6f747",
+      "output_sha256": "dd26f2a08033ec47fc6fd106c8869f694f9e09e802d4881b0e5612f93e971ad1",
       "adaptations": [],
       "mode": "0o755",
-      "status": "unchanged"
+      "status": "unchanged",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "scripts/portable_host.py",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
-      "output_sha256": "1e9edeeed604ce730b7db6f2a1f1b80e378d00a1c78b18cf5466dfc5317485e5",
+      "output_sha256": "82c50bba848150b4e6d88977d61ac42996614041ddc7f6bbe4b0fbc67f497428",
       "adaptations": [
         "New minimal explicit-configuration boundary for exported host source.",
         "Exact-subject external adopter decision requires JSON true and matching role/operation/workspace/state/bus; bounded local-authorizer call; no authority or credentials bundled."
       ],
       "mode": "0o644",
-      "status": "generated"
+      "status": "generated",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "scripts/portable_host_env.sh",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
-      "output_sha256": "00a56d4dbfa9a8d8a689736f955cf179f7d9abb33f50551de5518f922a10b0b4",
+      "output_sha256": "9ccdb5e00156e3f9a8f263a1dba431bfac5ffeede3a0819d55cc1b40b17b839f",
       "adaptations": [
         "New minimal explicit-configuration boundary for exported host source."
       ],
       "mode": "0o644",
       "status": "generated",
       "post_assembly_changes": [
-        "Validate and export explicit Company and Scribe deployment IDs before host-gate imports."
+        "Validate and export explicit Company and Scribe deployment IDs before host-gate imports.",
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     },
     {
       "path": "scripts/role_model_map.sh",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "19867a6758c4ba8ef4a4b18ed2c40551a513cb709913aaaa6d8a037866cb9a14",
-      "output_sha256": "e636e30e097eb04973181556819aa8b9086e961d59d1e5c8c2d36934be224cd9",
+      "output_sha256": "ce4de5eecb4bd0e95ef57f9b6e24f218f03e1c1822e43de0b3678df9c507777d",
       "adaptations": [
         "Retain source routing functions and verification-seat/contract checks; omit historical private mandate prose."
       ],
       "mode": "0o644",
-      "status": "adapted"
+      "status": "adapted",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "scripts/sync_kernel_dispatch_approval_shadow.py",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "b1b983be62a6c5aa7c31d7147071374d4ac9bf78ea5682f9b916cb62791b7fb7",
-      "output_sha256": "69138ba66eeb628ce184ff04427a4befb1432196740d14ffaca620d611b73b73",
+      "output_sha256": "e169e75628e1c1d6a7bdf3917b8e202f4bcca40b89cb90b68e5f57cab69663ba",
       "adaptations": [
         "Remove ambient Git/common-venv shell trampoline; invoke with configured Python."
       ],
       "mode": "0o755",
-      "status": "adapted"
+      "status": "adapted",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "tests/test_portable_host_boundary.py",
@@ -616,31 +721,38 @@
       "adaptations": [
         "Local-safe portable export boundary regression coverage; no deployment activation."
       ],
-      "output_sha256": "d2d671a752634b4351d1d17bd2d6ab15d38a17ea9b71401ae18f5719c03c0091",
+      "output_sha256": "91dbe003e7415777f091cd8c90c5d278c3f02d25d402c7684259249eaa4eb3fb",
       "mode": "0o644",
       "status": "generated",
       "post_assembly_changes": [
         "Test missing or invalid identities and generated fresh-environment host gate execution without live launch.",
-        "Test missing or invalid identities, generated host-gate execution, and configuration-free help without state changes."
+        "Test missing or invalid identities, generated host-gate execution, and configuration-free help without state changes.",
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     },
     {
       "path": "tests/test_tier1_channel_relay_durable_inbox.py",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "71af1eebdbc9f6f40e3d6d3161a12e34746a8b3b768a6364b89e022375da44a9",
-      "output_sha256": "71af1eebdbc9f6f40e3d6d3161a12e34746a8b3b768a6364b89e022375da44a9",
+      "output_sha256": "effdff175af0c2b66ddff3f69c673e6653ed802dc33d0fec4cead3a76a984f9b",
       "adaptations": [],
       "mode": "0o644",
-      "status": "unchanged"
+      "status": "unchanged",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "path": "tests/test_tier1_durable_inbox_cursor_seed.py",
       "source_revision": "c90a0ed761d6eaffebd7e7d0f15fa241856fcaa0",
       "source_sha256": "7567f08f218a9a43198e5b18c165685b26ccfc3b30a97d8c0db94669dea95e52",
-      "output_sha256": "7567f08f218a9a43198e5b18c165685b26ccfc3b30a97d8c0db94669dea95e52",
+      "output_sha256": "a9ad8d45db0e4e5da423cfc3719310d3601330864e29404c7d1ce87deb6f57af",
       "adaptations": [],
       "mode": "0o644",
-      "status": "unchanged"
+      "status": "unchanged",
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     }
   ]
 }

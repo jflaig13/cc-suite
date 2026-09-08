@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Persist and check qualifications derived from Evaluation Plane run history.
 
 The qualification module owns the decision semantics. This module only harvests

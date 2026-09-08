@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Byte-honest legacy handoff shadow into Objective + Ownership state.
 
 M4 begins shadow-only: the existing JSONL is authoritative and the protected

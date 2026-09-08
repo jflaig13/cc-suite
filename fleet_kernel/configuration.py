@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Explicit deployment identity for the public source export.
 
 Importing primitives never discovers an existing Mise installation or loads its

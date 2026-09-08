@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """EP-130 — grader interfaces, result semantics, and aggregation precedence.
 
 Governing contract: `fleet_kernel/fleet_kernel_evaluation_plane_full_project_directive.md`

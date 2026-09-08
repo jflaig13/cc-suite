@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Loopback-only web interface for the internal Mise Company Fleet."""
 from __future__ import annotations
 

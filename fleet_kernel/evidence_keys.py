@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Signed, short-lived evidence tokens for Payroll Work.
 
 Tokens are transport integrity only.  They do not grant authority by

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Per-cycle M3 parity comparison and the mechanical 50-cycle gate."""
 from __future__ import annotations
 

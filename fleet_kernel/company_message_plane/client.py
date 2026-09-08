@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Python client for kernel company message plane v1 RPCs."""
 from __future__ import annotations
 from fleet_kernel.configuration import company_id, scribe_deployment_id, authority_issuer, deployment_binding

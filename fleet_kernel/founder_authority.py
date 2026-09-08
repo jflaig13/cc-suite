@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """One bounded founder mandate with exact, ordered activation step subjects.
 
 The founder mandate is durable authority for one closed sequence.  It is not a

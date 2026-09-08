@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """fleet_kernel.m3 — held autonomy-engine migration scaffolding (OIL-227).
 
 Production M3 entry and pointer execution are fail-closed during the

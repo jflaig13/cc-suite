@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Tier-1 D0 (F2-corrected): cold-start replay fix via the ROLE CHECKPOINT — no flood,
 NO EVENT LOSS, Python matched to the TypeScript drain.
 

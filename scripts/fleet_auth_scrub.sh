@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# SPDX-License-Identifier: MPL-2.0
 # Remove ambient API authentication variables from the shell that launches
 # a fleet process. Source this file in that shell so the unset operations
 # affect the child process; running it in a separate shell is insufficient.

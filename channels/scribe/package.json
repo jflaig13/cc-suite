@@ -14,5 +14,6 @@
     "build": "bun --no-install build webhook.ts --target=bun --outfile=webhook.bundle.js",
     "typecheck": "tsc --noEmit",
     "test": "bun --no-install test durable_delivery.test.ts ../shared/send_receipt.test.ts ../shared/durable_inbox.test.ts ../shared/durable_inbox_coldstart.test.ts"
-  }
+  },
+  "license": "MPL-2.0"
 }

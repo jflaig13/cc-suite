@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """The 10 Phase-1 directive schemas (Objective, Run, Event, OwnershipClaim,
 Approval, ToolInvocation, VerificationResult, Receipt, CostRecord, Incident)
 as versioned code types.

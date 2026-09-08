@@ -18,10 +18,13 @@
       "source_sha256": "b4c4bbe1101dc5b22f0848f86e6e6e5dd1f7c5fa79021d5a1552676fd3e42a61",
       "status": "included",
       "output_path": "fleet_kernel/__init__.py",
-      "output_sha256": "20de886ca5cf8808cb2baca8a29386816813786b2d4e061ed075dc2089a7526d",
+      "output_sha256": "271cb8c534a21f4374c456bc5f902388cb26f7f5f7ac6666459faa3617191b54",
       "reason": "Current reusable Company runtime or its shared dependency",
       "modifications": [
         "Replace obsolete pre-live package description with current public scope."
+      ],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     },
     {
@@ -53,23 +56,27 @@
       "source_sha256": "47528d612b58a737f215289e12fa1e118ba96b04be1560f922e90f2da4078c29",
       "status": "included",
       "output_path": "fleet_kernel/company_message_plane/__init__.py",
-      "output_sha256": "47528d612b58a737f215289e12fa1e118ba96b04be1560f922e90f2da4078c29",
+      "output_sha256": "0ad8621300e5700a6f4da61e45bf879bc0aadec4a98629605f575f0171f91e54",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/company_message_plane/client.py",
       "source_sha256": "395d29deb6e20353bc1215d6783394bdff4afb085477f7593965a06592bfb7e9",
       "status": "adapted",
       "output_path": "fleet_kernel/company_message_plane/client.py",
-      "output_sha256": "681f7ae36e2904ae01358b85b41d2e3cdcdbc39001fd9bc3e17a0c9192aa3de8",
+      "output_sha256": "aa9e787aa9ee70d5782c1492cc6d66b8b51867e450d73c87c2b3e62fa1545baa",
       "reason": "Current reusable Company runtime or its shared dependency",
       "modifications": [
         "Removed live credentials-file fallback; database configuration is mandatory",
         "Company, Scribe deployment, and authority issuer are explicit configuration"
       ],
       "post_assembly_changes": [
-        "Use the configured shared cutover projection and serialize canonical changes through atomic projection; report partial failure."
+        "Use the configured shared cutover projection and serialize canonical changes through atomic projection; report partial failure.",
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     },
     {
@@ -77,10 +84,13 @@
       "source_sha256": "e96442c3436e2971140e4923ac3957d947573058900e53f90c0471482f10d516",
       "status": "included",
       "output_path": "fleet_kernel/company_role_runtime.py",
-      "output_sha256": "aa6bfbe4b26d60f19671e3a10753441744731cd288c903558c603bfee8cc83a8",
+      "output_sha256": "d30bffd059e29fae5a2214f2be011074cb07b43715712a96ec8afec9ffbce1c9",
       "reason": "Current reusable Company runtime or its shared dependency",
       "modifications": [
         "Pass explicit nonsecret host configuration into isolated role child. Bind channel code root to verified installed package payload and workspace to reviewed workspace binding, overriding ambient paths."
+      ],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     },
     {
@@ -88,11 +98,14 @@
       "source_sha256": "7ca2992208fb7ca33b8c9e7df94edbd4c03828559f91d42563978e7bdbd7754f",
       "status": "included",
       "output_path": "fleet_kernel/company_scribe_admission.py",
-      "output_sha256": "bdd8303a27bfeb8867ed79b3590868e000ec944d48ff56738f5ac603d9dc8d70",
+      "output_sha256": "5f67855ebba75cdc1cb1a59bddbf2a338408e2bf4268b3e33afa8f7f2742f4eb",
       "reason": "Current reusable Company runtime or its shared dependency",
       "modifications": [
         "Rebound source package inventory and digest to the public runtime closure; removed payroll release coupling",
         "Company, Scribe deployment, and authority issuer are explicit configuration"
+      ],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     },
     {
@@ -106,12 +119,15 @@
       "source_sha256": "cc63a811ce26ad7000e91170882ec418603965e8f55022fd7a8037424b365e28",
       "status": "included",
       "output_path": "fleet_kernel/company_scribe_runtime.py",
-      "output_sha256": "56f35e8e48cb209cb662155f7a4e88c6178dccd1f7bb1e342062be3e80e1e075",
+      "output_sha256": "5939a4eb557432b0e19157951e8340b9e144839e5857985894581081d33eb9da",
       "reason": "Current reusable Company runtime or its shared dependency",
       "modifications": [
         "Removed author-specific executable candidates; use explicit environment or installed CLI PATH",
         "Company, Scribe deployment, and authority issuer are explicit configuration",
         "Derive Scribe launch default from current role identity instead of stale model literal. Pass nonsecret explicit Company identity into isolated child/proxy environments; never authority file or database credentials."
+      ],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     },
     {
@@ -119,10 +135,13 @@
       "source_sha256": "b5233f231293cc9baf647f37aa4c1375111368f4296d2be910c14fb9207275c4",
       "status": "included",
       "output_path": "fleet_kernel/company_scribe_supervisor.py",
-      "output_sha256": "3ce81828520dab7de67bdc1cac06a8b9cf6498341971f7e94872425182b30ca6",
+      "output_sha256": "5f67d4c3eb241906228239db134d602016dc99f263609fcce40ec09ac688a7ad",
       "reason": "Current reusable Company runtime or its shared dependency",
       "modifications": [
         "Company, Scribe deployment, and authority issuer are explicit configuration"
+      ],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     },
     {
@@ -130,10 +149,13 @@
       "source_sha256": "196ffff070ead2cf86ca922d833aac0c753d8093a4519cdf73c926b59373c803",
       "status": "included",
       "output_path": "fleet_kernel/company_workspace.py",
-      "output_sha256": "8044876f838004057ebb486e797d90701bce5a6452fd7cc83569b5b665dad041",
+      "output_sha256": "896bb6f2efed38bb9b75963ff4b00842c80dc9e4fb8b87181b3fcbe326c037df",
       "reason": "Current reusable Company runtime or its shared dependency",
       "modifications": [
         "Public compatibility fix: bind reviewer signature, key lookup, receipt and MAC to current configured reviewer model; require exact immutable worker-model match."
+      ],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     },
     {
@@ -141,18 +163,24 @@
       "source_sha256": "76bbe84cf5650a77bda5881fd3b27c691cb206a1a6ee54139b62a97d669fd5c2",
       "status": "included",
       "output_path": "fleet_kernel/company_workspace_api.py",
-      "output_sha256": "76bbe84cf5650a77bda5881fd3b27c691cb206a1a6ee54139b62a97d669fd5c2",
+      "output_sha256": "feb5f773b8c9afdf3a8ff2b154921343b44d031fcffeb0b19666ab42214db233",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/content_lint.py",
       "source_sha256": "85cf88b9889ef3d6e14afb0556001cbd1a534f718a371d82df5436836dc6508e",
       "status": "included",
       "output_path": "fleet_kernel/content_lint.py",
-      "output_sha256": "85cf88b9889ef3d6e14afb0556001cbd1a534f718a371d82df5436836dc6508e",
+      "output_sha256": "e92bbe2ad3a456ba7d67ba2eb23c2b6f3346bf8942b3258c2d7a03ab00a16ce6",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/ddl/001_initial_schema.sql",
@@ -1047,37 +1075,49 @@
       "source_sha256": "058090a1820de58db4c2122b03b192f3bd0c6c136810f209c8d8370b65e9333a",
       "status": "included",
       "output_path": "fleet_kernel/eval_plane/__init__.py",
-      "output_sha256": "058090a1820de58db4c2122b03b192f3bd0c6c136810f209c8d8370b65e9333a",
+      "output_sha256": "4a203e9d46beb03d06fe57652319a1be512527dd7477bede48147f7769ad7eff",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/eval_plane/conduct_graders.py",
       "source_sha256": "7ecfc55109ebb6d5703bca740397aca2037ec4ea6f152d27f24bf9d8a588365f",
       "status": "included",
       "output_path": "fleet_kernel/eval_plane/conduct_graders.py",
-      "output_sha256": "7ecfc55109ebb6d5703bca740397aca2037ec4ea6f152d27f24bf9d8a588365f",
+      "output_sha256": "1fbb1e698ec459a45ee867dc1a885d6931f20c189715728cfac4aa4eeeb15ddd",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/eval_plane/domain.py",
       "source_sha256": "b919e06c6af534ae85e16e5c2ef0069e417dfbaf478cfeff719722c523c35dd2",
       "status": "included",
       "output_path": "fleet_kernel/eval_plane/domain.py",
-      "output_sha256": "b919e06c6af534ae85e16e5c2ef0069e417dfbaf478cfeff719722c523c35dd2",
+      "output_sha256": "f33bea42dd57f2ade5980f6eed8637cfc3b34e662830c57bdfb25f108fb03670",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/eval_plane/effect_control.py",
       "source_sha256": "59afcf402de1ba273530a6bd91f67f8401757dc02e180d1cd55d3ea952b49363",
       "status": "included",
       "output_path": "fleet_kernel/eval_plane/effect_control.py",
-      "output_sha256": "a35664b900b0013abf366711b62e657fca9152ff6a1d1b11c959c97be88eb7eb",
+      "output_sha256": "7cfc61e0548c36934c532824ac9efb033bc246e3f865319f8803e40d9caf14a3",
       "reason": "Current reusable Company runtime or its shared dependency",
       "modifications": [
         "Exclude private product adapter registry, production storage predicate and private response fixture import. Preserve native generic interception/ledger/redaction/simulation/recovery algorithms. Require explicit nonempty adopter chokepoints."
+      ],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     },
     {
@@ -1085,54 +1125,72 @@
       "source_sha256": "25e07d2873fa72547788bb3552c2bd8aedecc212bd62360251bd378205521178",
       "status": "included",
       "output_path": "fleet_kernel/eval_plane/graders.py",
-      "output_sha256": "25e07d2873fa72547788bb3552c2bd8aedecc212bd62360251bd378205521178",
+      "output_sha256": "421356bea82978621aa5119adb78c05173ad3c4c5ef07e4a231a24541b93819a",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/eval_plane/holdout_provider.py",
       "source_sha256": "b91374a31d5dcab7ae0edd897821f62d2c4ff69dbdc1ac5f002810c1dbfc47de",
       "status": "included",
       "output_path": "fleet_kernel/eval_plane/holdout_provider.py",
-      "output_sha256": "b91374a31d5dcab7ae0edd897821f62d2c4ff69dbdc1ac5f002810c1dbfc47de",
+      "output_sha256": "92d838d8ae82fe664f29fc1b06592acc86959b429c23c9d447338dc1d486fcf4",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/eval_plane/qualification.py",
       "source_sha256": "7528534802aa038b20f21e0c6f90a9ad06d1a44bff46f4fbb5648aaa96bf6a00",
       "status": "included",
       "output_path": "fleet_kernel/eval_plane/qualification.py",
-      "output_sha256": "7528534802aa038b20f21e0c6f90a9ad06d1a44bff46f4fbb5648aaa96bf6a00",
+      "output_sha256": "0bf109679c39d333908603065bbbb0656b5821abfaf922817fe30e28947eef34",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/eval_plane/qualification_store.py",
       "source_sha256": "21c9f596438619d6d23a3de9bdf5706ed8becfab71696ad1cfdf62ac615dec81",
       "status": "included",
       "output_path": "fleet_kernel/eval_plane/qualification_store.py",
-      "output_sha256": "21c9f596438619d6d23a3de9bdf5706ed8becfab71696ad1cfdf62ac615dec81",
+      "output_sha256": "2aaf98fcc09e479cf0854b174ef45e7a14f52f6fe8385c8a16201181286bf1ce",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/eval_plane/suite_package.py",
       "source_sha256": "8a6b4ed6fdd8c377d1a33f386f191eb27b7cd3d77d4fc264c5e948dc96feec2b",
       "status": "included",
       "output_path": "fleet_kernel/eval_plane/suite_package.py",
-      "output_sha256": "8a6b4ed6fdd8c377d1a33f386f191eb27b7cd3d77d4fc264c5e948dc96feec2b",
+      "output_sha256": "f40bf1a2a55ee650be124578ce0c5f6c78ec990189db82214a63df12834d147d",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/eval_plane/target_fingerprint.py",
       "source_sha256": "dfc88a622d5c27b20f85a66fc52075f834c48b6e9d832a63fd23e2a7ea9fac49",
       "status": "included",
       "output_path": "fleet_kernel/eval_plane/target_fingerprint.py",
-      "output_sha256": "dfc88a622d5c27b20f85a66fc52075f834c48b6e9d832a63fd23e2a7ea9fac49",
+      "output_sha256": "49d374d0eb412afa7f2f447a60591529db2441792966465d134253b585b1441d",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "[redacted-customer-source-002]",
@@ -1153,9 +1211,12 @@
       "source_sha256": "e026e8cdd75a4c4fdad65664f60fa3d73322e39506f1ead88537680242e37533",
       "status": "included",
       "output_path": "fleet_kernel/evidence_keys.py",
-      "output_sha256": "e026e8cdd75a4c4fdad65664f60fa3d73322e39506f1ead88537680242e37533",
+      "output_sha256": "c548772dc67b54821f56c11daf6f1e541d023e6579ff3bb023189333a523d016",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/fable_client.py",
@@ -1180,11 +1241,14 @@
       "source_sha256": "ed463bfe587384ff80cbb11a7fb38ed01859310e0da149c57e0a0038edf083e3",
       "status": "included",
       "output_path": "fleet_kernel/founder_authority.py",
-      "output_sha256": "9882474c82b7a23582e016ef7cfe250f97900d8e6dbaeba098121a0b2ab9014e",
+      "output_sha256": "224835edbc4261c1a5ed018a1ab96e5d2418469fdca2e42f2e48197f89414b66",
       "reason": "Current reusable Company runtime or its shared dependency",
       "modifications": [
         "Replaced private founder instruction, deployment IDs, signed artifact pins, and dates with absent-by-default deployment bindings",
         "Company, Scribe deployment, and authority issuer are explicit configuration"
+      ],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     },
     {
@@ -1198,14 +1262,15 @@
       "source_sha256": "8f8f4c1f3771b6662114d8752cea736a40e9f3a727932e005c8342ae984ce0eb",
       "status": "adapted",
       "output_path": "fleet_kernel/identity.py",
-      "output_sha256": "2bf3c2ff9e68588f7f3d9787a7ba67dc34b60f0ccf8e3b754ca997a5d6521e65",
+      "output_sha256": "29e278a08e2fd31af7d476b72cf600d8f1a927dd7c5bf80f4580672778e00ba4",
       "reason": "Current reusable Company runtime or its shared dependency",
       "modifications": [
         "Company, Scribe deployment, and authority issuer are explicit configuration"
       ],
       "post_assembly_changes": [
         "Remove private production account arrangement from comments; preserve executable behavior.",
-        "Remove private production account arrangement from comments; preserve executable behavior."
+        "Remove private production account arrangement from comments; preserve executable behavior.",
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     },
     {
@@ -1213,9 +1278,12 @@
       "source_sha256": "ed743fb81b7d0f1029d2f04d643c3db792a14c573e0c535832702680d4ef11b6",
       "status": "included",
       "output_path": "fleet_kernel/identity_key.py",
-      "output_sha256": "ed743fb81b7d0f1029d2f04d643c3db792a14c573e0c535832702680d4ef11b6",
+      "output_sha256": "6207f71d781224535ee1f878614221bb79e5861ecb7523e1dfde724eff2ffa8d",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m10/__init__.py",
@@ -1234,9 +1302,12 @@
       "source_sha256": "df1824660e0c31c791c1023491d07f668d3764c27577a81a0cb141ac52d685fb",
       "status": "included",
       "output_path": "fleet_kernel/m2/__init__.py",
-      "output_sha256": "df1824660e0c31c791c1023491d07f668d3764c27577a81a0cb141ac52d685fb",
+      "output_sha256": "aae29f43b419b95cbee99ac001e9143071b37ef4d98845182ebcf9e636482ba7",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m2/_harness_crash_money_fixed.py",
@@ -1267,18 +1338,24 @@
       "source_sha256": "bc5b7788b1d7d41488ec917ead3953fde6f37f20ef662a424ad99d3a3356fb22",
       "status": "included",
       "output_path": "fleet_kernel/m2/lease.py",
-      "output_sha256": "bc5b7788b1d7d41488ec917ead3953fde6f37f20ef662a424ad99d3a3356fb22",
+      "output_sha256": "35198f1092f409398ac7b78afc0b864b3ecb350b8da81daacb4ca31675e12cb5",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m3/__init__.py",
       "source_sha256": "1d058801f1f135d3051d1f389230610d47e3f3cb2ad0ced1387ef54b1e325e10",
       "status": "included",
       "output_path": "fleet_kernel/m3/__init__.py",
-      "output_sha256": "1d058801f1f135d3051d1f389230610d47e3f3cb2ad0ced1387ef54b1e325e10",
+      "output_sha256": "a52fd0a03dfc54e0aaf951ff53d4555b006ef083c06382672984c6c4ebfdf2fe",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m3/_repo_root.py",
@@ -1309,9 +1386,12 @@
       "source_sha256": "93f2ee79d7a2d40ca884406f047698160134722e4b23ed715ee7996dfd54d0c0",
       "status": "included",
       "output_path": "fleet_kernel/m3/controls.py",
-      "output_sha256": "93f2ee79d7a2d40ca884406f047698160134722e4b23ed715ee7996dfd54d0c0",
+      "output_sha256": "1dffe614c31e15f00689c252a9bb3315a26d48c26ad3beafadb03a9c83aaba61",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m3/cutover.py",
@@ -1360,18 +1440,24 @@
       "source_sha256": "074af9303c67f2614629ebd98348a766c9889dc91a7123f03f44664fab60664a",
       "status": "included",
       "output_path": "fleet_kernel/m3/outbox_renderer.py",
-      "output_sha256": "074af9303c67f2614629ebd98348a766c9889dc91a7123f03f44664fab60664a",
+      "output_sha256": "94c0dd70d00362ef2bc287d9852a408bc7db0915b71b436e31b4ea82b49a2dad",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m3/parity.py",
       "source_sha256": "50e7763ac3eb5b2bcd3110263ce6263b3cc93bd4a40ccf301508bc2ec15cb7c9",
       "status": "included",
       "output_path": "fleet_kernel/m3/parity.py",
-      "output_sha256": "50e7763ac3eb5b2bcd3110263ce6263b3cc93bd4a40ccf301508bc2ec15cb7c9",
+      "output_sha256": "8489558fedb6d3a1ef9372012e708dc83d8106b087008f329df59142ded7a2e4",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m3/runner_lock.py",
@@ -1384,9 +1470,12 @@
       "source_sha256": "46af67a51b4257b5b2a4511ba1746fe0216572bae278c8bb7321989a2ffa9912",
       "status": "included",
       "output_path": "fleet_kernel/m3/runtime_store.py",
-      "output_sha256": "46af67a51b4257b5b2a4511ba1746fe0216572bae278c8bb7321989a2ffa9912",
+      "output_sha256": "1580cefac966baecbb22d18bc633fa3de4b23ee27a5de75853c4d5177e1a66dd",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m3/shadow_cognition_boundary.py",
@@ -1423,9 +1512,12 @@
       "source_sha256": "17e05261121ad7c0c84d19ba16df26a61e0d1602cd982332697281d3fb7491f1",
       "status": "included",
       "output_path": "fleet_kernel/m4/__init__.py",
-      "output_sha256": "17e05261121ad7c0c84d19ba16df26a61e0d1602cd982332697281d3fb7491f1",
+      "output_sha256": "0f594c6bd3986cff95edbf1000e317ebfa0e1f28d54f351a4adcf26692dcc5c5",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m4/cutover.py",
@@ -1438,36 +1530,48 @@
       "source_sha256": "cfcb702ddd0f1104bc02ef80f132f962b7adaaf3eb1698658dbe3f9107439e88",
       "status": "included",
       "output_path": "fleet_kernel/m4/handoff_migration.py",
-      "output_sha256": "cfcb702ddd0f1104bc02ef80f132f962b7adaaf3eb1698658dbe3f9107439e88",
+      "output_sha256": "b06b46e2a9a3f49e71c6f15f4c26747ffff2d0612f0a0dc685a4e58378475219",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m4/locking.py",
       "source_sha256": "c52466b4cbbd12194819d3b52cc86223b9a34a0dd1a519dea3de873083a84a26",
       "status": "included",
       "output_path": "fleet_kernel/m4/locking.py",
-      "output_sha256": "c52466b4cbbd12194819d3b52cc86223b9a34a0dd1a519dea3de873083a84a26",
+      "output_sha256": "dd1a31491382d7bf052805b468de7b21d4a0f2fab411b6bc951060007d6a84e8",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m4/read_backend.py",
       "source_sha256": "ddcd14af3ec06f8e3ccd062a15b35953baab6dfac66270b1c73695f600d5bf8f",
       "status": "included",
       "output_path": "fleet_kernel/m4/read_backend.py",
-      "output_sha256": "ddcd14af3ec06f8e3ccd062a15b35953baab6dfac66270b1c73695f600d5bf8f",
+      "output_sha256": "b4449397c49a2f5f7641218e5219c48f5d548449b67e31be38c40054761b9128",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m4/supervision.py",
       "source_sha256": "9c9b2502b9be2712eb2a70d4774de115a9d81b46b2ac3348d3b641bce4b1613d",
       "status": "included",
       "output_path": "fleet_kernel/m4/supervision.py",
-      "output_sha256": "9c9b2502b9be2712eb2a70d4774de115a9d81b46b2ac3348d3b641bce4b1613d",
+      "output_sha256": "9c2b942312e1d583353c86b52e498df5717b9daca29ac850f9324ca855a64b05",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m4/sweep_adapter.py",
@@ -1480,18 +1584,24 @@
       "source_sha256": "3287fb30ecda4828ababd957712000bf5d91f74987273a8b59ef5d90c3e9d329",
       "status": "included",
       "output_path": "fleet_kernel/m5/__init__.py",
-      "output_sha256": "3287fb30ecda4828ababd957712000bf5d91f74987273a8b59ef5d90c3e9d329",
+      "output_sha256": "3a387c604b6c64a0ef2c276f24f09a64d8c968ff190716e1b914986eb39a49fe",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m5/approval_api.py",
       "source_sha256": "ea638235defe4a34775ac0f2aa5732e65e7b2bbd5674594cf9dde0334a5c0473",
       "status": "included",
       "output_path": "fleet_kernel/m5/approval_api.py",
-      "output_sha256": "ea638235defe4a34775ac0f2aa5732e65e7b2bbd5674594cf9dde0334a5c0473",
+      "output_sha256": "d0618cb475d7ca75d1b2e83586b59eb67499f345d54ab795e5f0d23ff0c4b2fb",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m5/cutover.py",
@@ -1504,19 +1614,25 @@
       "source_sha256": "65d8a27067331df683324dfb369acb90b1929a4b7d51b4cd1df27cc4e32f43bd",
       "status": "included",
       "output_path": "fleet_kernel/m5/dispatch_approval_migration.py",
-      "output_sha256": "65d8a27067331df683324dfb369acb90b1929a4b7d51b4cd1df27cc4e32f43bd",
+      "output_sha256": "3a9cfca811e3b3b71a3774af33d88c3f7a45ad7ab479264a44af9441a81b34c7",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m5/read_backend.py",
       "source_sha256": "4103354e9f7b9f8ed849de67db47d3d4ed031af1e7e38172e8e4117b90622a98",
       "status": "included",
       "output_path": "fleet_kernel/m5/read_backend.py",
-      "output_sha256": "03b221ea6ef5267de161c1ae2de828074119bd4ccb2718bcb51f7ddba2eb213e",
+      "output_sha256": "88f698f4a9ae443c050d00f09439184709d1fcbc49f7b4720488938e9bc44bae",
       "reason": "Current reusable Company runtime or its shared dependency",
       "modifications": [
         "Remove author home-state fallback; FLEET_KERNEL_M5_GAP_ROOT must be explicit and absolute."
+      ],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     },
     {
@@ -1524,27 +1640,36 @@
       "source_sha256": "530ef7cc35e923ebfd3d0659a07a1fbd532efdeeb421a67502ca50481917239f",
       "status": "included",
       "output_path": "fleet_kernel/m5/read_pointer.py",
-      "output_sha256": "530ef7cc35e923ebfd3d0659a07a1fbd532efdeeb421a67502ca50481917239f",
+      "output_sha256": "8d4719f01432e5330c07ed1d7fe69b0f48dd6bb50ffb5daea555b56e5ced4e5c",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m5/supervision.py",
       "source_sha256": "59a5b06598b4344926178a2035dc5e11e3509b061cfc253ac4d2896a7435fee6",
       "status": "included",
       "output_path": "fleet_kernel/m5/supervision.py",
-      "output_sha256": "59a5b06598b4344926178a2035dc5e11e3509b061cfc253ac4d2896a7435fee6",
+      "output_sha256": "94b5c6f7c381fffa37ed01290e4dc3db023663c1031b164cf414776b6f286bd3",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m6/__init__.py",
       "source_sha256": "925f44bc75f4706b08fc186d6563f76abd1444bc4de848a809ac975b381258eb",
       "status": "included",
       "output_path": "fleet_kernel/m6/__init__.py",
-      "output_sha256": "925f44bc75f4706b08fc186d6563f76abd1444bc4de848a809ac975b381258eb",
+      "output_sha256": "be38a9a734011ca74935227a29694c3732ec30d51aaf77a39dda62ed02fd7808",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m6/cutover.py",
@@ -1563,45 +1688,60 @@
       "source_sha256": "ef900160634dadb1ba6f62d3dc9f93c43558e5f4db9b54992b4be56bda1313bb",
       "status": "included",
       "output_path": "fleet_kernel/m6/read_backend.py",
-      "output_sha256": "ef900160634dadb1ba6f62d3dc9f93c43558e5f4db9b54992b4be56bda1313bb",
+      "output_sha256": "a1a4f0acd980bb2ace4237873cec3d6a840f2dc5d9bf33bfef12eda07cb161f9",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m6/read_pointer.py",
       "source_sha256": "1f0612c2facc0055ddcb18a3e0acb70b4324d5b860d38eafeb5b36a7ac35944f",
       "status": "included",
       "output_path": "fleet_kernel/m6/read_pointer.py",
-      "output_sha256": "1f0612c2facc0055ddcb18a3e0acb70b4324d5b860d38eafeb5b36a7ac35944f",
+      "output_sha256": "1e1a39f47d1a382d75fe2f0097df429a7be76cb49bb2cffac1fe5fbe2d096dcc",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m6/spend_migration.py",
       "source_sha256": "7f97f17cad395fb65a99eee696166e8994ea596546e077c4f221cef682e4af3e",
       "status": "included",
       "output_path": "fleet_kernel/m6/spend_migration.py",
-      "output_sha256": "7f97f17cad395fb65a99eee696166e8994ea596546e077c4f221cef682e4af3e",
+      "output_sha256": "a5ffb68431e0f1ba39ac2de910b9ad4095907624e435d7a9dfd44883af9a2dd2",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m6/supervision.py",
       "source_sha256": "5d262d7c0d5070ada4280fda0dec06099a558fdbf818a0c209c89031b906e389",
       "status": "included",
       "output_path": "fleet_kernel/m6/supervision.py",
-      "output_sha256": "5d262d7c0d5070ada4280fda0dec06099a558fdbf818a0c209c89031b906e389",
+      "output_sha256": "e28145caf00982faaf49388a9140a7beed24c1bc895c41100577cc1f99bb94b7",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m7/__init__.py",
       "source_sha256": "1af578a49892d86a79aba65cbf61e9f4c666db8006ba29cac9096e2fcf5ec8c8",
       "status": "included",
       "output_path": "fleet_kernel/m7/__init__.py",
-      "output_sha256": "1af578a49892d86a79aba65cbf61e9f4c666db8006ba29cac9096e2fcf5ec8c8",
+      "output_sha256": "8e283aa1028865856e78ae09600246e255d87cc5390f8e6ed9cdae99fafeee27",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m7/cutover.py",
@@ -1614,9 +1754,12 @@
       "source_sha256": "125958cfb0d0d37caede84e01b5f9986e15521f9c41def78037c8cc94aece42b",
       "status": "included",
       "output_path": "fleet_kernel/m7/errors.py",
-      "output_sha256": "125958cfb0d0d37caede84e01b5f9986e15521f9c41def78037c8cc94aece42b",
+      "output_sha256": "5290150d93f42c4fd4b2e426ba83963d2e3b3e9a4c0c211098970e50b6c3b974",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m7/hook_backend.py",
@@ -1629,63 +1772,84 @@
       "source_sha256": "f915b56055bc4d05eb41576aab5ffa7650abf35647216019cc6f18af208d276b",
       "status": "included",
       "output_path": "fleet_kernel/m7/legacy_surfaces.py",
-      "output_sha256": "f915b56055bc4d05eb41576aab5ffa7650abf35647216019cc6f18af208d276b",
+      "output_sha256": "a7db5dd69d4f7392d76079fbbd7fd1e6bc0e37f4847fb668a1b4c5f375c59c58",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m7/read_backend.py",
       "source_sha256": "8983161a2832daca23e4086ae063a59749ebda3ebb34cc58d0f3419f74441e7f",
       "status": "included",
       "output_path": "fleet_kernel/m7/read_backend.py",
-      "output_sha256": "8983161a2832daca23e4086ae063a59749ebda3ebb34cc58d0f3419f74441e7f",
+      "output_sha256": "e18247e281253e5366191112d611667e7c1f6925b716c75ffd7eb3302a736145",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m7/read_pointer.py",
       "source_sha256": "00ad9581e01050521dbca72e3cb31154782a24a63f8cc9a3dba5cb2a6fbed4c7",
       "status": "included",
       "output_path": "fleet_kernel/m7/read_pointer.py",
-      "output_sha256": "00ad9581e01050521dbca72e3cb31154782a24a63f8cc9a3dba5cb2a6fbed4c7",
+      "output_sha256": "66b904974c873b8518fcbc375b175b3ac5fba8af610490d185ab2363893664f9",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m7/role_queue_migration.py",
       "source_sha256": "32c1ca53e17b8e669a26fa108a91ab90a8efc6dfac33d0af009896cf6a64f506",
       "status": "included",
       "output_path": "fleet_kernel/m7/role_queue_migration.py",
-      "output_sha256": "32c1ca53e17b8e669a26fa108a91ab90a8efc6dfac33d0af009896cf6a64f506",
+      "output_sha256": "9d8911dc61e34e5e19eb6bca4d5effa1790aea255ee0b50ef2dd68b6ab159931",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m7/supervision.py",
       "source_sha256": "f4c20382a8cfa23d4f117a74554d0ec98daf287e62792abf60c4a9e1db24d348",
       "status": "included",
       "output_path": "fleet_kernel/m7/supervision.py",
-      "output_sha256": "f4c20382a8cfa23d4f117a74554d0ec98daf287e62792abf60c4a9e1db24d348",
+      "output_sha256": "9d40ddc631729ff7ef33c0ab5d5f443fdc7defa0636313d9b23e4f45fa8c73ca",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m8/__init__.py",
       "source_sha256": "5078a3d0bb0d3b15295593fbe4c926566783c797649c25cefc20e87a39f43c06",
       "status": "included",
       "output_path": "fleet_kernel/m8/__init__.py",
-      "output_sha256": "5078a3d0bb0d3b15295593fbe4c926566783c797649c25cefc20e87a39f43c06",
+      "output_sha256": "10ca8ca6cf816a44278469b6aab0656fdc9d0ffa967e1aebec570af6c2484788",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m8/authority.py",
       "source_sha256": "8d00a92047728ad55e9d4d6b1d67ccb6d0486b60dcbcae3b8a2505f0642c56d9",
       "status": "included",
       "output_path": "fleet_kernel/m8/authority.py",
-      "output_sha256": "8d00a92047728ad55e9d4d6b1d67ccb6d0486b60dcbcae3b8a2505f0642c56d9",
+      "output_sha256": "36c09d2a310e563dc71bc2c1c70df761be2822b6f40d0658adf3d1d05da31975",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m8/compiled_controls.py",
@@ -1698,11 +1862,14 @@
       "source_sha256": "0df52d68f3f38477a6a48a29241e8047ad6e2005a6dafd949694abeda8d281ed",
       "status": "included",
       "output_path": "fleet_kernel/m8/db_isolation.py",
-      "output_sha256": "6cc3462470a987b7f542f3fe4b15fe80a4f765c8601ca1dae948f324c021368e",
+      "output_sha256": "bd10b2be57d9ce21bfe105dc61bf6b4bca881751ad52f374a39e67265fdf16c5",
       "reason": "Current reusable Company runtime or its shared dependency",
       "modifications": [
         "Kept Company principal provisioning/assertions; excluded restaurant grant tables and restaurant-serving functions",
         "Company, Scribe deployment, and authority issuer are explicit configuration"
+      ],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     },
     {
@@ -1710,9 +1877,12 @@
       "source_sha256": "6635261f6fdc99fddcbd2be7228fefd393a338aa9fb3593acc2c90107fe33c42",
       "status": "included",
       "output_path": "fleet_kernel/m8/isolation.py",
-      "output_sha256": "6635261f6fdc99fddcbd2be7228fefd393a338aa9fb3593acc2c90107fe33c42",
+      "output_sha256": "48439d91a1619f6b2564fb13d4de109841297bc706ceac0bea0c154e5e0b84bd",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m8/observability.py",
@@ -1725,9 +1895,12 @@
       "source_sha256": "db1aa6b2fa604f441f3804cc2228aee7f3aba1ca5435ca7d77a13b4484f51300",
       "status": "included",
       "output_path": "fleet_kernel/m8/verification.py",
-      "output_sha256": "db1aa6b2fa604f441f3804cc2228aee7f3aba1ca5435ca7d77a13b4484f51300",
+      "output_sha256": "6c3a447ed899288c2a0d46e7d0139390637f9802fd2925eabe4f4be49d40ab5d",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/m9/__init__.py",
@@ -1926,9 +2099,12 @@
       "source_sha256": "88c647aa5e4e4f83dd73efd7241b21046023ccee2f18b7f1523767b681b3588c",
       "status": "included",
       "output_path": "fleet_kernel/prose_lint.py",
-      "output_sha256": "88c647aa5e4e4f83dd73efd7241b21046023ccee2f18b7f1523767b681b3588c",
+      "output_sha256": "c4e35a2799c56a94a4100fd4be4044febca9b6c72b2cd80ba5c0ec111afaa192",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/requirements-kernel.txt",
@@ -1971,9 +2147,12 @@
       "source_sha256": "457293885a0ae816c4317d270e70035ed0cc29d044d8b4bced9f5b4dbe231a39",
       "status": "included",
       "output_path": "fleet_kernel/schemas.py",
-      "output_sha256": "457293885a0ae816c4317d270e70035ed0cc29d044d8b4bced9f5b4dbe231a39",
+      "output_sha256": "4d1ef3f0838635f3f0856211012fe2bc9552ffb785176bfc2def0c3cdd135795",
       "reason": "Current reusable Company runtime or its shared dependency",
-      "modifications": []
+      "modifications": [],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      ]
     },
     {
       "source_path": "fleet_kernel/section_zero_ratchet.py",
@@ -1986,10 +2165,13 @@
       "source_sha256": "6d203046fe60ae1b21f64885b22a57a5bb4aa2e1fdf75e56e047a0af94b3c927",
       "status": "included",
       "output_path": "scripts/company_scribe_effect_broker.py",
-      "output_sha256": "d13d61b415cbd491d6bf2e17d29f4df2bad0cc9d513e537a651c2bdac2e7083f",
+      "output_sha256": "bd35e71b7dde3d9e6f7a00661c55df8fef7f486828d55abfc83537f1ce6532c5",
       "reason": "Current reusable Company runtime or its shared dependency",
       "modifications": [
         "Propagate only explicit nonsecret Company identities into isolated broker command environment."
+      ],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     },
     {
@@ -1997,12 +2179,15 @@
       "source_sha256": "7a850229950273a997ad024eda276cfc8e5b2ea2acd93bb46ea26df0aa0721ea",
       "status": "included",
       "output_path": "scripts/company_scribe_supervisor.py",
-      "output_sha256": "f2438170d9dc170eecd386a872e0d73af676f1d44beb674cfee24de0ce76980e",
+      "output_sha256": "bddb0c8afbb43790d3bbd77edbef8dd64cf0aa7754b5b39799282faed8015d15",
       "reason": "Current reusable Company runtime or its shared dependency",
       "modifications": [
         "Rebound release digest to the public runtime closure",
         "Company, Scribe deployment, and authority issuer are explicit configuration",
         "Derive Scribe launch default from current role identity. Preserve explicit trusted supervisor authority configuration. Require explicit install plist and label; atomic exclusive link by default prevents existing-target replacement, which requires --replace-existing."
+      ],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     },
     {
@@ -2010,10 +2195,13 @@
       "source_sha256": "2df4d42a5df3f3329986ab20800c91c71f08571510ca530352d35541b33251dd",
       "status": "adapted-test",
       "output_path": "tests/runtime/test_company_workspace.py",
-      "output_sha256": "b3e7502318acd31febe6b8f0fa8f63381ea334bb7500d16458b4551097fec8d2",
+      "output_sha256": "841a2c1e2ee045752a4f0f5015a0e371f3c8dff72e14e54a4db4477e35e3fa60",
       "reason": "Native test logic/fixtures selected for reusable scope, generalized to synthetic identities, with public compatibility/recovery regressions.",
       "modifications": [
         "Removed private environment and excluded-domain assumptions; use disposable local fixtures."
+      ],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     },
     {
@@ -2021,10 +2209,13 @@
       "source_sha256": "5c316cf5beccf6d4c4223d719bdb96d41819b1b39c882fa98d64d9125a13d9d5",
       "status": "adapted-test",
       "output_path": "tests/runtime/test_effect_broker.py",
-      "output_sha256": "ef3ac8295707163d23c7ce7acde065e3d193a1b0a35141b1fec9af26f1889f85",
+      "output_sha256": "1f71793bb1e2b2c20a8966a5dc95210f8cdf3bcb7a85da3f60ab962305cd8e43",
       "reason": "Native test logic/fixtures selected for reusable scope, generalized to synthetic identities, with public compatibility/recovery regressions.",
       "modifications": [
         "Removed private environment and excluded-domain assumptions; use disposable local fixtures."
+      ],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     },
     {
@@ -2032,10 +2223,13 @@
       "source_sha256": "c4be4a30f028b2a7a2c264989d7c0bc76bd020839f5cce251da9fd40e410a6e0",
       "status": "adapted-test",
       "output_path": "tests/runtime/test_kernel_m8_authority.py",
-      "output_sha256": "25154651d2dcc77a975748a58076be15debde87c3a8798ae8797b602c5407cb3",
+      "output_sha256": "abe3ab858c303abf29430612c85d9e0cc14498b971ca51c04559c5ae0010ca5b",
       "reason": "Native test logic/fixtures selected for reusable scope, generalized to synthetic identities, with public compatibility/recovery regressions.",
       "modifications": [
         "Removed private environment and excluded-domain assumptions; use disposable local fixtures."
+      ],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     },
     {
@@ -2043,13 +2237,14 @@
       "source_sha256": "7241c164351d446287a4184cb341b2f83cbe12cff9f2ee629784edd31e1f4430",
       "status": "adapted-test",
       "output_path": "tests/runtime/test_kernel_m8_isolation.py",
-      "output_sha256": "4fbf9de2d1a44b986fce837ebb321240d8ed0e6795a47fb86c2efaea4a58badf",
+      "output_sha256": "50b3f8b6985f67e5f2200708d661e9b6f9b3aa4154740097cd940075f8acd54d",
       "reason": "Native test logic/fixtures selected for reusable scope, generalized to synthetic identities, with public compatibility/recovery regressions.",
       "modifications": [
         "Removed private environment and excluded-domain assumptions; use disposable local fixtures."
       ],
       "post_assembly_changes": [
-        "Synthetic worker fixture explicitly assigns the current process group across platforms."
+        "Synthetic worker fixture explicitly assigns the current process group across platforms.",
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     },
     {
@@ -2057,10 +2252,13 @@
       "source_sha256": "f9503efe1ad6b80dc605b28558aa1fae8b01a9ab6f2de985fe116f1ef964a875",
       "status": "adapted-test",
       "output_path": "tests/runtime/test_kernel_content_lint.py",
-      "output_sha256": "e63c22c8942821e16817c16ccb4a5bc0508c5214d3653cc3bafcda71db32c8ea",
+      "output_sha256": "54aba64a249f4df3145e7fe49ddb065df852e65c0a4153b5d17bce92ce684ddf",
       "reason": "Native test logic/fixtures selected for reusable scope, generalized to synthetic identities, with public compatibility/recovery regressions.",
       "modifications": [
         "Removed private environment and excluded-domain assumptions; use disposable local fixtures."
+      ],
+      "post_assembly_changes": [
+        "September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
       ]
     }
   ],

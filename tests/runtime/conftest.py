@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Tests never inherit real application identities, DSNs, or auth configuration."""
 import os
 for key in tuple(os.environ):

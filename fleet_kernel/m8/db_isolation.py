@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Postgres-principal tenant isolation and no-reuse serving connections."""
 from __future__ import annotations
 from fleet_kernel.configuration import company_id, scribe_deployment_id, authority_issuer, deployment_binding

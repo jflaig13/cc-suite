@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Byte-honest M5 shadow for dispatch intents and FODL approval emissions.
 
 Legacy JSONL and markdown remain authoritative. Historical prose is never

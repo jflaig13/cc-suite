@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Durable, tenant-bound Fleet Kernel identity plane.
 
 Prompts describe work; they never grant identity. Identity is the chain:

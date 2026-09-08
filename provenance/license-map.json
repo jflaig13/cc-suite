@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "scope": "Mise copyrightable contributions only; upstream notices and historical grants retain their own terms. First matching rule applies.",
+  "rules": [
+    {
+      "patterns": [
+        "governance/memos/.gitkeep"
+      ],
+      "kind": "empty-placeholder",
+      "license": "no-copyrightable-content"
+    },
+    {
+      "patterns": [
+        "LICENSES/third-party/*.txt"
+      ],
+      "kind": "upstream-notice",
+      "license": "see-third-party-manifest"
+    },
+    {
+      "patterns": [
+        "LICENSE",
+        "LICENSES/*.txt"
+      ],
+      "kind": "license-text",
+      "license": "verbatim-license-text"
+    },
+    {
+      "patterns": [
+        "channels/agent/channel.bundle.js"
+      ],
+      "kind": "bundle",
+      "license": "MPL-2.0 AND MIT AND BSD-3-Clause AND ISC"
+    },
+    {
+      "patterns": [
+        "channels/scribe/webhook.bundle.js"
+      ],
+      "kind": "bundle",
+      "license": "MPL-2.0"
+    },
+    {
+      "patterns": [
+        "*.md",
+        "provenance/*.json"
+      ],
+      "kind": "documentation",
+      "license": "CC-BY-SA-4.0",
+      "embedded_code_license": "MPL-2.0"
+    },
+    {
+      "patterns": [
+        "*.py",
+        "*.ts",
+        "*.sh",
+        "*.toml",
+        "*.yml",
+        "*.yaml",
+        "MANIFEST.in",
+        ".gitignore"
+      ],
+      "kind": "software-with-notice",
+      "license": "MPL-2.0"
+    },
+    {
+      "patterns": [
+        "*.sql",
+        "*.json",
+        "*.lock"
+      ],
+      "kind": "software-with-directory-notice",
+      "license": "MPL-2.0"
+    }
+  ],
+  "canonical_license_texts": [
+    {
+      "path": "LICENSE",
+      "url": "https://www.mozilla.org/en-US/MPL/2.0/index.txt",
+      "sha256": "3f3d9e0024b1921b067d6f7f88deb4a60cbe7a78e76c64e3f1d7fc3b779b9d04"
+    },
+    {
+      "path": "LICENSES/CC-BY-SA-4.0.txt",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/legalcode.txt",
+      "sha256": "28a9529c7d0bb4dc51f4bf5c116a3d16ef247a052f7591466768ddf563fd1cf5"
+    }
+  ],
+  "required_delivery_files": [
+    "LICENSE",
+    "COPYING.md",
+    "TRADEMARKS.md",
+    "THIRD_PARTY_NOTICES.md",
+    "LICENSES/CC-BY-SA-4.0.txt",
+    "provenance/license-map.json",
+    "provenance/third-party-licenses.json"
+  ]
+}

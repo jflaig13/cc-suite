@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MPL-2.0
 /**
  * bun test — OIL-211 surface 2: receipt-or-loud queue append (send seams),
  * D1/D2 build-back edition (offset-anchored refinement ruling, 2026-07-08).

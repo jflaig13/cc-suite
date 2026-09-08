@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MPL-2.0
 """Exact-parent MCP boundary for every writable Company Scribe effect.
 
 The admitted Claude process receives only this server's Unix-socket path.  The

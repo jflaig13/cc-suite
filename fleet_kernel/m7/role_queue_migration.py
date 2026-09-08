@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Byte-honest role queues -> kernel Objectives; Slack is observability only."""
 from __future__ import annotations
 

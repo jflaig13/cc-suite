@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Crash-idempotent file renderer for M3's transactional outbox.
 
 The database is authoritative. Each render rebuilds the destination from an

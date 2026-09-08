@@ -1,12 +1,15 @@
+# SPDX-License-Identifier: MPL-2.0
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77.0.3"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "cc-suite-runtime"
-version = "2026.9.4"
+version = "2026.9.8"
 description = "Current CC-Suite Company Fleet Kernel source and reusable runtime components"
 requires-python = ">=3.11"
+license = "MPL-2.0"
+license-files = ["LICENSE", "COPYING.md", "TRADEMARKS.md", "THIRD_PARTY_NOTICES.md", "LICENSES/*.txt", "LICENSES/third-party/*.txt", "provenance/license-map.json", "provenance/third-party-licenses.json"]
 dependencies = ["psycopg[binary]==3.3.4", "cryptography==46.0.7", "fastapi==0.141.1", "httpx==0.28.1", "mcp>=1.0,<2"]
 
 [project.optional-dependencies]

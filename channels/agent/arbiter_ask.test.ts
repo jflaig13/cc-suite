@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MPL-2.0
 /**
  * Tests for arbiter_ask.ts — FDRL Component 3 (canon 2026-05-26).
  *

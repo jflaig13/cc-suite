@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Deterministic content lint: the mechanically checkable subset of the no-ai-slop doctrine.
 
 This module is the deterministic layer of the content-quality gate. It compiles

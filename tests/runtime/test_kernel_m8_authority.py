@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """M8 cryptographically evidence-bound authority matrix tests."""
 from __future__ import annotations
 

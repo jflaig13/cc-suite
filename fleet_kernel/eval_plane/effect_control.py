@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Execution modes and effect control for the Fleet Kernel Evaluation Plane (EP-120).
 
 Implements directive §9 ("Mechanical enforcement requirements") for eval runs:

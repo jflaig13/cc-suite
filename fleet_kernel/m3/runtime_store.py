@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Transactional M3 runtime state for the autonomy migration.
 
 The kernel event is the authoritative append boundary. Event sequence

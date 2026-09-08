@@ -70,6 +70,14 @@ bun run test
 
 Scribe uses TypeScript 5.9.3 and `@types/bun` 1.3.11 for development. The generic channel also declares `@modelcontextprotocol/sdk` 1.29.0. Runtime launch uses the compiled generic `channel.bundle.js`, including its SDK dependency, so no `node_modules` tree or automatic package install is needed to start a reviewed payload. Bun runs and bundles the channels; a separate Node runtime is not required by these commands. The checked-in Scribe bundle must match every manifest input, its bundle hash and the canonical manifest link hash. Rebuild with the manifest's exact command and refresh that manifest only as part of a reviewed source change.
 
+The generic channel's build command embeds the exact upstream license notices
+using Python 3.11 or later and `tools/license_bundles.py`. Scribe's entrypoint
+contains a license/source comment that Bun preserves in its ordinary build.
+Run `python tools/license_bundles.py --check` after rebuilding. The check refuses
+unknown bundled dependencies, changed license inputs and missing notices.
+Keep these notices with standalone bundle copies; see
+[the license scope](../COPYING.md) and [third-party notices](../THIRD_PARTY_NOTICES.md).
+
 With package Python dependencies, pytest, Bash, zsh, and Bun 1.3.12 installed, run from the package root. Use the [secure test-state configuration](runtime.md#install-and-run-the-synthetic-workflow) when the default HOME is inside a captured or synced workspace:
 
 ```sh

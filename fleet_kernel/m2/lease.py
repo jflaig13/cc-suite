@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """The kernel lease module — heartbeat leases + monotonic DB-issued fencing
 tokens (D4's decision: built as a first-class kernel component ON the same
 Postgres DBOS uses, not hand-rolled outside it).

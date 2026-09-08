@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Cryptographically evidence-bound deterministic action authority."""
 from __future__ import annotations
 

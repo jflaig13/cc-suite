@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Fail-closed M5 kernel reads while legacy files remain rollback surfaces."""
 from __future__ import annotations
 

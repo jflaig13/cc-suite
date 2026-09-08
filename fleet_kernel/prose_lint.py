@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Prose lint for agent-authored text (Told -> Bound program, Phase D).
 
 Pure functions over text. No network, no database, no writes. The rules mirror

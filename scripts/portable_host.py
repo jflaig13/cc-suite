@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Explicit adopter configuration for reusable native host adapters.
 
 The authorizer is supplied by the deploying organization. Its decision does

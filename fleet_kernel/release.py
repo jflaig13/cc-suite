@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Exact-byte release identity scoped to the public Company runtime."""
 from pathlib import Path
 import hashlib

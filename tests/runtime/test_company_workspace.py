@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Current Company workflow, identity, signed review, and durable-state proofs."""
 import hashlib
 from concurrent.futures import ThreadPoolExecutor

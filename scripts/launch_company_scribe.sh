@@ -1,4 +1,5 @@
 #!/bin/bash
+# SPDX-License-Identifier: MPL-2.0
 set -euo pipefail
 
 # This launcher is copied into the reviewed package and is the only runtime

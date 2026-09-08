@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Bridge channel_relay ↔ company message plane v1 cutover.
 
 When a role's cutover state is dual_write or kernel_primary:

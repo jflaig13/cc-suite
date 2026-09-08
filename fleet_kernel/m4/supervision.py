@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """One locked authoritative-file-to-kernel M4 synchronization cycle."""
 from __future__ import annotations
 

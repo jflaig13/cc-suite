@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """EP-110 — the canonical `EvalTargetManifest` fingerprint.
 
 One evaluated target is the whole system under test, not just its code: the

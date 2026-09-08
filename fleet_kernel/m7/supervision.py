@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Stable, read-only capture for append-only M7 role queue shadowing.
 
 Cycle identity deliberately follows queue bytes plus the monotonic role cursor. A

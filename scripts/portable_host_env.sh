@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# SPDX-License-Identifier: MPL-2.0
 # Sourced configuration guard; values are never printed.
 _cc_suite_require_identity() {
   local name="$1" value="$2" LC_ALL=C

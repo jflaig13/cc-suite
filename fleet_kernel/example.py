@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Synthetic, disposable Company workflow using the real exported implementation.
 
 This starts only a temporary Unix-socket PostgreSQL instance. It performs no

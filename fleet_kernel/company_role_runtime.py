@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Fail-closed runtime bootstrap for one admitted non-Scribe Company role.
 
 The immutable profile selects identity.  The installed package selects code.

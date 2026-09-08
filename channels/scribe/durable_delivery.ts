@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MPL-2.0
 /**
  * Durable inbound-delivery state for the Scribe channel.
  *

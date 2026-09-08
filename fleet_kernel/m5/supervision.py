@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Stable, read-only legacy-surface capture for the M5 shadow observer."""
 from __future__ import annotations
 

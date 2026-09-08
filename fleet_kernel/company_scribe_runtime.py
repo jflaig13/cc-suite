@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Fail-closed process wrapper for the one writable Company Fleet Scribe."""
 from __future__ import annotations
 from fleet_kernel.configuration import company_id, scribe_deployment_id, authority_issuer, deployment_binding, identity_environment

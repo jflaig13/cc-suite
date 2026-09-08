@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """EP-130 — qualification, staleness, expiration, and waiver semantics.
 
 Governing contract: `fleet_kernel/fleet_kernel_evaluation_plane_full_project_directive.md`

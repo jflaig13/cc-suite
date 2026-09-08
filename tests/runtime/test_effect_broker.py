@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Tier 1 hostile proofs for the split Company Scribe effect broker."""
 
 from __future__ import annotations

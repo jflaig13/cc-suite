@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Shared-reader/exclusive-writer advisory locking for M4 handoff state."""
 from __future__ import annotations
 

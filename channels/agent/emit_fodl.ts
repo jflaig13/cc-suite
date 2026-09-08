@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MPL-2.0
 /**
  * FDRL Component 4: FODL Auto-Emission primitive — handleEmitFodl.
  *

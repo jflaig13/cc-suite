@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Versioned suite/case package contracts for the Fleet Kernel Evaluation Plane.
 
 Per directive §5.2 and §6.1-6.2, evaluation *meaning* — suites, cases, fixture

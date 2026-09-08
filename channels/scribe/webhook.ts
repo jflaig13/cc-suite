@@ -1,4 +1,8 @@
 #!/usr/bin/env bun
+/*! SPDX-License-Identifier: MPL-2.0
+ * Source: https://github.com/jflaig13/cc-suite
+ * License: https://mozilla.org/MPL/2.0/
+ */
 /**
  * Scribe Channel v3.2 — Full institutional observer.
  *

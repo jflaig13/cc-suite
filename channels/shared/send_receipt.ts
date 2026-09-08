@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MPL-2.0
 /**
  * send_receipt.ts — receipt-or-loud queue append for the bun send seams
  * (OIL-211 surface 2, CCTO design ef2bb1d / CCTO_design__20260706;

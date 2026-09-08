@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Evaluator-isolated holdout retrieval for the Fleet Kernel Evaluation Plane.
 
 Founder decision, `docs/brain/080926__ep040-phase0-synthesis-gate-a.md` §7(A): V1

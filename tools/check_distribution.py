@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MPL-2.0
 """Check a portable source checkout without loading or running its application code."""
 from __future__ import annotations
 import ast
@@ -96,6 +97,10 @@ def scan(root: Path) -> dict:
 
 def main() -> int:
     result = scan(ROOT)
+    from check_licenses import scan_licenses
+    licensing = scan_licenses(ROOT, files(ROOT))
+    result['issues'].extend(licensing['issues'])
+    result['status'] = 'FAIL' if result['issues'] else 'PASS'
     print(json.dumps(result, indent=2))
     return 1 if result['issues'] else 0
 

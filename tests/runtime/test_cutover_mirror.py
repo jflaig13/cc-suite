@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Public cutover configuration and one shared database/relay projection."""
 from concurrent.futures import ThreadPoolExecutor
 from contextlib import contextmanager

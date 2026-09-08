@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Evaluation Plane domain contracts (EP-100).
 
 Mirrors fleet_kernel/ddl/042_eval_plane_domain.sql one dataclass per table, in

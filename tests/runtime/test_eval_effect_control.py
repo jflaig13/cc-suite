@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """Exercise the native interception algorithm against explicit synthetic adapters."""
 from dataclasses import replace
 from types import ModuleType

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MPL-2.0
 """The ONE identity-key builder — kernel-wide law (founder ruling 8/31).
 
 Eradication campaign Step 3 (docs/ops/20260901__eradication-step*.md):
