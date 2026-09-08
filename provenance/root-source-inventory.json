@@ -54,8 +54,8 @@
     },
     {
       "path": "README.md",
-      "output_sha256": "3a4740201da219084e3c9a98c76c1ca53e16e4b2137b1d97d06acf51a6fa5d8d",
-      "basis": "Current release contents, verified usage and user-supplied Mise demo"
+      "output_sha256": "93e3abf492bfd5cd944a34ad77539dbbf2911af8afae7732863adc6762c7f8c6",
+      "basis": "Current release contents and verified usage; restaurant app demo removed at owner request"
     },
     {
       "path": "VALUES_TEMPLATE.md",

@@ -4,10 +4,6 @@ CC-Suite is the governed multi-agent system I use to build and operate [Mise](ht
 
 The public package is synchronized with the September 4, 2026 reference implementation. It includes the portable framework, host entry points, and reusable Company runtime. The source inventory records what was carried over, what was adapted for a standalone installation, and which private product components are excluded.
 
-**[Watch the Mise app walkthrough · 2:46, with audio](https://drive.google.com/file/d/1WWGTV3MokvatA3bC2EHhwADEs7fUjvPe/view?usp=sharing)**
-
-The walkthrough covers Ask Mise, payroll, voice inventory, order preparation, and the product catalog. Mise is the restaurant application built with this system. The demo provides product context for the engineering and operating work behind CC-Suite.
-
 ## How the parts fit together
 
 | Part | Responsibility |
