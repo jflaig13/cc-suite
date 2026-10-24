@@ -17,10 +17,10 @@
 
 ## Active Work (Exact State at Close)
 
-*What you were doing the moment the close signal came in. Be specific — file paths, line numbers, V-Loop step numbers, test status, deploy status.*
+*What you were doing the moment the close signal came in. Be specific — file paths, line numbers, branch and pull request, test status, deploy status.*
 
 - **Current ticket:** {Ticket ID or short description, or "None"}
-- **V-Loop step:** {1-9, or "N/A"}
+- **Branch / pull request:** {branch name and pull request state, or "N/A"}
 - **Mid-edit:** {File path and line number if you were editing something, or "No"}
 - **Test status:** {Passing / Failing / Not run / Which test}
 - **Deploy status:** {Not deployed / Deploy in flight / Deployed but unverified / Verified}
@@ -67,11 +67,9 @@
 
 ---
 
-## Strike Count
+## Cases
 
-**{AGENT_ID}: {current} / 3**
-
-*If you received strikes during this session, note the reason and whether any recent strike was "same class" as the prior one (back-to-back rule risk).*
+*Any case opened this session: what happened, the missing rail it names, and whether that rail is built and proven.*
 
 ---
 
@@ -103,5 +101,5 @@ Before writing this handoff, confirm:
 - [ ] Every file modified is listed in "Code Changes"
 - [ ] Every open item is in priority order
 - [ ] Pickup Instructions are mechanical (specific files, specific commands, specific next actions)
-- [ ] Strike count is current
+- [ ] Every case opened this session is recorded
 - [ ] Nothing important was left in chat history that is not captured here

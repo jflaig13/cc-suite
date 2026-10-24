@@ -8,6 +8,6 @@ A missing queue file is not automatically healthy. Check the transport's contrac
 
 Record the subject revisions, checks performed, observed failures and unresolved coverage. Deliver a digest only to an authorized destination and according to the owner's notification preferences. Keep unchanged routine state quiet when that is the agreed behavior; retain a machine-readable run record regardless.
 
-The maintenance role does not ratify rules, issue strikes, initiate terminations or take over another worker's authority. Findings route to the responsible owner with evidence. Routine in-scope repairs require their own granted capability; otherwise the run records the pending dependency.
+The maintenance role does not ratify rules, retire a deployment or take over another worker's authority. Findings route to the responsible owner with evidence. Routine in-scope repairs require their own granted capability; otherwise the run records the pending dependency.
 
 Before relying on the worker, exercise its real trigger, successful output, interruption, retry, missed-run detection and failure reporting. A process that starts is not proof of a complete maintenance cycle. See `../MONITORING_CHAIN_INTEGRITY.md` and `../AUTHORITY_AND_EVIDENCE.md`.

@@ -1,5 +1,7 @@
 # V-Loop Checklist — Ticket: [description]
 
+> **Superseded 2026-10-24** by lanes landing through the merge queue ([HARNESS_CORE.md](../../HARNESS_CORE.md) section 12). Kept as a record of the earlier protocol; it is not current policy.
+
 **Tier/EDG:** [classification]
 **Date:** [YYYY-MM-DD]
 

@@ -14,7 +14,7 @@
 ## Responsibilities
 
 - Classify all changes by Tier/EDG before implementation
-- Investigate data before writing code (Step 2 of V-Loop)
+- Investigate data before writing code (search before building)
 - Write clean, tested implementations
 - Run test suites before handing off
 - Provide comprehensive handoff details to the Reviewer

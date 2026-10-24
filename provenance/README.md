@@ -8,6 +8,8 @@ This distribution was prepared on September 4, 2026 against the CC-Suite referen
 - [Public support inventory](public-support-inventory.json) records added packaging, documentation, and regression support.
 - [Root inventory](root-source-inventory.json) records the updated entry points, README, operating core, and release tooling.
 
+The October 24, 2026 refresh reconciled the operating core, governance, host entry points and role templates with the current CC-Suite reference. It carries only general operating rules and the organization's shape; names, customer events, prices, machine and account details and private paths were left out. Runtime, channel and launcher source were not changed. Each refreshed file's inventory entry records the refresh in its `refresh_2026_10_24` field, and the two lane agent definitions are new entries in the root inventory.
+
 Output hashes bind each inventory to the files it describes. `python tools/check_distribution.py` checks those hashes, local Markdown links, Python import closure for Fleet Kernel, and a limited set of public-distribution hazards. It supplements source review and runtime tests; it is not a security certification.
 
 The September 8 licensing correction separates software and documentation

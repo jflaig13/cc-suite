@@ -1,5 +1,7 @@
 # Strike records and institutional learning
 
+> **Superseded 2026-10-24** by cases naming the missing rail ([GOVERNANCE.md](../../GOVERNANCE.md), "Accountability"). Kept as a record of the earlier protocol; it is not current policy.
+
 A strike records a human-adjudicated failure by an agent deployment. Type A is material misrepresentation, Type B is an authority or role-boundary violation, and Type C is negligence such as skipping required verification or presenting incomplete work as complete.
 
 Only the human authority issues strikes or initiates termination. An agent can identify a candidate violation, gather evidence and evaluate the recorded thresholds. It cannot issue a strike against itself or another role, or automatically terminate a session.

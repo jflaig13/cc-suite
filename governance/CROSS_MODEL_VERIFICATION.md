@@ -1,5 +1,7 @@
 # Cross-model verification
 
+> **Superseded 2026-10-24** by three skeptics from three model families, majority deciding ([HARNESS_CORE.md](../HARNESS_CORE.md) section 8). Kept as a record of the earlier protocol; it is not current policy.
+
 An independent reviewer from another model family reviews the complete frozen subject. Record both model families, the artifact hashes or commit/tree identity, the original acceptance criteria, the review scope and the evidence available to the reviewer.
 
 The reviewer receives the artifact and governing criteria without the producer's preferred verdict. It identifies substantive defects, authority or data-boundary violations, incomplete behaviors, unsupported claims and coverage gaps. Findings name a location, consequence and reproducing evidence when available. A favorable summary cannot replace a whole-subject review.

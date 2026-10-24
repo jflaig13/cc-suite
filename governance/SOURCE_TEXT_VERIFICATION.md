@@ -19,4 +19,4 @@ At each downstream boundary, check whether the same source and context still sup
 
 A memory note quoting approval is a retrieval pointer, not independent proof of authority. Read the original instruction or validate the actual delegation record when authority is consequential. Do not invent a relay or speak for the human.
 
-Correct a disproved claim across its material consumers and preserve the original event record. Any candidate governance violation follows human-only strike issuance and termination initiation under `AUTHORITY_AND_EVIDENCE.md`, for every role subject to that policy.
+Correct a disproved claim across its material consumers and preserve the original event record. A governance miss is recorded as a case naming the missing rail; retiring a deployment remains the owner's decision (`AUTHORITY_AND_EVIDENCE.md`).
