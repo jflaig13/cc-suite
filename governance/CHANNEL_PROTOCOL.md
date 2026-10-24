@@ -19,6 +19,12 @@ This protocol is **optional** — CC-Suite deployments that do not run long-runn
 
 ---
 
+## Sourced Sends
+
+Every send that hands a role work names its source (the owner's ask, a landing, a case, a receipt, or a standing audit and the evidence it read), in a metadata field or a `SOURCE:` line under its subject. An answer carries the source of the send it answers. The adapter that wakes a role delivers a send with no source as information only: it starts no turn. A role's cursor moves past a send only once its session took it; a send that cannot be delivered is kept, in order, for the role's next live session, and the failure is reported once. An acknowledgement is never itself acknowledged.
+
+---
+
 ## The Problem It Solves
 
 Use event-driven delivery or an explicitly configured observation process. Preserve durable state and make observation failures distinguishable from an empty queue.
@@ -242,9 +248,7 @@ Enforcement comes from three layers:
 
 1. **Scribe audit** — The Scribe (see `governance/scribe/SCRIBE_CHANNEL_PROTOCOL.md`) periodically reviews the audit log and flags any Slack-sourced (bus-sourced) event whose internal ACK has no corresponding bus post visible in the originating channel within the owner-configured acknowledgment window.
 2. **Human observation** — The human authority watches the bus channels in real time. A missing bus ACK from an agent that SHOULD have received an event is immediately visible. This is the fastest detection path.
-3. **Canon pressure + strike consequences** — Violations are strike-able under the deployment's governance rules (e.g., Type C — Negligence, per `GOVERNANCE.md`). Repeat violations escalate per the standard and back-to-back termination thresholds.
-
-See `BACK_TO_BACK_TERMINATION_RULE.md` for back-to-back repeat handling.
+3. **Cases** — A missed acknowledgment is recorded as a case naming the missing rail (the control that would have caught it), and the case closes when that rail exists and is proven (`GOVERNANCE.md`, "Accountability").
 
 ---
 
@@ -312,8 +316,7 @@ See the deployment’s actual transport and recovery runbook.
 - **`governance/scribe/SCRIBE_AUDIT_CHECKLIST.md`** — Mechanical checklist the Scribe runs on every event type. Extracted from this protocol to keep Scribe responsibilities auditable.
 - **`governance/lifecycle/INTERACTIVE_LIFECYCLE.md`** — Lifecycle variant for long-running agents that consume channel events. Interactive agents MUST be channel-connected.
 - **`governance/lifecycle/EPHEMERAL_LIFECYCLE.md`** — Lifecycle variant for batch-triggered ephemeral agents. Bounded workers may consume a durable queue when their adapter supports it; `governance/DIGEST_BRIDGE_PROTOCOL.md` describes the separate output-delivery pattern.
-- **`governance/TANDEM_PROTOCOL.md`** — V-Loop Step 9 (Audit) references the Scribe audit checklist for mechanical per-event-type enforcement.
 - **`HARNESS_CORE.md`** — Compressed init that may reference this protocol in its "Communication" section.
-- **`BACK_TO_BACK_TERMINATION_RULE.md`** — Governs repeat violations of dual-ACK canon and other channel-protocol rules.
+- **`GOVERNANCE.md`** — The company bus rules: every dispatch names its source, no turn starts without one, and an acknowledgement is never acknowledged.
 
 ---

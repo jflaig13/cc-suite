@@ -116,7 +116,7 @@ Beyond its own compliance, the Scribe is responsible for AUDITING every other ag
    - Event ID and type
    - Audit log entry
    - The specific channel and window searched
-4. The flagged violation is a candidate for a strike under the deployment's governance rules (typically Type C — Negligence).
+4. The flagged violation is recorded as a case naming the missing rail (`GOVERNANCE.md`, "Accountability").
 
 **Rationale:** the channel server cannot verify a bus post occurred because that post happens through a separate tool call outside the server's view. The only actor positioned to verify dual-ACK compliance is one that can read both the audit log and the bus-side channel history — the Scribe. This is why dual-ACK enforcement is the Scribe's job, not the channel server's.
 

@@ -1,5 +1,7 @@
 # Builder/reviewer verification loop
 
+> **Superseded 2026-10-24** by lanes that land as their own pull requests through the merge queue, with three skeptics where work is judged ([HARNESS_CORE.md](../HARNESS_CORE.md) sections 8 and 12). Kept as a record of the earlier protocol; it is not current policy.
+
 Use the full V-Loop for Tier S/A changes at EDG-2 or above, or when the applicable task contract requires it. Other work follows its governing risk and verification requirements. Neither role can replace independent verification with its own implementation tests.
 
 A coordination record names the original objective, exact subject, affected behavior inventory, current step, next owner, evidence and open requirements. Each role writes its own section. A silent peer is an unknown state: observe the actual worker or transport before claiming it is working, idle or failed.

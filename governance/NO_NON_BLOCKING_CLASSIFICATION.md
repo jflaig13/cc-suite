@@ -71,8 +71,7 @@ This is mandatory. Skipping it is itself a Tier B violation.
 
 ### Scribe audit duty
 - Flag any agent message using banned framings to demote a real bug
-- Tier B strike for repeat use
-- Tier A × EDG-1 if the demoted bug had Tier S impact (financial / payroll / inventory / customer-facing)
+- Record each use as a case naming the missing rail, with the demoted bug's real Tier (Tier S when it had financial or customer-facing impact)
 
 ### Pattern detection
 - Two same-session demotions by the same agent = formal warning

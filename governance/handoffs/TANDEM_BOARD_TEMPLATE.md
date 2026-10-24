@@ -1,5 +1,7 @@
 # TANDEM BOARD — Active Coordination
 
+> **Superseded 2026-10-24** by the one board kept by the Chief of Staff ([GOVERNANCE.md](../../GOVERNANCE.md)). Kept as a record of the earlier protocol; it is not current policy.
+
 **Last updated:** [DATE]
 **Protocol:** `governance/TANDEM_PROTOCOL.md`
 

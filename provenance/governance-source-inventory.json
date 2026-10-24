@@ -14,7 +14,8 @@
       "action": "adapted",
       "source": "HARNESS_CORE.md \u00a714; docs/brain/081226__quality-verification-ladder-canon.md",
       "baseline_sha256": "7c79a4d9310012c0ec01001eaed11b68ac03c46c8a94376e498feac0e089b081",
-      "output_sha256": "82c86f1a17a6c74b59ec38a9f188ff6b6c891144960501474349472d05b527f3"
+      "output_sha256": "9f783249945a2d45771da5e9daa4c54c9c35852b2d6a2a712b51091ef6d9362a",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/ATOMIC_VERIFICATION_PROTOCOL.md",
@@ -28,14 +29,16 @@
       "action": "adapted",
       "source": "HARNESS_CORE.md \u00a79",
       "baseline_sha256": "3699074e9438f7fafa811ad79359f4e506b054fb8e648043745784f8abb9d998",
-      "output_sha256": "0708c86a8978a6959290971a7becf9c95eb91cbe02a29ab65da932cb7cce22d5"
+      "output_sha256": "8fd39a70efbd644259bd708fdbe60aac627fa23e5a10d13184c6368fc08c868f",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/CHANNEL_PROTOCOL.md",
       "action": "adapted",
       "source": "HARNESS_CORE.md \u00a7\u00a70, 5, 9\u201310, 19; host-agnostic contract and authority boundary",
       "baseline_sha256": "c43536c56ef4ae02197915700edc7be4a37d626288ea68d930abc85dd6897f59",
-      "output_sha256": "f7e84cff941df5442362d5c4f81d8dab25275acd5184ae4e1f2422cce20198b1"
+      "output_sha256": "bfec34af7f840bbe407729e21001b6574199037b7a944d2e1102c35e88d2c0e3",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/CHANNEL_TEMPLATE.md",
@@ -63,7 +66,8 @@
       "action": "adapted",
       "source": "HARNESS_CORE.md \u00a7\u00a71, 5, 17, 19",
       "baseline_sha256": "4b4d600bb1888e47a6c5bea54bec24cc1c1d011b840c0e7eba95e33727c41aca",
-      "output_sha256": "1c9491e224f52545b7d344dc0ac2fc4e8c78fa41010e37346eab5d17cf0491c4"
+      "output_sha256": "c97a700d5d5acf04067e99d7c5833f4f5bae9b1da4356d789d95ea88c6393e8d",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/FODL_SCOPE_DEFINITION.md",
@@ -77,7 +81,8 @@
       "action": "adapted",
       "source": "HARNESS_CORE.md \u00a7\u00a710\u201311, 17, 19",
       "baseline_sha256": "7b6a2670cca51e3e96fbca93a0b307323d00a600ed4d62ddd39b2b916d9096a5",
-      "output_sha256": "bbf6d98d2350307abc7619224019baff103d8500897ff5a580017983fc162221"
+      "output_sha256": "21332f123715a3f156137d5c8a011521385abf821622a3ba8d5ffe940f045cf3",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/ID_REGISTRY.md",
@@ -98,7 +103,8 @@
       "action": "adapted",
       "source": "HARNESS_CORE.md \u00a7\u00a79\u201310; AGENTS.md",
       "baseline_sha256": "c6bbb53e26c9bcce2f3402ebfae5c70623e030c45cd10df28796041d1a220c33",
-      "output_sha256": "47027fbf09c016c1f7697ef80a912017a1f4850cbb4b721d49ef24024b7b1dc8"
+      "output_sha256": "c8c0d954f642bb0e2ec4c6ac5534302af31c9fb3670262a72c22dc617243b60b",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/MECHANISM_VERIFICATION_ATTESTATION.md",
@@ -126,7 +132,8 @@
       "action": "adapted",
       "source": "HARNESS_CORE.md \u00a7\u00a70\u20133, 9\u201310, 14, 19; unchanged generic protocol body preserved; implementation history removed",
       "baseline_sha256": "8b3813c875cb2e258d3f02f09afc3b5edde2f7f0cf60365c44a5411118e0c4ad",
-      "output_sha256": "0f25d26437b0638b63145e7bd6524820991f3f2651412d3759dedc0d2cf8719c"
+      "output_sha256": "f5b1f3591a3709f6fdc233c84f2827d32466da06f4a5c60d9795ace93ee84c29",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/RISK_CLASSIFICATION.md",
@@ -147,14 +154,16 @@
       "action": "adapted",
       "source": "HARNESS_CORE.md \u00a7\u00a70, 3, 5, 9\u201310; primary source and verified authority",
       "baseline_sha256": "122d0cc140edeb24784d4ef8fb5a6543a4e277d20d207cac7d2c0ead2844b7d4",
-      "output_sha256": "c429ed452d98c9c144e61c30bd60e6e1037a607d29cad49e730ec9e7114bdd49"
+      "output_sha256": "3449c6f0423d93c534f6b69b5482823aea61bdc24c60b8c60f18f221dbb075ff",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/TANDEM_PROTOCOL.md",
       "action": "adapted",
       "source": "HARNESS_CORE.md \u00a7\u00a70\u20131, 8\u201310, 14, 19",
       "baseline_sha256": "05ba4fa6e88f455bb52eb32e103f32b64329ff5305d38dd6e2a534fced1df037",
-      "output_sha256": "8a85fb330b7054f1e028fe44e103d54784593c5d6a2d69d0f02149d4e2cea7af"
+      "output_sha256": "469cf24321ee39ae17ba289eac95caed7108cb3b9a30bbb929a702ae902ed0a0",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/TOUCH_TERMINOLOGY.md",
@@ -168,7 +177,8 @@
       "action": "adapted",
       "source": "HARNESS_CORE.md \u00a7\u00a71, 13, 19; .agents/skills/no-ai-slop/SKILL.md",
       "baseline_sha256": "046afdc05732b83694126d6ef4a5bfb4bf9dde7e071087ffae4a941289619d76",
-      "output_sha256": "113d093918fcfdc7f3fbddd7225f8e80db8488f10e603a263c73ee944cf2f2d6"
+      "output_sha256": "7f1099bf5bbd96e32b0d3aae0bd081b5a677a259262ac86b023ac414a491116c",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/bridges/DIGEST_FORMAT_TEMPLATE.md",
@@ -196,21 +206,24 @@
       "action": "adapted",
       "source": "Existing generic template/protocol retained; no current-rule conflict identified",
       "baseline_sha256": "6a77cb9dd0c5e6c79b5a1c80b56994da61bbb1a30e477f7c7f232b81e482fe80",
-      "output_sha256": "7ab1669219554924b3ebd5e587ec9140535e930b92046b051857129e67da280a"
+      "output_sha256": "4753c597566d17bd71695fc1f3c288819842bd094208cdac4f46ffe2bae029ce",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/handoffs/TANDEM_BOARD_TEMPLATE.md",
       "action": "adapted",
       "source": "HARNESS_CORE.md \u00a7\u00a71, 8\u201310, 14, 19; portable template coherence",
       "baseline_sha256": "ac8eb1937ea725f3a7268e3bb436d15f25e1e47d36e13bb93fd74684ad6f3c4f",
-      "output_sha256": "54458caf577948d1a66ca3c16e3dc389f9639315e300a8e6c9c5cb76f61411b8"
+      "output_sha256": "7cb038a501398bbc8218295098314fde40091c006fd321987fd4055515c150c8",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/handoffs/VLOOP_CHECKLIST_TEMPLATE.md",
       "action": "adapted",
       "source": "HARNESS_CORE.md \u00a7\u00a71, 8\u201310, 14, 19; portable template coherence",
       "baseline_sha256": "d0812f138946fe67a5772a8a7276a785fc025b13f6b6f99b5c0c65dc548284ea",
-      "output_sha256": "9f6ebcaddc6620df5f5544ad00fd76eac460b451367a63e3ecde35b62e82c8d5"
+      "output_sha256": "542da12a2ab2e7823cc04f09807a8445bace8e38a9ad21851b6364ee3332b42c",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/lifecycle/EPHEMERAL_LIFECYCLE.md",
@@ -259,7 +272,8 @@
       "action": "adapted",
       "source": "HARNESS_CORE.md \u00a7\u00a70\u20133, 9\u201310, 14, 19; unchanged generic protocol body preserved; implementation history removed",
       "baseline_sha256": "cbcc99be5865c6067d7ac717bc4d66629a4d27f943dd53f05491ded2faffeca2",
-      "output_sha256": "3e646e4421f433ec02b0def660a210d7435cca00b1f2c99cf5e623b80f0faf6c"
+      "output_sha256": "287afd0a8354311a381420be6deb1dde6f747923c3b738e7ee5814187816bad8",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/roles/EXAMPLE_reviewer.md",
@@ -273,14 +287,16 @@
       "action": "adapted",
       "source": "HARNESS_CORE.md \u00a7\u00a70\u20133, 5, 9\u201310, 19; existing generic structure preserved",
       "baseline_sha256": "b8a2d5f43ad5f41d04b62b8195ec6289294989e24455de2483a6f9ffcf1f115d",
-      "output_sha256": "4cf0162bbad6786e7c4db83ca74b2e119d69b76c0219e8150b87128f96dd6387"
+      "output_sha256": "ffec0057806220764c40e084e90b2a4c798f47c0de0bdb0814272babb9c95bd3",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/scribe/DREAM_CYCLE_PROTOCOL.md",
       "action": "adapted",
       "source": "HARNESS_CORE.md \u00a7\u00a70\u20131, 5, 8\u201310, 14, 19",
       "baseline_sha256": "f1f8611c84d6d5be8b92b7a32bfa48c2c17af93e41362ddb367b093b4be0a7b4",
-      "output_sha256": "13f8677651d8ebef54b2a393a2d24d88cc950ca62652382458dc134ef35a472e"
+      "output_sha256": "f9439bc168bee44c199aac7e4ed0e4decebe9632125a394142ebc863941358bd",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/scribe/EVENT_TYPES.md",
@@ -308,14 +324,16 @@
       "action": "adapted",
       "source": "HARNESS_CORE.md \u00a7\u00a70\u20133, 5, 9\u201310, 19; existing generic structure preserved",
       "baseline_sha256": "b5f1017c0469e549832df997622d653cc3d5b8f0ff938b507c326e89d3103e14",
-      "output_sha256": "67224aa3594a8d5b96bbf0d761b4d6bcf566900f41df299d72a5905018c07ee2"
+      "output_sha256": "0fac151cc43a9f4f19bebc9011194a2733f189053369b27b717ba8bad86c1d6f",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/scribe/STRIKE_SYSTEM_PRIMITIVE.md",
       "action": "adapted",
       "source": "HARNESS_CORE.md \u00a79",
       "baseline_sha256": "18b6bc6f899a181edae4e617b079661d556eca6abc929c7190a75c22c8502751",
-      "output_sha256": "badb97ecb29408b2a855fcd6d182cd432840b62cd7ad07f78b05b5ccc9ab6983"
+      "output_sha256": "312cd7795264203aacfe124b99cd14c53c2ed10db86e628b08d2f9852a5b191e",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/scribe/SUBATOMIC_AUDIT_PROTOCOL.md",
@@ -336,28 +354,32 @@
       "action": "adapted",
       "source": "HARNESS_CORE.md \u00a7\u00a71, 8\u201310, 14, 19; portable template coherence",
       "baseline_sha256": "b40a478971a9c0dd0e608c0ea8ba7b2a9d8ef3aa1c5dbc8648b77f84599173f1",
-      "output_sha256": "3f69285ddb55e859e3ffd5254f7a698830fbb81b6d8334abaf14e6238420f05b"
+      "output_sha256": "2a08e5d3d7ae26c4584c700b112123334666ef37e8f0a25560e6c672a944afae",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/strikes/STRIKE_REPORT_TEMPLATE.md",
       "action": "adapted",
       "source": "HARNESS_CORE.md \u00a7\u00a71, 8\u201310, 14, 19; portable template coherence",
       "baseline_sha256": "64f1cae912c65f062d7992659332ec06415b29a027c3e3135dd6e83aa29878b4",
-      "output_sha256": "5b826ec2b7daa4d078ec8bc686a31d6a46d67f6fc9d5a87391574be210b9acb8"
+      "output_sha256": "6cf99370eef40d1910ca9f783ea2adb24e656f9e1dbd92a9ea0fc6a93d7ff7e0",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/terminations/SUCCESSOR_ONBOARDING_TEMPLATE.md",
       "action": "retained",
       "source": "Existing generic template/protocol retained; no current-rule conflict identified",
       "baseline_sha256": "cf1cef7ac759c07e6ffa49d54b19aab3dd9819cc38a4758cbd7fd171e63be57a",
-      "output_sha256": "cf1cef7ac759c07e6ffa49d54b19aab3dd9819cc38a4758cbd7fd171e63be57a"
+      "output_sha256": "71bf98ef9fe548e1bcd4032f33ba04c9b91e803fda321a856f7e8d92acc8f04f",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/terminations/TERMINATION_TEMPLATE.md",
       "action": "adapted",
       "source": "HARNESS_CORE.md \u00a7\u00a71, 8\u201310, 14, 19; portable template coherence",
       "baseline_sha256": "3035d5ff74dbe89d509750798d7e59202a5067b1f33094b61878719ad6d59cdc",
-      "output_sha256": "76caa6b1acb62455f3618a443c8251bda134ea28f62af9c1d083a509c3459d9d"
+      "output_sha256": "0e240366f98d847a3e1e164ddaa819e8e8aa8e40ae04811fd59c29431467571b",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/verification/COMPARISON_TEMPLATE.md",
@@ -398,13 +420,15 @@
       "path": "governance/AUTHORITY_AND_EVIDENCE.md",
       "action": "added",
       "source": "HARNESS_CORE.md \u00a7\u00a70\u20135, 9\u201310, 19",
-      "output_sha256": "2c2ee0e2110c8a099841be043a8b457ee1f8869ef5a7d5a9716bc2a6e662af0f"
+      "output_sha256": "2c019c588d76c990ba9bbf25d7faa0158ecb791b04dfb13c4457dcf5355f89bf",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/CONDUCT_FLOOR.md",
       "action": "added",
       "source": "HARNESS_CORE.md \u00a7\u00a70\u20131, 19",
-      "output_sha256": "dbf1481d69877d942df4f7f9f0b88a2fecb98eed1c050c64edc748dde02c74b5"
+      "output_sha256": "42f0e799342f2c37e93f277dd0744796fad8cb7f57768a264c3093c5cb80a8d7",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/NO_SILENT_SCOPE_REDUCTION.md",
@@ -416,7 +440,8 @@
       "path": "governance/TOLD_AND_BOUND.md",
       "action": "added",
       "source": "docs/brain/081426__told-vs-bound-canon.md; HARNESS_CORE.md \u00a71",
-      "output_sha256": "8c57ff2a34432e152cbe22b737debe49cd985763380967040cb0ac5b9b521bd3"
+      "output_sha256": "99af60d0aa3da8f1003b5ff892c29151ff4b5c9b221b7fb5618df0e819af2130",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/SKILLIFICATION_PROTOCOL.md",
@@ -428,13 +453,15 @@
       "path": "governance/QUALITY_VERIFICATION_LADDER.md",
       "action": "added",
       "source": "docs/brain/081226__quality-verification-ladder-canon.md; HARNESS_CORE.md \u00a714",
-      "output_sha256": "42fe477b6efa6debf257f0d838533e11634ce93bd5d9f1626883efd23a067461"
+      "output_sha256": "63ec33b76353efdbae64bff58e54530097b61849491ed1dd1fac4e9d2d48279f",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/CROSS_MODEL_VERIFICATION.md",
       "action": "added",
       "source": "HARNESS_CORE.md \u00a714; docs/brain/081226__quality-verification-ladder-canon.md",
-      "output_sha256": "ed0240cced47ec44c8db486730d763ffca565ec3992f83279b35e608886dc2e9"
+      "output_sha256": "f8d7d61667956ffe85c46659c9b82aab754440dffe82dfec74bfb5e4d4cab625",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "governance/VERIFICATION_INDEPENDENCE.md",
@@ -452,7 +479,8 @@
       "path": "governance/ROLE_SEPARATION.md",
       "action": "added",
       "source": "HARNESS_CORE.md \u00a7\u00a79\u201310; AGENTS.md",
-      "output_sha256": "a190a5d770cd2c1cca929d8f06aa21b6c26943a0444c0603084dd56a6c610f93"
+      "output_sha256": "15685eaaf690ac32a303450b97a36f6140271ab2e9a8e5fa6b78920fa1a81b57",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     }
   ]
 }

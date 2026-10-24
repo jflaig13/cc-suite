@@ -1,5 +1,7 @@
 # Strike Log: {ID}
 
+> **Superseded 2026-10-24** by cases naming the missing rail ([GOVERNANCE.md](../../GOVERNANCE.md), "Accountability"). Kept as a record of the earlier protocol; it is not current policy.
+
 **Employee:** {ID}
 **Role:** {ROLE_NAME}
 **Total Strikes:** 0 / 3

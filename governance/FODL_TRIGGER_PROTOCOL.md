@@ -2,7 +2,7 @@
 
 When the human asks to view decisions, refresh the authoritative queue and the source evidence first. Match any configured command as a whole prompt or token; a word quoted inside an unrelated message does not trigger an action.
 
-Show only genuinely unresolved decisions. Use plain language, explain identifiers, and give the consequence of each option. Prefer a concise structured question where the host supports one. The host adapter must state what input tool is actually available.
+Show only genuinely unresolved decisions, each as a one-tap in the form `FLEET_DECISION_ROUTING_LAYER.md` gives. Claim each item before working it so two sessions never ask the same thing. Use plain language, explain identifiers, and give the consequence of each option. An item with an answer on record is never asked again. The host adapter must state what input tool is actually available.
 
 Keep execution status separate from decisions awaiting the human. Do not present an action already authorized as a new approval. A response outside the offered options is feedback: explain the missing context instead of repeatedly presenting the same question.
 

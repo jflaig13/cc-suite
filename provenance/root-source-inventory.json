@@ -4,13 +4,25 @@
   "files": [
     {
       "path": ".claude/CLAUDE.md",
-      "output_sha256": "91593447cec08d170e856192fc5642ff1678193a566d16030fb472b7da59c066",
-      "basis": "Current operating core and portable Claude host entrypoint"
+      "output_sha256": "08613017a4fc8e2cb26b862ae85d8fee2dd095c3426fe9c7b48ebaaf3174f69b",
+      "basis": "Current operating core and portable Claude host entrypoint",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
+    },
+    {
+      "path": ".claude/agents/build-lane.md",
+      "output_sha256": "7e7c1830bbfec44a35c28cfff80ca3e6bdbe8873add6642ede4af58c5a44c24b",
+      "basis": "New in the October 24, 2026 refresh: generic build-lane and read-lane agent definitions adapted from the current reference, with private paths, names and events omitted. A new file because the host loads agent definitions only from this directory."
+    },
+    {
+      "path": ".claude/agents/read-lane.md",
+      "output_sha256": "fa482cd03b4eef2b5909dc569e21b01e6cbe59f6cbd5a60d13c5d9dfee5007c9",
+      "basis": "New in the October 24, 2026 refresh: generic build-lane and read-lane agent definitions adapted from the current reference, with private paths, names and events omitted. A new file because the host loads agent definitions only from this directory."
     },
     {
       "path": ".claude/commands/init-role.md",
-      "output_sha256": "882d501c39dba95ad2534a2bbdb8aac01b00f54e36f4db0f0e79e8337199a43e",
-      "basis": "Current role initialization and explicit identity/admission boundary"
+      "output_sha256": "9943f7bde443d589562937cb0f4a90139b06df94335860e42a8f7e955d47cd99",
+      "basis": "Current role initialization and explicit identity/admission boundary",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": ".github/workflows/verify.yml",
@@ -24,8 +36,9 @@
     },
     {
       "path": "AGENTS.md",
-      "output_sha256": "484b9f0c8d5075812e109f089df515a31eb9573e418af88a0c7d504e4c0aee11",
-      "basis": "Portable Codex entrypoint adapted from current AGENTS.md and HARNESS_CORE.md"
+      "output_sha256": "5db894d0ace74bb72b5872ff4e14e13d7991f6d6735aed4d2a7e78d8894ba319",
+      "basis": "Portable Codex entrypoint adapted from current AGENTS.md and HARNESS_CORE.md",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "COPYING.md",
@@ -39,18 +52,21 @@
     },
     {
       "path": "GOVERNANCE.md",
-      "output_sha256": "ff3a73d6b6f27534ec2c4579a0794386ffa363bde9435477ae63df80e6d420d7",
-      "basis": "Current operating core, role separation, identity and human authority rules"
+      "output_sha256": "957439a669e346422719eb0465f5adfa92c67095ddd6117e90e46037f931c65d",
+      "basis": "Current operating core, role separation, identity and human authority rules",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "HARNESS_CORE.md",
-      "output_sha256": "3220b4da5815333224499516b1d5c916b0c7916bb321e991d3b32cec02224822",
-      "basis": "Current reference HARNESS_CORE.md and governing protocols, adapted to a portable distribution"
+      "output_sha256": "06eedc83b0fc1b42ab1acb9849639e8a668acc2af0644137ba6bf3edcc6b89f3",
+      "basis": "Current reference HARNESS_CORE.md and governing protocols, adapted to a portable distribution",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "HOST_CLAUDE_CODE.md",
-      "output_sha256": "dda2b1cd6799965deb84be4bf788f68069faeee77198745dde8bb53be8b5a91a",
-      "basis": "Current host adapter separation and explicit capability configuration"
+      "output_sha256": "4768038047b44556c389a59e88fd75cec9fad0f261f13a1d0d3bf23ecddb3289",
+      "basis": "Current host adapter separation and explicit capability configuration",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "LICENSE",
@@ -109,8 +125,9 @@
     },
     {
       "path": "README.md",
-      "output_sha256": "0f579cf87ecfb3b1a7b0eb664175142d3a09652d404bca37fc2d8f9e3e988deb",
-      "basis": "Current release contents and verified usage; restaurant app demo removed at owner request; September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      "output_sha256": "da3329283299d4bb22d75be919f3fc2035ebe873cc52b4a0ac30e3cbea461c2c",
+      "basis": "Current release contents and verified usage; restaurant app demo removed at owner request; September 8 owner-authorized software/documentation license split, source notices and verified license delivery.",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -129,8 +146,9 @@
     },
     {
       "path": "provenance/README.md",
-      "output_sha256": "89714982c5a9aba94fdda281731fa199c10f85fd474bc901cbbf661268703d3b",
-      "basis": "New release inventory explanation; September 8 owner-authorized software/documentation license split, source notices and verified license delivery."
+      "output_sha256": "ecc42a5fcd980c7cdae369748e0a257b45a2d1f312a350936223882d7ddf5646",
+      "basis": "New release inventory explanation; September 8 owner-authorized software/documentation license split, source notices and verified license delivery.",
+      "refresh_2026_10_24": "Reconciled with the October 24, 2026 CC-Suite reference: general operating rules and organization only; private names, events and deployment details omitted."
     },
     {
       "path": "tools/check_distribution.py",

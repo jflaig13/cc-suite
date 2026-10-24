@@ -1,5 +1,7 @@
 # Back-to-back repeat termination rule
 
+> **Superseded 2026-10-24** by cases naming the missing rail ([GOVERNANCE.md](../GOVERNANCE.md), "Accountability"). Kept as a record of the earlier protocol; it is not current policy.
+
 Three thresholds inform human termination decisions: three total strikes, two OLD strikes, and consecutive repetition of the same mistake. Only the human authority issues a strike, classifies its relation to prior failures, or initiates termination. A threshold detector records a finding and routes it to that authority; it never ends a deployment on its own.
 
 An OLD strike repeats a failure documented in a predecessor's packet. A back-to-back finding concerns the same failure mechanism on consecutive recorded attempts. Similar wording or a broad label such as negligence is insufficient evidence; identify the actual failed obligation and the intervening sequence.

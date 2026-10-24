@@ -51,6 +51,6 @@ By completing this packet, the successor confirms:
 - I have read ALL predecessor termination packets in full
 - I understand what went wrong and why the system allowed it
 - I have completed all enhanced onboarding areas
-- I accept that repeating a documented predecessor failure is an OLD strike under PERP
+- I have read every open case naming my predecessor's work and the rail each one requires
 
 **Acknowledged:** [ ] Date: ___________

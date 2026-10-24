@@ -1,5 +1,7 @@
 # Quality and verification ladder
 
+> **Superseded 2026-10-24** by three skeptics ([HARNESS_CORE.md](../HARNESS_CORE.md) section 8) and the [convergence loop](ASYMPTOTE_PROTOCOL.md). Kept as a record of the earlier protocol; it is not current policy.
+
 Choose review work for the subject and its risk. State the exit predicate before the first pass. Each selected protocol runs in full; duplicate rituals do not add evidence.
 
 ## Product and data truth

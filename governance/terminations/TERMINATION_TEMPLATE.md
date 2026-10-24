@@ -10,7 +10,7 @@
 | Role | {ROLE_NAME} |
 | Hire Date | {HIRE_DATE} |
 | Termination Date | {TERMINATION_DATE} |
-| Termination Trigger | {3 strikes / 2 OLD strikes / back-to-back repeat / human at-will decision / other} |
+| Termination Trigger | {owner decision / role retired / other} |
 | Authorized By | {NAME} |
 
 ---
@@ -70,7 +70,7 @@
 | Artifact | Path |
 |----------|------|
 | Performance Log | `governance/performance/{ID}.md` |
-| Strike Log | `governance/strikes/{ID}.md` |
+| Cases | {case records naming this deployment's work} |
 | Related Files | {list or "None"} |
 
 ---
