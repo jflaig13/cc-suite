@@ -1,6 +1,6 @@
 # Trademarks
 
-Mise, Inc. claims trademark rights in **CC-Suite** and
+Mise Inc. claims trademark rights in **CC-Suite** and
 **“Your agents fail. Your institution learns.”**
 
 The copyright licenses do not grant general rights in the project's names,
