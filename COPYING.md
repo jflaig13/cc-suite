@@ -1,6 +1,6 @@
 # Copyright and license scope
 
-Copyright © 2026 Mise, Inc., for Mise's own copyrightable contributions.
+Copyright © 2026 Mise Inc., for Mise's own copyrightable contributions.
 Third-party material retains its authors' copyrights and license terms.
 
 ## Software
