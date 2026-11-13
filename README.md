@@ -109,7 +109,7 @@ The [runtime source inventory](provenance/runtime-source-inventory.json) and [go
 
 Built by [Jonathan Flaig](https://github.com/jflaig13), founder of [Mise](https://getmise.io).
 
-Copyright © 2026 Mise, Inc., for its own contributions. Software is licensed
+Copyright © 2026 Mise Inc., for its own contributions. Software is licensed
 under [MPL-2.0](LICENSE); documentation and governance prose are licensed under
 [CC BY-SA 4.0](LICENSES/CC-BY-SA-4.0.txt). See [COPYING.md](COPYING.md) for the
 scope, embedded code examples, third-party exceptions and earlier releases.
